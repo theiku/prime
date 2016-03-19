@@ -1,0 +1,7 @@
+#!/bin/bash
+DIRECTORY=./inc/boldgrid-theme-framework
+if [ -d "$DIRECTORY" ]; then
+	rm -rf $DIRECTORY
+fi
+git clone -b dev --single-branch https://github.com/BoldGrid/boldgrid-theme-framework.git $DIRECTORY
+cd $DIRECTORY && git filter-branch --subdirectory-filter $(basename $DIRECTORY)
