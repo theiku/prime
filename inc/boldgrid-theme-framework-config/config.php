@@ -1,9 +1,6 @@
 <?php
 if ( ! function_exists( 'boldgrid_theme_framework_config' ) ) {
 	function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
-		/**
-		 * General Configs
-		 */
 
 		// Waiting for all themes to opt in before removing switch.		
 		$boldgrid_framework_configs['customizer-options']['typography']['enabled'] = true;
@@ -13,6 +10,9 @@ if ( ! function_exists( 'boldgrid_theme_framework_config' ) ) {
 
 		// Waiting for all themes to opt in before removing switch.
 		$boldgrid_framework_configs['customizer-options']['colors']['enabled'] = true;
+
+		// Waiting for all themes to opt in before removing switch.
+		$boldgrid_framework_configs['bootstrap-compile'] = true;
 
 		// Turn on the parent theme template engine.
 		$boldgrid_framework_configs['boldgrid-parent-theme'] = true;
@@ -26,13 +26,15 @@ if ( ! function_exists( 'boldgrid_theme_framework_config' ) ) {
 		// Display Call To Action Widget on all pages.
 		$boldgrid_framework_configs['template']['call-to-action'] = 'all-pages';
 
-		// Default Colors
-		$boldgrid_framework_configs['customizer-options']['colors']['defaults'] = [ array (
-			'default' => true,
-			'format' => 'palette-primary',
-			'neutral-color' => '#ffffff',
-			'colors' => ['#000000', '#000000', '#ffffff']
-			) ];
+		// Default Colors.
+		$boldgrid_framework_configs['customizer-options']['colors']['defaults'] = array( 
+			array(
+				'default' => true,
+				'format' => 'palette-primary',
+				'neutral-color' => '#ffffff',
+				'colors' => array( '#000000', '#000000', '#ffffff' )
+			)
+		);
 
 		// CTA Widget Markup.
 		$widget_markup['call-to-action'] = <<<HTML
@@ -46,7 +48,7 @@ if ( ! function_exists( 'boldgrid_theme_framework_config' ) ) {
 HTML;
 
 		// Assign Widget 1 the Call to Action.
-		$boldgrid_framework_configs['widget']['widget_instances']['boldgrid-widget-1'][] = array (
+		$boldgrid_framework_configs['widget']['widget_instances']['boldgrid-widget-1'][] = array(
 			'title' => 'Call To Action',
 			'text' => $widget_markup['call-to-action'],
 			'type' => 'visual',
@@ -57,7 +59,7 @@ HTML;
 		// Name Widget Area.
 		$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Call To Action';
 
-		// Configs above will override framework defaults
+		// Configs above will override framework defaults.
 		return $boldgrid_framework_configs;
 	}
 }
@@ -69,7 +71,7 @@ if ( ! function_exists( 'filter_logo_controls' ) ) {
 		// Reset Site Title Margin.
 		$controls['logo_margin_top']['default'] = '0';
 		$controls['logo_margin_bottom']['default'] = '0';
-		// Controls above will override framework defaults
+		// Controls above will override framework defaults.
 		return $controls;
 	}
 }
