@@ -11,7 +11,7 @@
 				<?php the_post_thumbnail(); ?>
 			<?php endif; ?> 
 			<?php the_content(); ?>
-			<?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'bgtfw' ), 'after' => '</p></nav>']); ?>
+			<?php wp_link_pages( array( 'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'bgtfw' ), 'after' => '</p></nav>' ) ); ?>
 		</div><!-- .entry-content -->
 		<footer class="entry-footer">
 			<?php boldgrid_entry_footer(); ?>

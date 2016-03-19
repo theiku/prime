@@ -24,7 +24,7 @@ if ( $cta === 'all-pages' ) {
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php wp_link_pages( [ 'before' => '<nav class="page-links"><p>' . esc_html__( 'Pages:', 'bgtfw' ), 'after' => '</p></nav>' ] ); ?>
+		<?php wp_link_pages( array( 'before' => '<nav class="page-links"><p>' . esc_html__( 'Pages:', 'bgtfw' ), 'after' => '</p></nav>' ) ); ?>
 	</div><!-- .entry-content -->
 	<footer class="entry-footer">
 		<?php
