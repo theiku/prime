@@ -26,6 +26,15 @@ if ( ! function_exists( 'boldgrid_theme_framework_config' ) ) {
 		// Display Call To Action Widget on all pages.
 		$boldgrid_framework_configs['template']['call-to-action'] = 'all-pages';
 
+		// Enable Search Form in Navbar.
+		$boldgrid_framework_configs['template']['navbar-search-form'] = true;
+
+		// Remove Container ID that is targetted by navbar-toggle.
+		$boldgrid_framework_configs['menu']['prototype']['primary']['container_id'] = 'primary-menu';
+
+		// Remove the container classes that are targetted with navbar-collapse.
+		$boldgrid_framework_configs['menu']['prototype']['primary']['container_class'] = 'primary-menu';
+
 		// Default Colors.
 		$boldgrid_framework_configs['customizer-options']['colors']['defaults'] = array( 
 			array(
