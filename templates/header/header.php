@@ -29,24 +29,26 @@ $configs = $boldgrid_theme_framework->get_configs();
 			</div>
 		</div>
 	</div><!-- .container -->
-	<nav id="site-navigation" class="navbar navbar-default" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div><!-- .navbar-header -->
-			<div class="navbar-collapse collapse" id="primary-navbar">
-				<?php do_action( 'boldgrid_menu_primary' ); ?>
-				<?php if ( true === $configs['template']['navbar-search-form'] ) : ?>
-					<?php get_template_part( 'templates/header/search' ); ?>
-				<?php endif; ?>
+	<?php if ( has_nav_menu( 'primary' ) ) : ?>
+		<nav id="site-navigation" class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div><!-- .navbar-header -->
+				<div class="navbar-collapse collapse" id="primary-navbar">
+					<?php do_action( 'boldgrid_menu_primary' ); ?>
+					<?php if ( true === $configs['template']['navbar-search-form'] ) : ?>
+						<?php get_template_part( 'templates/header/search' ); ?>
+					<?php endif; ?>
+				</div>
 			</div>
-		</div>
-	</nav><!-- #site-navigation -->
+		</nav><!-- #site-navigation -->
+	<?php endif; ?>
 	<?php do_action( 'boldgrid_menu_tertiary' ); ?>
 	<?php do_action( 'boldgrid_header_bottom' ); ?>
 </header><!-- #masthead -->
