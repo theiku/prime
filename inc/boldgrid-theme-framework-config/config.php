@@ -2,18 +2,23 @@
 if ( ! function_exists( 'boldgrid_theme_framework_config' ) ) {
 	function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
-		// Waiting for all themes to opt in before removing switch.		
+		// Waiting for all themes to opt in before removing switch.
+		// Enable typography controls in the customizer.
 		$boldgrid_framework_configs['customizer-options']['typography']['enabled'] = true;
 
 		// Waiting for all themes to opt in before removing switch.
+		// Remove the wrong attribution links from the footer.
 		$boldgrid_framework_configs['temp']['attribution_links'] = true;
 
 		// Waiting for all themes to opt in before removing switch.
+		// Enable the color palettes in the customizer.
 		$boldgrid_framework_configs['customizer-options']['colors']['enabled'] = true;
 
 		// Waiting for all themes to opt in before removing switch.
+		// Enable Bootstrap SCSS Compiling.
 		$boldgrid_framework_configs['bootstrap-compile'] = true;
 
+		// Waiting for all themes to opt in before removing switch.
 		// Turn on the parent theme template engine.
 		$boldgrid_framework_configs['boldgrid-parent-theme'] = true;
 
