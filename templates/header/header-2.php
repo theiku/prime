@@ -1,4 +1,15 @@
-<header id="masthead" class="site-header" role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>>
+<?php
+/**
+ *
+ * @package BoldGrid
+ */
+
+// Get the theme configs.
+global $boldgrid_theme_framework;
+$configs = $boldgrid_theme_framework->get_configs();
+?>
+
+<header id="masthead" class="<?php echo basename(__FILE__, '.php'); ?>" role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>>
 	<?php do_action( 'boldgrid_menu_secondary' ); ?>
 	<div class="container">
 		<?php do_action( 'boldgrid_header_top' ); ?>
@@ -29,6 +40,9 @@
 					</button>
 				</div><!-- .navbar-header -->
 				<?php do_action( 'boldgrid_menu_primary' ); ?>
+				<?php if ( true === $configs['template']['navbar-search-form'] ) : ?>
+					<?php get_template_part( 'templates/header/search' ); ?>
+				<?php endif; ?>
 			</nav><!-- #site-navigation -->
 		</div><!-- .row -->
 		<?php dynamic_sidebar( 'boldgrid-widget-2' ); ?>

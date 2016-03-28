@@ -14,11 +14,11 @@ $configs = $boldgrid_theme_framework->get_configs();
 <html <?php language_attributes(); ?>>
 	<?php get_template_part( 'templates/head' ); ?>
 	<body <?php body_class(); ?>>
-		<div class="header">
+		<div class="site-header">
 			<?php do_action( 'get_header' ); ?>
 			<?php get_template_part( 'templates/header/header', $configs['template']['header'] ); ?>
 		</div><!-- /.header -->
-		<div class="content" role="document">
+		<div class="site-content" role="document">
 			<main class="main">
 				<?php include Boldgrid_Framework_Wrapper::boldgrid_template_path(); ?>
 			</main><!-- /.main -->
