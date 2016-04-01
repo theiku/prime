@@ -1,3 +1,4 @@
 inc/boldgrid-theme-framework/
 node_modules/
 css/color-palettes.css
+bower_components/
