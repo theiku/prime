@@ -3,41 +3,60 @@ var gulp     = require( 'gulp' ),
 	sequence = require( 'run-sequence' ),
 	unzip    = require( 'gulp-unzip' ),
 	download = require( 'gulp-download' ),
+	debug    = require( 'gulp-debug' ),
+	del      = require( 'del' ),
 	bower    = require( 'gulp-bower' );
 
 //Configs
 var config = {
 	src : '.',
+	mergeDest : '../qboldgrid-two',
+	tempDir : './boldgrid-gulp-parent-temp',
 	bower : './bower_components',
-	frameworkDest : './inc/boldgrid-theme-framework',
+	defaultChild : 'https://github.com/BoldGrid/starter/archive/master.zip',
+	frameworkDest : '/inc/boldgrid-theme-framework'
 };
 
-gulp.copy = function ( src, dest ) {
-    return gulp.src(src, {base:"."})
-        .pipe( gulp.dest(dest) );
-};
-
-gulp.task('test', function () {
-	return download( argv.child )
+/**
+ * Child Download
+ */
+gulp.task('child-download', function () {
+	var child = ( argv.child ) ? argv.child : config.defaultChild;
+	
+	return download( child )
 		.pipe( unzip() )
-		.pipe( gulp.dest( './tmp' ) );
+		.pipe( gulp.dest( config.tempDir ) );
 } );
 
-gulp.task('move', function () {
-	return gulp.src( './tmp/**/*' )
-		.pipe( gulp.dest( './boldgrid-two' ) );
+gulp.task('child-copy-files', function () {
+	return gulp.src( [
+		config.tempDir + '/starter-master/**',
+		'!' + config.tempDir + '/starter-master/',
+		'!' + config.tempDir + '/*/functions.php',
+		'!' + config.tempDir + '/*/README.md',
+		'!' + config.tempDir + '/*/LICENSE',
+		] )
+	.pipe( debug() )
+	.pipe( gulp.dest( config.mergeDest ) );
 });
 
+gulp.task('child-remove-temp', function () {
+	return del( config.tempDir ) ;
+} );
+
+// Download framework.
 gulp.task('bower', function () {
 	  return bower().pipe( gulp.dest( config.bower ) );
 });
 
+// Copy from bower into parent dest.
 gulp.task('framework', function () {
 	return gulp.src( config.bower + '/boldgrid-theme-framework/boldgrid-theme-framework/**/*' )
-		.pipe( gulp.dest( config.frameworkDest ) );
+		.pipe( gulp.dest( config.mergeDest + config.frameworkDest ) );
 });
 
-gulp.task('standalone', function () {
+//Copy parent into new copy.
+gulp.task('parent', function () {
 	
 	return gulp.src( [
 	 '!./.git',
@@ -45,30 +64,41 @@ gulp.task('standalone', function () {
 	 '!./bower_components',
 	 '!./bower_components/**',
 	 '!./clone',
+	 '!./gulpfile.js',
+	 '!./package.json',
+	 '!./bower.json',
 	 '!./node_modules',
 	 '!./node_modules/**',
 	 '!./inc/boldgrid-theme-framework',
 	 '!./inc/boldgrid-theme-framework/**',
 	 './**/*'
 	] )
-	.pipe( gulp.dest( '../boldgrid-two' ) );
+	.pipe( gulp.dest( config.mergeDest ) );
 });
 
-//Tasks
-gulp.task( 'tester', function ( cb ) {
+// Remove an existing copy of merge theme.
+gulp.task( 'clean-output', function () {
+	return del( config.mergeDest, { force: true } );
+});
+
+// Copy child into merged.
+gulp.task( 'child-theme', function ( cb ) {
 	sequence (
-		'test',
-		'move',
+		'child-download',
+		'child-copy-files',
+		'child-remove-temp',
 		cb
 	);
 });
 
-//Tasks
-gulp.task( 'build', function ( cb ) {
+// Tasks.
+gulp.task( 'generate', function ( cb ) {
   sequence (
+    'clean-output',
     'bower',
+    'parent',
     'framework',
-    'cleanup',
+    'child-theme',
     cb
   );
 });
