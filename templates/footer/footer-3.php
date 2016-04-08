@@ -12,7 +12,7 @@
 				</div><!-- .attribution -->
 			</div><!-- .col -->
 			<div class="col-md-3">
-				<?php do_action( 'boldgrid_menu_social' ) ?>
+				<?php do_action( 'boldgrid_menu_footer_social' ) ?>
 			</div><!-- .col -->
 		</div><!-- .row -->
 		<?php do_action( 'boldgrid_footer_bottom' ); ?>
