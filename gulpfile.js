@@ -14,7 +14,8 @@ var config = {
 	tempDir : './boldgrid-gulp-parent-temp',
 	bower : './bower_components',
 	defaultChild : 'https://github.com/BoldGrid/starter/archive/master.zip',
-	frameworkDest : '/inc/boldgrid-theme-framework'
+	frameworkDest : '/inc/boldgrid-theme-framework',
+	localFramework : '../boldgrid-theme-framework/boldgrid-theme-framework',
 };
 
 /**
@@ -54,6 +55,14 @@ gulp.task('framework', function () {
 	return gulp.src( config.bower + '/boldgrid-theme-framework/boldgrid-theme-framework/**/*' )
 		.pipe( gulp.dest( config.mergeDest + config.frameworkDest ) );
 });
+// Copy from bower into parent dest.
+gulp.task('local-framework', function () {
+	return gulp.src( [
+			config.localFramework + '/**/*'
+     	] )
+     	.pipe( gulp.dest( config.mergeDest + config.frameworkDest )  );
+	
+});
 
 //Copy parent into new copy.
 gulp.task('parent', function () {
@@ -92,13 +101,22 @@ gulp.task( 'child-theme', function ( cb ) {
 });
 
 // Tasks.
-gulp.task( 'generate', function ( cb ) {
+gulp.task( 'generate-local', function ( cb ) {
   sequence (
     'clean-output',
-    'bower',
+    'local-framework',
     'parent',
-    'framework',
     'child-theme',
     cb
   );
+});
+gulp.task( 'generate', function ( cb ) {
+	sequence (
+		'clean-output',
+		'bower',
+		'framework',
+		'parent',
+		'child-theme',
+		cb
+	);
 });
