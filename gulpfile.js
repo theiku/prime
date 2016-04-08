@@ -10,7 +10,7 @@ var gulp     = require( 'gulp' ),
 //Configs
 var config = {
 	src : '.',
-	mergeDest : '../qboldgrid-two',
+	mergeDest : '../starter',
 	tempDir : './boldgrid-gulp-parent-temp',
 	bower : './bower_components',
 	defaultChild : 'https://github.com/BoldGrid/starter/archive/master.zip',
