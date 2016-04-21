@@ -50,5 +50,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 		</nav><!-- #site-navigation -->
 	<?php endif; ?>
 	<?php do_action( 'boldgrid_menu_tertiary' ); ?>
-	<?php do_action( 'boldgrid_header_bottom' ); ?>
+	<div class="container">
+		<?php do_action( 'boldgrid_header_bottom' ); ?>
+	</div>
 </header><!-- #masthead -->
