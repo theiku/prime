@@ -1,4 +1,4 @@
-<header id="masthead" class="site-header <?php echo esc_attr( basename(__FILE__, '.php' ) ); ?>" role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>> 
+<header id="masthead" class="site-header <?php echo esc_attr( basename(__FILE__, '.php' ) ); ?>" role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>>
 <?php BoldGrid::skip_link(  ); ?>
 	<div class="container">
 		<div class="col-md-12">
@@ -14,7 +14,7 @@
 		</div><!-- .site-branding -->
 		<nav id="site-navigation" class="navbar navbar-default" role="navigation">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-navbar">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navbar">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
