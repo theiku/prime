@@ -33,8 +33,8 @@ $configs = $boldgrid_theme_framework->get_configs();
 		<?php if ( true === $configs['template']['navbar-search-form'] ) : ?>
 			<?php get_template_part( 'templates/header/search' ); ?>
 		<?php endif; ?>
-    </div>
-    <div class="navbar navbar-default navbar-fixed-top">
+	</div>
+	<div class="navbar navbar-default navbar-fixed-top">
 		<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
