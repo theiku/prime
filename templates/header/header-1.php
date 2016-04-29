@@ -24,6 +24,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 		</div>
 	</div><!-- .container -->
 	<div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
+		<?php do_action( 'inside_offcanvas_nav' ); ?>
 		<div class="site-branding">
 			<?php do_action( 'boldgrid_site_title' ); ?>
 			<?php do_action( 'boldgrid_print_tagline' ); ?>
