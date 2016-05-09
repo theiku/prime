@@ -33,7 +33,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 		<nav id="site-navigation" class="navbar navbar-default" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-navbar">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navbar">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -50,5 +50,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 		</nav><!-- #site-navigation -->
 	<?php endif; ?>
 	<?php do_action( 'boldgrid_menu_tertiary' ); ?>
-	<?php do_action( 'boldgrid_header_bottom' ); ?>
+	<div class="container">
+		<?php do_action( 'boldgrid_header_bottom' ); ?>
+	</div>
 </header><!-- #masthead -->

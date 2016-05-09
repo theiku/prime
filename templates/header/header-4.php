@@ -19,7 +19,7 @@
 			<div class="col-md-12">
 				<nav id="site-navigation" class="navbar navbar-default col-md-12" role="navigation">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-navbar">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navbar">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
