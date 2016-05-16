@@ -1,6 +1,6 @@
 <?php
-if ( ! function_exists( 'boldgrid_theme_framework_config' ) ) {
-	function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
+if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
+	function boldgrid_prime_framework_config( $boldgrid_framework_configs ) {
 
 		// Waiting for all themes to opt in before removing switch.
 		// Enable typography controls in the customizer.
@@ -41,7 +41,7 @@ if ( ! function_exists( 'boldgrid_theme_framework_config' ) ) {
 		$boldgrid_framework_configs['menu']['prototype']['primary']['container_class'] = 'primary-menu';
 
 		// Default Colors.
-		$boldgrid_framework_configs['customizer-options']['colors']['defaults'] = array( 
+		$boldgrid_framework_configs['customizer-options']['colors']['defaults'] = array(
 			array(
 				'default' => true,
 				'format' => 'palette-primary',
@@ -77,11 +77,11 @@ HTML;
 		return $boldgrid_framework_configs;
 	}
 }
-add_filter( 'boldgrid_theme_framework_config', 'boldgrid_theme_framework_config' );
+add_filter( 'boldgrid_theme_framework_config', 'boldgrid_prime_framework_config' );
 
 // Site Title & Logo Controls.
-if ( ! function_exists( 'filter_logo_controls' ) ) {
-	function filter_logo_controls( $controls ) {
+if ( ! function_exists( 'boldgrid_prime_filter_logo_controls' ) ) {
+	function boldgrid_prime_filter_logo_controls( $controls ) {
 		// Reset Site Title Margin.
 		$controls['logo_margin_top']['default'] = '0';
 		$controls['logo_margin_bottom']['default'] = '0';
@@ -89,4 +89,4 @@ if ( ! function_exists( 'filter_logo_controls' ) ) {
 		return $controls;
 	}
 }
-add_filter( 'kirki/fields', 'filter_logo_controls' );
+add_filter( 'kirki/fields', 'boldgrid_prime_filter_logo_controls' );
