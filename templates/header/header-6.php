@@ -31,7 +31,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 		</div><!-- .row -->
 		<div class="row">
 			<?php
-			if ( has_nav_menu( 'primary' ) ) : ?>
+			if ( 1 || has_nav_menu( 'primary' ) ) : ?>
 			<nav id="site-navigation" class="navbar navbar-default" role="navigation">
 				<div class="container">
 					<div class="navbar-header">
