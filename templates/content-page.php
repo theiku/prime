@@ -27,6 +27,7 @@ if ( $cta === 'all-pages' ) {
 		<?php wp_link_pages( array( 'before' => '<nav class="page-links"><p>' . esc_html__( 'Pages:', 'bgtfw' ), 'after' => '</p></nav>' ) ); ?>
 	</div><!-- .entry-content -->
 	<footer class="entry-footer">
+		<div class='container'>
 		<?php
 			edit_post_link(
 				sprintf(
@@ -38,5 +39,6 @@ if ( $cta === 'all-pages' ) {
 				'</i>'
 			);
 		?>
+		</div>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

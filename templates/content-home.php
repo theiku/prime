@@ -32,6 +32,7 @@ if ( $cta === 'all-pages' || $cta === 'home-only' ) {
 		); ?>
 	</div><!-- .entry-content -->
 	<footer class="entry-footer">
+		<div class='container'>
 		<?php
 			edit_post_link(
 				sprintf(
@@ -43,5 +44,6 @@ if ( $cta === 'all-pages' || $cta === 'home-only' ) {
 				'</i>'
 			);
 		?>
+		</div>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
