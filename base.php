@@ -25,7 +25,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 			</main><!-- /.main -->
 		</div><!-- /.content -->
 		<?php do_action( 'boldgrid_footer_before' ); ?>
-		<div class="site-footer-wrap">
+		<div class="site-footer">
 			<?php do_action( 'get_footer' ); ?>
 			<?php get_template_part( 'templates/footer/footer', $configs['template']['footer'] ); ?>
 			<?php wp_footer(); ?>

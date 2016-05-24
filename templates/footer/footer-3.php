@@ -1,4 +1,4 @@
-<footer id="colophon" class="site-footer" role="contentinfo" <?php BoldGrid_Framework_Schema::footer( true ); ?>>
+<footer id="colophon" role="contentinfo" <?php BoldGrid_Framework_Schema::footer( true ); ?>>
 	<div class="container">
 		<div class="row">
 		<?php do_action( 'boldgrid_footer_top' ); ?>
