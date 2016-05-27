@@ -5,9 +5,10 @@ $configs = $boldgrid_theme_framework->get_configs();
 ?>
 
 <header id="masthead" class="<?php echo basename(__FILE__, '.php'); ?>" role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>>
-
 	<?php do_action( 'boldgrid_header_top' ); ?>
-
+		<div class='boldgrid-section'>
+			<?php do_action( 'boldgrid-theme-location', 'header', '12' ); ?>
+		</div>
 		<div class='boldgrid-section'>
 			<div class="container">
 				<div class='row'>
@@ -37,7 +38,8 @@ $configs = $boldgrid_theme_framework->get_configs();
 				</div>
 			</div><!-- .container -->
 		</div><!-- .section -->
-
+		<div class='boldgrid-section'>
+			<?php do_action( 'boldgrid-theme-location', 'header', '13' ); ?>
+		</div>
 	<?php do_action( 'boldgrid_header_bottom' ); ?>
-
 </header><!-- #masthead -->
