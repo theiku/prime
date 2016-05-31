@@ -20,6 +20,10 @@ $configs = $boldgrid_theme_framework->get_configs();
 					<div class='col-md-4'><?php do_action( 'boldgrid-theme-location', 'header', '4' ); ?></div>
 				</div>
 				<div class='row'>
+					<div class='col-md-9'><?php do_action( 'boldgrid-theme-location', 'header', '14' ); ?></div>
+					<div class='col-md-3'><?php do_action( 'boldgrid-theme-location', 'header', '15' ); ?></div>
+				</div>
+				<div class='row'>
 					<div class='col-md-12'><?php do_action( 'boldgrid-theme-location', 'header', '5' ); ?></div>
 				</div>
 				<div class='row'>
