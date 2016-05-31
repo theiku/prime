@@ -19,6 +19,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 			<?php do_action( 'get_header' ); ?>
 			<?php get_template_part( 'templates/header/header', $configs['template']['header'] ); ?>
 		</div><!-- /.header -->
+		<?php do_action( 'boldgrid_content_before' ); ?>
 		<div class="site-content" role="document">
 			<main class="main">
 				<?php include Boldgrid_Framework_Wrapper::boldgrid_template_path(); ?>
