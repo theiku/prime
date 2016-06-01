@@ -20,27 +20,13 @@ if ( $cta === 'all-pages' ) {
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<div class='container'>
-			<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
-		</div>
+		<?php get_template_part( 'templates/entry-header', $configs['template']['entry-header'] ); ?>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php wp_link_pages( array( 'before' => '<nav class="page-links"><p>' . esc_html__( 'Pages:', 'bgtfw' ), 'after' => '</p></nav>' ) ); ?>
 	</div><!-- .entry-content -->
 	<footer class="entry-footer">
-		<div class='container'>
-		<?php
-			edit_post_link(
-				sprintf(
-					/* translators: %s: Name of current post */
-					esc_html__( 'Edit %s', 'bgtfw' ),
-					the_title( '<span class="screen-reader-text">"', '"</span>', false )
-				),
-				'<i class="fa fa-pencil">',
-				'</i>'
-			);
-		?>
-		</div>
+		<?php get_template_part( 'templates/entry-footer', $configs['template']['entry-footer'] ); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

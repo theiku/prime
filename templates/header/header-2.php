@@ -14,7 +14,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 					<?php do_action( 'boldgrid_header_top' ); ?>
 					<div class="col-md-12">
 						<?php do_action( 'boldgrid_menu_secondary' ); ?>
-						<?php dynamic_sidebar( 'boldgrid-widget-1' ); ?>
+						<?php dynamic_sidebar( 'boldgrid-widget-2' ); ?>
 					</div><!-- .col -->
 					<div class="col-md-12">
 						<div class="site-branding">
