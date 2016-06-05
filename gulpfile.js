@@ -22,9 +22,17 @@ var config = {
  * Child Download
  */
 gulp.task('child-download', function () {
-	var child = ( argv.child ) ? argv.child : config.defaultChild;
+	var child = ( argv.child ) ? argv.child : config.defaultChild,
+		childZip = ( argv.childZip ) ? argv.childZip : '',
+		zip;
 	
-	return download( child )
+	if ( childZip ) {
+		zip = gulp.src( childZip );
+	} else {
+		zip = download( child );
+	}
+	
+	return zip
 		.pipe( unzip() )
 		.pipe( gulp.dest( config.tempDir ) );
 } );
