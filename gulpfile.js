@@ -10,7 +10,7 @@ var gulp     = require( 'gulp' ),
 //Configs
 var config = {
 	src : '.',
-	defaultOutputName : 'starters',
+	defaultThemeFolderName : 'starter-master',
 	mergeDest : './generated/',
 	tempDir : './boldgrid-gulp-parent-temp',
 	bower : './bower_components',
@@ -18,6 +18,9 @@ var config = {
 	frameworkDest : '/inc/boldgrid-theme-framework',
 	localFramework : '../boldgrid-theme-framework/boldgrid-theme-framework',
 };
+
+config.themeFolderName = ( argv.themeFolderName) ? argv.themeFolderName : config.defaultThemeFolderName;
+config.mergeDest += config.themeFolderName;
 
 /**
  * Child Download
@@ -40,12 +43,10 @@ gulp.task('child-download', function () {
 
 gulp.task('child-copy-files', function () {
 	return gulp.src( [
-		config.tempDir + '/starter-master/**',
-		'!' + config.tempDir + '/starter-master/',
+		config.tempDir + '/' + config.themeFolderName + '/**',
+		'!' + config.tempDir + '/' + config.themeFolderName + '/',
 		'!' + config.tempDir + '/*/functions.php',
 		'!' + config.tempDir + '/*/README.md',
-		'!' + config.tempDir + '/*/generated/',
-		'!' + config.tempDir + '/*/generated/**',
 		'!' + config.tempDir + '/*/LICENSE',
 		] )
 	.pipe( debug() )
@@ -88,6 +89,8 @@ gulp.task('parent', function () {
 	 '!./package.json',
 	 '!./bower.json',
 	 '!./node_modules',
+	 '!./generated',
+	 '!./generated/**',
 	 '!./node_modules/**',
 	 '!./inc/boldgrid-theme-framework',
 	 '!./inc/boldgrid-theme-framework/**',
@@ -99,9 +102,6 @@ gulp.task('parent', function () {
 // Remove an existing copy of merge theme.
 gulp.task( 'clean-output', function () {
 	return del( config.mergeDest, { force: true } );
-});
-gulp.task( 'setup-destination', function () {
-	config.mergeDest += ( argv.outputName) ? argv.outputName : config.defaultOutputName;
 });
 
 // Copy child into merged.
@@ -117,7 +117,6 @@ gulp.task( 'child-theme', function ( cb ) {
 // Tasks.
 gulp.task( 'generate-local', function ( cb ) {
   sequence (
-	'setup-destination',
     'clean-output',
     'local-framework',
     'parent',
@@ -127,7 +126,6 @@ gulp.task( 'generate-local', function ( cb ) {
 });
 gulp.task( 'generate', function ( cb ) {
 	sequence (
-		'setup-destination',
 		'clean-output',
 		'bower',
 		'framework',
