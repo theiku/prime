@@ -44,6 +44,8 @@ gulp.task('child-copy-files', function () {
 		'!' + config.tempDir + '/starter-master/',
 		'!' + config.tempDir + '/*/functions.php',
 		'!' + config.tempDir + '/*/README.md',
+		'!' + config.tempDir + '/*/generated/',
+		'!' + config.tempDir + '/*/generated/**',
 		'!' + config.tempDir + '/*/LICENSE',
 		] )
 	.pipe( debug() )
