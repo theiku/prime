@@ -10,7 +10,8 @@ var gulp     = require( 'gulp' ),
 //Configs
 var config = {
 	src : '.',
-	mergeDest : '../starter',
+	defaultOutputName : 'starters',
+	mergeDest : './generated/',
 	tempDir : './boldgrid-gulp-parent-temp',
 	bower : './bower_components',
 	defaultChild : 'https://github.com/BoldGrid/starter/archive/master.zip',
@@ -97,6 +98,9 @@ gulp.task('parent', function () {
 gulp.task( 'clean-output', function () {
 	return del( config.mergeDest, { force: true } );
 });
+gulp.task( 'setup-destination', function () {
+	config.mergeDest += ( argv.outputName) ? argv.outputName : config.defaultOutputName;
+});
 
 // Copy child into merged.
 gulp.task( 'child-theme', function ( cb ) {
@@ -111,6 +115,7 @@ gulp.task( 'child-theme', function ( cb ) {
 // Tasks.
 gulp.task( 'generate-local', function ( cb ) {
   sequence (
+	'setup-destination',
     'clean-output',
     'local-framework',
     'parent',
@@ -120,6 +125,7 @@ gulp.task( 'generate-local', function ( cb ) {
 });
 gulp.task( 'generate', function ( cb ) {
 	sequence (
+		'setup-destination',
 		'clean-output',
 		'bower',
 		'framework',
