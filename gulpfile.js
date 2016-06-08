@@ -1,3 +1,9 @@
+/**
+ * Primary Tasks:
+ * 
+ * gulp install-framework: Places the theme framework in your inc folder.
+ */
+
 var gulp     = require( 'gulp' ),
 	argv     = require('yargs').argv,
 	sequence = require( 'run-sequence' ),
@@ -65,7 +71,7 @@ gulp.task('bower', function () {
 // Copy from bower into parent dest.
 gulp.task('framework', function () {
 	return gulp.src( config.bower + '/boldgrid-theme-framework/boldgrid-theme-framework/**/*' )
-		.pipe( gulp.dest( config.mergeDest + config.frameworkDest ) );
+		.pipe( gulp.dest( '.' + config.frameworkDest ) );
 });
 // Copy from bower into parent dest.
 gulp.task('local-framework', function () {
@@ -114,7 +120,7 @@ gulp.task( 'child-theme', function ( cb ) {
 	);
 });
 
-// Tasks.
+//Create a child theme with framework in same directory.
 gulp.task( 'generate-local', function ( cb ) {
   sequence (
     'clean-output',
@@ -124,13 +130,23 @@ gulp.task( 'generate-local', function ( cb ) {
     cb
   );
 });
+
+// Create a child theme with bower dependencies.
 gulp.task( 'generate', function ( cb ) {
 	sequence (
 		'clean-output',
-		'bower',
-		'framework',
+		'install-framework',
 		'parent',
 		'child-theme',
+		cb
+	);
+});
+
+// Install theme framework into the parent theme.
+gulp.task( 'install-framework', function ( cb ) {
+	return sequence (
+		'bower',
+		'framework',
 		cb
 	);
 });
