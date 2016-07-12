@@ -5,4 +5,4 @@
  * @package BoldGrid
  */
 
-dynamic_sidebar( 'sidebar-primary' ); ?>
+dynamic_sidebar( 'sidebar-1' ); ?>
