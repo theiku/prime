@@ -2,6 +2,7 @@
 // Get the theme configs.
 global $boldgrid_theme_framework;
 $configs = $boldgrid_theme_framework->get_configs();
+$entry_header = $configs['template']['entry-header'];
 ?>
 
 <header id="masthead" class="<?php echo basename(__FILE__, '.php'); ?>" role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>>
@@ -10,7 +11,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 			<?php do_action( 'boldgrid-theme-location', 'header', '12' ); ?>
 		</div>
 		<div class='boldgrid-section'>
-			<div class="container">
+			<div class="containe<?php echo empty( $entry_header ) ? '' : '-' . $entry_header; ?>r">
 				<div class='row header-1'>
 					<div class='col-md-12 header-1'><?php do_action( 'boldgrid-theme-location', 'header', '1' ); ?></div>
 				</div>
