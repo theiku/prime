@@ -1,7 +1,15 @@
+<?php
+// Get the theme configs.
+global $boldgrid_theme_framework;
+$configs = $boldgrid_theme_framework->get_configs();
+
+$entry_footer = $configs['template']['entry-footer'];
+?>
+
 <footer id="colophon" role="contentinfo" <?php BoldGrid_Framework_Schema::footer( true ); ?>>
 	<?php do_action( 'boldgrid_footer_top' ); ?>
 		<div class='boldgrid-section'>
-			<div class="container">
+			<div class="container<?php echo empty( $entry_footer ) ? '' : '-' . $entry_footer; ?>">
 				<div class='row footer-1'>
 					<div class='col-md-12 footer-1'><?php do_action( 'boldgrid-theme-location', 'footer', '1' ); ?></div>
 				</div>
