@@ -2,7 +2,6 @@
 // Get the theme configs.
 global $boldgrid_theme_framework;
 $configs = $boldgrid_theme_framework->get_configs();
-
 $entry_footer = $configs['template']['entry-footer'];
 ?>
 
