@@ -6,12 +6,15 @@
 				<?php boldgrid_posted_on(); ?>
 			</div><!-- .entry-meta -->
 		</header><!-- .entry-header -->
+
 		<div class="entry-content">
-			<?php if ( has_post_thumbnail() ) : ?>
-				<?php the_post_thumbnail(); ?>
-			<?php endif; ?> 
-			<?php the_content(); ?>
-			<?php wp_link_pages( array( 'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'bgtfw' ), 'after' => '</p></nav>' ) ); ?>
+			<div class="bgtfw <?php echo BoldGrid::print_container_class( 'entry-content' )?>">
+				<?php if ( has_post_thumbnail() ) : ?>
+					<?php the_post_thumbnail(); ?>
+				<?php endif; ?>
+				<?php the_content(); ?>
+				<?php wp_link_pages( array( 'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'bgtfw' ), 'after' => '</p></nav>' ) ); ?>			</div><!-- .entry-content -->
+			</div><!-- .bgtfw container -->
 		</div><!-- .entry-content -->
 		<footer class="entry-footer">
 			<?php boldgrid_entry_footer(); ?>

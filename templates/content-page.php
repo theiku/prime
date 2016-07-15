@@ -20,13 +20,15 @@ if ( $cta === 'all-pages' ) {
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php get_template_part( 'templates/entry-header', $configs['template']['entry-header'] ); ?>
+		<?php get_template_part( 'templates/entry-header' ); ?>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php wp_link_pages( array( 'before' => '<nav class="page-links"><p>' . esc_html__( 'Pages:', 'bgtfw' ), 'after' => '</p></nav>' ) ); ?>
+		<div class="bgtfw <?php echo BoldGrid::print_container_class( 'entry-content' )?>">
+			<?php the_content(); ?>
+			<?php wp_link_pages( array( 'before' => '<nav class="page-links"><p>' . esc_html__( 'Pages:', 'bgtfw' ), 'after' => '</p></nav>' ) ); ?>
+		</div><!-- .bgtfw container -->
 	</div><!-- .entry-content -->
 	<footer class="entry-footer">
-		<?php get_template_part( 'templates/entry-footer', $configs['template']['entry-footer'] ); ?>
+		<?php get_template_part( 'templates/entry-footer' ); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
