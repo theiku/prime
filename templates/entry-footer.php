@@ -1,4 +1,4 @@
-<div class="container">
+<div class="bgtfw <?php echo BoldGrid::print_container_class( 'entry-header' )?>">
 <?php
 	edit_post_link(
 		sprintf(

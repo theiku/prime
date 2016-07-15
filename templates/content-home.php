@@ -21,7 +21,7 @@ if ( $cta === 'all-pages' || $cta === 'home-only' ) {
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php get_template_part( 'templates/entry-header', $configs['template']['entry-header'] ); ?>
+		<?php get_template_part( 'templates/entry-header' ); ?>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<?php the_content(); ?>
