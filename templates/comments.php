@@ -12,8 +12,10 @@ if ( post_password_required(  ) ) {
   return;
 }
 ?>
-<section id="comments" class="comments">
-	<?php do_action( 'boldgrid_comments_before' ) ?>
-	<?php do_action( 'boldgrid_comments' ) ?>
-	<?php do_action( 'boldgrid_comments_after' ) ?>
-</section>
+<div class="container">
+	<section id="comments" class="comments">
+		<?php do_action( 'boldgrid_comments_before' ) ?>
+		<?php do_action( 'boldgrid_comments' ) ?>
+		<?php do_action( 'boldgrid_comments_after' ) ?>
+	</section>
+</div>
