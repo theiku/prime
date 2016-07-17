@@ -1,11 +1,13 @@
 <?php while ( have_posts() ) : the_post(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<?php do_action( 'before_entry_title' ); ?>
 		<header class="entry-header">
 			<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 			<div class="entry-meta">
 				<?php boldgrid_posted_on(); ?>
 			</div><!-- .entry-meta -->
 		</header><!-- .entry-header -->
+		<?php do_action( 'after_entry_title' ); ?> 
 		<div class="entry-content">
 			<?php if ( has_post_thumbnail() ) : ?>
 				<?php the_post_thumbnail(); ?>

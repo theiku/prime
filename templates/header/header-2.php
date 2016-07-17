@@ -22,7 +22,6 @@ $configs = $boldgrid_theme_framework->get_configs();
 			<?php do_action('boldgrid_print_tagline'); ?>
 		</div>
 	</div>
-
 	<div class="col-md-12">
 		<nav id="site-navigation" class="navbar navbar-default" role="navigation">
 			<div class="navbar-header">
