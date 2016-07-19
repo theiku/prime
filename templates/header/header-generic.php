@@ -10,7 +10,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 			<?php do_action( 'boldgrid-theme-location', 'header', '12' ); ?>
 		</div>
 		<div class='boldgrid-section'>
-			<div class="bgtfw <?php echo BoldGrid::print_container_class( 'header' )?>">
+			<div class="bgtfw <?php echo $configs['template']['pages']['global']['header']; ?>">
 				<div class='row header-1'>
 					<div class='col-md-12 header-1'><?php do_action( 'boldgrid-theme-location', 'header', '1' ); ?></div>
 				</div>
