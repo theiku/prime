@@ -8,4 +8,3 @@ $configs = $boldgrid_theme_framework->get_configs();
 <div class="bgtfw-cta <?php echo $configs['template']['pages']['global']['call-to-action']; ?>">
 	<?php dynamic_sidebar( 'boldgrid-widget-1' );?>
 </div>
-?>
