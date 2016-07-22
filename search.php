@@ -9,7 +9,7 @@
 $results_count = $wp_query->found_posts;
 ?>
 <div class="jumbotron">
-	<div class="container">
+	<div class="bgtfw <?php echo BoldGrid::print_container_class('blog')?>">
 		<h1>Search <span class="keyword">&ldquo;<?php the_search_query(); ?>&rdquo;</span></h1>
 		<?php if ( $results_count == '' || $results_count == 0 ) { // No Results ?>
 			<p><span class="label label-danger"><?php _e( 'No Results' ); ?></span>&nbsp; <?php _e( 'Try different search terms.' ); ?></p>
@@ -23,7 +23,7 @@ $results_count = $wp_query->found_posts;
 		</div>
 	</div> <!-- .container -->
 </div> <!-- .jumbotron -->
-<div class="container">
+<div class="bgtfw <?php echo BoldGrid::print_container_class('blog')?>">
 	<div class="row">
 		<div class="col-md-12">
 			<?php if ( have_posts() ) : // Results Found. ?>
