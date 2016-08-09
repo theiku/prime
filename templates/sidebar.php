@@ -9,7 +9,7 @@ $link = esc_url( add_query_arg( array( array( 'autofocus' => array( 'panel' => '
 
 dynamic_sidebar( 'sidebar-1' ); ?>
 
-<?php if ( current_user_can ( 'edit_pages' ) ) : ?>
+<?php if ( current_user_can( 'edit_pages' ) && ! is_customize_preview() ) : ?>
 	<?php if ( ! is_active_sidebar( 'sidebar-1' ) ) : ?>
 		<div class="empty-sidebar-message">
 			<h2>Empty Sidebar</h2>
