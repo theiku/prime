@@ -13,8 +13,9 @@ Prime is a BoldGrid Parent Theme used to create new child themes for use in the 
 ## Changelog
 
 ### 1.1.1 ###
-Bug Fix: Fixed issue for site with no posts or pages.
-New feature: Add empty widget area messages for sidebar.
+
+- Bug Fix:     Fixed issue for site with no posts or pages.
+- New feature: Add empty widget area messages for sidebar.
 
 ### 1.1 ###
 New feature: Added Container Configs.
