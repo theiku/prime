@@ -5,7 +5,8 @@
  * @package BoldGrid
  */
 // Link to the widgets section in the customizer.
-$link = esc_url( add_query_arg( array( array( 'autofocus' => array( 'panel' => 'widgets' ) ), 'return' => urlencode( wp_unslash( $_SERVER['REQUEST_URI'] ) ), ), admin_url( 'customize.php' ) ) );
+$current_page = urlencode( get_site_url( null, wp_unslash( $_SERVER['REQUEST_URI'] ), null ) );
+$link = esc_url( add_query_arg( array( 'url' => $current_page, array( 'autofocus' => array( 'panel' => 'widgets' ) ), 'return' => $current_page, ), admin_url( 'customize.php' ) ) );
 
 dynamic_sidebar( 'sidebar-1' ); ?>
 
