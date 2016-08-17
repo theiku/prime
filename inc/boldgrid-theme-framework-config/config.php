@@ -6,6 +6,9 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Enable typography controls in the customizer.
 		$boldgrid_framework_configs['customizer-options']['typography']['enabled'] = true;
 
+		// Enable Sticky Footer.
+		$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;
+
 		// Waiting for all themes to opt in before removing switch.
 		// Remove the wrong attribution links from the footer.
 		$boldgrid_framework_configs['temp']['attribution_links'] = true;
