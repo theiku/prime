@@ -9,7 +9,7 @@
  */
 
 if ( post_password_required(  ) ) {
-  return;
+	return;
 }
 ?>
 <section id="comments" class="comments">
