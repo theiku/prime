@@ -1,7 +1,6 @@
 <?php
 // Get the theme configs.
-global $boldgrid_theme_framework;
-$configs = $boldgrid_theme_framework->get_configs();
+
 $widgets = $configs['widget']['widget_instances'];
 // Display the call to action widget area if configs are set.
 ?>

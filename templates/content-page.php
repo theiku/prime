@@ -15,7 +15,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 // Display the call to action widget area if configs are set.
 $cta = $configs['template']['call-to-action'];
 if ( $cta === 'all-pages' ) {
-	get_template_part( 'templates/call-to-action' );
+	include locate_template( 'templates/call-to-action.php' );
 }
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -23,7 +23,7 @@ if ( $cta === 'all-pages' ) {
 	<header class="entry-header">
 		<?php get_template_part( 'templates/entry-header' ); ?>
 	</header><!-- .entry-header -->
-	<?php do_action( 'after_entry_title' ); ?> 
+	<?php do_action( 'after_entry_title' ); ?>
 	<div class="entry-content">
 		<div class="bgtfw <?php echo BoldGrid::print_container_class( 'entry-content' )?>">
 			<?php the_content(); ?>

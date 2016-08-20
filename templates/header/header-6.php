@@ -26,7 +26,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 		</div><!-- .row -->
 		<div class="row">
 			<div class="col-md-12">
-				<?php get_template_part( 'templates/call-to-action' ); ?>
+				<?php include locate_template( 'templates/call-to-action.php' ); ?>
 			</div><!-- .col -->
 		</div><!-- .row -->
 		<div class="row">
