@@ -1,11 +1,11 @@
 /**
  * Primary Tasks:
- * 
+ *
  * gulp install-framework: Places the theme framework in your inc folder.
  */
 
 var gulp     = require( 'gulp' ),
-	argv     = require('yargs').argv,
+	argv     = require( 'yargs' ).argv,
 	sequence = require( 'run-sequence' ),
 	unzip    = require( 'gulp-unzip' ),
 	download = require( 'gulp-download' ),
@@ -35,13 +35,13 @@ gulp.task('child-download', function () {
 	var child = ( argv.child ) ? argv.child : config.defaultChild,
 		childZip = ( argv.childZip ) ? argv.childZip : '',
 		zip;
-	
+
 	if ( childZip ) {
 		zip = gulp.src( childZip );
 	} else {
 		zip = download( child );
 	}
-	
+
 	return zip
 		.pipe( unzip() )
 		.pipe( gulp.dest( config.tempDir ) );
@@ -79,12 +79,12 @@ gulp.task('local-framework', function () {
 			config.localFramework + '/**/*'
      	] )
      	.pipe( gulp.dest( config.mergeDest + config.frameworkDest )  );
-	
+
 });
 
 //Copy parent into new copy.
 gulp.task('parent', function () {
-	
+
 	return gulp.src( [
 	 '!./.git',
 	 '!./.git/**',

@@ -16,7 +16,7 @@ $cta = $configs['template']['call-to-action'];
  * Display the call to action widget area if configs are set.
  */
 if ( $cta === 'all-pages' || $cta === 'home-only' ) {
-	include locate_template( 'templates/call-to-action.php' );
+	include get_template_part( 'templates/call-to-action' );
 }
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
