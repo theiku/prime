@@ -6,7 +6,20 @@
  */
 // Link to the widgets section in the customizer.
 $current_page = ( is_ssl() ? 'https://' : 'http://' ) . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-$link = esc_url( add_query_arg( 'url', urlencode( $current_page ), wp_customize_url() ) );
+$link = esc_url(
+			add_query_arg(
+				array(
+					'url' => urlencode( $current_page ),
+					array(
+						'autofocus' => array(
+							'control' => 'sidebars_widgets[sidebar-1]'
+						),
+					),
+					'return' => $current_page,
+				),
+				wp_customize_url()
+			)
+		);
 
 dynamic_sidebar( 'sidebar-1' ); ?>
 
