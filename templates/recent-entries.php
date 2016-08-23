@@ -6,7 +6,9 @@
 				$args = array( 'numberposts' => '10', 'post_status' => 'publish' );
 				$recent_posts = wp_get_recent_posts( $args );
 				foreach( $recent_posts as $recent ) {
-					echo '<li class="list-group-item"><a href="' . get_permalink( $recent["ID"] ) . '">' . $recent["post_title"] . '</a></li>';
+					if ( $recent['post_title'] ) {
+						echo '<li class="list-group-item"><a href="' . get_permalink( $recent['ID'] ) . '">' . $recent['post_title'] . '</a></li>';
+					}
 				}
 			?>
 		</ul>
@@ -17,7 +19,9 @@
 		<?php $args = array( 'numberposts' => '10', 'sort_column' => 'menu_order' );
 			$posts = get_pages( $args );
 				foreach( $posts as $post ) {
-					echo '<li class="list-group-item"><a href="' . get_permalink( $post->ID ) . '">' . $post->post_title . '</a></li>';
+					if ( $post->post_title ) {
+						echo '<li class="list-group-item"><a href="' . get_permalink( $post->ID ) . '">' . $post->post_title . '</a></li>';
+					}
 				} ?>
 		</ul>
 	</div> <!-- .search-pages -->
