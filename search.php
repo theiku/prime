@@ -17,7 +17,7 @@ $results_count = $wp_query->found_posts;
 			<p><span class="label label-success"><?php echo $results_count . __( ' Results' ); ?></span></p>
 		<?php } // End results check. ?>
 		<div class="row">
-			<div class="col-md-12">
+			<div class="<?php echo BoldGrid::display_sidebar( ) ? 'col-md-9' : 'col-md-12'; ?>">
 				<?php get_search_form(); ?>
 			</div>
 		</div>
@@ -25,7 +25,7 @@ $results_count = $wp_query->found_posts;
 </div> <!-- .jumbotron -->
 <div class="bgtfw <?php echo BoldGrid::print_container_class('blog')?>">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="<?php echo BoldGrid::display_sidebar( ) ? 'col-md-9' : 'col-md-12'; ?>">
 			<?php if ( have_posts() ) : // Results Found. ?>
 				<h1><?php _e( 'Search Results' ); ?></h1>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -45,7 +45,7 @@ $results_count = $wp_query->found_posts;
 	</div> <!-- .row -->
 	<?php else : // No Results. ?>
 	<div class="row">
-		<div class="col-md-12">
+		<div class="<?php echo BoldGrid::display_sidebar( ) ? 'col-md-9' : 'col-md-12'; ?>">
 			<p><?php _e( 'Sorry. We couldn&rsquo;t find anything for that search. View one of our site&rsquo;s pages or a recent article below.' ); ?></p>
 		</div><!-- .col-md-12 -->
 	</div> <!-- .row -->
