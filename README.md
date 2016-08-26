@@ -15,6 +15,7 @@ Prime is a BoldGrid Parent Theme used to create new child themes for use in the 
 ### 1.1.2 ###
 
 * Bug Fix: Don't print out a link if there's no title for page or post in recent-entries template.
+* Bug Fix: Sidebar not displaying correctly on search pages.
 
 ### 1.1.1 ###
 
