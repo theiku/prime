@@ -12,6 +12,10 @@ Prime is a BoldGrid Parent Theme used to create new child themes for use in the 
 
 ## Changelog
 
+### 1.1.4 ###
+
+* Bug Fix: Home page title causes duplicate H1 tags.
+
 ### 1.1.3 ###
 
 * New feature: Framework Version in use now displayed in HTML comment for easier reference.
