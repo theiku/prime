@@ -9,7 +9,7 @@
 $results_count = $wp_query->found_posts;
 ?>
 <div class="jumbotron">
-	<div class="bgtfw <?php echo BoldGrid::print_container_class('blog')?>">
+	<div class="bgtfw">
 		<h1>Search <span class="keyword">&ldquo;<?php the_search_query(); ?>&rdquo;</span></h1>
 		<?php if ( $results_count == '' || $results_count == 0 ) { // No Results ?>
 			<p><span class="label label-danger"><?php _e( 'No Results' ); ?></span>&nbsp; <?php _e( 'Try different search terms.' ); ?></p>
@@ -17,15 +17,15 @@ $results_count = $wp_query->found_posts;
 			<p><span class="label label-success"><?php echo $results_count . __( ' Results' ); ?></span></p>
 		<?php } // End results check. ?>
 		<div class="row">
-			<div class="<?php echo BoldGrid::display_sidebar( ) ? 'col-md-9' : 'col-md-12'; ?>">
+			<div class="<?php echo BoldGrid::display_sidebar() ? 'col-md-9' : 'col-md-12'; ?>">
 				<?php get_search_form(); ?>
 			</div>
 		</div>
 	</div> <!-- .container -->
 </div> <!-- .jumbotron -->
-<div class="bgtfw <?php echo BoldGrid::print_container_class('blog')?>">
+<div class="bgtfw search-results">
 	<div class="row">
-		<div class="<?php echo BoldGrid::display_sidebar( ) ? 'col-md-9' : 'col-md-12'; ?>">
+		<div class="<?php echo BoldGrid::display_sidebar() ? 'col-md-9' : 'col-md-12'; ?>">
 			<?php if ( have_posts() ) : // Results Found. ?>
 				<h1><?php _e( 'Search Results' ); ?></h1>
 				<?php while ( have_posts() ) : the_post(); ?>
