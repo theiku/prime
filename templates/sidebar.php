@@ -2,8 +2,9 @@
 /**
  * The template for displaying the sidebar.
  *
- * @package BoldGrid
+ * @package Prime
  */
+
 // Link to the widgets section in the customizer.
 $current_page = ( is_ssl() ? 'https://' : 'http://' ) . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 $link = esc_url(

@@ -1,4 +1,13 @@
 <?php
+/**
+ * Generic Footer Template
+ *
+ * This file contains the markup for the generic footer template.
+ *
+ * @since 2.0
+ * @package Prime
+ */
+
 // Get the theme configs.
 global $boldgrid_theme_framework;
 $configs = $boldgrid_theme_framework->get_configs();

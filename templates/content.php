@@ -1,9 +1,13 @@
 <?php
 /**
- * @package BoldGrid
+ * Content Template
+ *
+ * This file contains the markup for the default content template.
+ *
+ * @package Prime
  */
-
 ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php get_template_part( 'templates/entry-header' ); ?>

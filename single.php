@@ -2,9 +2,8 @@
 /**
  * The template for displaying all single posts.
  *
- * @package BoldGrid
+ * @package Prime
  */
-
 ?>
 
 <?php get_template_part( 'templates/content-single', get_post_type() );?>

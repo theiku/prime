@@ -2,9 +2,9 @@
 /**
  * Header Template 3
  *
- * This is a BoldGrid Theme Header Template.
+ * This file contains the markup for header template #3.
  *
- * @package BoldGrid
+ * @package Prime
  */
 
 // Get the theme configs.

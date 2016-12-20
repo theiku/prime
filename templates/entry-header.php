@@ -1,3 +1,13 @@
+<?php
+/**
+ * Entry Header Template
+ *
+ * This file contains the markup for the default entry header.
+ *
+ * @package Prime
+ */
+?>
+
 <div class="bgtfw <?php echo BoldGrid::print_container_class( 'entry-header' )?>">
 	<?php if ( is_page() || is_single() ) :
 		$id = get_the_ID();

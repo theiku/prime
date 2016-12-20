@@ -1,11 +1,10 @@
 <?php
 /**
- * Header Template 1
+ * Header Template 5
  *
- * This template utilizes off-canvas navigation menu for the primary menu width
- * a fixed width on desktop views.
+ * This file contains the markup for header template #5.
  *
- * @package BoldGrid
+ * @package Prime
  */
 
 // Get the theme configs.

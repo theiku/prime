@@ -1,3 +1,14 @@
+<?php
+/**
+ * 404 Template
+ *
+ * This file contains the 404 template used in this theme.
+ *
+ * @since 2.0
+ * @package Prime
+ */
+?>
+
 <footer id="colophon" role="contentinfo" <?php BoldGrid_Framework_Schema::footer( true ); ?>>
 	<div class="container">
 		<?php do_action( 'boldgrid_footer_top' ); ?>

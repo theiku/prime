@@ -1,3 +1,13 @@
+<?php
+/**
+ * No Content Template
+ *
+ * This displayed if no page content exists.
+ *
+ * @package Prime
+ */
+?>
+
 <section class="no-results not-found">
 	<div class="jumbotron text-center">
 		<div class="container">

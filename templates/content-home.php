@@ -6,6 +6,7 @@
  * home page in the BoldGrid Theme.
  *
  * @since 2.0
+ * @package Prime
  */
 
 global $boldgrid_theme_framework;

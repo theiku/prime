@@ -1,4 +1,15 @@
 <?php
+/**
+ * Recent Entries Template
+ *
+ * This file contains the markup for recent entries displayed in the
+ * 404 pages of the Prime theme.
+ *
+ * @package Prime
+ */
+?>
+
+<?php
 	$recent_posts = wp_get_recent_posts( array( 'numberposts' => '10', 'post_status' => 'publish' ) );
 	$pages = get_pages( array( 'sort_column' => 'menu_order' ) );
 ?>

@@ -1,3 +1,14 @@
+<?php
+/**
+ * Footer Template 3
+ *
+ * This file contains the markup for footer template #3.
+ *
+ * @since 2.0
+ * @package Prime
+ */
+?>
+
 <footer id="colophon" role="contentinfo" <?php BoldGrid_Framework_Schema::footer( true ); ?>>
 	<div class="container">
 		<div class="row">

@@ -1,7 +1,10 @@
 <?php
 /**
+ * Header Template 2
  *
- * @package BoldGrid
+ * This file contains the markup for header template #2.
+ *
+ * @package Prime
  */
 
 // Get the theme configs.

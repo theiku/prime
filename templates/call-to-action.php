@@ -1,6 +1,13 @@
 <?php
-// Get the theme configs.
+/**
+ * Call To Action Template
+ *
+ * This is the call to action template used in Prime themes.
+ *
+ * @package Prime
+ */
 
+// Get the theme configs.
 $widgets = $configs['widget']['widget_instances'];
 // Display the call to action widget area if configs are set.
 ?>

@@ -1,4 +1,12 @@
 <?php
+/**
+ * Generic Header Template
+ *
+ * This file contains the markup for the generic header template.
+ *
+ * @package Prime
+ */
+
 // Get the theme configs.
 global $boldgrid_theme_framework;
 $configs = $boldgrid_theme_framework->get_configs();

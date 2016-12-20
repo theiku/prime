@@ -4,6 +4,8 @@
  * then this template gets used.  One of two required WordPress files.
  *
  * @since 2.0
+ *
+ * @package Prime
  */
 
 if ( ! have_posts() ) :

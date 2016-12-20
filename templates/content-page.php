@@ -6,6 +6,7 @@
  * default page in the BoldGrid Theme.
  *
  * @since 2.0
+ * @package Prime
  */
 
 // Get the theme configs.

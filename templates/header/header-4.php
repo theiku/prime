@@ -1,3 +1,13 @@
+<?php
+/**
+ * Header Template 4
+ *
+ * This file contains the markup for header template #4.
+ *
+ * @package Prime
+ */
+?>
+
 <header id="masthead" class="site-header" role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>>
 	<?php BoldGrid::skip_link(  ); ?>
 	<?php do_action( 'boldgrid_menu_secondary' ); ?>
