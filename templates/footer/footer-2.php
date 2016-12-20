@@ -1,8 +1,8 @@
 <?php
 /**
- * 404 Template
+ * Footer Template 2
  *
- * This file contains the 404 template used in this theme.
+ * This file contains the markup for footer template #2.
  *
  * @since 2.0
  * @package Prime
