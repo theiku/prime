@@ -9,7 +9,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package BoldGrid
+ * @package Prime
  */
 
 while ( have_posts() ) : the_post(); ?>
