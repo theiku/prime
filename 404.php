@@ -1,3 +1,14 @@
+<?php
+/**
+ * 404 Template
+ *
+ * This file contains the 404 template used in this theme.
+ *
+ * @since 2.0
+ * @package Prime
+ */
+?>
+
 <?php do_action( '404_before' ); ?>
 <div class="jumbotron text-center">
 	<div class="container">

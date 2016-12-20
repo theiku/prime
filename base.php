@@ -5,6 +5,7 @@
  * This file contains the base structure of a BoldGrid Theme.
  *
  * @since 2.0
+ * @package Prime
  */
 
 global $boldgrid_theme_framework;
