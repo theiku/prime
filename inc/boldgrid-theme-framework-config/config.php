@@ -1,4 +1,12 @@
 <?php
+/**
+ * Prime Configuration File.
+ *
+ * This file contains the configuration options used in the Prime theme.
+ *
+ * @package Prime
+ */
+
 if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 	function boldgrid_prime_framework_config( $boldgrid_framework_configs ) {
 
