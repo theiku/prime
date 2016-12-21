@@ -21,4 +21,3 @@ while ( have_posts() ) : the_post();
 endwhile;
 
 the_posts_navigation();
-?>

@@ -8,7 +8,7 @@
  * @package Prime
  */
 
-if ( post_password_required(  ) ) {
+if ( post_password_required() ) {
 	return;
 }
 ?>

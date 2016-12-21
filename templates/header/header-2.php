@@ -12,8 +12,8 @@ global $boldgrid_theme_framework;
 $configs = $boldgrid_theme_framework->get_configs();
 ?>
 
-<header id="masthead" class="<?php echo basename(__FILE__, '.php'); ?>" role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>>
-	<?php BoldGrid::skip_link(  ); ?>
+<header id="masthead" class="<?php echo basename( __FILE__, '.php' ); ?>" role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>>
+	<?php BoldGrid::skip_link(); ?>
 	<?php do_action( 'boldgrid_header_top' ); ?>
 	<div class="col-md-12">
 		<?php do_action( 'boldgrid_menu_secondary' ); ?>
@@ -21,8 +21,8 @@ $configs = $boldgrid_theme_framework->get_configs();
 	</div><!-- .col -->
 	<div class="col-md-12">
 		<div class="site-branding">
-			<?php do_action('boldgrid_site_title'); ?>
-			<?php do_action('boldgrid_print_tagline'); ?>
+			<?php do_action( 'boldgrid_site_title' ); ?>
+			<?php do_action( 'boldgrid_print_tagline' ); ?>
 		</div>
 	</div>
 	<div class="col-md-12">
@@ -44,7 +44,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 	</div><!-- .col -->
 
 	<div class="col-md-12">
-		<?php do_action('boldgrid_menu_social'); ?>
+		<?php do_action( 'boldgrid_menu_social' ); ?>
 	</div>
 	<?php do_action( 'boldgrid_header_bottom' ); ?>
 </header><!-- #masthead -->

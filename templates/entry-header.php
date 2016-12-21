@@ -16,7 +16,7 @@
 		if ( ! ( empty( $post_meta['boldgrid_hide_page_title'][0] ) && isset( $post_meta['boldgrid_hide_page_title'] ) ) && 'page_home.php' !== get_page_template_slug() ) : ?>
 			<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 		<?php endif; ?>
-	<?php else: ?>
+	<?php else : ?>
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 	<?php endif; ?>
 </div>

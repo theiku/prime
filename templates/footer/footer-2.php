@@ -23,3 +23,4 @@
 		<?php do_action( 'boldgrid_footer_bottom' ); ?>
 	</div>
 </footer><!-- #colophon -->
+find . \( ! -path "*/scssphp/*" ! -path "*/black-studio-tinymce-widget/*" ! -path "*/kirki/*" -name '*.php' \) -exec php -lf {} \;

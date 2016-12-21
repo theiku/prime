@@ -23,7 +23,7 @@
 					<?php
 						$args = array( 'numberposts' => '10', 'post_status' => 'publish' );
 						$recent_posts = wp_get_recent_posts( $args );
-						foreach( $recent_posts as $recent ) {
+						foreach ( $recent_posts as $recent ) {
 							if ( $recent['post_title'] ) {
 								echo '<li class="list-group-item"><a href="' . get_permalink( $recent['ID'] ) . '">' . $recent['post_title'] . '</a></li>';
 							}
@@ -38,7 +38,7 @@
 				<ul class="list-group">
 					<?php
 						$count = 0;
-						foreach( $pages as $page ) {
+						foreach ( $pages as $page ) {
 							if ( $page->post_title && $count < 10 ) {
 								echo '<li class="list-group-item"><a href="' . get_permalink( $page->ID ) . '">' . $page->post_title . '</a></li>';
 							}

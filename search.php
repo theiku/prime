@@ -11,7 +11,7 @@ $results_count = $wp_query->found_posts;
 <div class="jumbotron">
 	<div class="bgtfw">
 		<h1>Search <span class="keyword">&ldquo;<?php the_search_query(); ?>&rdquo;</span></h1>
-		<?php if ( $results_count == '' || $results_count == 0 ) { // No Results ?>
+		<?php if ( '' == $results_count || 0 == $results_count ) { // No Results ?>
 			<p><span class="label label-danger"><?php _e( 'No Results' ); ?></span>&nbsp; <?php _e( 'Try different search terms.' ); ?></p>
 		<?php } else { // Results Found. ?>
 			<p><span class="label label-success"><?php echo $results_count . __( ' Results' ); ?></span></p>

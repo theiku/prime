@@ -5,4 +5,4 @@
  * @package Prime
  */
 
-do_action( 'boldgrid_search_form' ); ?>
+do_action( 'boldgrid_search_form' );

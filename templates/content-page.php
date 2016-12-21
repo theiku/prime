@@ -15,7 +15,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 
 // Display the call to action widget area if configs are set.
 $cta = $configs['template']['call-to-action'];
-if ( $cta === 'all-pages' ) {
+if ( 'all-pages' === $cta ) {
 	include locate_template( 'templates/call-to-action.php' );
 }
 ?>

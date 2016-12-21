@@ -12,7 +12,7 @@ global $boldgrid_theme_framework;
 $configs = $boldgrid_theme_framework->get_configs();
 ?>
 
-<header id="masthead" class="<?php echo basename(__FILE__, '.php'); ?>" role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>>
+<header id="masthead" class="<?php echo basename( __FILE__, '.php' ); ?>" role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>>
 	<?php do_action( 'boldgrid_menu_secondary' ); ?>
 	<div class="container">
 		<?php do_action( 'boldgrid_header_top' ); ?>

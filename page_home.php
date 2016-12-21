@@ -12,6 +12,6 @@
  * @package Prime
  */
 
-while ( have_posts() ) : the_post(); ?>
-	<?php get_template_part( 'templates/content', 'home' ); ?>
-<?php endwhile; // end of the loop. ?>
+while ( have_posts() ) : the_post();
+	get_template_part( 'templates/content', 'home' );
+endwhile; // end of the loop.
