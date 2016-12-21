@@ -8,6 +8,13 @@
  */
 
 if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
+	/**
+	 * Boldgrid Theme Framework Configs
+	 *
+	 * Filters the theme framework configurations.
+	 *
+	 * @since 1.0.0
+	 */
 	function boldgrid_prime_framework_config( $boldgrid_framework_configs ) {
 
 		// Waiting for all themes to opt in before removing switch.
@@ -92,6 +99,13 @@ add_filter( 'boldgrid_theme_framework_config', 'boldgrid_prime_framework_config'
 
 // Site Title & Logo Controls.
 if ( ! function_exists( 'boldgrid_prime_filter_logo_controls' ) ) {
+	/**
+	 * Logo Filter Configs
+	 *
+	 * This filters the kirki controls for the logo defaults.
+	 *
+	 * @since 1.0.0
+	 */
 	function boldgrid_prime_filter_logo_controls( $controls ) {
 		// Reset Site Title Margin.
 		$controls['logo_margin_top']['default'] = '0';
