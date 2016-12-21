@@ -57,8 +57,8 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'default' => true,
 				'format' => 'palette-primary',
 				'neutral-color' => '#86b8b1',
-				'colors' => array( '#1e73be', '#dd3333', '#ffffff' )
-			)
+				'colors' => array( '#1e73be', '#dd3333', '#ffffff' ),
+			),
 		);
 
 		// CTA Widget Markup.
@@ -78,7 +78,7 @@ HTML;
 			'text' => $widget_markup['call-to-action'],
 			'type' => 'visual',
 			'filter' => 1,
-			'label' => 'black-studio-tinymce'
+			'label' => 'black-studio-tinymce',
 		);
 
 		// Name Widget Area.
