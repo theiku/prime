@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php
 		/**
-		 * woocommerce_before_main_content hook.
+		 * The woocommerce_before_main_content hook.
 		 *
 		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
 		 * @hooked woocommerce_breadcrumb - 20
@@ -38,7 +38,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php
 			/**
-			 * woocommerce_archive_description hook.
+			 * The woocommerce_archive_description hook.
 			 *
 			 * @hooked woocommerce_taxonomy_archive_description - 10
 			 * @hooked woocommerce_product_archive_description - 10
@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<?php
 				/**
-				 * woocommerce_before_shop_loop hook.
+				 * The woocommerce_before_shop_loop hook.
 				 *
 				 * @hooked woocommerce_result_count - 20
 				 * @hooked woocommerce_catalog_ordering - 30
@@ -72,7 +72,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<?php
 				/**
-				 * woocommerce_after_shop_loop hook.
+				 * The woocommerce_after_shop_loop hook.
 				 *
 				 * @hooked woocommerce_pagination - 10
 				 */
@@ -87,7 +87,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php
 		/**
-		 * woocommerce_after_main_content hook.
+		 * The woocommerce_after_main_content hook.
 		 *
 		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
 		 */
