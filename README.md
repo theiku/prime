@@ -12,6 +12,10 @@ Prime is a BoldGrid Parent Theme used to create new child themes for use in the 
 
 ## Changelog
 
+### 1.4 ###
+Update: Added gulp to package deps.
+Update: Hiding archive titles.
+
 ### 1.2.2 ###
 * Update: Updating code standards.
 
