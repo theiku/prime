@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 <form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search" class="woocommerce-product-search">
-	<div class="form-group">
+	<div class="form-inline form-group">
 
 	<input type="text" id="woocommerce-product-search-field" class="search-field form-control" placeholder="<?php echo esc_attr_x( 'Search Products&hellip;', 'placeholder', 'woocommerce' ); ?>" value="<?php echo get_search_query(); ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label', 'woocommerce' ); ?>" />
 	</div>
