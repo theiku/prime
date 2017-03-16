@@ -43,15 +43,27 @@ if ( ! $product->is_purchasable() ) {
 	<form class="cart" method="post" enctype='multipart/form-data'>
 	 	<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
-	 	<?php
-	 		if ( ! $product->is_sold_individually() ) {
-	 			woocommerce_quantity_input( array(
-	 				'min_value'   => apply_filters( 'woocommerce_quantity_input_min', 1, $product ),
-	 				'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->backorders_allowed() ? '' : $product->get_stock_quantity(), $product ),
-	 				'input_value' => ( isset( $_POST['quantity'] ) ? wc_stock_amount( $_POST['quantity'] ) : 1 )
-	 			) );
-	 		}
-	 	?>
+		<?php if ( ! $product->is_sold_individually() ) {
+			$min_value = apply_filters( 'woocommerce_quantity_input_min', 1, $product );
+			$max_value = apply_filters( 'woocommerce_quantity_input_max', $product->backorders_allowed() ? '' : $product->get_stock_quantity(), $product );
+			$input_value = ( isset( $_POST['quantity'] ) ? wc_stock_amount( $_POST['quantity'] ) : 1 );
+		?>
+
+			<div class="input-group quantity">
+				<span class="input-group-btn">
+					<button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantity" disabled="disabled">
+						<span class="fa fa-minus"></span>
+					</button>
+				</span>
+				<input type="text" name="quantity" class="form-control input-number input-text qty text" value="<?php echo $input_value ?>" min="<?php echo $min_value ?>" max="<?php echo $max_value ?>" />
+				<span class="input-group-btn">
+					<button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantity">
+						<span class="fa fa-plus"></span>
+					</button>
+				</span>
+			</div>
+
+		<?php } ?>
 
 	 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
 
