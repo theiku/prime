@@ -22,13 +22,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <div class="input-group quantity">
 	<span class="input-group-btn">
-		<button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantity" disabled="disabled">
+		<button type="button" class="btn btn-minus btn-number"  data-type="minus" data-field="<?php echo esc_attr( $input_name ); ?>" disabled="disabled">
 			<span class="fa fa-minus"></span>
 		</button>
 	</span>
 	<input type="text" name="<?php echo esc_attr( $input_name ); ?>" class="form-control input-number input-text qty text" value="<?php echo esc_attr( $input_value ); ?>" min="<?php echo esc_attr( $min_value ); ?>" max="<?php echo esc_attr( $max_value ); ?>" title="<?php echo esc_attr_x( 'Qty', 'Product quantity input tooltip', 'woocommerce' ) ?>" />
 	<span class="input-group-btn">
-		<button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantity">
+		<button type="button" class="btn btn-plus btn-number" data-type="plus" data-field="<?php echo esc_attr( $input_name ); ?>">
 			<span class="fa fa-plus"></span>
 		</button>
 	</span>
