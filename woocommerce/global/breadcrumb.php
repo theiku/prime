@@ -30,7 +30,7 @@ if ( ! empty( $breadcrumb ) ) {
 		echo $before;
 
 		if ( ! empty( $crumb[1] ) && sizeof( $breadcrumb ) !== $key + 1 ) {
-			echo '<a href="' . esc_url( $crumb[1] ) . '"><span class="color2-text-default">' . esc_html( $crumb[0] ) . '</span></a>';
+			echo '<a href="' . esc_url( $crumb[1] ) . '">' . esc_html( $crumb[0] ) . '</a>';
 		} else {
 			echo '<a class="filler">' . esc_html( $crumb[0] ) . '</a>';
 		}
