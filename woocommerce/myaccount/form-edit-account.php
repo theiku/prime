@@ -45,15 +45,15 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 		<legend><?php _e( 'Password Change', 'woocommerce' ); ?></legend>
 		<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide form-group">
 			<label for="password_current"><?php _e( 'Current Password (leave blank to leave unchanged)', 'woocommerce' ); ?></label>
-			<input type="password" class="woocommerce-Input woocommerce-Input--password input-text form-control" name="password_current" id="password_current" />
+			<input type="password" class="woocommerce-Input woocommerce-Input--password input-text form-control input-lg" name="password_current" id="password_current" />
 		</p>
 		<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide form-group">
 			<label for="password_1"><?php _e( 'New Password (leave blank to leave unchanged)', 'woocommerce' ); ?></label>
-			<input type="password" class="woocommerce-Input woocommerce-Input--password input-text form-control" name="password_1" id="password_1" />
+			<input type="password" class="woocommerce-Input woocommerce-Input--password input-text form-control input-lg" name="password_1" id="password_1" />
 		</p>
 		<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide form-group">
 			<label for="password_2"><?php _e( 'Confirm New Password', 'woocommerce' ); ?></label>
-			<input type="password" class="woocommerce-Input woocommerce-Input--password input-text form-control" name="password_2" id="password_2" />
+			<input type="password" class="woocommerce-Input woocommerce-Input--password input-text form-control input-lg" name="password_2" id="password_2" />
 		</p>
 	</fieldset>
 	<div class="clear"></div>
