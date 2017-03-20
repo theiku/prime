@@ -34,7 +34,7 @@ if ( ! empty( $tabs ) ) : ?>
 		<ul class="wc-tabs nav nav-tabs">
 			<?php foreach ( $tabs as $key => $tab ) : ?>
 				<li class="<?php echo esc_attr( $key ); ?>_tab">
-					<a href="#tab-<?php echo esc_attr( $key ); ?>"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?></a>
+					<a href="#tab-<?php echo esc_attr( $key ); ?>" class="color1-background-hover color-1-text-contrast-hover"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?></a>
 				</li>
 			<?php endforeach; ?>
 		</ul>
