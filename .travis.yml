@@ -1,0 +1,5 @@
+language: php
+sudo: false
+before_script:
+- bash clone master
+script: ${TRAVIS_TAG:+bash release}

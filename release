@@ -1,0 +1,2 @@
+#!/bin/bash
+sed -i "/^Version/c\Version: $TRAVIS_TAG" style.css && zip -r boldgrid-prime.zip . -x .\* -x codesniffer.ruleset.xml -x gulpfile.js -x package.json -x bower.json -x clone -x release
