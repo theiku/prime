@@ -10,3 +10,5 @@ deploy:
   file: boldgrid-prime.zip
   on:
     repo: BoldGrid/prime
+    tags: true
+    skip_cleanup: true
