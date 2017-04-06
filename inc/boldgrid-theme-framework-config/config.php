@@ -49,8 +49,21 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Display Call To Action Widget on all pages.
 		$boldgrid_framework_configs['template']['call-to-action'] = 'all-pages';
 
-		// Enable Search Form in Navbar.
-		$boldgrid_framework_configs['template']['navbar-search-form'] = true;
+		// Assign menus, widgets, and actions to locations in generic header template.
+		$boldgrid_framework_configs['template']['locations']['header'] = array(
+			'1' => array( '[menu]secondary' ),
+			'6' => array( '[action]boldgrid_site_identity', '[menu]social' ),
+			'8' => array( '[widget]boldgrid-widget-2' ),
+			'11' => array( '[action]boldgrid_primary_navigation' ),
+			'13' => array( '[menu]tertiary' ),
+		);
+
+		// Assign Locations for Generic Footer.
+		$boldgrid_framework_configs['template']['locations']['footer'] = array(
+			'1' => array( '[menu]footer_center' ),
+			'5' => array( '[widget]boldgrid-widget-3' ),
+			'8' => array( '[action]boldgrid_display_attribution_links' ),
+		);
 
 		// Remove Container ID that is targetted by navbar-toggle.
 		$boldgrid_framework_configs['menu']['prototype']['primary']['container_id'] = 'primary-menu';
@@ -69,15 +82,14 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		);
 
 		// CTA Widget Markup.
-		$widget_markup['call-to-action'] = <<<HTML
-		<div class="jumbotron">
-	      <div class="container">
-	        <h1>Welcome to BoldGrid!</h1>
-	        <p>This is the parent theme for the BoldGrid Theme Framework.  Unfortunately this theme is not intended to be used as a standalone theme, and a child theme should be used instead.</p>
-	        <p><a class="button-primary btn-lg" href="#" role="button">Learn more »</a></p>
-	      </div>
-	    </div>
-HTML;
+		$widget_markup['call-to-action'] = '
+			<div class="jumbotron">
+				<div class="container">
+					<h1>Welcome to BoldGrid!</h1>
+					<p>This is a parent theme for the BoldGrid Theme Framework.  Unfortunately this theme is not intended to be used as a standalone theme, and a child theme should be used instead.</p>
+					<p><a class="button-primary btn-lg" href="#" role="button">Learn more »</a></p>
+				</div>
+			</div>';
 
 		// Assign Widget 1 the Call to Action.
 		$boldgrid_framework_configs['widget']['widget_instances']['boldgrid-widget-1'][] = array(
