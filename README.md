@@ -13,18 +13,25 @@ Prime is a BoldGrid Parent Theme used to create new child themes for use in the 
 ## Changelog
 
 ### 1.4.2 ###
-Update: Added build process to provide a full theme .zip for users to download from github.
+
+* Update: Added build process to provide a full theme .zip for users to download from github.
+* Update: Created additional wooCommerce templates to integrate with BoldGrid Theme Framework
+* Update: Prime now uses the standard header/footer "generic" templates.
 
 ### 1.4.1 ###
-Update: Improving wooCommerce integration with BoldGrid Theme Framework.
+
+* Update: Improving wooCommerce integration with BoldGrid Theme Framework.
 
 ### 1.4 ###
-Bump version.
+
+* Bump version.
 
 ### 1.2.3 ###
-Update: Added gulp to package deps.
+
+* Update: Added gulp to package deps.
 
 ### 1.2.2 ###
+
 * Update: Updating code standards.
 
 ### 1.2.1 ###
@@ -60,7 +67,9 @@ Update: Added gulp to package deps.
 * Bug Fix: Let variables get passed in to CTA template.
 
 ### 1.1 ###
-New feature: Added Container Configs.
+
+* New feature: Added Container Configs.
 
 ### 1.0 ###
-Initial Release
+
+* Initial Release
