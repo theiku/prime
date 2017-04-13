@@ -13,7 +13,7 @@
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 2.6.0
+ * @version 3.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -42,7 +42,7 @@ wc_print_notices(); ?>
 
 	<?php do_action( 'woocommerce_resetpassword_form' ); ?>
 
-	<p class="woocommerce-FormRow form-row">
+	<p class="woocommerce-form-row form-row">
 		<input type="hidden" name="wc_reset_password" value="true" />
 		<input type="submit" class="btn button-primary" value="<?php esc_attr_e( 'Save', 'woocommerce' ); ?>" />
 	</p>
