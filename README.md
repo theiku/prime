@@ -12,6 +12,9 @@ Prime is a BoldGrid Parent Theme used to create new child themes for use in the 
 
 ## Changelog
 
+### 1.4.5 ###
+* Update: Added new template tag method for entry-footer template.
+
 ### 1.4.4 ###
 * Update: Addressing wooCommerce bugfixes for variable and grouped products' add to cart templates.
 * Update: Fixing product search form classes.
