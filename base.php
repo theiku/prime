@@ -23,7 +23,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 		</div><!-- /.header -->
 		<?php do_action( 'boldgrid_header_after' ); ?>
 		<?php do_action( 'boldgrid_content_before' ); ?>
-		<div class="site-content" role="document">
+		<div id="content" class="site-content" role="document">
 			<main class="main <?php echo BoldGrid::print_container_class( 'blog' ); ?>">
 				<div class="row">
 					<div class="<?php echo ! BoldGrid::display_sidebar( ) ? '' : 'col-md-9'; ?>">
