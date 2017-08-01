@@ -13,12 +13,15 @@
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 3.0.3
+ * @version 3.1.0
  */
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
 wc_print_notices();
+
 do_action( 'woocommerce_before_cart' ); ?>
 
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
@@ -101,7 +104,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 									$product_quantity = woocommerce_quantity_input( array(
 										'input_name'  => "cart[{$cart_item_key}][qty]",
 										'input_value' => $cart_item['quantity'],
-										'max_value'   => $_product->backorders_allowed() ? '' : $_product->get_stock_quantity(),
+										'max_value'   => $_product->get_max_purchase_quantity(),
 										'min_value'   => '0',
 									), $_product, false );
 								}
@@ -147,7 +150,15 @@ do_action( 'woocommerce_before_cart' ); ?>
 </form>
 
 <div class="cart-collaterals">
-	<?php do_action( 'woocommerce_cart_collaterals' ); ?>
+	<?php
+		/**
+		 * woocommerce_cart_collaterals hook.
+		 *
+		 * @hooked woocommerce_cross_sell_display
+		 * @hooked woocommerce_cart_totals - 10
+		 */
+		do_action( 'woocommerce_cart_collaterals' );
+	?>
 </div>
 
 <?php do_action( 'woocommerce_after_cart' ); ?>
