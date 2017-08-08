@@ -2,8 +2,8 @@
 
 - Contributors: rramo012, timph
 - Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-layout, rtl-language-support, translation-ready
-- Requires at least: 4.3
-- Tested up to: 4.8
+- Requires at least: 4.4
+- Tested up to: 4.8.1
 - License: GNU General Public License v2 or later
 - License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,6 +11,9 @@
 Prime is a BoldGrid Parent Theme used to create new child themes for use in the BoldGrid system.  This theme utilizes the [BoldGrid Theme Framework](https://github.com/boldgrid/boldgrid-theme-framework).
 
 ## Changelog
+
+### 1.5 ###
+* Update: Bump version.
 
 ### 1.4.5 ###
 * Update: Added new template tag method for entry-footer template.
