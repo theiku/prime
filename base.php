@@ -23,7 +23,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 		</div><!-- /.header -->
 		<?php do_action( 'boldgrid_header_after' ); ?>
 		<?php do_action( 'boldgrid_content_before' ); ?>
-		<?php $column_class = method_exists('BoldGrid', 'is_blog') && BoldGrid::is_blog() ? 'col-md-12' : ''; ?>
+		<?php $column_class = method_exists( 'BoldGrid', 'is_blog' ) && BoldGrid::is_blog() ? 'col-md-12' : ''; ?>
 		<div id="content" class="site-content" role="document">
 			<main class="main <?php echo BoldGrid::print_container_class( 'blog' ); ?>">
 				<div class="row">
