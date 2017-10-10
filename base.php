@@ -23,22 +23,15 @@ $configs = $boldgrid_theme_framework->get_configs();
 		</div><!-- /.header -->
 		<?php do_action( 'boldgrid_header_after' ); ?>
 		<?php do_action( 'boldgrid_content_before' ); ?>
-		<?php $column_class = method_exists( 'BoldGrid', 'is_blog' ) && BoldGrid::is_blog() ? 'col-md-12' : ''; ?>
-		<div id="content" class="site-content" role="document">
-			<main class="main <?php echo BoldGrid::print_container_class( 'blog' ); ?>">
-				<div class="row">
-					<div class="<?php echo ! BoldGrid::display_sidebar( ) ? $column_class : 'col-md-9'; ?>">
-						<?php include Boldgrid_Framework_Wrapper::boldgrid_template_path(); ?>
-					</div>
-					<?php if ( BoldGrid::display_sidebar( ) ) : ?>
-						<div class="col-md-3">
-							<aside class="sidebar">
-								<?php include BoldGrid::boldgrid_sidebar_path(); ?>
-							</aside><!-- /.sidebar -->
-						</div>
-					<?php endif; ?>
-				</div>
-			</main><!-- /.main -->
+		<div id="content" class="site-content <?php echo BoldGrid::print_container_class( 'blog' ); ?>" role="document">
+				<main class="main">
+					<?php include Boldgrid_Framework_Wrapper::boldgrid_template_path(); ?>
+				</main><!-- /.main -->
+				<?php if ( BoldGrid::display_sidebar( ) ) : ?>
+					<aside class="sidebar">
+						<?php include BoldGrid::boldgrid_sidebar_path(); ?>
+					</aside><!-- /.sidebar -->
+				<?php endif; ?>
 		</div><!-- /.content -->
 		<?php do_action( 'boldgrid_content_after' ); ?>
 		<?php do_action( 'boldgrid_footer_before' ); ?>
