@@ -13,7 +13,7 @@
  * @see 	    https://docs.woocommerce.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     2.5.0
+ * @version     3.3.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<span class="fa fa-minus"></span>
 		</button>
 	</span>
-	<input type="text" name="<?php echo esc_attr( $input_name ); ?>" class="form-control input-number input-text qty text" value="<?php echo esc_attr( $input_value ); ?>" min="<?php echo esc_attr( $min_value ); ?>" max="<?php echo esc_attr( $max_value ); ?>" title="<?php echo esc_attr_x( 'Qty', 'Product quantity input tooltip', 'woocommerce' ) ?>" />
+	<input id="<?php echo esc_attr( $input_id ); ?>" type="text" name="<?php echo esc_attr( $input_name ); ?>" class="form-control input-number input-text qty text" value="<?php echo esc_attr( $input_value ); ?>" min="<?php echo esc_attr( $min_value ); ?>" max="<?php echo esc_attr( $max_value ); ?>" title="<?php echo esc_attr_x( 'Qty', 'Product quantity input tooltip', 'woocommerce' ) ?>" aria-labelledby="<?php echo ! empty( $args['product_name'] ) ? sprintf( esc_attr__( '%s quantity', 'woocommerce' ), $args['product_name'] ) : ''; ?>" inputmode="<?php echo esc_attr( $inputmode ); ?>" />
 	<span class="input-group-btn">
 		<button type="button" class="btn btn-plus btn-number" data-type="plus" data-field="<?php echo esc_attr( $input_name ); ?>">
 			<span class="fa fa-plus"></span>
