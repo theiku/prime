@@ -33,12 +33,14 @@ $configs = $boldgrid_theme_framework->get_configs();
 		} ?>
 		<?php do_action( 'boldgrid_site_identity' ); ?>
 
-		<!-- Mobile toggle -->
+		<?php if ( has_nav_menu( 'main' ) ) : ?>
+			<!-- Mobile toggle -->
 			<input id="main-menu-state" type="checkbox" />
 			<label class="main-menu-btn" for="main-menu-state">
 				<span class="main-menu-btn-icon"></span><span class="sr-only">Toggle main menu visibility</span>
 			</label>
-		<?php do_action( 'boldgrid_menu_main' ) ?>
+			<?php do_action( 'boldgrid_menu_main' ) ?>
+		<?php endif; ?>
 	</div>
 	<?php do_action( 'boldgrid_header_bottom' ); ?>
 </header><!-- #masthead -->
