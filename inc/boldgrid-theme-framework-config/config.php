@@ -17,6 +17,11 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 	 */
 	function boldgrid_prime_framework_config( $boldgrid_framework_configs ) {
 
+		// Disable old typography controls in favor of new ones.
+		$boldgrid_framework_configs['customizer-options']['typography']['controls']['main_text'] = false;
+		$boldgrid_framework_configs['customizer-options']['typography']['controls']['subheadings'] = false;
+		$boldgrid_framework_configs['customizer-options']['site-title']['site-title'] = false;
+
 		// Waiting for all themes to opt in before removing switch.
 		// Enable typography controls in the customizer.
 		$boldgrid_framework_configs['customizer-options']['typography']['enabled'] = true;
@@ -64,12 +69,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'5' => array( '[widget]boldgrid-widget-3' ),
 			'8' => array( '[action]boldgrid_display_attribution_links' ),
 		);
-
-		// Remove Container ID that is targetted by navbar-toggle.
-		$boldgrid_framework_configs['menu']['prototype']['primary']['container_id'] = 'primary-menu';
-
-		// Remove the container classes that are targetted with navbar-collapse.
-		$boldgrid_framework_configs['menu']['prototype']['primary']['container_class'] = 'primary-menu';
 
 		// Default Colors.
 		$boldgrid_framework_configs['customizer-options']['colors']['defaults'] = array(
