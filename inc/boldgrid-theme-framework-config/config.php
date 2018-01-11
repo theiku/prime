@@ -102,6 +102,9 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Name Widget Area.
 		$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Call To Action';
 
+		// Add container to header.
+		$boldgrid_framework_configs['template']['header'] = 'container';
+
 		// Configs above will override framework defaults.
 		return $boldgrid_framework_configs;
 	}
