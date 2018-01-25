@@ -5,4 +5,4 @@
  * @package Prime
  */
 
-bgtfw_widget( 'sidebar-1', true );
+bgtfw_widget( 'primary-sidebar', true );

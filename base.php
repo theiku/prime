@@ -23,7 +23,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 		</div><!-- /.header -->
 		<?php do_action( 'boldgrid_header_after' ); ?>
 		<?php do_action( 'boldgrid_content_before' ); ?>
-		<div id="content" class="site-content <?php echo BoldGrid::print_container_class( 'blog' ); ?>" role="document">
+		<div id="content" class="site-content" role="document">
 				<main class="main">
 					<?php include Boldgrid_Framework_Wrapper::boldgrid_template_path(); ?>
 				</main><!-- /.main -->

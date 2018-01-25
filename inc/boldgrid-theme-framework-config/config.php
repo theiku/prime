@@ -51,24 +51,8 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// This theme doesn't support a background image.
 		$boldgrid_framework_configs['customizer-options']['background']['defaults']['background_image'] = false;
 
-		// Display Call To Action Widget on all pages.
-		$boldgrid_framework_configs['template']['call-to-action'] = 'all-pages';
-
-		// Assign menus, widgets, and actions to locations in generic header template.
-		$boldgrid_framework_configs['template']['locations']['header'] = array(
-			'1' => array( '[menu]secondary' ),
-			'6' => array( '[action]boldgrid_site_identity', '[menu]social' ),
-			'8' => array( '[widget]boldgrid-widget-2' ),
-			'11' => array( '[action]boldgrid_primary_navigation' ),
-			'13' => array( '[menu]tertiary' ),
-		);
-
-		// Assign Locations for Generic Footer.
-		$boldgrid_framework_configs['template']['locations']['footer'] = array(
-			'1' => array( '[menu]footer_center' ),
-			'5' => array( '[widget]boldgrid-widget-3' ),
-			'8' => array( '[action]boldgrid_display_attribution_links' ),
-		);
+		// Disable Call to Action Widget.
+		$boldgrid_framework_configs['template']['call-to-action'] = 'disabled';
 
 		// Default Colors.
 		$boldgrid_framework_configs['customizer-options']['colors']['defaults'] = array(
@@ -79,28 +63,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'colors' => array( '#1e73be', '#dd3333', '#ffffff' ),
 			),
 		);
-
-		// CTA Widget Markup.
-		$widget_markup['call-to-action'] = '
-			<div class="jumbotron">
-				<div class="container">
-					<h1>Welcome to BoldGrid!</h1>
-					<p>This is a parent theme for the BoldGrid Theme Framework.  Unfortunately this theme is not intended to be used as a standalone theme, and a child theme should be used instead.</p>
-					<p><a class="button-primary btn-lg" href="#" role="button">Learn more »</a></p>
-				</div>
-			</div>';
-
-		// Assign Widget 1 the Call to Action.
-		$boldgrid_framework_configs['widget']['widget_instances']['boldgrid-widget-1'][] = array(
-			'title' => 'Call To Action',
-			'text' => $widget_markup['call-to-action'],
-			'type' => 'visual',
-			'filter' => 1,
-			'label' => 'black-studio-tinymce',
-		);
-
-		// Name Widget Area.
-		$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Call To Action';
 
 		// Add container to header.
 		$boldgrid_framework_configs['template']['header'] = 'container';
