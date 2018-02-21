@@ -13,7 +13,7 @@ global $boldgrid_theme_framework;
 $configs = $boldgrid_theme_framework->get_configs();
 ?>
 
-<footer id="colophon" <?php bgtfw_footer_class( array( basename( __FILE__, '.php' ), $configs['template']['pages']['global']['footer'] ) ); ?> role="contentinfo" <?php BoldGrid_Framework_Schema::footer( true ); ?>>
+<footer id="colophon" <?php bgtfw_footer_class( array( basename( __FILE__, '.php' ), bgtfw_get_footer_container() ) ); ?> role="contentinfo" <?php BoldGrid_Framework_Schema::footer( true ); ?>>
 	<?php do_action( 'boldgrid_footer_top' ); ?>
 	<div class="social-menu-wrapper">
 		<?php do_action( 'boldgrid_menu_social' ); ?>
