@@ -1,6 +1,6 @@
 # prime
 
-- Contributors: rramo012, timph
+- Contributors: rramo012, timph, joemoto
 - Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-layout, rtl-language-support, translation-ready
 - Requires at least: 4.4
 - Tested up to: 4.8.1
