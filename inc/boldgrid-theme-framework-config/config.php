@@ -91,3 +91,13 @@ if ( ! function_exists( 'boldgrid_prime_filter_logo_controls' ) ) {
 	}
 }
 add_filter( 'kirki/fields', 'boldgrid_prime_filter_logo_controls' );
+
+// Load the BoldGrid Library
+if ( ! class_exists( 'Boldgrid_Premium_Loader' ) ) {
+	require_once get_template_directory() . '/inc/class-boldgrid-premium-loader.php';
+}
+
+$loader = new Boldgrid_Premium_Loader();
+
+// Enable the ClaimPremiumKey notice.
+add_filter( 'Boldgrid\Library\Library\Notice\ClaimPremiumKey_enable', '__return_true' );
