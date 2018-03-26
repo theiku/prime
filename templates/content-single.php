@@ -11,7 +11,7 @@
 <?php while ( have_posts() ) : the_post(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php do_action( 'before_entry_title' ); ?>
-		<header class="entry-header <?php echo BoldGrid::print_container_class( 'entry-header' )?>">
+		<header class="entry-header">
 			<?php get_template_part( 'templates/entry-header' ); ?>
 			<div class="entry-meta">
 				<?php boldgrid_posted_on(); ?>

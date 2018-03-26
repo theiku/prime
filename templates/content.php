@@ -9,7 +9,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header <?php echo BoldGrid::print_container_class( 'entry-header' )?>" <?php bgtfw_featured_img_bg( $post->ID ); ?>>
+	<header class="entry-header" <?php bgtfw_featured_img_bg( $post->ID ); ?>>
 		<div class="featured-imgage-header">
 			<?php get_template_part( 'templates/entry-header' ); ?>
 			<?php if ( 'post' == get_post_type() ) : ?>
