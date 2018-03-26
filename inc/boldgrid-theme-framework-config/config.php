@@ -59,8 +59,14 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			array(
 				'default' => true,
 				'format' => 'palette-primary',
-				'neutral-color' => '#86b8b1',
-				'colors' => array( '#1e73be', '#dd3333', '#ffffff' ),
+				'neutral-color' => '#ffffff',
+				'colors' => array(
+					'#f95b26',
+					'#1a1a1a',
+					'#efefef',
+					'#efefef',
+					'#ffffff'
+				),
 			),
 		);
 
