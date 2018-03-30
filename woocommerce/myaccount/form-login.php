@@ -13,7 +13,7 @@
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 3.2.0
+ * @version 3.3.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<p class="form-row">
 				<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
-				<input type="submit" class="woocommerce-Button btn button-primary" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>" />
+				<button type="submit" class="woocommerce-Button btn button-primary" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>"><?php esc_html_e( 'Login', 'woocommerce' ); ?></button>
 				<input class="woocommerce-Input woocommerce-Input--checkbox with-font" name="rememberme" type="checkbox" id="rememberme" value="forever" />
 				<label for="rememberme" class="inline"><?php _e( 'Remember me', 'woocommerce' ); ?></label>
 
@@ -95,7 +95,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php do_action( 'register_form' ); ?>
 			<p class="woocomerce-FormRow form-row">
 				<?php wp_nonce_field( 'woocommerce-register', 'woocommerce-register-nonce' ); ?>
-				<input type="submit" class="woocommerce-Button btn button-primary" name="register" value="<?php esc_attr_e( 'Register', 'woocommerce' ); ?>" />
+				<button type="submit" class="woocommerce-Button btn button-primary" name="register" value="<?php esc_attr_e( 'Register', 'woocommerce' ); ?>"><?php esc_html_e( 'Register', 'woocommerce' ); ?></button>
 			</p>
 			<?php do_action( 'woocommerce_register_form_end' ); ?>
 		</form>
