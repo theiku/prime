@@ -70,6 +70,8 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			),
 		);
 
+		$boldgrid_framework_configs['menu']['footer_menus'][] = 'social';
+
 		// Add container to header.
 		$boldgrid_framework_configs['template']['header'] = 'container';
 
