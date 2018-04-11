@@ -65,7 +65,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 					'#1a1a1a',
 					'#efefef',
 					'#fff7bd',
-					'#ffffff',
+					'#1a1a1a',
 				),
 			),
 			array(
@@ -76,7 +76,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 					'#1a1a1a',
 					'#e8e9eb',
 					'#ff5e5b',
-					'#ffffff',
+					'#1a1a1a',
 				),
 			),
 			array(
@@ -109,7 +109,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 					'#1a1a1a',
 					'#e3e4db',
 					'#01baef',
-					'#f1faee',
+					'#1a1a1a',
 				),
 			),
 		);
