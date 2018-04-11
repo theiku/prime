@@ -114,10 +114,19 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			),
 		);
 
-		$config['menu']['footer_menus'][] = 'social';
+		// Text Contrast Colors.
+		$config['customizer-options']['colors']['light_text'] = '#ffffff';
+		$config['customizer-options']['colors']['dark_text'] = '#333333';
 
-		// Add container to header.
-		$config['template']['header'] = 'container';
+		// Button Classes
+		$config['components']['buttons']['variables']['button-primary-classes'] = '.btn, .btn-color-1, .btn-pill';
+		$config['components']['buttons']['variables']['button-secondary-classes'] = '.btn, .btn-color-2, .btn-pill';
+
+		// Social Icons.
+		$config['social-icons']['size'] = 'large';
+
+		// Remove footer menus when footer is disabled.
+		$config['menu']['footer_menus'][] = 'social';
 
 		// Configs above will override framework defaults.
 		return $config;
