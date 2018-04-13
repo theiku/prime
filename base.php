@@ -25,7 +25,9 @@ $configs = $boldgrid_theme_framework->get_configs();
 		<?php do_action( 'boldgrid_content_before' ); ?>
 		<div id="content" class="site-content" role="document">
 			<main class="main">
+				<?php do_action( 'boldgrid_main_top' ); ?>
 				<?php include Boldgrid_Framework_Wrapper::boldgrid_template_path(); ?>
+				<?php do_action( 'boldgrid_main_bottom' ); ?>
 			</main><!-- /.main -->
 			<?php if ( BoldGrid::display_sidebar( ) ) : ?>
 				<?php include BoldGrid::boldgrid_sidebar_path(); ?>
