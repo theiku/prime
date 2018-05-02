@@ -16,7 +16,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 	<div class="custom-header-media">
 		<?php the_custom_header_markup(); ?>
 	</div>
-	<div id="navi" class="<?php bgtfw_header_container(); ?>">
+	<div id="navi" <?php bgtfw_inner_header_class() ?>>
 
 		<?php
 
