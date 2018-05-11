@@ -41,6 +41,6 @@
 				<?php do_action( 'boldgrid_menu_main' ) ?>
 			<?php endif; ?>
 		</div>
+		<?php do_action( 'boldgrid_header_bottom' ); ?>
 	</div>
-	<?php do_action( 'boldgrid_header_bottom' ); ?>
 </header><!-- #masthead -->
