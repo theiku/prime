@@ -20,5 +20,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-$crio_woocommerce_classes = array( 'content-area', get_theme_mod( 'woocommerce_container', 'container' ) );
-echo '<div class="' . implode( ' ', $crio_woocommerce_classes ) . '"><div>';
+echo '<div class="content-area"><div>';
