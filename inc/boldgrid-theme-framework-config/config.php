@@ -315,25 +315,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 add_filter( 'boldgrid_theme_framework_config', 'boldgrid_prime_framework_config' );
 
-// Site Title & Logo Controls.
-if ( ! function_exists( 'boldgrid_prime_filter_logo_controls' ) ) {
-	/**
-	 * Logo Filter Configs
-	 *
-	 * This filters the kirki controls for the logo defaults.
-	 *
-	 * @since 1.0.0
-	 */
-	function boldgrid_prime_filter_logo_controls( $controls ) {
-		// Reset Site Title Margin.
-		$controls['logo_margin_top']['default'] = '0';
-		$controls['logo_margin_bottom']['default'] = '0';
-		// Controls above will override framework defaults.
-		return $controls;
-	}
-}
-add_filter( 'kirki/fields', 'boldgrid_prime_filter_logo_controls' );
-
 // Load the BoldGrid Library
 if ( ! class_exists( 'Boldgrid_Premium_Loader' ) ) {
 	require_once get_template_directory() . '/inc/class-boldgrid-premium-loader.php';
