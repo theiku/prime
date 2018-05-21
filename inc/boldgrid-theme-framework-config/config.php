@@ -197,85 +197,112 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'page_for_posts' => '{{blog}}',
 		);
 
-		// Primary Colors.
+		// Primary background color.
 		$config['customizer']['controls']['boldgrid_background_color']['default'] = 'color-neutral';
-		$config['customizer']['controls']['bgtfw_headings_color']['default'] = 'color-1';
+
+		// Primary headings color.
+		$config['customizer']['controls']['bgtfw_headings_color']['default'] = 'color-2';
 
 		// Primary color for site's title.
-		$config['customizer']['controls']['bgtfw_site_title_color']['default'] = 'color-3';
+		$config['customizer']['controls']['bgtfw_site_title_color']['default'] = 'color-neutral';
 
 		// Primary color for site's tagline.
-		$config['customizer']['controls']['bgtfw_tagline_color']['default'] = 'color-3';
+		$config['customizer']['controls']['bgtfw_tagline_color']['default'] = 'color-4';
 
 		// Header specific colors for background, headings, and links.
-		$config['customizer']['controls']['bgtfw_header_color']['default'] = 'color-2';
-		$config['customizer']['controls']['bgtfw_header_headings_color']['default'] = 'color-1';
+		$config['customizer']['controls']['bgtfw_header_color']['default'] = 'color-5';
+		$config['customizer']['controls']['bgtfw_header_headings_color']['default'] = 'color-2';
 		$config['customizer']['controls']['bgtfw_header_links']['default'] = 'color-3';
 
 		// Footer specific colors for background, headings, and links.
-		$config['customizer']['controls']['bgtfw_footer_color']['default'] = 'color-2';
-		$config['customizer']['controls']['bgtfw_footer_headings_color']['default'] = 'color-1';
+		$config['customizer']['controls']['bgtfw_footer_color']['default'] = 'color-5';
+		$config['customizer']['controls']['bgtfw_footer_headings_color']['default'] = 'color-2';
 		$config['customizer']['controls']['bgtfw_footer_links']['default'] = 'color-3';
 
 		// Hide titles on all pages, but show titles on posts.
 		$config['customizer']['controls']['bgtfw_pages_display_title']['default'] = '0';
 		$config['customizer']['controls']['bgtfw_posts_display_title']['default'] = '1';
 
-		// Set the default theme_mod values to use.
-		$config['starter-content']['theme_mods'] = array(
-			'bgtfw_header_layout_position' => 'header-top',
-			'bgtfw_fixed_header' => true,
-			'bgtfw_header_top_layouts' => 'layout-3',
-			'header_container' => 'container',
-			'boldgrid_enable_footer' => true,
-			'footer_container' => 'container',
-			'bgtfw_footer_layouts' => 'layout-7',
-			'bgtfw_pages_blog_blog_page_layout_columns' => '2',
-			'bgtfw_pages_blog_blog_page_layout_content' => 'excerpt',
-			'bgtfw_blog_layout' => 'design-3',
-			'bgtfw_layout_page' => 'no-sidebar',
-			'bgtfw_site_title_typography' => array(
-				'color' => '#ffffff',
-				'font-family' => 'Roboto',
-				'font-size' => '42px',
-				'text-transform' => 'uppercase',
-				'line-height' => '1.1',
-				'text-align' => 'left',
-				'variant' => 'regular'
-			),
-			'bgtfw_tagline_typography' => array(
-				'color' => '#ffffff',
-				'font-family' => 'Roboto',
-				'font-size' => '30px',
-				'line-height' => '1.1',
-				'text-align' => 'left',
-				'variant' => '100'
-			),
-			'bgtfw_menu_typography' => array(
-				'color' => '#333333',
-				'font-family' => 'Roboto',
-				'font-size' => '18px',
-				'line-height' => '1.5',
-				'text-transform' => 'uppercase',
-				'variant' => 'regular'
-			),
-			'bgtfw_body_headings' => array(
-				'color' => '#333333',
-				'font-family' => 'Roboto',
-				'font-size' => '14px',
-				'line-height' => '1.5',
-				'text-transform' => 'none',
-				'variant' => 'regular'
-			),
-			'bgtfw_body_typography' => array(
-				'color' => '#333333',
-				'font-family' => 'Roboto',
-				'font-size' => '17px',
-				'line-height' => '1.4',
-				'text-transform' => 'none',
-				'variant' => '300'
-			),
+		// Default header position is on top.
+		$config['customizer']['controls']['bgtfw_header_layout_position']['default'] = 'header-top';
+
+		// Default header is a fixed header.
+		$config['customizer']['controls']['bgtfw_fixed_header']['default'] = true;
+
+		// Default header layout will be layout-3.
+		$config['customizer']['controls']['bgtfw_header_top_layouts']['default'] = 'layout-3';
+
+		// Default header will be in container.
+		$config['customizer']['controls']['header_container']['default'] = 'container';
+
+		// Default footer will be in container.
+		$config['customizer']['controls']['footer_container']['default'] = 'container';
+
+		// Default footer layout will be layout-7.
+		$config['customizer']['controls']['bgtfw_footer_layouts']['default'] = 'layout-7';
+
+		// Show blog and archives in a 2 column layout.
+		$config['customizer']['controls']['bgtfw_pages_blog_blog_page_layout_columns']['default'] = '2';
+
+		// Show excerpts instead of full blog post on blog and archives.
+		$config['customizer']['controls']['bgtfw_pages_blog_blog_page_layout_content']['default'] = 'excerpt';
+
+		// The blog page will use design-3 as the default.
+		$config['customizer']['controls']['bgtfw_blog_layout']['default'] = 'design-3';
+
+		// Pages will not show a sidebar by default.
+		$config['customizer']['controls']['bgtfw_layout_page']['default'] = 'no-sidebar';
+
+		// Site's title typography defaults.
+		$config['customizer']['controls']['bgtfw_site_title_typography']['default'] = array(
+			'font-family' => 'Roboto',
+			'font-size' => '42px',
+			'text-transform' => 'uppercase',
+			'line-height' => '1.1',
+			'text-align' => 'left',
+			'variant' => 'regular'
 		);
+
+		// Site's tagline typography defaults.
+		$config['customizer']['controls']['bgtfw_tagline_typography']['default'] = array(
+			'font-family' => 'Roboto',
+			'font-size' => '30px',
+			'line-height' => '1.1',
+			'text-align' => 'left',
+			'variant' => '100'
+		);
+
+		// Site's body typography defaults.
+		$config['customizer']['controls']['bgtfw_body_typography']['default'] = array(
+			'font-family' => 'Roboto',
+			'font-size' => '17px',
+			'line-height' => '1.4',
+			'text-transform' => 'none',
+			'variant' => '300'
+		);
+
+		// Site's headings typography defaults.
+		$config['customizer']['controls']['bgtfw_headings_typography']['default'] = array(
+			'font-family' => 'Roboto',
+			'font-size' => '14px',
+			'line-height' => '1.5',
+			'text-transform' => 'none',
+			'variant' => 'regular'
+		);
+
+		/**
+		 * Menu typography is generated dynamically, and is currently using the old menu
+		 * configs.  This will be updated so that menu typography can be set in the same
+		 * way.
+		$config['customizer']['controls']['bgtfw_menu_typography'] = array(
+			'color' => '#333333',
+			'font-family' => 'Roboto',
+			'font-size' => '18px',
+			'line-height' => '1.5',
+			'text-transform' => 'uppercase',
+			'variant' => 'regular'
+		);
+		*/
 
 		// Main Menu configuration.
 		$config['starter-content']['nav_menus']['main'] = array(
