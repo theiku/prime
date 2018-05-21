@@ -34,10 +34,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['temp']['attribution_links'] = true;
 
 		// Waiting for all themes to opt in before removing switch.
-		// Enable Bootstrap SCSS Compiling.
-		$config['bootstrap-compile'] = true;
-
-		// Waiting for all themes to opt in before removing switch.
 		// Turn on the parent theme template engine.
 		$config['boldgrid-parent-theme'] = true;
 
