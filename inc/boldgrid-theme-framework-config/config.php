@@ -34,10 +34,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['temp']['attribution_links'] = true;
 
 		// Waiting for all themes to opt in before removing switch.
-		// Enable the color palettes in the customizer.
-		$config['customizer-options']['colors']['enabled'] = true;
-
-		// Waiting for all themes to opt in before removing switch.
 		// Enable Bootstrap SCSS Compiling.
 		$config['bootstrap-compile'] = true;
 
@@ -242,7 +238,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'line-height' => '1.5',
 				'text-transform' => 'uppercase',
 				'variant' => 'regular'
-			),				
+			),
 			'bgtfw_body_headings' => array(
 				'color' => '#333333',
 				'font-family' => 'Roboto',
@@ -250,7 +246,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'line-height' => '1.5',
 				'text-transform' => 'none',
 				'variant' => 'regular'
-			),			
+			),
 			'bgtfw_body_typography' => array(
 				'color' => '#333333',
 				'font-family' => 'Roboto',
