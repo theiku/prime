@@ -90,10 +90,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<input type="password" class="form-control" name="password" id="reg_password" autocomplete="new-password" />
 				</div>
 			<?php endif; ?>
-			<!-- Spam Trap -->
-			<div style="<?php echo ( ( is_rtl() ) ? 'right' : 'left' ); ?>: -999em; position: absolute;"><label for="trap"><?php esc_html_e( 'Anti-spam', 'woocommerce' ); ?></label><input type="text" name="email_2" id="trap" tabindex="-1" autocomplete="off" /></div>
 			<?php do_action( 'woocommerce_register_form' ); ?>
-			<?php do_action( 'register_form' ); ?>
 			<p class="woocomerce-FormRow form-row">
 				<?php wp_nonce_field( 'woocommerce-register', 'woocommerce-register-nonce' ); ?>
 				<button type="submit" class="woocommerce-Button btn button-primary" name="register" value="<?php esc_attr_e( 'Register', 'woocommerce' ); ?>"><?php esc_html_e( 'Register', 'woocommerce' ); ?></button>
