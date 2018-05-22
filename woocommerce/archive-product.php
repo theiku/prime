@@ -44,7 +44,7 @@ do_action( 'woocommerce_before_main_content' );
 	?>
 </header>
 <?php
-if ( woocommerce_product_loop() ) {
+if ( function_exists( 'woocommerce_product_loop' ) ? woocommerce_product_loop() : have_posts() ) {
 
 	/**
 	 * Hook: woocommerce_before_shop_loop.
