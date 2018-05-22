@@ -142,7 +142,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 					<?php do_action( 'woocommerce_cart_actions' ); ?>
 
-					<?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
+					<?php
+					global $woocommerce;
+					version_compare( $woocommerce->version, '3.3.5', '>' ) ? wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ) : wp_nonce_field( 'woocommerce-cart' );
+					?>
 				</td>
 			</tr>
 
