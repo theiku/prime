@@ -37,6 +37,9 @@ wc_print_notices(); ?>
 		<button type="submit" class="woocommerce-Button btn button-primary" value="<?php esc_attr_e( 'Reset password', 'woocommerce' ); ?>"><?php esc_html_e( 'Reset password', 'woocommerce' ); ?></button>
 	</p>
 
-	<?php wp_nonce_field( 'lost_password', 'woocommerce-lost-password-nonce' ); ?>
+	<?php
+	global $woocommerce;
+	version_compare( $woocommerce->version, '3.3.5', '>' ) ? wp_nonce_field( 'lost_password', 'woocommerce-lost-password-nonce' ) : wp_nonce_field( 'lost_password' );
+	?>
 
 </form>

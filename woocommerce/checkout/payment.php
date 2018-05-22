@@ -49,7 +49,10 @@ if ( ! is_ajax() ) {
 
 		<?php do_action( 'woocommerce_review_order_after_submit' ); ?>
 
-		<?php wp_nonce_field( 'woocommerce-process_checkout', 'woocommerce-process-checkout-nonce' ); ?>
+		<?php
+		global $woocommerce;
+		version_compare( $woocommerce->version, '3.3.5', '>' ) ? wp_nonce_field( 'woocommerce-process_checkout', 'woocommerce-process-checkout-nonce' ) : wp_nonce_field( 'woocommerce-process_checkout' );
+		?>
 	</div>
 </div>
 <?php
