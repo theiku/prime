@@ -10,22 +10,28 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see 	    https://docs.woocommerce.com/document/template-structure/
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
- * @version     2.1.0
+ * @see https://docs.woocommerce.com/document/template-structure/
+ * @package WooCommerce/Templates
+ * @version 3.4.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+defined( 'ABSPATH' ) || exit;
+
+$product_url_parts = wp_parse_url( $product_url );
+$query_string      = array();
+
+if ( ! empty( $product_url_parts['query'] ) ) {
+	parse_str( $product_url_parts['query'], $query_string );
 }
 
-?>
+do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
-<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
+<form class="cart" action="<?php echo esc_url( $product_url ); ?>" method="get">
+	<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
-<p class="cart">
-	<a href="<?php echo esc_url( $product_url ); ?>" rel="nofollow" class="single_add_to_cart_button btn button-primary"><?php echo esc_html( $button_text ); ?></a>
-</p>
+	<button type="submit" class="single_add_to_cart_button btn button-primary"><?php echo esc_html( $button_text ); ?></button>
 
-<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
+	<?php wc_query_string_form_fields( $query_string ); ?>
+
+	<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
+</form>
