@@ -1,5 +1,5 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php get_template_part( 'templates/entry-header', get_post_type() !== 'post' ? get_post_type() : get_post_format() ); ?>
+	<?php get_template_part( 'templates/entry-header' ); ?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->

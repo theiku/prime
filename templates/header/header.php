@@ -9,13 +9,13 @@
 
 ?>
 
-<header id="masthead" <?php bgtfw_header_class( basename( __FILE__, '.php' ) ); ?> role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>>
+<header id="masthead" <?php BoldGrid::add_class( 'header', [ 'header' ] ); ?> role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>>
 	<div class="custom-header-media">
 		<?php the_custom_header_markup(); ?>
 	</div>
-	<div id="navi-wrap" <?php bgtfw_inner_header_class() ?>>
-		<?php do_action( 'boldgrid_menu_secondary', [ 'container_class' => bgtfw_get_header_container() ] ); ?>
-		<div id="navi" <?php bgtfw_header_container(); ?>>
+	<div id="navi-wrap" <?php BoldGrid::add_class( 'navi_wrap' ); ?>>
+		<?php do_action( 'boldgrid_menu_secondary', [ 'container_class' => BoldGrid::get_container_classes( 'header' ) ] ); ?>
+		<div id="navi" <?php BoldGrid::add_class( 'navi' ); ?>>
 			<?php do_action( 'boldgrid_site_identity' ); ?>
 			<?php if ( has_nav_menu( 'main' ) ) : ?>
 				<input id="main-menu-state" type="checkbox" />

@@ -17,14 +17,14 @@ $configs = $boldgrid_theme_framework->get_configs();
 	<?php get_template_part( 'templates/head' ); ?>
 	<body <?php body_class(); ?>>
 		<?php do_action( 'boldgrid_header_before' ); ?>
-		<div class="site-header">
+		<div <?php BoldGrid::add_class( 'site_header', [ 'site-header' ] ); ?>>
 			<?php do_action( 'get_header' ); ?>
 			<?php get_template_part( 'templates/header/header', $configs['template']['header'] ); ?>
 		</div><!-- /.header -->
 		<?php do_action( 'boldgrid_header_after' ); ?>
 		<?php do_action( 'boldgrid_content_before' ); ?>
-		<div id="content" class="site-content" role="document">
-			<main class="main">
+		<div id="content" <?php BoldGrid::add_class( 'site_content', [ 'site-content' ] ); ?> role="document">
+			<main <?php BoldGrid::add_class( 'main', [ 'main' ] ); ?>>
 				<?php do_action( 'boldgrid_main_top' ); ?>
 				<?php include Boldgrid_Framework_Wrapper::boldgrid_template_path(); ?>
 				<?php do_action( 'boldgrid_main_bottom' ); ?>
