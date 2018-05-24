@@ -220,8 +220,8 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['bgtfw_footer_links']['default'] = 'color-3';
 
 		// Hide titles on all pages, but show titles on posts.
-		$config['customizer']['controls']['bgtfw_pages_display_title']['default'] = '0';
-		$config['customizer']['controls']['bgtfw_posts_display_title']['default'] = '1';
+		$config['customizer']['controls']['bgtfw_pages_display_title']['default'] = false;
+		$config['customizer']['controls']['bgtfw_posts_display_title']['default'] = true;
 
 		// Default header position is on top.
 		$config['customizer']['controls']['bgtfw_header_layout_position']['default'] = 'header-top';

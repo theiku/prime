@@ -9,16 +9,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header" <?php bgtfw_featured_img_bg( $post->ID ); ?>>
-		<div class="featured-imgage-header">
-			<?php get_template_part( 'templates/entry-header' ); ?>
-			<?php if ( 'post' == get_post_type() ) : ?>
-				<div class="entry-meta">
-					<?php boldgrid_posted_on(); ?>
-				</div><!-- .entry-meta -->
-			<?php endif; ?>
-		</div>
-	</header><!-- .entry-header -->
+	<?php get_template_part( 'templates/entry-header', get_post_type() ); ?>
 	<div class="entry-content">
 	<?php
 		/* translators: %s: Name of current post */
@@ -26,7 +17,7 @@
 		if ( $content === 'excerpt' ) {
 			the_excerpt();
 		} else {
-			if ( get_theme_mod( 'bgtfw_pages_blog_blog_page_layout_featimg', false ) && has_post_thumbnail() ) : ?>
+			if ( get_theme_mod( 'bgtfw_pages_blog_blog_page_layout_featimg' ) && has_post_thumbnail() ) : ?>
 				<div class="featured-image container">
 					<?php the_post_thumbnail(); ?>
 				</div>
