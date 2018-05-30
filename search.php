@@ -23,7 +23,7 @@ $results_count = $wp_query->found_posts;
 			</div>
 		</div> <!-- .container -->
 	</div> <!-- .jumbotron -->
-	<div class="bgtfw search-results text-center">
+	<div class="bgtfw search-results<?php echo ! have_posts() ? ' text-center' : ''; ?>">
 		<div class="row">
 			<div class="<?php echo BoldGrid::display_sidebar() ? 'col-md-9' : 'col-md-12'; ?>">
 				<?php if ( have_posts() ) : // Results Found. ?>
