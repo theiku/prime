@@ -18,7 +18,7 @@
 	<div class="row">
 		<?php if ( $recent_posts ) : ?>
 			<div class="<?php echo ! $pages ? 'col-md-12' : 'col-md-6'; ?> search-posts">
-				<h3><?php _e( 'Recent Articles' ); ?></h3>
+				<h3><?php _e( 'Recent Articles', 'bgtfw' ); ?></h3>
 				<ul class="list-group">
 					<?php
 						$args = array( 'numberposts' => '10', 'post_status' => 'publish' );
@@ -34,7 +34,7 @@
 		<?php endif; ?>
 		<?php if ( $pages ) : ?>
 			<div class="<?php echo ! $recent_posts ? 'col-md-12' : 'col-md-6'; ?> search-pages">
-				<h3><?php _e( 'Page Sitemap' ); ?></h3>
+				<h3><?php _e( 'Page Sitemap', 'bgtfw' ); ?></h3>
 				<ul class="list-group">
 					<?php
 						$count = 0;

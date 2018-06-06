@@ -22,7 +22,7 @@
 					<?php the_post_thumbnail(); ?>
 				</div>
 			<?php endif; ?>
-			<?php the_content( sprintf( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'boldgrid' ), the_title( '<span class="screen-reader-text">"', '"</span>', false ) ) );
+			<?php the_content( sprintf( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'bgtfw' ), the_title( '<span class="screen-reader-text">"', '"</span>', false ) ) );
 		}
 	?>
 	<?php wp_link_pages( array(
