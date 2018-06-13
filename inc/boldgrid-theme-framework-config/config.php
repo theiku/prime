@@ -211,8 +211,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Header specific colors for background, headings, and links.
 		$config['customizer']['controls']['bgtfw_header_color']['default'] = 'color-5';
-		$config['customizer']['controls']['bgtfw_header_headings_color']['default'] = 'color-1';
-		$config['customizer']['controls']['bgtfw_header_links']['default'] = 'color-1';
 
 		// Footer specific colors for background, headings, and links.
 		$config['customizer']['controls']['bgtfw_footer_color']['default'] = 'color-5';
