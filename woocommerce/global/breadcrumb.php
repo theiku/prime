@@ -23,26 +23,27 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( ! empty( $breadcrumb ) ) {
 
-	echo $wrap_before;
+	$markup = $wrap_before;
 
 	foreach ( $breadcrumb as $key => $crumb ) {
 
-		echo $before;
+		$markup .= $before;
 
 		if ( ! empty( $crumb[1] ) && sizeof( $breadcrumb ) !== $key + 1 ) {
-			echo '<a href="' . esc_url( $crumb[1] ) . '">' . esc_html( $crumb[0] ) . '</a>';
+			$markup .= '<a href="' . esc_url( $crumb[1] ) . '">' . esc_html( $crumb[0] ) . '</a>';
 		} else {
-			echo '<a class="filler">' . esc_html( $crumb[0] ) . '</a>';
+			$markup .= '<a class="filler">' . esc_html( $crumb[0] ) . '</a>';
 		}
 
-		echo $after;
+		$markup .= $after;
 
 		if ( sizeof( $breadcrumb ) !== $key + 1 ) {
-			echo $delimiter;
+			$markup .= $delimiter;
 		}
 
 	}
 
-	echo $wrap_after;
+	$markup .= $wrap_after;
 
+	echo wp_kses_post( $markup );
 }
