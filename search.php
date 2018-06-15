@@ -14,7 +14,7 @@ $results_count = $wp_query->found_posts;
 			<?php if ( '' == $results_count || 0 == $results_count ) { // No Results ?>
 				<p><span class="label label-danger"><?php _e( 'No Results', 'bgtfw' ); ?></span>&nbsp; <?php _e( 'Try different search terms.', 'bgtfw' ); ?></p>
 			<?php } else { // Results Found. ?>
-				<p><span class="label label-success"><?php echo $results_count . __( ' Results', 'bgtfw' ); ?></span></p>
+				<p><span class="label label-success"><?php echo absint( $results_count ) . ' ' . esc_html__( 'Results', 'bgtfw' ); ?></span></p>
 			<?php } // End results check. ?>
 			<div class="row">
 				<div class="<?php echo BoldGrid::display_sidebar() ? 'col-md-9' : 'col-md-12'; ?>">
