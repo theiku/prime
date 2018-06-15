@@ -37,14 +37,7 @@ $results_count = $wp_query->found_posts;
 					</article>
 					<hr />
 					<?php endwhile; ?>
-					<?php
-					global $wp_query;
-						if ( $wp_query->max_num_pages <= 1 ) {
-							return;
-						}
-
-						do_action( 'bgtfw_pagination_display' );
-					?>
+					<?php boldgrid_paging_nav(); ?>
 			</div> <!-- .col-md-12 -->
 		</div> <!-- .row -->
 		<?php else : // No Results. ?>
