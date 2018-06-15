@@ -37,7 +37,7 @@ do_action( 'woocommerce_before_account_navigation' );
 					$active = 'color1-color';
 				}
 			?>
-				<a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>" class="color1-background-color-hover color-1-text-contrast-hover <?php echo $active; ?>"><?php echo esc_html( $label ); ?></a>
+				<a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>" class="color1-background-color-hover color-1-text-contrast-hover <?php echo esc_attr( $active ); ?>"><?php echo esc_html( $label ); ?></a>
 			</li>
 		<?php endforeach; ?>
 	</ul>
