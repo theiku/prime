@@ -26,4 +26,4 @@ if ( $wp_query->max_num_pages <= 1 ) {
 	return;
 }
 
-do_action( 'woocommerce_pagination_display' );
+do_action( 'bgtfw_pagination_display' );

@@ -37,10 +37,14 @@ $results_count = $wp_query->found_posts;
 					</article>
 					<hr />
 					<?php endwhile; ?>
-					<ul class="pager">
-						<li><?php next_posts_link( '<i class="icon-chevron-left"></i>&nbsp; Older Results' ) ?></li>
-						<li><?php previous_posts_link( 'Newer Results &nbsp;<i class="icon-chevron-right"></i>' ) ?></li>
-					</ul>
+					<?php
+					global $wp_query;
+						if ( $wp_query->max_num_pages <= 1 ) {
+							return;
+						}
+
+						do_action( 'bgtfw_pagination_display' );
+					?>
 			</div> <!-- .col-md-12 -->
 		</div> <!-- .row -->
 		<?php else : // No Results. ?>
