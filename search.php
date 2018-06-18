@@ -37,10 +37,7 @@ $results_count = $wp_query->found_posts;
 					</article>
 					<hr />
 					<?php endwhile; ?>
-					<ul class="pager">
-						<li><?php next_posts_link( '<i class="icon-chevron-left"></i>&nbsp; Older Results' ) ?></li>
-						<li><?php previous_posts_link( 'Newer Results &nbsp;<i class="icon-chevron-right"></i>' ) ?></li>
-					</ul>
+					<?php boldgrid_paging_nav(); ?>
 			</div> <!-- .col-md-12 -->
 		</div> <!-- .row -->
 		<?php else : // No Results. ?>
