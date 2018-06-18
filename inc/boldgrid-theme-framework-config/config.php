@@ -265,6 +265,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['bgtfw_tagline_typography']['default'] = array(
 			'font-family' => 'Roboto',
 			'font-size' => '30px',
+			'text-transform' => 'uppercase',
 			'line-height' => '1.1',
 			'text-align' => 'left',
 			'variant' => '100'
