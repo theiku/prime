@@ -9,4 +9,7 @@
 	<footer class="entry-footer">
 		<?php get_template_part( 'templates/entry-footer' ); ?>
 	</footer><!-- .entry-footer -->
+	<?php if ( comments_open() || get_comments_number() ) : ?>
+		<?php comments_template( '/templates/comments.php' ); ?>
+	<?php endif; ?>
 </article><!-- #post-## -->
