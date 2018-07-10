@@ -291,19 +291,10 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'variant' => 'regular'
 		);
 
-		/**
-		 * Menu typography is generated dynamically, and is currently using the old menu
-		 * configs.  This will be updated so that menu typography can be set in the same
-		 * way.
-		$config['customizer']['controls']['bgtfw_menu_typography'] = array(
-			'color' => '#333333',
-			'font-family' => 'Roboto',
-			'font-size' => '18px',
-			'line-height' => '1.5',
-			'text-transform' => 'uppercase',
-			'variant' => 'regular'
-		);
-		*/
+		if ( ! class_exists( 'Boldgrid_Editor' ) ) {
+			$config['scripts']['animate-css'] = true;
+			$config['scripts']['wow-js'] = true;
+		}
 
 		// Main Menu configuration.
 		$config['starter-content']['nav_menus']['main'] = array(
