@@ -6,7 +6,7 @@
 			<?php the_title( sprintf( '<p class="h1 entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>
 		<?php endif; ?>
 		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
+		<div class="entry-meta text-center">
 			<?php boldgrid_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
