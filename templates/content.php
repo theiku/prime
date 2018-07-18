@@ -15,7 +15,7 @@
 		/* translators: %s: Name of current post */
 		$content = get_theme_mod( 'bgtfw_pages_blog_blog_page_layout_content', 'excerpt' );
 		if ( $content === 'excerpt' ) {
-			the_excerpt();
+			Boldgrid_Framework_Content::the_excerpt();
 		} else {
 			if ( get_theme_mod( 'bgtfw_pages_blog_blog_page_layout_featimg' ) && has_post_thumbnail() ) : ?>
 				<div class="featured-image container">
