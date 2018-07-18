@@ -17,9 +17,7 @@
 	<div id="navi-wrap" <?php BoldGrid::add_class( 'navi_wrap' ); ?>>
 		<div id="navi" <?php BoldGrid::add_class( 'navi' ); ?>>
 			<?php do_action( 'boldgrid_site_identity' ); ?>
-			<?php if ( has_nav_menu( 'main' ) ) : ?>
-				<?php do_action( 'boldgrid_menu_main' ) ?>
-			<?php endif; ?>
+			<?php do_action( 'boldgrid_menu_main' ) ?>
 		</div>
 		<?php do_action( 'boldgrid_header_bottom' ); ?>
 	</div>
