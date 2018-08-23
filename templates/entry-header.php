@@ -1,5 +1,5 @@
-<header class="entry-header" <?php is_single() ? : bgtfw_featured_img_bg( $post->ID ); ?>>
-	<div class="featured-imgage-header">
+<header <?php BoldGrid::add_class( 'entry_header', [ 'entry-header' ] ); ?> <?php is_single() ? : bgtfw_featured_img_bg( $post->ID ); ?>>
+	<div <?php BoldGrid::add_class( 'featured_image', [ 'featured-imgage-header' ] ); ?>>
 		<?php if ( is_single() || is_page() ) : ?>
 			<?php the_title( '<p class="h1 entry-title page-title text-center">', '</p>' ); ?>
 		<?php else : ?>
