@@ -13,8 +13,12 @@ if ( ! have_posts() ) :
 endif;
 
 if ( is_archive() ) :
-	get_template_part( 'templates/entry-header', 'archive' );
+	get_template_part( 'templates/page-header', 'archive' );
 endif;
+
+if ( ! is_front_page() && is_home() ) {
+	printf( '<header class="page-header"><p class="h1 page-title text-center">%s</p></header>', get_the_title( get_option( 'page_for_posts', true ) ) );
+}
 
 while ( have_posts() ) : the_post();
 	get_template_part( 'templates/content', get_post_type() !== 'post' ? get_post_type() : get_post_format() );
