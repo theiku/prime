@@ -232,8 +232,8 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['bgtfw_footer_links']['default'] = 'color-1';
 
 		// Page title display settings, show by default.
-		$config['customizer']['controls']['bgtfw_pages_display_title']['default'] = true;
-		$config['customizer']['controls']['bgtfw_posts_display_title']['default'] = true;
+		$config['customizer']['controls']['bgtfw_pages_title_display']['default'] = 'show';
+		$config['customizer']['controls']['bgtfw_posts_title_display']['default'] = 'show';
 
 		// Default header position is on top.
 		$config['customizer']['controls']['bgtfw_header_layout_position']['default'] = 'header-top';
