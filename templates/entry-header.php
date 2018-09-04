@@ -5,10 +5,10 @@
 		<?php elseif ( is_page() ) : ?>
 			<?php the_title( sprintf( '<p class="entry-title page-title ' . get_theme_mod( 'bgtfw_pages_title_size' ) . '"><a ' . BoldGrid::add_class( 'pages_title', [ 'link' ], false ) . ' href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>
 		<?php else : ?>
-			<?php the_title( sprintf( '<p class="h1 entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>
+			<?php the_title( sprintf( '<p class="entry-title ' . get_theme_mod( 'bgtfw_blog_post_header_title_size' ) . '"><a ' . BoldGrid::add_class( 'blog_page_post_title', [ 'link' ], false ) . ' href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>
 		<?php endif; ?>
 		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta text-center">
+		<div class="entry-meta">
 			<?php boldgrid_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>

@@ -3,7 +3,7 @@
 	<div>
 		<?php the_title( sprintf( '<p class="entry-title ' . get_theme_mod( 'bgtfw_blog_post_header_title_size' ) . '"><a ' . BoldGrid::add_class( 'blog_page_post_title', [ 'link' ], false ) . ' href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>
 		<?php if ( 'post' == get_post_type() ) : ?>
-			<div class="entry-meta text-center">
+			<div class="entry-meta">
 				<?php boldgrid_posted_on(); ?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>

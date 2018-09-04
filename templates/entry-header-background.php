@@ -3,10 +3,10 @@
 		<?php if ( is_single() || is_page() ) : ?>
 			<?php the_title( '<p class="h1 entry-title page-title text-center">', '</p>' ); ?>
 		<?php else : ?>
-			<?php the_title( sprintf( '<p class="entry-title h1"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>
+			<?php the_title( sprintf( '<p class="entry-title ' . get_theme_mod( 'bgtfw_blog_post_header_title_size' ) . '"><a ' . BoldGrid::add_class( 'blog_page_post_title', [ 'link' ], false ) . ' href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>
 		<?php endif; ?>
 		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta text-center">
+		<div class="entry-meta">
 			<?php boldgrid_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
