@@ -17,7 +17,7 @@ if ( is_archive() ) :
 endif;
 
 if ( ! is_front_page() && is_home() ) {
-	printf( '<header class="page-header"><p class="h1 page-title text-center">%s</p></header>', get_the_title( get_option( 'page_for_posts', true ) ) );
+	get_template_part( 'templates/page-header', 'blog' );
 }
 
 while ( have_posts() ) : the_post();
