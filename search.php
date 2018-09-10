@@ -8,7 +8,7 @@
 // Get number of results.
 $results_count = $wp_query->found_posts;
 ?>
-	<div class="jumbotron text-center">
+	<div class="text-center">
 		<div class="container">
 			<h1>Search <span class="keyword">&ldquo;<?php the_search_query(); ?>&rdquo;</span></h1>
 			<?php if ( '' == $results_count || 0 == $results_count ) { // No Results ?>
