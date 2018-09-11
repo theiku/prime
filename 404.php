@@ -10,7 +10,7 @@
 ?>
 
 <?php do_action( '404_before' ); ?>
-<div class="jumbotron text-center">
+<div class="text-center">
 	<div class="container">
 		<h1>404: Page Not Found.</h1>
 			<p><?php _e( 'The page you requested could not be found.', 'bgtfw' ); ?></p>
