@@ -131,7 +131,9 @@
     </div>
     <div class="row row-spacing-bottom">
       <div class="col-md-12 col-sm-12 col-xs-12">
-        [boldgrid_component type="wp_recent-posts"]
+        <div class="boldgrid-shortcode" data-imhwpb-draggable="true">
+          [boldgrid_component type="wp_recent-posts"]
+        </div>
       </div>
     </div>
   </div>

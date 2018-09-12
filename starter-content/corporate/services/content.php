@@ -62,7 +62,9 @@
         </div>
         <div class="row" style="padding-top: 60px; padding-bottom: 35px;">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              [boldgrid_component type="wp_recent-posts"]
+              <div class="boldgrid-shortcode" data-imhwpb-draggable="true">
+                [boldgrid_component type="wp_recent-posts"]
+              </div>
             </div>
         </div>
     </div>
