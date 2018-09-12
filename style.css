@@ -10,3 +10,21 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: bgtfw
 Tags: custom-background, custom-colors, custom-menu, editor-style, rtl-language-support, translation-ready, boldgrid-theme-53
 */
+
+/** Some temporary classes **/
+.row-spacing {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.row-spacing-top {
+  padding-top: 65px;
+}
+
+.row-spacing-bottom {
+  padding-bottom: 65px;
+}
+
+.image-shadow {
+  box-shadow: 12px 12px 2px rgba(0, 0, 0, 0.2);
+}
