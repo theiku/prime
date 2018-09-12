@@ -20,18 +20,17 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// New.
 		$config['customizer']['controls']['bgtfw_pages_container']['default'] = '';
 
-
 		// Menu.
 		$config['customizer']['controls']['bgtfw_menu_margin_main']['default'] = [
-				[
-					'media' => [ 'base' ],
-					'unit' => 'px',
-					'isLinked' => true,
-					'values' => [
-						'bottom' => 20,
-					],
+			[
+				'media' => [ 'base' ],
+				'unit' => 'px',
+				'isLinked' => true,
+				'values' => [
+					'bottom' => 20,
 				],
-			];
+			],
+		];
 
 		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_main']['default'] = 'color-1';
 		$config['customizer']['controls']['bgtfw_menu_items_link_color_main']['default'] = 'color-2';
@@ -257,8 +256,76 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Show blog and archives in a 1 column layout.
 		$config['customizer']['controls']['bgtfw_pages_blog_blog_page_layout_columns']['default'] = '1';
 
+		// Set the blog/archive pages sidebar display.
+		$config['customizer']['controls']['bgtfw_blog_blog_page_sidebar']['default'] = 'right-sidebar';
+
+		// Set the primary sidebar background color.
+		$config['customizer']['controls']['sidebar_meta']['primary-sidebar']['background_color'] = 'color-neutral';
+
+		// Set the primary sidebar links color.
+		$config['customizer']['controls']['sidebar_meta']['primary-sidebar']['links_color'] = 'color-1';
+
+		// Set the primary sidebar headings color.
+		$config['customizer']['controls']['sidebar_meta']['primary-sidebar']['headings_color'] = 'color-2';
+
+		// Register primary sidebar widgets..
+		$config['starter-content']['widgets']['primary-sidebar'] = array(
+
+			// Widget ID
+			'custom_html' => array(
+
+				// Widget $id -> set when creating a Widget Class
+				'custom_html',
+
+				// Widget $instance -> settings
+				array(
+					'title' => 'About ' . get_bloginfo( 'name' ),
+					'content' => '<p>' . get_bloginfo( 'name' ) . ' is taking brand ambassadors but re-target key demographics.  Amplifying cloud. </p>',
+				),
+			),
+			'search',
+			'category',
+			'recent-posts',
+		);
+
 		// Show excerpts instead of full blog post on blog and archives.
 		$config['customizer']['controls']['bgtfw_pages_blog_blog_page_layout_content']['default'] = 'excerpt';
+
+		// Set the blog excerpt length.
+		$config['customizer']['controls']['bgtfw_pages_blog_blog_page_layout_excerpt_length']['default'] = 30;
+
+		// Display option for featured images on blog/archive lists.
+		$config['customizer']['controls']['bgtfw_blog_post_header_feat_image_display']['default'] = 'show';
+
+		// Featured image in post list position.
+		$config['customizer']['controls']['bgtfw_blog_post_header_feat_image_position']['default'] = 'above';
+
+		// Set post list's featured image height.
+		$config['customizer']['controls']['bgtfw_blog_post_header_feat_image_height']['default'] = 20;
+
+		// Set post list's featured image width.
+		$config['customizer']['controls']['bgtfw_blog_post_header_feat_image_width']['default'] = 100;
+
+		// Post list title color.
+		$config['customizer']['controls']['bgtfw_blog_post_header_title_color']['default'] = 'color-2';
+
+		// Post list read more link text.
+		$config['customizer']['controls']['bgtfw_blog_post_readmore_text']['default'] = esc_html__( 'Read More', 'bgtfw' );
+
+		// Post list read more link style.
+		$config['customizer']['controls']['bgtfw_blog_post_readmore_type']['default'] = 'btn button-primary';
+
+		// Post list read more link alignment.
+		$config['customizer']['controls']['bgtfw_blog_post_readmore_position']['default'] = 'left';
+
+		// Post list tag links display.
+		$config['customizer']['controls']['bgtfw_blog_post_tags_display']['default'] = 'none';
+
+		// Post list category links display.
+		$config['customizer']['controls']['bgtfw_blog_post_cats_display']['default'] = 'none';
+
+		// Post list comment links display.
+		$config['customizer']['controls']['bgtfw_blog_post_comments_display']['default'] = 'none';
 
 		// Pages will not show a sidebar by default.
 		$config['customizer']['controls']['bgtfw_layout_page']['default'] = 'no-sidebar';
