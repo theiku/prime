@@ -19,6 +19,6 @@
 			<?php do_action( 'boldgrid_site_identity' ); ?>
 			<?php do_action( 'boldgrid_menu_main' ) ?>
 		</div>
-		<?php do_action( 'boldgrid_header_bottom' ); ?>
 	</div>
+	<?php do_action( 'boldgrid_header_bottom' ); ?>
 </header><!-- #masthead -->
