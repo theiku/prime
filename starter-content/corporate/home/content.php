@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row row-spacing">
         <div class="col-md-6 col-sm-12 col-xs-12">
-          <h5 style="margin-bottom: 0;" class="color4-color">We help Entrepreneurs</h5>
+          <h5 style="margin-bottom: 0; text-transform: uppercase;" class="color4-color">We Help Entrepreneurs</h5>
           <h2 style="margin-top: 0" class="color4-color h1">Grow Your Business</h2>
           <?php $divider(); ?>
           <h5 style="font-size: 1.3em;" class="color4-color">Taking core competencies to, consequently, infiltrate new markets. Drive analytics so that as an end result.</h5>
@@ -19,10 +19,10 @@
     <div class="container">
       <div class="row row-spacing">
         <div class="col-md-6 col-sm-12 col-xs-12">
-          <h5 style="margin-bottom: 0;" class="color4-color">We help Entrepreneurs</h5>
-          <h2 style="margin-top: 0" class="color4-color h1">Grow Your Business</h2>
+          <h5 style="margin-bottom: 0; text-transform: uppercase;" class="color4-color">Let Us Help</h5>
+          <h2 style="margin-top: 0" class="color4-color h1">Dedicated to Quality</h2>
           <?php $divider(); ?>
-          <h5 style="font-size: 1.3em;" class="color4-color">Taking core competencies to, consequently, infiltrate new markets. Drive analytics so that as an end result.</h5>
+          <h5 style="font-size: 1.3em;" class="color4-color">Leading best in class so that as an end result, we make the logo bigger. Lead analytics to in turn make the ROI bigger.</h5>
           <p style="margin-top: 30px;"><a href="#" class="button-primary">Learn More</a></p>
         </div>
         <div class="col-md-6 col-sm-12 col-xs-12"></div>
@@ -34,10 +34,10 @@
     <div class="container">
       <div class="row row-spacing">
         <div class="col-md-6 col-sm-12 col-xs-12">
-          <h5 style="margin-bottom: 0;" class="color4-color">We help Entrepreneurs</h5>
-          <h2 style="margin-top: 0" class="color4-color h1">Grow Your Business</h2>
+          <h5 style="margin-bottom: 0; text-transform: uppercase;" class="color4-color">Bold Solutions</h5>
+          <h2 style="margin-top: 0" class="color4-color h1">Industry Leaders</h2>
           <?php $divider(); ?>
-          <h5 style="font-size: 1.3em;" class="color4-color">Taking core competencies to, consequently, infiltrate new markets. Drive analytics so that as an end result.</h5>
+          <h5 style="font-size: 1.3em;" class="color4-color">Take blue-sky thinking to in turn create actionable insights. Amplifying growth channels to use best practice.</h5>
           <p style="margin-top: 30px;"><a href="#" class="button-primary">Learn More</a></p>
         </div>
         <div class="col-md-6 col-sm-12 col-xs-12"></div>
@@ -49,7 +49,7 @@
   <div class="container">
     <div class="row row-spacing">
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <h5 style="margin-bottom: 0;">Where we started</h5>
+        <h5 style="margin-bottom: 0; text-transform: uppercase;">Where We Started</h5>
         <h2 style="margin-top: 0">Our Story</h2>
         <?php $divider(); ?>
         <p style="margin-bottom: 20px;">Executing big data with the aim to improve overall outcomes. Build user stories so that as an end result, we create actionable insights. Engage audience segments and above all, use best practice. Target key demographics while remembering to get buy in.</p>
@@ -68,7 +68,7 @@
   <div class="container">
     <div class="row row-spacing-top">
       <div class="col-md-12 col-sm-12 col-xs-12">
-        <h5 style="margin-bottom: 0;" class="color4-color">What We Do</h5>
+        <h5 style="margin-bottom: 0; text-transform: uppercase;" class="color4-color">What We Do</h5>
         <h2 style="margin-top: 0" class="color4-color">Services</h2>
         <?php $divider(); ?>
       </div>
@@ -120,7 +120,7 @@
   <div class="container">
     <div class="row row-spacing-top">
       <div class="col-md-5 col-sm-12 col-xs-12">
-        <h5 style="margin-bottom: 0;">Read All About It</h5>
+        <h5 style="margin-bottom: 0; text-transform: uppercase;">Read All About It</h5>
         <h2 style="margin-top: 0">Recent News</h2>
         <?php $divider(); ?>
       </div>
@@ -141,7 +141,7 @@
   <div class="container">
     <div class="row row-spacing-top">
       <div class="col-md-12 col-sm-12 col-xs-12">
-        <h5 style="margin-bottom: 0;">Meet the Professionals</h5>
+        <h5 style="margin-bottom: 0; text-transform: uppercase;">Meet the Professionals</h5>
         <h2 style="margin-top: 0">Team</h2>
         <?php $divider(); ?>
       </div>
@@ -162,8 +162,8 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="bg-box text-center">
                 <img class="image-shadow" src="<?php $image_path( 'home/home8.png' ) ?>" style="width: 350px;">
-                <h4 style="margin-top: 25px;">Nathan Counsel</h4>
-                <p>Chief Executive Officer</p>
+                <h4 style="margin-top: 25px;">Sue Wolfe</h4>
+                <p>Chief Financial Officer</p>
               </div>
             </div>
           </div>
@@ -171,8 +171,8 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="bg-box text-center">
                 <img class="image-shadow" src="<?php $image_path( 'home/home8a.png' ) ?>" style="width: 350px;">
-                <h4 style="margin-top: 25px;">Nathan Counsel</h4>
-                <p>Chief Executive Officer</p>
+                <h4 style="margin-top: 25px;">Sam Wood</h4>
+                <p>Product Management</p>
               </div>
             </div>
           </div>
