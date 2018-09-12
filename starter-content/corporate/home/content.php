@@ -1,25 +1,41 @@
-<?php
-$printImagePath = function ( $path ) {
-  echo get_parent_theme_file_uri( 'starter-content/corporate/' .  $path );
-};
-$divider = function() { ?>
-  <div class="row bg-editor-hr-wrap" style="padding-bottom: 15px;">
-    <div class="col-md-12 col-xs-12 col-sm-12">
-      <div>
-        <hr class="bg-hr color1-color bg-hr-15" style="width: 50px; margin-left: 0px; margin-right: auto; margin-top: 0px; border-radius: 100px;">
-      </div>
-    </div>
-  </div>
-<?php }; ?>
-
 <div class="boldgrid-slider boldgrid-section-wrap">
   <div class="boldgrid-section"
-    style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $printImagePath( 'home/home1.png' ) ?>)">
+    style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'home/home1.png' ) ?>)">
     <div class="container">
       <div class="row row-spacing">
         <div class="col-md-6 col-sm-12 col-xs-12">
           <h5 style="margin-bottom: 0;" class="color4-color">We help Entrepreneurs</h5>
-          <h2 style="margin-top: 0" class="color4-color">Grow Your Business</h2>
+          <h2 style="margin-top: 0" class="color4-color h1">Grow Your Business</h2>
+          <?php $divider(); ?>
+          <h5 style="font-size: 1.3em;" class="color4-color">Taking core competencies to, consequently, infiltrate new markets. Drive analytics so that as an end result.</h5>
+          <p style="margin-top: 30px;"><a href="#" class="button-primary">Learn More</a></p>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12"></div>
+      </div>
+    </div>
+  </div>
+  <div class="boldgrid-section"
+    style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'home/home1a.png' ) ?>)">
+    <div class="container">
+      <div class="row row-spacing">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <h5 style="margin-bottom: 0;" class="color4-color">We help Entrepreneurs</h5>
+          <h2 style="margin-top: 0" class="color4-color h1">Grow Your Business</h2>
+          <?php $divider(); ?>
+          <h5 style="font-size: 1.3em;" class="color4-color">Taking core competencies to, consequently, infiltrate new markets. Drive analytics so that as an end result.</h5>
+          <p style="margin-top: 30px;"><a href="#" class="button-primary">Learn More</a></p>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12"></div>
+      </div>
+    </div>
+  </div>
+  <div class="boldgrid-section"
+    style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'home/home1b.png' ) ?>)">
+    <div class="container">
+      <div class="row row-spacing">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <h5 style="margin-bottom: 0;" class="color4-color">We help Entrepreneurs</h5>
+          <h2 style="margin-top: 0" class="color4-color h1">Grow Your Business</h2>
           <?php $divider(); ?>
           <h5 style="font-size: 1.3em;" class="color4-color">Taking core competencies to, consequently, infiltrate new markets. Drive analytics so that as an end result.</h5>
           <p style="margin-top: 30px;"><a href="#" class="button-primary">Learn More</a></p>
@@ -42,13 +58,13 @@ $divider = function() { ?>
         <p><a href="#" class="button-primary">Learn More</a></p>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12 align-column-center">
-        <p class="text-center"><img class="image-shadow" style="width: 350px" src="<?php $printImagePath( 'home/home2.png' ) ?>" ></p>
+        <p class="text-center"><img class="image-shadow" style="width: 350px" src="<?php $image_path( 'home/home2.png' ) ?>" ></p>
       </div>
     </div>
   </div>
 </div>
 <div class="boldgrid-section"
-  style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $printImagePath( 'home/home3.png' ) ?>)">
+  style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'home/home3.png' ) ?>)">
   <div class="container">
     <div class="row row-spacing-top">
       <div class="col-md-12 col-sm-12 col-xs-12">
@@ -60,21 +76,21 @@ $divider = function() { ?>
     <div class="row row-spacing-bottom">
       <div class="col-md-4 col-sm-12 col-xs-12">
         <div class="bg-box text-center color2-background-alpha" style="padding: 1.6em;">
-          <img src="<?php $printImagePath( 'icons/development.svg' ) ?>" style="height: 75px;">
+          <img src="<?php $image_path( 'icons/development.svg' ) ?>" style="height: 75px;">
           <h4 class="color4-color">Advanced Analytics</h4>
           <p class="color4-color">Building brand integration and possibly funnel users.</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-12 col-xs-12">
         <div class="bg-box text-center color2-background-alpha" style="padding: 1.6em;">
-          <img src="<?php $printImagePath( 'icons/business.svg' ) ?>" style="height: 75px;">
+          <img src="<?php $image_path( 'icons/business.svg' ) ?>" style="height: 75px;">
           <h4 class="color4-color">Finance</h4>
           <p class="color4-color">Building brand integration and possibly funnel users.</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-12 col-xs-12">
         <div class="bg-box text-center color2-background-alpha" style="padding: 1.6em;">
-          <img src="<?php $printImagePath( 'icons/strategy.svg' ) ?>" style="height: 75px;">
+          <img src="<?php $image_path( 'icons/strategy.svg' ) ?>" style="height: 75px;">
           <h4 class="color4-color">Strategy & Marketing</h4>
           <p class="color4-color">Building brand integration and possibly funnel users.</p>
         </div>
@@ -86,16 +102,16 @@ $divider = function() { ?>
   <div class="container">
     <div class="row row-spacing">
       <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-        <img src="<?php $printImagePath( 'home/logo1.png' ) ?>">
+        <img src="<?php $image_path( 'home/logo1.png' ) ?>">
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-        <img src="<?php $printImagePath( 'home/logo3.png' ) ?>">
+        <img src="<?php $image_path( 'home/logo3.png' ) ?>">
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-        <img src="<?php $printImagePath( 'home/logo4.png' ) ?>">
+        <img src="<?php $image_path( 'home/logo4.png' ) ?>">
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-        <img src="<?php $printImagePath( 'home/logo5.png' ) ?>">
+        <img src="<?php $image_path( 'home/logo5.png' ) ?>">
       </div>
     </div>
   </div>
@@ -116,7 +132,7 @@ $divider = function() { ?>
     </div>
     <div class="row row-spacing-bottom">
       <div class="col-md-12 col-sm-12 col-xs-12">
-        [boldgrid_component type="recent_posts"]
+        [boldgrid_component type="wp_recent-posts"]
       </div>
     </div>
   </div>
@@ -136,7 +152,7 @@ $divider = function() { ?>
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="bg-box text-center">
-                <img class="image-shadow" src="<?php $printImagePath( 'home/home7.png' ) ?>" style="width: 350px;">
+                <img class="image-shadow" src="<?php $image_path( 'home/home7.png' ) ?>" style="width: 350px;">
                 <h4 style="margin-top: 25px;">Nathan Counsel</h4>
                 <p>Chief Executive Officer</p>
               </div>
@@ -145,7 +161,7 @@ $divider = function() { ?>
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="bg-box text-center">
-                <img class="image-shadow" src="<?php $printImagePath( 'home/home8.png' ) ?>" style="width: 350px;">
+                <img class="image-shadow" src="<?php $image_path( 'home/home8.png' ) ?>" style="width: 350px;">
                 <h4 style="margin-top: 25px;">Nathan Counsel</h4>
                 <p>Chief Executive Officer</p>
               </div>
@@ -154,7 +170,7 @@ $divider = function() { ?>
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="bg-box text-center">
-                <img class="image-shadow" src="<?php $printImagePath( 'home/home8a.png' ) ?>" style="width: 350px;">
+                <img class="image-shadow" src="<?php $image_path( 'home/home8a.png' ) ?>" style="width: 350px;">
                 <h4 style="margin-top: 25px;">Nathan Counsel</h4>
                 <p>Chief Executive Officer</p>
               </div>
@@ -174,7 +190,7 @@ $divider = function() { ?>
   </div>
 </div>
 <div class="boldgrid-section"
-  style="background-size: cover; background-position: 50% 37%; background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $printImagePath( 'home/home9.png' ) ?>)">
+  style="background-size: cover; background-position: 50% 37%; background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'home/home9.png' ) ?>)">
   <div class="container">
     <div class="row row-spacing">
       <div class="col-md-8 col-sm-12 col-xs-12">

@@ -368,7 +368,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		);
 
 
-		$config['customizer']['controls']['bgtfw_headings_font_size']['default'] = '21';
+		$config['customizer']['controls']['bgtfw_headings_font_size']['default'] = '18';
 		$config['customizer']['controls']['bgtfw_headings_typography']['default'] = array(
 			'font-family' => 'Playfair Display',
 			'line-height' => '1.5',
@@ -438,6 +438,8 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 }
 
 function bgtfw_get_contents( $filePath ) {
+	include get_template_directory() . '/starter-content/corporate/utility.php';
+
 	ob_start();
 	include get_template_directory() . '/starter-content/' . $filePath;
 	$content = ob_get_contents();
