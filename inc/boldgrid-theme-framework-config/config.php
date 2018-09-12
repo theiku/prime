@@ -76,7 +76,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'colors' => array(
 					'#f95b26',
 					'#212121',
-					'#a8a9ad',
+					'#eaebed',
 					'#f6f6f6',
 					'#1a1a1a',
 				),
