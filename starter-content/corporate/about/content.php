@@ -84,10 +84,10 @@
         </div>
     </div>
 </div>
-<div class="boldgrid-slider boldgrid-slider-wrap">
+<div class="boldgrid-slider boldgrid-slider-wrap" data-config='{"arrows":false,"autoplay":true,"autoplaySpeed":"8","dots":true,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
   <div class="boldgrid-section">
       <div class="container">
-          <div class="row" style="padding-top: 100px; padding-bottom: 100px;">
+          <div class="row" style="padding-top: 100px;">
               <div class="col-md-4 col-xs-12 col-sm-5">
                   <p><img src="<?php $image_path( 'about/about4.png' ) ?>" class="image-shadow"></p>
               </div>
@@ -101,7 +101,7 @@
   </div>
   <div class="boldgrid-section">
       <div class="container">
-          <div class="row" style="padding-top: 100px; padding-bottom: 100px;">
+          <div class="row" style="padding-top: 100px;">
               <div class="col-md-4 col-xs-12 col-sm-5">
                   <p><img src="<?php $image_path( 'about/about4b.png' ) ?>" class="image-shadow"></p>
               </div>
@@ -115,7 +115,7 @@
   </div>
   <div class="boldgrid-section">
       <div class="container">
-          <div class="row" style="padding-top: 100px; padding-bottom: 100px;">
+          <div class="row" style="padding-top: 100px;">
               <div class="col-md-4 col-xs-12 col-sm-5">
                   <p><img src="<?php $image_path( 'about/about4c.png' ) ?>" class="image-shadow"></p>
               </div>

@@ -1,4 +1,4 @@
-<div class="boldgrid-slider boldgrid-section-wrap">
+<div class="boldgrid-slider boldgrid-section-wrap"  data-config='{"arrows":true,"autoplay":true,"autoplaySpeed":"10","dots":false,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
   <div class="boldgrid-section"
     style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'home/home1.png' ) ?>)">
     <div class="container">
@@ -149,11 +149,11 @@
     </div>
     <div class="row row-spacing-bottom">
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <div class="boldgrid-slider boldgrid-wrap-row">
+        <div class="boldgrid-slider boldgrid-wrap-row" data-config='{"arrows":false,"autoplay":true,"autoplaySpeed":"8","dots":true,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="bg-box text-center">
-                <img class="image-shadow" src="<?php $image_path( 'home/home7.png' ) ?>" style="width: 350px;">
+              <div class="text-center">
+                <img class="image-shadow" src="<?php $image_path( 'home/home7.png' ) ?>">
                 <h4 style="margin-top: 25px;">Nathan Counsel</h4>
                 <p>Chief Executive Officer</p>
               </div>
@@ -161,8 +161,8 @@
           </div>
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="bg-box text-center">
-                <img class="image-shadow" src="<?php $image_path( 'home/home8.png' ) ?>" style="width: 350px;">
+              <div class="text-center">
+                <img class="image-shadow" src="<?php $image_path( 'home/home8.png' ) ?>">
                 <h4 style="margin-top: 25px;">Sue Wolfe</h4>
                 <p>Chief Financial Officer</p>
               </div>
@@ -170,8 +170,8 @@
           </div>
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="bg-box text-center">
-                <img class="image-shadow" src="<?php $image_path( 'home/home8a.png' ) ?>" style="width: 350px;">
+              <div class="text-center">
+                <img class="image-shadow" src="<?php $image_path( 'home/home8a.png' ) ?>">
                 <h4 style="margin-top: 25px;">Sam Wood</h4>
                 <p>Product Management</p>
               </div>
@@ -179,14 +179,15 @@
           </div>
         </div>
       </div>
+      <div class="col-md-1 col-sm-12 col-xs-12"></div>
       <div class="col-md-4 col-sm-12 col-xs-12">
-        <h3 style="margin-bottom: 1.1em;">Who We Are</h3>
+        <h3 style="margin-bottom: 1.1em; margin-top: 0;">Who We Are</h3>
         <p style="margin-bottom: 2em;">Generate vertical integration while remembering to increase viewability.
           Grow social with the aim to increase viewability. Lead vertical integration in turn innovate.</p>
         <p style="margin-bottom: 2em;">Repurpose customer jounreys with the aim to come up with a bespoken solution. Growing benchmarking so that we build ROI.</p>
+        <p style="margin-bottom: 2em;">Engage benchmarking to, consequently, take this offline. Execute user experience to go viral. Funneling sprints and possibly improve overall outcomes.</p>
         <p><a href="#" class="button-primary">Meet the Team</a></p>
       </div>
-      <div class="col-md-1 col-sm-12 col-xs-12"></div>
     </div>
   </div>
 </div>
