@@ -303,6 +303,18 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Display the page title content inside of a container.
 		$config['customizer']['controls']['bgtfw_global_title_content_container']['default'] = 'container';
 
+		// Set background color of page title containers.
+		$config['customizer']['controls']['bgtfw_global_title_background_color']['default'] = 'color-2';
+
+		// Set the default global page title color.
+		$config['customizer']['controls']['bgtfw_global_title_color']['default'] = 'color-4';
+
+		// Set the text alignment of the page titles globally.
+		$config['customizer']['controls']['bgtfw_global_title_alignment']['default'] = 'left';
+
+		// Set the headings size of the page titles globally.
+		$config['customizer']['controls']['bgtfw_global_title_size']['default'] = 'h2';
+
 		// Show blog and archives in a 1 column layout.
 		$config['customizer']['controls']['bgtfw_pages_blog_blog_page_layout_columns']['default'] = '1';
 
