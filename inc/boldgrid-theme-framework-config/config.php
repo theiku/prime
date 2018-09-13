@@ -103,6 +103,28 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 					'#342e37',
 				),
 			),
+			array(
+				'format' => 'palette-primary',
+				'neutral-color' => '#f7e2da',
+				'colors' => array(
+					'#f15152',
+					'#3a2e39',
+					'#ffffff',
+					'#f7f4ea',
+					'#3a2e39',
+				),
+			),
+			array(
+				'format' => 'palette-primary',
+				'neutral-color' => '#ffffff',
+				'colors' => array(
+					'#17a398',
+					'#33312e',
+					'#e1ebed',
+					'#f6f7f7',
+					'#33312e',
+				),
+			),
 		);
 
 		// Create the custom image attachments used as post thumbnails for pages.
