@@ -381,7 +381,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'text-transform' => 'uppercase',
 			'line-height' => '1.1',
 			'text-align' => 'left',
-			'variant' => 'regular'
+			'variant' => '300'
 		);
 
 		// Site's body typography defaults.
