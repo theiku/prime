@@ -372,22 +372,22 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Site's title typography defaults.
 		$config['customizer']['controls']['bgtfw_site_title_typography']['default'] = array(
-			'font-family' => 'Lato',
-			'font-size' => '32px',
-			'text-transform' => 'uppercase',
+			'font-family' => 'Playfair Display',
+			'font-size' => '38px',
+			'text-transform' => 'capitalize',
 			'line-height' => '1.1',
-			'text-align' => 'left',
+			'text-align' => 'center',
 			'variant' => 'regular'
 		);
 
 		// Site's tagline typography defaults.
 		$config['customizer']['controls']['bgtfw_tagline_typography']['default'] = array(
 			'font-family' => 'Lato',
-			'font-size' => '30px',
-			'text-transform' => 'uppercase',
+			'font-size' => '20px',
+			'text-transform' => 'lowercase',
 			'line-height' => '1.1',
-			'text-align' => 'left',
-			'variant' => '300'
+			'text-align' => 'center',
+			'variant' => '300italic'
 		);
 
 		// Site's body typography defaults.
