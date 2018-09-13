@@ -164,9 +164,17 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		);
 
 		$config['starter-content']['plugins'] = array(
+			/*array(
+				'name'      => 'BoldGrid Post and Page Builder',
+				'slug'      => 'post-and-page-builder',
+				'required'  => true,
+			),*/
+
+			// Install release candidate.
 			array(
 				'name'      => 'BoldGrid Post and Page Builder',
 				'slug'      => 'post-and-page-builder',
+				'source'    => 'https://downloads.wordpress.org/plugin/post-and-page-builder-1.8.0-rc.1.zip',
 				'required'  => true,
 			),
 			array(
@@ -292,7 +300,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['footer_container']['default'] = 'container';
 
 		// Default footer layout will be layout-7.
-		$config['customizer']['controls']['bgtfw_footer_layouts']['default'] = 'layout-7';
+		$config['customizer']['controls']['bgtfw_footer_layouts']['default'] = 'layout-3';
 
 		// Set the page title position.
 		$config['customizer']['controls']['bgtfw_global_title_position']['default'] = 'above';
