@@ -4,15 +4,9 @@
         <div class="row" style="padding-top: 45px; padding-bottom: 35px;">
             <div class="col-md-2 col-sm-12 col-xs-12"></div>
             <div class="col-md-8 col-xs-12 col-sm-12 text-center">
-                <p class="" style="color: #fff; text-transform: uppercase;">Take Your Steps</p>
+                <p class="" style="color: #fff; text-transform: uppercase; margin-bottom: 0;">Take Your Steps</p>
                 <h2 style="color: #fff; margin-top: 0px;">Winning Process</h2>
-                <div class="row bg-editor-hr-wrap">
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <div>
-                            <hr class="bg-hr bg-hr-15 color1-color" style="width: 10%; margin-left: auto; margin-right: auto; margin-top: 0px;">
-                        </div>
-                    </div>
-                </div>
+                <?php $divider(); ?>
             </div>
             <div class="col-md-2 col-sm-12 col-xs-12"></div>
         </div>
@@ -39,7 +33,7 @@
             <div class="col-md-3 col-xs-12 col-sm-3 text-center" style="padding: 2em;">
                 <p class=""><img src="<?php $image_path( 'icons/011-develop.png' ) ?>" alt="" width="75" height="75"></p>
                 <h3 class="" style="margin-top: 35px;">Success</h3>
-                <p class="">Lead bleeding edge and then further your reach. Synchronizing below the line .</p>
+                <p class="">Lead bleeding edge and then further your reach. Synchronizing below the line.</p>
             </div>
         </div>
     </div>
@@ -48,15 +42,9 @@
     <div class="container">
         <div class="row" style="padding-top: 60px; padding-bottom: 35px;">
             <div class="col-md-5 col-sm-4 col-xs-12">
-                <p class="color1-color" style="margin-bottom: 5px;">Our Best Business</p>
+                <p class="color1-color" style="margin-bottom: 5px; text-transform: uppercase;">Our Best Business</p>
                 <h2 class="" style="margin-top: 0px;">The Benefit</h2>
-                <div class="row bg-editor-hr-wrap">
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <div>
-                            <hr class="bg-hr color1-color bg-hr-15" style="width: 10%; margin-left: 0px; margin-right: auto; margin-top: 0px;">
-                        </div>
-                    </div>
-                </div>
+                <?php $divider(); ?>
             </div>
             <div class="col-md-7 col-xs-12 col-sm-7"></div>
         </div>
@@ -74,15 +62,8 @@
         <div class="row" style="padding-top: 80px; padding-bottom: 80px;">
             <div class="col-md-5 col-sm-4 col-xs-12">
                 <p class="" style="margin-bottom: 5px; text-transform: uppercase;">Take a Look</p>
-
                 <h2 style="color: #fff; margin-top: 0px;">Glimpse</h2>
-                <div class="row bg-editor-hr-wrap">
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <div>
-                            <hr class="bg-hr color1-color bg-hr-15" style="width: 10%; margin-left: 0px; margin-right: auto; margin-top: 0px;">
-                        </div>
-                    </div>
-                </div>
+                <?php $divider(); ?>
             </div>
             <div class="col-md-7 col-xs-12 col-sm-12">
                 <p class="" style="margin-top: 35px;">Executing audience segments and try to be transparent. Generating analytics with a goal to build ROI. Grow stakeholder management so that we surprise and delight.</p>
@@ -149,34 +130,27 @@
                     <div class="col-md-5 col-xs-12 col-sm-12 align-column-center">
                         <div>
                             <p class="" style="font-size: 24px;">sponsored by us</p>
-
                         </div>
                     </div>
                 </div>
                 <div class="row bg-editor-hr-wrap">
                     <div class="col-md-12 col-xs-12 col-sm-12">
-
                         <hr>
-
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-7 col-xs-12 col-sm-12">
                         <p class="" style="font-size: 40px;">30 years</p>
-
                     </div>
                     <div class="col-md-5 col-xs-12 col-sm-12 align-column-center">
                         <div>
                             <p class="" style="font-size: 24px;">of experience</p>
-
                         </div>
                     </div>
                 </div>
                 <div class="row bg-editor-hr-wrap">
                     <div class="col-md-12 col-xs-12 col-sm-12">
-
                         <hr>
-
                     </div>
                 </div>
             </div>
@@ -188,17 +162,8 @@
         <div class="row" style="padding-top: 60px; padding-bottom: 0px;">
             <div class="col-md-5 col-sm-4 col-xs-12">
                 <p class="color1-color" style="text-transform: uppercase; margin-bottom: 5px;">Pick Your Plan</p>
-
                 <h2 class="" style="margin-top: 0px;">Pricing Table</h2>
-                <div class="row bg-editor-hr-wrap">
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <div>
-
-                            <hr class="bg-hr color1-color bg-hr-15" style="width: 10%; margin-left: 0px; margin-right: auto; margin-top: 0px;">
-
-                        </div>
-                    </div>
-                </div>
+                <?php $divider(); ?>
             </div>
             <div class="col-md-7 col-xs-12 col-sm-7"></div>
         </div>
@@ -218,7 +183,6 @@
                     <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>A goal to increase viewability</p>
                     <p class="h2 color-2-text-contrast color2-background-color" style="margin: 35px -32px 25px; text-align: center; padding: 0.5em;">$100</p>
                     <p class="" style="text-align: center;"><a class="button-primary" style="margin: 10px 0px;" href="#">Purchase</a></p>
-
                 </div>
             </div>
             <div class="col-md-4 col-xs-12 col-sm-4 align-column-center">
@@ -232,7 +196,6 @@
                     <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>A goal to increase viewability</p>
                     <p class="h1 color-2-text-contrast color2-background-color" style="z-index: 1; position: relative; margin: 35px -32px 25px; text-align: center; padding: 0.7em; box-shadow: #cecece 0px 0px 8px 0px;">$200</p>
                     <p class="" style="text-align: center;"><a class="button-primary" style="margin: 20px 0px;" href="#">Purchase</a></p>
-
                 </div>
             </div>
             <div class="col-md-4 col-xs-12 col-sm-4 align-column-center">
@@ -246,7 +209,6 @@
                     <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>A goal to increase viewability</p>
                     <p class="h2 color-2-text-contrast color2-background-color" style="margin-right: -32px; margin-left: -32px; text-align: center; padding: 0.5em;">$300</p>
                     <p class="" style="text-align: center;"><a class="button-primary" style="margin: 10px 0px;" href="#">Purchase</a></p>
-
                 </div>
             </div>
         </div>

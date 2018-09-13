@@ -8,13 +8,7 @@
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <p class="color1-color" style="margin-bottom: 5px; text-transform: uppercase;">Your Best Solution</p>
                 <h2 style="margin-top: 0;">What We Do</h2>
-                <div class="row bg-editor-hr-wrap">
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <div>
-                            <hr class="bg-hr color1-color bg-hr-15" style="width: 10%; margin-left: 0px; margin-right: auto; margin-top: 0px;">
-                        </div>
-                    </div>
-                </div>
+                <?php $divider(); ?>
                 <p style="margin-top: 35px;">Leveraging sprints with the aim to take this offline. Executing transformation mapping with a goal to build ROI. Taking dark social to in turn think outside the box. Execute cloud computing to, consequently, go viral. Utilise below the fold and then re-target key demographics.</p>
                 <p style="margin-top: 35px;">Inform user experience to, consequently, funnel users. Amplifying vertical integration yet be CMSable. Demonstrating customer journeys but target the low hanging fruit.</p>
                 <p style="margin-top: 35px;"><a class="button-primary" href="#">Learn More</a></p>
@@ -55,13 +49,7 @@
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <p class="color1-color" style="margin-bottom: 5px; text-transform: uppercase;">Spark Better Business</p>
                 <h2 style="margin-top: 0px;">Why Choose Us</h2>
-                <div class="row bg-editor-hr-wrap">
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <div>
-                            <hr class="bg-hr color1-color bg-hr-15" style="width: 10%; margin-left: 0px; margin-right: auto; margin-top: 0px;">
-                        </div>
-                    </div>
-                </div>
+                <?php $divider(); ?>
                 <p style="margin-top: 35px;">Leveraging sprints with the aim to take this offline. Executing transformation mapping with a goal to build ROI. Taking dark social to in turn think outside the box.</p>
                 <p style="margin-top: 35px;">Execute cloud computing to, consequently, go viral. Utilise below the fold and then re-target key demographics.</p>
                 <div class="row" style="margin-top: 35px;">
@@ -134,13 +122,7 @@
             <div class="col-md-4 col-sm-4 col-xs-12">
                 <p class="color1-color" style="margin-bottom: 5px; text-transform: uppercase;">Meet the Professionals</p>
                 <h2 style="margin-top: 0px;">Team</h2>
-                <div class="row bg-editor-hr-wrap">
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <div>
-                            <hr class="bg-hr color1-color bg-hr-15" style="width: 10%; margin-left: 0px; margin-right: auto; margin-top: 0px;">
-                        </div>
-                    </div>
-                </div>
+                <?php $divider(); ?>
             </div>
             <div class="col-md-1 col-sm-1 col-xs-12"></div>
             <div class="col-md-7 col-xs-12 col-sm-7">
