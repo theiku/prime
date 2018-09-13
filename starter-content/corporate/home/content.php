@@ -99,7 +99,7 @@
 </div>
 <div class="boldgrid-section">
   <div class="container">
-    <div class="row row-spacing">
+    <div class="row row-spacing-sm">
       <div class="col-md-3 col-sm-6 col-xs-12 text-center">
         <img src="<?php $image_path( 'home/logo1.png' ) ?>">
       </div>
@@ -194,7 +194,7 @@
 <div class="boldgrid-section"
   style="background-size: cover; background-position: 50% 37%; background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'home/home9.png' ) ?>)">
   <div class="container">
-    <div class="row row-spacing">
+    <div class="row row-spacing-sm">
       <div class="col-md-8 col-sm-12 col-xs-12">
         <h3 style="color: #fff;">Create daily standups to in turn re-target key demographics.</h3>
       </div>
