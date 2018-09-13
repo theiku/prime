@@ -4,8 +4,8 @@
         <div class="row" style="padding-top: 45px; padding-bottom: 35px;">
             <div class="col-md-2 col-sm-12 col-xs-12"></div>
             <div class="col-md-8 col-xs-12 col-sm-12 text-center">
-                <p class="color1-color">TAKE YOUR STEPS</p>
-                <h2 class="color4-color" style="margin-top: 0px;">Winning Process</h2>
+                <p class="" style="color: #fff; text-transform: uppercase;">Take Your Steps</p>
+                <h2 style="color: #fff; margin-top: 0px;">Winning Process</h2>
                 <div class="row bg-editor-hr-wrap">
                     <div class="col-md-12 col-xs-12 col-sm-12">
                         <div>
@@ -48,7 +48,7 @@
     <div class="container">
         <div class="row" style="padding-top: 60px; padding-bottom: 35px;">
             <div class="col-md-5 col-sm-4 col-xs-12">
-                <p class="color1-color" style="margin-bottom: 5px;">OUR BEST BUSINESS</p>
+                <p class="color1-color" style="margin-bottom: 5px;">Our Best Business</p>
                 <h2 class="" style="margin-top: 0px;">The Benefit</h2>
                 <div class="row bg-editor-hr-wrap">
                     <div class="col-md-12 col-xs-12 col-sm-12">
@@ -69,13 +69,13 @@
         </div>
     </div>
 </div>
-<div class="boldgrid-section color5-color" style="background-image: linear-gradient(to left, rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0.5)), url('<?php $image_path( 'services/services8.png' ) ?>'); background-size: cover; background-position: 50% 50%;" data-bg-overlaycolor="rgba(33,33,33,0.5)">
+<div class="boldgrid-section" style="color: #fff; background-image: linear-gradient(to left, rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0.5)), url('<?php $image_path( 'services/services8.png' ) ?>'); background-size: cover; background-position: 50% 50%;" data-bg-overlaycolor="rgba(33,33,33,0.5)">
     <div class="container">
         <div class="row" style="padding-top: 80px; padding-bottom: 80px;">
             <div class="col-md-5 col-sm-4 col-xs-12">
-                <p class="color1-color" style="margin-bottom: 5px;">TAKE A LOOK</p>
+                <p class="" style="margin-bottom: 5px; text-transform: uppercase;">Take a Look</p>
 
-                <h2 class="color5-color" style="margin-top: 0px;">Glimpse</h2>
+                <h2 style="color: #fff; margin-top: 0px;">Glimpse</h2>
                 <div class="row bg-editor-hr-wrap">
                     <div class="col-md-12 col-xs-12 col-sm-12">
                         <div>
@@ -184,17 +184,10 @@
     </div>
 </div>
 <div class="boldgrid-section">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 col-xs-12 col-sm-12"></div>
-        </div>
-    </div>
-</div>
-<div class="boldgrid-section">
     <div class="container">
         <div class="row" style="padding-top: 60px; padding-bottom: 0px;">
             <div class="col-md-5 col-sm-4 col-xs-12">
-                <p class="color1-color" style="margin-bottom: 5px;">PICK YOUR PLAN</p>
+                <p class="color1-color" style="text-transform: uppercase; margin-bottom: 5px;">Pick Your Plan</p>
 
                 <h2 class="" style="margin-top: 0px;">Pricing Table</h2>
                 <div class="row bg-editor-hr-wrap">

@@ -149,28 +149,28 @@
         </div>
         <div class="row" style="padding-bottom: 100px;">
             <div class="col-md-3 col-xs-12 col-sm-6">
-                <div class="text-center bg-box bg-box-square bg-box-cover color-5-text-contrast color5-background-color" style="padding: 0.5em 0.5em 1em; margin: 0px -13px;">
+                <div class="text-center bg-box bg-box-square bg-box-cover color-3-text-contrast color3-background-color" style="padding: 0.5em 0.5em 1em; margin: 0px -13px;">
                     <p class=""><img src="<?php $image_path( 'about/about5.png' ) ?>"></p>
                     <h4>Nathan Counsel</h4>
                     <p class="color1-color">Chief Executive Officer</p>
                 </div>
             </div>
             <div class="col-md-3 col-xs-12 col-sm-6">
-                <div class="text-center bg-box bg-box-square bg-box-cover color-5-text-contrast color5-background-color" style="padding: 0.5em 0.5em 1em; margin: 0px -13px;">
+                <div class="text-center bg-box bg-box-square bg-box-cover color-3-text-contrast color3-background-color" style="padding: 0.5em 0.5em 1em; margin: 0px -13px;">
                     <p class=""><img src="<?php $image_path( 'about/about6.png' ) ?>"></p>
                     <h4>Morten Iverson</h4>
                     <p class="color1-color">Chief Financial Officer</p>
                 </div>
             </div>
             <div class="col-md-3 col-xs-12 col-sm-6">
-                <div class="text-center bg-box bg-box-square bg-box-cover color-5-text-contrast color5-background-color" style="padding: 0.5em 0.5em 1em; margin: 0px -13px;">
+                <div class="text-center bg-box bg-box-square bg-box-cover color-3-text-contrast color3-background-color" style="padding: 0.5em 0.5em 1em; margin: 0px -13px;">
                     <p class=""><img src="<?php $image_path( 'about/about7.png' ) ?>"></p>
                     <h4>Julie Grave</h4>
                     <p class="color1-color">Information Technology Officer</p>
                 </div>
             </div>
             <div class="col-md-3 col-xs-12 col-sm-6">
-                <div class="text-center bg-box bg-box-square bg-box-cover color-5-text-contrast color5-background-color" style="padding: 0.5em 0.5em 1em; margin: 0px -13px;">
+                <div class="text-center bg-box bg-box-square bg-box-cover color-3-text-contrast color3-background-color" style="padding: 0.5em 0.5em 1em; margin: 0px -13px;">
                     <p class=""><img src="<?php $image_path( 'about/about8.png' ) ?>"></p>
                     <h4>Hans Paulsen</h4>
                     <p class="color1-color">Operations Director</p>
