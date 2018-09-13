@@ -147,6 +147,25 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			),
 		);
 
+		$config['starter-content']['plugins'] = array(
+			array(
+				'name'      => 'BoldGrid Post and Page Builder',
+				'slug'      => 'post-and-page-builder',
+				'required'  => true,
+			),
+			array(
+				'name'      => 'WPForms',
+				'slug'      => 'wpforms-lite',
+				'required'  => true,
+			),
+		);
+
+		// Post activate actions.
+		$config['starter-content']['plugins_post_activate'] = array(
+			// Prevent the "exit" and redirect to "WPForms Welcome Page" after activation.
+			'delete_transient' => 'wpforms_activation_redirect',
+		);
+
 		// Specify the core-defined pages to create and add custom thumbnails to some of them.
 		$config['starter-content']['posts'] = array(
 			'homepage' => array(
