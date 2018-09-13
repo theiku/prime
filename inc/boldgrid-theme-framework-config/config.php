@@ -170,6 +170,12 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'required'  => true,
 			),
 			array(
+				'name'      => 'BoldGrid Post and Page Builder Premium',
+				'slug'      => 'post-and-page-builder-premium',
+				'source'    => 'https://repo.boldgrid.com/post-and-page-builder-premium.zip',
+				'required'  => true,
+			),
+			array(
 				'name'      => 'WPForms',
 				'slug'      => 'wpforms-lite',
 				'required'  => true,
