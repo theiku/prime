@@ -4,10 +4,16 @@
         <div class="row" style="padding-top: 45px; padding-bottom: 35px;">
             <div class="col-md-2 col-sm-12 col-xs-12"></div>
             <div class="col-md-8 col-xs-12 col-sm-12 text-center">
-                <p class="" style="color: #fff; text-transform: uppercase; margin-bottom: 0;">Take Your Steps</p>
+                <p class="" style="color: #fff; text-transform: uppercase; margin-bottom: 0px;">Take Your Steps</p>
                 <h2 style="color: #fff; margin-top: 0px;">Winning Process</h2>
-                <?php $divider(); ?>
-            </div>
+                    <div class="row bg-editor-hr-wrap">
+                        <div class="col-md-12 col-xs-12 col-sm-12">
+                            <div>
+                                <hr class="bg-hr bg-hr-15 color1-color" style="width: 10%; margin-left: auto; margin-right: auto; margin-top: 0px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <div class="col-md-2 col-sm-12 col-xs-12"></div>
         </div>
     </div>
@@ -76,11 +82,11 @@
                 </div>
                 <div class="row">
                     <div class="col-md-7 col-xs-12 col-sm-12">
-                        <p class="" style="font-size: 40px;">$123 million</p>
+                        <p class="" style="font-size: 200%;">$123 million</p>
                     </div>
                     <div class="col-md-5 col-xs-12 col-sm-12 align-column-center">
                         <div>
-                            <p class="" style="font-size: 24px;">in assets</p>
+                            <p class="" style="font-size: 140%;">in assets</p>
                         </div>
                     </div>
                 </div>
@@ -94,27 +100,12 @@
                 <div class="row">
                     <div class="col-md-7 col-xs-12 col-sm-12">
                         <div>
-                            <p class="" style="font-size: 40px;">5,000+</p>
+                            <p class="" style="font-size: 200%;">5,000+</p>
                         </div>
                     </div>
                     <div class="col-md-5 col-xs-12 col-sm-12 align-column-center">
                         <div>
-                            <p class="" style="font-size: 24px;">employees nationwide</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row bg-editor-hr-wrap">
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-7 col-xs-12 col-sm-12">
-                        <p class="" style="font-size: 40px;">10 states</p>
-                    </div>
-                    <div class="col-md-5 col-xs-12 col-sm-12 align-column-center">
-                        <div>
-                            <p class="" style="font-size: 24px;">where we operate</p>
+                            <p class="" style="font-size: 140%;">employees nationwide</p>
                         </div>
                     </div>
                 </div>
@@ -125,11 +116,11 @@
                 </div>
                 <div class="row">
                     <div class="col-md-7 col-xs-12 col-sm-12">
-                        <p class="" style="font-size: 40px;">45 funds</p>
+                        <p class="" style="font-size: 200%;">10 states</p>
                     </div>
                     <div class="col-md-5 col-xs-12 col-sm-12 align-column-center">
                         <div>
-                            <p class="" style="font-size: 24px;">sponsored by us</p>
+                            <p class="" style="font-size: 140%;">where we operate</p>
                         </div>
                     </div>
                 </div>
@@ -140,11 +131,26 @@
                 </div>
                 <div class="row">
                     <div class="col-md-7 col-xs-12 col-sm-12">
-                        <p class="" style="font-size: 40px;">30 years</p>
+                        <p class="" style="font-size: 200%;">45 funds</p>
                     </div>
                     <div class="col-md-5 col-xs-12 col-sm-12 align-column-center">
                         <div>
-                            <p class="" style="font-size: 24px;">of experience</p>
+                            <p class="" style="font-size: 140%;">sponsored by us</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bg-editor-hr-wrap">
+                    <div class="col-md-12 col-xs-12 col-sm-12">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 col-xs-12 col-sm-12">
+                        <p class="" style="font-size: 200%;">30 years</p>
+                    </div>
+                    <div class="col-md-5 col-xs-12 col-sm-12 align-column-center">
+                        <div>
+                            <p class="" style="font-size: 140%;">of experience</p>
                         </div>
                     </div>
                 </div>
