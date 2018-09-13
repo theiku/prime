@@ -32,3 +32,14 @@
 		</div>
 	</div>
 </div>
+<div class="boldgrid-section color5-background-color color-5-text-contrast bg-background-color">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-sm-12">
+				<div class="bg-box-cover bg-box-flush bg-box">
+					<p class="boldgrid-google-maps" style="margin: 0;"><iframe style="width: 100%;" src="https://maps.google.com/maps?q=New+York%2C+NY&amp;t=m&amp;z=16&amp;output=embed" width="2000" height="450" frameborder="0"><span style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" data-mce-type="bookmark" class="mce_SELRES_start">﻿</span></iframe></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
