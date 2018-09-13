@@ -25,12 +25,28 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			[
 				'media' => [ 'base' ],
 				'unit' => 'px',
-				'isLinked' => true,
+				'isLinked' => false,
 				'values' => [
 					'bottom' => 20,
 				],
 			],
 		];
+
+		$config['customizer']['controls']['bgtfw_header_border']['default'] = [
+			[
+				'media' => [ 'base' ],
+				'unit' => 'px',
+				'isLinked' => false,
+				'type' => 'solid',
+				'values' => [
+					'top' => 0,
+					'left' => 0,
+					'right' => 0,
+					'bottom' => 5
+				],
+			],
+		];
+		$config['customizer']['controls']['bgtfw_header_border_color']['default'] = 'color-3';
 
 		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_main']['default'] = 'color-1';
 		$config['customizer']['controls']['bgtfw_menu_items_link_color_main']['default'] = 'color-2';
@@ -76,53 +92,53 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'colors' => array(
 					'#f95b26',
 					'#212121',
-					'#a8a9ad',
+					'#eaebed',
 					'#f6f6f6',
 					'#1a1a1a',
 				),
 			),
 			array(
 				'format' => 'palette-primary',
-				'neutral-color' => '#ffffff',
+				'neutral-color' => '#ededed',
+				'colors' => array(
+					'#ff2626',
+					'#515151',
+					'#ffffff',
+					'#e2e2e2',
+					'#515151',
+				),
+			),
+			array(
+				'format' => 'palette-primary',
+				'neutral-color' => '#f3fafe',
 				'colors' => array(
 					'#4392f1',
-					'#1a1a1a',
-					'#e8e9eb',
-					'#ff5e5b',
-					'#1a1a1a',
-				),
-			),
-			array(
-				'format' => 'palette-primary',
-				'neutral-color' => '#6b6570',
-				'colors' => array(
-					'#b7f0ad',
+					'#342e37',
+					'#f1f0f0',
 					'#ffffff',
-					'#4a314d',
-					'#f0add9',
-					'#8c8c8c',
+					'#342e37',
 				),
 			),
 			array(
 				'format' => 'palette-primary',
-				'neutral-color' => '#333333',
+				'neutral-color' => '#f7e2da',
 				'colors' => array(
-					'#e1d89f',
+					'#f15152',
+					'#3a2e39',
 					'#ffffff',
-					'#494949',
-					'#f07e13',
-					'#5e605d',
+					'#f7f4ea',
+					'#3a2e39',
 				),
 			),
 			array(
 				'format' => 'palette-primary',
-				'neutral-color' => '#f1faee',
+				'neutral-color' => '#ffffff',
 				'colors' => array(
-					'#e3170a',
-					'#1a1a1a',
-					'#e3e4db',
-					'#01baef',
-					'#1a1a1a',
+					'#17a398',
+					'#33312e',
+					'#e1ebed',
+					'#f6f7f7',
+					'#33312e',
 				),
 			),
 		);
@@ -145,6 +161,31 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'post_title' => _x( 'WordCamp 101', 'Theme starter content', 'boldgrid-prime' ),
 				'file' => 'images/wordcamp-101.png',
 			),
+		);
+
+		$config['starter-content']['plugins'] = array(
+			array(
+				'name'      => 'BoldGrid Post and Page Builder',
+				'slug'      => 'post-and-page-builder',
+				'required'  => true,
+			),
+			array(
+				'name'      => 'BoldGrid Post and Page Builder Premium',
+				'slug'      => 'post-and-page-builder-premium',
+				'source'    => 'https://repo.boldgrid.com/post-and-page-builder-premium.zip',
+				'required'  => true,
+			),
+			array(
+				'name'      => 'WPForms',
+				'slug'      => 'wpforms-lite',
+				'required'  => true,
+			),
+		);
+
+		// Post activate actions.
+		$config['starter-content']['plugins_post_activate'] = array(
+			// Prevent the "exit" and redirect to "WPForms Welcome Page" after activation.
+			'delete_transient' => 'wpforms_activation_redirect',
 		);
 
 		// Specify the core-defined pages to create and add custom thumbnails to some of them.
@@ -241,8 +282,8 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Default header is a fixed header.
 		$config['customizer']['controls']['bgtfw_fixed_header']['default'] = true;
 
-		// Default header layout will be layout-3.
-		$config['customizer']['controls']['bgtfw_header_top_layouts']['default'] = 'layout-1';
+		// Default header layout will be layout-4.
+		$config['customizer']['controls']['bgtfw_header_top_layouts']['default'] = 'layout-4';
 
 		// Default header will be in container.
 		$config['customizer']['controls']['header_container']['default'] = 'container';
@@ -343,22 +384,22 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Site's title typography defaults.
 		$config['customizer']['controls']['bgtfw_site_title_typography']['default'] = array(
-			'font-family' => 'Lato',
-			'font-size' => '42px',
-			'text-transform' => 'uppercase',
+			'font-family' => 'Playfair Display',
+			'font-size' => '38px',
+			'text-transform' => 'capitalize',
 			'line-height' => '1.1',
-			'text-align' => 'left',
+			'text-align' => 'center',
 			'variant' => 'regular'
 		);
 
 		// Site's tagline typography defaults.
 		$config['customizer']['controls']['bgtfw_tagline_typography']['default'] = array(
 			'font-family' => 'Lato',
-			'font-size' => '30px',
-			'text-transform' => 'uppercase',
+			'font-size' => '20px',
+			'text-transform' => 'lowercase',
 			'line-height' => '1.1',
-			'text-align' => 'left',
-			'variant' => '100'
+			'text-align' => 'center',
+			'variant' => '300italic'
 		);
 
 		// Site's body typography defaults.
@@ -367,7 +408,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'font-size' => '17px',
 			'line-height' => '1.4',
 			'text-transform' => 'none',
-			'variant' => '300'
+			'variant' => 'regular'
 		);
 
 		// Site's headings typography defaults.
@@ -380,7 +421,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		);
 
 
-		$config['customizer']['controls']['bgtfw_headings_font_size']['default'] = '21';
+		$config['customizer']['controls']['bgtfw_headings_font_size']['default'] = '18';
 		$config['customizer']['controls']['bgtfw_headings_typography']['default'] = array(
 			'font-family' => 'Playfair Display',
 			'line-height' => '1.5',
@@ -450,6 +491,8 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 }
 
 function bgtfw_get_contents( $filePath ) {
+	include get_template_directory() . '/starter-content/corporate/utility.php';
+
 	ob_start();
 	include get_template_directory() . '/starter-content/' . $filePath;
 	$content = ob_get_contents();
