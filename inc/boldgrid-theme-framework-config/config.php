@@ -83,46 +83,24 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			),
 			array(
 				'format' => 'palette-primary',
-				'neutral-color' => '#ffffff',
+				'neutral-color' => '#ededed',
+				'colors' => array(
+					'#ff2626',
+					'#515151',
+					'#ffffff',
+					'#e2e2e2',
+					'#515151',
+				),
+			),
+			array(
+				'format' => 'palette-primary',
+				'neutral-color' => '#f3fafe',
 				'colors' => array(
 					'#4392f1',
-					'#1a1a1a',
-					'#e8e9eb',
-					'#ff5e5b',
-					'#1a1a1a',
-				),
-			),
-			array(
-				'format' => 'palette-primary',
-				'neutral-color' => '#6b6570',
-				'colors' => array(
-					'#b7f0ad',
+					'#342e37',
+					'#f1f0f0',
 					'#ffffff',
-					'#4a314d',
-					'#f0add9',
-					'#8c8c8c',
-				),
-			),
-			array(
-				'format' => 'palette-primary',
-				'neutral-color' => '#333333',
-				'colors' => array(
-					'#e1d89f',
-					'#ffffff',
-					'#494949',
-					'#f07e13',
-					'#5e605d',
-				),
-			),
-			array(
-				'format' => 'palette-primary',
-				'neutral-color' => '#f1faee',
-				'colors' => array(
-					'#e3170a',
-					'#1a1a1a',
-					'#e3e4db',
-					'#01baef',
-					'#1a1a1a',
+					'#342e37',
 				),
 			),
 		);
