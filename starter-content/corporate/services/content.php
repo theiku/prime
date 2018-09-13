@@ -1,4 +1,3 @@
-<!-- Nicole Markup -->
 <div class="boldgrid-section" style="background-image: linear-gradient(to left, rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0.5)), url('<?php $image_path( 'services/services1.png' ) ?>'); background-size: cover; background-position: 50% 50%;" data-bg-overlaycolor="rgba(33,33,33,0.5)">
     <div class="container">
         <div class="row" style="padding-top: 45px; padding-bottom: 35px;">
