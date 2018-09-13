@@ -10,7 +10,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if ( is_home() || is_archive() ) : ?>
-		<?php get_template_part( 'templates/entry-header', get_theme_mod( 'bgtfw_blog_post_header_feat_image_position' ) ); ?>
+		<?php get_template_part( 'templates/post-list-header', get_theme_mod( 'bgtfw_blog_post_header_feat_image_position' ) ); ?>
 	<?php else : ?>
 		<?php get_template_part( 'templates/entry-header', get_post_type() ); ?>
 	<?php endif; ?>

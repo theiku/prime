@@ -253,11 +253,23 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Default footer layout will be layout-7.
 		$config['customizer']['controls']['bgtfw_footer_layouts']['default'] = 'layout-7';
 
+		// Set the page title position.
+		$config['customizer']['controls']['bgtfw_global_title_position']['default'] = 'above';
+
+		// Display page title background in full width container.
+		$config['customizer']['controls']['bgtfw_global_title_background_container']['default'] = 'full-width';
+
+		// Display the page title content inside of a container.
+		$config['customizer']['controls']['bgtfw_global_title_content_container']['default'] = 'container';
+
 		// Show blog and archives in a 1 column layout.
 		$config['customizer']['controls']['bgtfw_pages_blog_blog_page_layout_columns']['default'] = '1';
 
-		// Set the blog/archive pages sidebar display.
+		// Set the blog/archive pages sidebar display (Homepage > Displays Latest Posts).
 		$config['customizer']['controls']['bgtfw_blog_blog_page_sidebar']['default'] = 'right-sidebar';
+
+		// Set the blog/archive pages sidebar display (Design > Blog > Blog Page > Sidebar).
+		$config['customizer']['controls']['bgtfw_blog_blog_page_sidebar2']['default'] = 'right-sidebar';
 
 		// Set the primary sidebar background color.
 		$config['customizer']['controls']['sidebar_meta']['primary-sidebar']['background_color'] = 'color-neutral';

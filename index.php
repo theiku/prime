@@ -20,8 +20,25 @@ if ( ! is_front_page() && is_home() ) {
 	get_template_part( 'templates/page-header', 'blog' );
 }
 
-while ( have_posts() ) : the_post();
-	get_template_part( 'templates/content', get_post_type() !== 'post' ? get_post_type() : get_post_format() );
-endwhile;
+if ( ( is_home() || is_archive() ) && 'above' === get_theme_mod( 'bgtfw_global_title_position' ) ) {
+	echo '<div class="article-wrapper">';
+
+	while ( have_posts() ) : the_post();
+		get_template_part( 'templates/content', get_post_type() !== 'post' ? get_post_type() : get_post_format() );
+	endwhile;
+
+	echo '</div>';
+
+	if ( BoldGrid::display_sidebar() ) {
+		include BoldGrid::boldgrid_sidebar_path();
+	}
+} else {
+	while ( have_posts() ) : the_post();
+		get_template_part( 'templates/content', get_post_type() !== 'post' ? get_post_type() : get_post_format() );
+	endwhile;
+}
+
+
+
 
 boldgrid_paging_nav();

@@ -11,18 +11,23 @@
 <?php while ( have_posts() ) : the_post(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php do_action( 'before_entry_title' ); ?>
-		<?php get_template_part( 'templates/entry-header', get_post_type() !== 'post' ? get_post_type() : get_post_format() ); ?>
+		<?php get_template_part( 'templates/entry-header', get_post_type() !== 'post' ? 'single' . get_post_type() : 'single' . get_post_format() ); ?>
 		<?php do_action( 'after_entry_title' ); ?>
-		<div class="entry-content">
-			<?php the_content(); ?>
-			<?php wp_link_pages( array( 'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'bgtfw' ), 'after' => '</p></nav>' ) ); ?>
-		</div><!-- .entry-content -->
-		<footer class="entry-footer">
-			<?php boldgrid_entry_footer(); ?>
-		</footer><!-- .entry-footer -->
-		<?php boldgrid_post_nav(); ?>
-		<?php if ( comments_open() || get_comments_number() ) : ?>
-			<?php comments_template( '/templates/comments.php' ); ?>
+		<div class ="article-wrapper">
+			<div class="entry-content">
+				<?php the_content(); ?>
+				<?php wp_link_pages( array( 'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'bgtfw' ), 'after' => '</p></nav>' ) ); ?>
+			</div><!-- .entry-content -->
+			<footer class="entry-footer">
+				<?php boldgrid_entry_footer(); ?>
+			</footer><!-- .entry-footer -->
+			<?php boldgrid_post_nav(); ?>
+			<?php if ( comments_open() || get_comments_number() ) : ?>
+				<?php comments_template( '/templates/comments.php' ); ?>
+			<?php endif; ?>
+		</div>
+		<?php if ( BoldGrid::display_sidebar() && 'above' === get_theme_mod( 'bgtfw_global_title_position' ) ) : ?>
+			<?php include BoldGrid::boldgrid_sidebar_path(); ?>
 		<?php endif; ?>
 	</article><!-- #post-## -->
 <?php endwhile; ?>
