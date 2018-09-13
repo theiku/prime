@@ -25,12 +25,28 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			[
 				'media' => [ 'base' ],
 				'unit' => 'px',
-				'isLinked' => true,
+				'isLinked' => false,
 				'values' => [
 					'bottom' => 20,
 				],
 			],
 		];
+
+		$config['customizer']['controls']['bgtfw_header_border']['default'] = [
+			[
+				'media' => [ 'base' ],
+				'unit' => 'px',
+				'isLinked' => false,
+				'type' => 'solid',
+				'values' => [
+					'top' => 0,
+					'left' => 0,
+					'right' => 0,
+					'bottom' => 5
+				],
+			],
+		];
+		$config['customizer']['controls']['bgtfw_header_border_color']['default'] = 'color-3';
 
 		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_main']['default'] = 'color-1';
 		$config['customizer']['controls']['bgtfw_menu_items_link_color_main']['default'] = 'color-2';
@@ -260,8 +276,8 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Default header is a fixed header.
 		$config['customizer']['controls']['bgtfw_fixed_header']['default'] = true;
 
-		// Default header layout will be layout-3.
-		$config['customizer']['controls']['bgtfw_header_top_layouts']['default'] = 'layout-1';
+		// Default header layout will be layout-4.
+		$config['customizer']['controls']['bgtfw_header_top_layouts']['default'] = 'layout-4';
 
 		// Default header will be in container.
 		$config['customizer']['controls']['header_container']['default'] = 'container';
@@ -351,7 +367,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Site's title typography defaults.
 		$config['customizer']['controls']['bgtfw_site_title_typography']['default'] = array(
 			'font-family' => 'Lato',
-			'font-size' => '42px',
+			'font-size' => '32px',
 			'text-transform' => 'uppercase',
 			'line-height' => '1.1',
 			'text-align' => 'left',
@@ -365,7 +381,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'text-transform' => 'uppercase',
 			'line-height' => '1.1',
 			'text-align' => 'left',
-			'variant' => '100'
+			'variant' => 'regular'
 		);
 
 		// Site's body typography defaults.
@@ -374,7 +390,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'font-size' => '17px',
 			'line-height' => '1.4',
 			'text-transform' => 'none',
-			'variant' => '300'
+			'variant' => 'regular'
 		);
 
 		// Site's headings typography defaults.
