@@ -528,6 +528,7 @@ function bgtfw_get_contents( $filePath ) {
 	include get_template_directory() . '/starter-content/' . $filePath;
 	$content = ob_get_contents();
 	ob_end_clean();
+	$content = str_replace( array( "\n", "\t" ), '', $content );
 
 	return $content;
 }
