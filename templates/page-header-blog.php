@@ -1,4 +1,4 @@
-<div <?php BoldGrid::add_class( 'page_header_wrapper', [ 'page-header-wrapper' ] ); ?>>
+<div <?php BoldGrid::add_class( 'page_header_wrapper', [ 'page-header-wrapper', get_theme_mod( 'bgtfw_global_title_background_container' ) ] ); ?>>
 	<header <?php BoldGrid::add_class( 'blog_page_title', [ 'page-header', has_post_thumbnail( get_option( 'page_for_posts', true ) ) ? 'has-featured-image-header' : '' ] ) ?> <?php bgtfw_featured_img_bg( get_option( 'page_for_posts', true ), true ); ?>>
 		<div <?php BoldGrid::add_class( 'featured_image', [ 'featured-imgage-header', get_theme_mod( 'bgtfw_global_title_content_container' ) ] ); ?>>
 			<?php
