@@ -145,21 +145,33 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Create the custom image attachments used as post thumbnails for pages.
 		$config['starter-content']['attachments'] = array(
-			'image-blogging-101' => array(
+
+			// Pages.
+			'contact-featured' => array(
+				'post_title' => _x( 'Contact', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/contact/featured.jpg',
+			),
+			'about-featured' => array(
+				'post_title' => _x( 'About Us', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/about/featured.jpg',
+			),
+
+			// Blog Posts.
+			'blogging-101' => array(
 				'post_title' => _x( 'Blogging 101', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'images/blogging-101.png',
+				'file' => 'starter-content/corporate/blog/blogging-101.png',
 			),
-			'image-basic-taxonomies' => array(
+			'basic-taxonomies' => array(
 				'post_title' => _x( 'Basic Taxonomies', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'images/basic-taxonomies.png',
+				'file' => 'starter-content/corporate/blog/basic-taxonomies.png',
 			),
-			'image-tips-better-writing' => array(
+			'writing-tips' => array(
 				'post_title' => _x( 'Tips Better Writing', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'images/tips-better-writing.png',
+				'file' => 'starter-content/corporate/blog/writing-tips.png',
 			),
-			'image-wordcamp-101' => array(
+			'wordcamp-101' => array(
 				'post_title' => _x( 'WordCamp 101', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'images/wordcamp-101.png',
+				'file' => 'starter-content/corporate/blog/wordcamp-101.png',
 			),
 		);
 
@@ -194,6 +206,8 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Specify the core-defined pages to create and add custom thumbnails to some of them.
 		$config['starter-content']['posts'] = array(
+
+			// Pages.
 			'homepage' => array(
 				'post_type' => 'page',
 				'post_title' => 'Home',
@@ -205,6 +219,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'about' => array(
 				'post_type' => 'page',
 				'post_title' => 'About Us',
+				'thumbnail' => '{{about-featured}}',
 				'post_content' => bgtfw_get_contents( '/corporate/about/content.php' ),
 			),
 			'menu' => array(
@@ -215,34 +230,34 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'contact' => array(
 				'post_type' => 'page',
 				'post_title' => 'Contact Us',
+				'thumbnail' => '{{contact-featured}}',
 				'post_content' => bgtfw_get_contents( '/corporate/contact/content.php' ),
 			),
+
+			// Posts.
 			'bloging-101' => array(
 				'post_type' => 'post',
 				'post_title' => 'Blogging 101',
-				'thumbnail' => '{{image-blogging-101}}',
-				'post_content' => '',
+				'thumbnail' => '{{blogging-101}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/blogging-101.php' ),
 			),
 			'basic-taxonomies' => array(
 				'post_type' => 'post',
 				'post_title' => 'Basic Taxonomies',
-				'thumbnail' => '{{image-basic-taxonomies}}',
-				'post_content' => '<div class="boldgrid-section"><div class="container"><div class="row">
-					<div class="col-md-12 col-xs-12 col-sm-12"><h3>Categories and Tags</h3><p class="">If you write about a variety of subjects, categories can help your readers find the posts that are most relevant to them. For instance, if you run a consulting business, you may want some of your posts to reflect work you\'ve done with previous clients, while having other posts act as informational resources. In this particular case, you can set up 2 categories: one labeled <em><strong>Projects</strong></em> and another labeled <em><strong>Resources</strong></em>. You\'d then place your posts in their respective categories.</p><!--more Read more &gt; --><p class="">Categories are accessible from the post editor. There you can create new categories and assign them to your posts.</p><p class="">Tags, on the other hand, allow you to label your posts with relevant topics. For instance, within one of your resource posts you may choose to write about a set of project management tools. While you can certainly create a new category called "Project Management Tools," you may not plan to write about the topic often enough to justify giving it a dedicated category. Instead, you may want to tag your post with several topics that exists within the post; e.g. <em><strong>project management tools, communication, time tracking</strong></em>, etc.</p><p class="">What\'s great about tags is that they are searchable and provide your users another way to find content on your site. Anyone searching for "project management tools" will be able to locate any posts you\'ve tagged with those words!</p></div></div></div></div>',
+				'thumbnail' => '{{basic-taxonomies}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/basic-taxonomies.php' ),
 			),
 			'tips-for-writing' => array(
 				'post_type' => 'post',
 				'post_title' => 'Tips For Better Writing',
-				'thumbnail' => '{{image-tips-better-writing}}',
-				'post_content' => '<div class="boldgrid-section"><div class="container"><div class="row">
-					<div class="col-md-12 col-xs-12 col-sm-12"><h3>Plan Your Content</h3><p class="">If you\'re considering adding a blog to your site, you\'ll want to have a plan beforehand. Planning your blog will help your subject matter remain consistent over time. It\'ll also help you determine whether or not there\'s enough material to maintain a steady stream of posts.</p><p class="">One pitfall many new bloggers run into is starting a blog that isn\'t posted to frequently enough. A shortage of recent posts can give your visitors a bad impression of your business. One may think "I wonder if they’re still in business" or "they may want to hire a writer."</p><p class="">A blog, like any other customer facing aspect of your business, communicates your brand. If it isn\'t maintained and given proper attention, people will notice. Post regularly and keep your content fresh. Give your audience a reason to visit often.</p><p class=""><!--more Read more &gt; --></p><h3>Find Your Audience</h3><p class="">While on the topic of audiences, you\'ll likely want to identify yours early on. If your blog is going to be set up to compliment a business, your target audience will likely be the same as your consumer base; you\'re then writing for the same people that buy your product. You\'ll want to allow any marketing material you\'ve used inform the style and tone of your writing. Think of your blog as an extension of your company\'s brand. If, on the other hand, your business is completely new or you don\'t happen to be selling anything in particular, this is the time to start thinking about your brand.</p></div></div></div></div>',
+				'thumbnail' => '{{writing-tips}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/writing-tips.php' ),
 			),
 			'wordcamp-101' => array(
 				'post_type' => 'post',
 				'post_title' => 'WordCamp 101',
-				'thumbnail' => '{{image-wordcamp-101}}',
-				'post_content' => '<div class="boldgrid-section"><div class="container"><div class="row">
-					<div class="col-md-12 col-xs-12 col-sm-12"><p class="">What is WordCamp? It’s a place for WordPress enthusiasts to meet, greet, and speak about everything WordPress. Many in attendance play a much more active role in the WordPress community, guiding and assisting WordPress users all around the world through community-based Support Forums, and documentation from contributors on everything from installing WordPress to creating plugins.</p><h3>The WordPress Community</h3><p class="">At any given time, an announcement seeking speaker applications as well as organizing teams to attend WordCamp goes out to WordPress enthusiasts in North America, similar announcements can be seen in Africa, and Europe. As community members from around the world prepare for attendance, it’s at this time you may be wondering “What can you expect from attending a WordCamp?”.</p><p class="">It’s about everything WordPress. From developers and designers to first-time bloggers, WordCamp is a place to meet, collaborate, and discuss everything WordPress. The focus of the event is on using and developing for WordPress and all are welcome. First organized by Matt Mullenweg in 2006, and held in San Francisco, events continue to grow in attendance with local WordPress communities organizing over 796 WordCamp events in 65 countries spread across 6 continents. What stands out as astonishing is how the event organizers, speakers, and attendees are all volunteers from local WordPress communities. It is these local communities that together make the WordPress community as a whole, and that is the highlight of this post.</p><p class="">Visit the WordPress Support Forums and join in the community discussion here <a href="https://wordpress.org/support/" target="_blank" rel="noopener">https://wordpress.org/support/</a></p></div></div></div></div>',
+				'thumbnail' => '{{wordcamp-101}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/wordcamp-101.php' ),
 			),
 			'blog' => array(
 				'post_type' => 'page',

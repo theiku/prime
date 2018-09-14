@@ -1,6 +1,6 @@
 <div class="boldgrid-section">
 	<div class="container">
-		<div class="row" style="padding-bottom: 100px; padding-top: 100px;">
+		<div class="row row-spacing-sm">
 			<div class="col-md-6 col-sm-6 col-xs-12">
 				<p class=" color1-color" style="margin-bottom: 5px; text-transform: uppercase;">Free Consultation</p>
 				<h2 style="margin-top: 0;">Get a Quote</h2>
@@ -23,7 +23,7 @@
 							<p class=""><a href="#">support@example.com</a></p>
 							<p class="color1-color" style="margin-top: 35px; font-weight: 400; margin-bottom: 5px;" data-font-weight="400">Phone:</p>
 							<p class="">+1 456 152 4652</p>
-							<p class="" style="margin-top: 50px;"><i class="fa bg-inserted-icon fa-facebook-square color1-color" style="font-size: 22px; margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i><i class="fa bg-inserted-icon fa-twitter-square color1-color" style="font-size: 22px; margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i><i class="fa bg-inserted-icon fa-google-plus-square color1-color" style="font-size: 22px; margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i><i class="fa bg-inserted-icon fa-linkedin-square color1-color" style="font-size: 22px; margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i><i class="fa bg-inserted-icon fa-youtube-square color1-color" style="font-size: 22px; margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i></p>
+							<p class="" style="margin-top: 50px; "><i class="fa bg-inserted-icon fa-facebook-square color1-color" style="font-size: 22px; margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i><i class="fa bg-inserted-icon fa-twitter-square color1-color" style="font-size: 22px; margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i><i class="fa bg-inserted-icon fa-google-plus-square color1-color" style="font-size: 22px; margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i><i class="fa bg-inserted-icon fa-linkedin-square color1-color" style="font-size: 22px; margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i><i class="fa bg-inserted-icon fa-youtube-square color1-color" style="font-size: 22px; margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i></p>
 						</div>
 					</div>
 				</div>
@@ -37,7 +37,7 @@
 		<div class="row">
 			<div class="col-md-12 col-xs-12 col-sm-12">
 				<div class="bg-box-cover bg-box-flush bg-box">
-					<p class="boldgrid-google-maps" style="margin: 0;"><iframe style="width: 100%;" src="https://maps.google.com/maps?q=New+York%2C+NY&amp;t=m&amp;z=16&amp;output=embed" width="2000" height="450" frameborder="0"><span style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" data-mce-type="bookmark" class="mce_SELRES_start">﻿</span></iframe></p>
+					<p class="boldgrid-google-maps" style="margin: 0;"><iframe style="width: 100%; filter: grayscale(100%);" src="https://maps.google.com/maps?q=New+York%2C+NY&amp;t=m&amp;z=16&amp;output=embed" width="2000" height="450" frameborder="0"><span style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" data-mce-type="bookmark" class="mce_SELRES_start">﻿</span></iframe></p>
 				</div>
 			</div>
 		</div>
