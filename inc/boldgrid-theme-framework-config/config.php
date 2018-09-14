@@ -522,15 +522,17 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 }
 
 function bgtfw_get_contents( $filePath ) {
-	include get_template_directory() . '/starter-content/corporate/utility.php';
+	return function () use ( $filePath ) {
+		include get_template_directory() . '/starter-content/corporate/utility.php';
 
-	ob_start();
-	include get_template_directory() . '/starter-content/' . $filePath;
-	$content = ob_get_contents();
-	ob_end_clean();
-	$content = str_replace( array( "\n", "\t" ), '', $content );
+		ob_start();
+		include get_template_directory() . '/starter-content/' . $filePath;
+		$content = ob_get_contents();
+		ob_end_clean();
+		$content = str_replace( array( "\n", "\t" ), '', $content );
 
-	return $content;
+		return $content;
+	};
 }
 
 add_filter( 'boldgrid_theme_framework_config', 'boldgrid_prime_framework_config' );
