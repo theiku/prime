@@ -174,48 +174,90 @@
         </div>
     </div>
 </div>
-<div class="boldgrid-section">
+<div class="tmpl-pricing_tables-9 boldgrid-section dynamic-gridblock">
     <div class="container">
-        <div class="row" style="padding-top: 20px; padding-bottom: 80px;">
-            <div class="col-md-4 col-xs-12 col-sm-4 align-column-center">
-                <div class="bg-box-cover bg-background-color bg-box color-4-text-contrast color4-background-color" style="padding: 1em 2em; border-style: solid; border-width: 1px 0px 1px 1px;">
-                    <h3 class="color1-color" style="margin-bottom: 0px; text-align: center;">Entrepreneur</h3>
-                    <p class="" style="margin-bottom: 35px; text-align: center;">Driving audience segments</p>
-                    <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Aim to target low hanging fruit</p>
-                    <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Generating dark social</p>
-                    <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Remembering to build ROI</p>
-                    <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Inform below the fold</p>
-                    <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>A goal to increase viewability</p>
-                    <p class="h2 color-2-text-contrast color2-background-color" style="margin: 35px -32px 25px; text-align: center; padding: 0.5em;">$100</p>
-                    <p class="" style="text-align: center;"><a class="button-primary" style="margin: 10px 0px;" href="#">Purchase</a></p>
+        <div class="row" style="padding-top: 25px;padding-bottom: 100px;">
+            <div class="col-md-3 col-xs-12 col-sm-3 text-center align-column-center">
+                <div class="bg-box-flush bg-box-cover basic product-type color-neutral-background-color color-neutral-text-contrast bg-background-color bg-box" style="margin-top: 10px; margin-bottom: 10px;">
+                    <p class="product-name">STANDARD</p>
+                    <p class="price" style="background-color: rgba(0,0,0,.05);margin-top: 0;"> <span style="font-size: 1.5em; position: relative; top:-15px;" class="color2-color">$</span> <span style="font-size: 2.5em;" class="color2-color">39</span> <span style="margin-top: 0; font-size: .9em; font-style: italic; display: block;">Yearly</span> </p>
+                    <ul class="feature-list bg-list">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                        <li><i class="fa fa-remove" aria-hidden="true"><span style="display:none;">&nbsp;</span></i></li>
+                        <li><i class="fa fa-remove" aria-hidden="true"><span style="display:none;">&nbsp;</span></i></li>
+                        <li><i class="fa fa-remove" aria-hidden="true"><span style="display:none;">&nbsp;</span></i></li>
+                        <li>
+                            <div class="rating-icons-1"> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> </div>
+                        </li>
+                    </ul>
+                    <p style="background-color: rgba(0,0,0,.05);" class="action"> <a class="btn-color-3 btn btn-capitalize btn-pill btn-regular" href="#">Buy Now</a> </p>
+
                 </div>
+
             </div>
-            <div class="col-md-4 col-xs-12 col-sm-4 align-column-center">
-                <div class="bg-box-cover bg-background-color bg-box color-4-text-contrast color4-background-color" style="padding: 1em 2em; border-style: solid; border-width: 1px;">
-                    <h3 class="color1-color h2" style="margin-bottom: 0px; text-align: center;">Small Business</h3>
-                    <p class="" style="margin-bottom: 35px; text-align: center;">Driving audience segments</p>
-                    <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Aim to target low hanging fruit</p>
-                    <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Generating dark social</p>
-                    <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Remembering to build ROI</p>
-                    <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Inform below the fold</p>
-                    <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>A goal to increase viewability</p>
-                    <p class="h1 color-2-text-contrast color2-background-color" style="z-index: 1; position: relative; margin: 35px -32px 25px; text-align: center; padding: 0.7em; box-shadow: #cecece 0px 0px 8px 0px;">$200</p>
-                    <p class="" style="text-align: center;"><a class="button-primary" style="margin: 20px 0px;" href="#">Purchase</a></p>
+            <div class="col-md-3 col-xs-12 col-sm-3 text-center align-column-center">
+                <div class="bg-box-flush bg-box-cover basic product-type color-neutral-background-color color-neutral-text-contrast bg-background-color bg-box" style="margin-top: 10px; margin-bottom: 10px;">
+                    <p class="product-name">BUSINESS</p>
+                    <p class="price" style="background-color: rgba(0,0,0,.05);margin-top: 0;"> <span style="font-size: 1.5em; position: relative; top:-15px;" class="color2-color">$</span> <span style="font-size: 2.5em;" class="color2-color">59</span> <span style="margin-top: 0; font-size: .9em; font-style: italic; display: block;">Yearly</span> </p>
+                    <ul class="feature-list bg-list">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                        <li><i class="fa fa-check color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i></li>
+                        <li><i class="fa fa-remove" aria-hidden="true"><span style="display:none;">&nbsp;</span></i></li>
+                        <li><i class="fa fa-remove" aria-hidden="true"><span style="display:none;">&nbsp;</span></i></li>
+                        <li>
+                            <div class="rating-icons-1"> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> </div>
+                        </li>
+                    </ul>
+                    <p style="background-color: rgba(0,0,0,.05);" class="action"> <a class="btn-color-3 btn btn-capitalize btn-pill  btn-regular" href="#">Buy Now</a> </p>
+
                 </div>
+
             </div>
-            <div class="col-md-4 col-xs-12 col-sm-4 align-column-center">
-                <div class="bg-box-cover bg-background-color bg-box color-4-text-contrast color4-background-color" style="padding: 1em 2em; border-style: solid; border-width: 1px 1px 1px 0px;">
-                    <h3 class="color1-color" style="margin-bottom: 0px; text-align: center;">Corporate</h3>
-                    <p class="" style="margin-bottom: 35px; text-align: center;">Driving audience segments</p>
-                    <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Aim to target low hanging fruit</p>
-                    <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Generating dark social</p>
-                    <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Remembering to build ROI</p>
-                    <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Inform below the fold</p>
-                    <p class=""><i class="fa bg-inserted-icon fa-check-square-o" style="margin-right: 15px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>A goal to increase viewability</p>
-                    <p class="h2 color-2-text-contrast color2-background-color" style="margin-right: -32px; margin-left: -32px; text-align: center; padding: 0.5em;">$300</p>
-                    <p class="" style="text-align: center;"><a class="button-primary" style="margin: 10px 0px;" href="#">Purchase</a></p>
+            <div class="col-md-3 col-xs-12 col-sm-3 text-center align-column-center bg-box-border-thin color3-border-color" style="position:relative; z-index:1">
+                <div class="bg-box-flush bg-box-cover featured product-type color-neutral-background-color color-neutral-text-contrast bg-background-color bg-box" style="margin-bottom: 10px;">
+                    <p class="product-name">PREMIUM</p>
+                    <p class="price" style="background-color: rgba(0,0,0,.05);margin-top: 0;"> <span style="font-size: 1.5em; position: relative; top:-15px;" class="color2-color">$</span> <span style="font-size: 2.5em;" class="color2-color">79</span> <span style="margin-top: 0; font-size: .9em; font-style: italic; display: block;">Yearly</span> </p>
+                    <ul class="feature-list bg-list">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                        <li><i class="fa fa-check color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i></li>
+                        <li><i class="fa fa-check color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i></li>
+                        <li><i class="fa fa-remove" aria-hidden="true"><span style="display:none;">&nbsp;</span></i></li>
+                        <li>
+                            <div class="rating-icons-1"> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> </div>
+                        </li>
+                    </ul>
+                    <p style="background-color: rgba(0,0,0,.05);" class="action"> <a class="button-primary" href="#">Buy Now</a> </p>
+
                 </div>
+
             </div>
+            <div class="col-md-3 col-xs-12 col-sm-3 text-center align-column-center">
+                <div class="bg-box-flush bg-box-cover basic product-type color-neutral-background-color color-neutral-text-contrast bg-background-color bg-box" style="margin-top: 10px; margin-bottom: 10px;">
+                    <p class="product-name">ULTIMATE</p>
+                    <p class="price" style="background-color: rgba(0,0,0,.05);margin-top: 0;"> <span style="font-size: 1.5em; position: relative; top:-15px;" class="color2-color">$</span> <span style="font-size: 2.5em;" class="color2-color">109</span> <span style="margin-top: 0; font-size: .9em; font-style: italic; display: block;">Yearly</span> </p>
+                    <ul class="feature-list bg-list">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                        <li><i class="fa fa-check color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i></li>
+                        <li><i class="fa fa-check color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i></li>
+                        <li><i class="fa fa-check color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i></li>
+                        <li>
+                            <div class="rating-icons-1"> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> </div>
+                        </li>
+                    </ul>
+                    <p style="background-color: rgba(0,0,0,.05);" class="action"> <a class="btn-color-3 btn btn-capitalize btn-pill  btn-regular" href="#">Buy Now</a> </p>
+
+                </div>
+
+            </div>
+            
         </div>
     </div>
 </div>
