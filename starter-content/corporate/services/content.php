@@ -53,10 +53,10 @@
 			</div>
 			<div class="col-md-7 col-xs-12 col-sm-7"></div>
 		</div>
-		<div class="row" style="padding-top: 60px; padding-bottom: 35px;">
+		<div class="row" style="padding-bottom: 35px;">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div class="boldgrid-shortcode" data-imhwpb-draggable="true">
-					[boldgrid_component type="wp_recent-posts"]
+					[boldgrid_component type="wp_boldgrid_component_postlist" opts="%7B%22widget-boldgrid_component_postlist%5B%5D%5Bcolumns%5D%22%3A%223%22%7D"]
 				</div>
 			</div>
 		</div>

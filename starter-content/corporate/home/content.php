@@ -124,10 +124,10 @@
 				<p>Target user stories so that we maximise share of voice. Grow cloud computing with the aim to take this offline. Lead integrated tech stacks and above all, target the low hanging fruit.</p>
 			</div>
 		</div>
-		<div class="row row-spacing-bottom">
+		<div class="row row-spacing-sm">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div class="boldgrid-shortcode" data-imhwpb-draggable="true">
-					[boldgrid_component type="wp_recent-posts"]
+					[boldgrid_component  type="wp_boldgrid_component_postlist" opts="%7B%22widget-boldgrid_component_postlist%5B%5D%5Bcolumns%5D%22%3A%223%22%7D"]
 				</div>
 			</div>
 		</div>
