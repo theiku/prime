@@ -1,3 +1,17 @@
+<?php $post_widget_opts = function () {
+	return urlencode( json_encode( [
+		'widget-boldgrid_component_postlist[][selected_post]' => 'all',
+		'widget-boldgrid_component_postlist[][sorting]' => 'newest',
+		'widget-boldgrid_component_postlist[][limit]' => 6,
+		'widget-boldgrid_component_postlist[][columns]' => 3,
+		'widget-boldgrid_component_postlist[][show_title]' => 1,
+		'widget-boldgrid_component_postlist[][excerpt]' => 1,
+		'widget-boldgrid_component_postlist[][author]' => 0,
+		'widget-boldgrid_component_postlist[][thumbnail]' => 1,
+		'widget-boldgrid_component_postlist[][date]' => 0,
+		'widget-boldgrid_component_postlist[][image_size]' => 'medium',
+	] ) );
+} ?>
 <div class="boldgrid-section" style="background-image: linear-gradient(to left, rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0.5)), url('<?php $image_path( 'services/services1.png' ) ?>'); background-size: cover; background-position: 50% 50%;" data-bg-overlaycolor="rgba(33,33,33,0.5)">
 	<div class="container">
 		<div class="row" style="padding-top: 45px; padding-bottom: 35px;">
@@ -45,7 +59,7 @@
 </div>
 <div class="boldgrid-section color4-background-color color-4-text-contrast bg-background-color">
 	<div class="container">
-		<div class="row" style="padding-top: 60px; padding-bottom: 35px;">
+		<div class="row" style="padding-top: 60px; padding-bottom: 60px;">
 			<div class="col-md-5 col-sm-4 col-xs-12">
 				<p class="color1-color" style="margin-bottom: 5px; text-transform: uppercase;">Our Best Business</p>
 				<h2 style="margin-top: 0px;">The Benefit</h2>
@@ -56,7 +70,7 @@
 		<div class="row" style="padding-bottom: 35px;">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div class="boldgrid-shortcode" data-imhwpb-draggable="true">
-					[boldgrid_component type="wp_boldgrid_component_postlist" opts="%7B%22widget-boldgrid_component_postlist%5B%5D%5Bcolumns%5D%22%3A%223%22%7D"]
+					[boldgrid_component type="wp_boldgrid_component_postlist" opts="<?php print $post_widget_opts(); ?>"]
 				</div>
 			</div>
 		</div>

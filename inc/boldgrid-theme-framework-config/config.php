@@ -17,6 +17,10 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 	 */
 	function boldgrid_prime_framework_config( $config ) {
 
+
+		// Move to Post and Page builder. also add bgtfw_blog_post_readmore_position or loosen selector.
+		$config['customizer']['controls']['bgtfw_blog_post_readmore_link_color']['choices']['selectors'][] = '.bgc-single-article .read-more .link';
+
 		// New.
 		$config['customizer']['controls']['bgtfw_pages_container']['default'] = '';
 
@@ -46,12 +50,17 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				],
 			],
 		];
+
 		$config['customizer']['controls']['bgtfw_header_border_color']['default'] = 'color-3';
 
 		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_main']['default'] = 'color-1';
 		$config['customizer']['controls']['bgtfw_menu_items_link_color_main']['default'] = 'color-2';
 		$config['customizer']['controls']['bgtfw_menu_items_hover_color_main']['default'] = 'color-1';
 		$config['customizer']['controls']['bgtfw_menu_items_hover_effect_main']['default'] = 'hvr-underline-from-center';
+
+		// Content Links.
+		$config['customizer']['controls']['bgtfw_body_link_decoration']['default'] = 'none';
+
 		// End New.
 
 		// Disable old typography controls in favor of new ones.
@@ -156,22 +165,44 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'file' => 'starter-content/corporate/about/featured.jpg',
 			),
 
-			// Blog Posts.
-			'blogging-101' => array(
-				'post_title' => _x( 'Blogging 101', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'starter-content/corporate/blog/blogging-101.png',
+			// Blog Posts Home.
+			'artificial-intelligence-featured' => array(
+				'post_title' => _x( 'Artificial Intelligence', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/artificial-intelligence.png',
 			),
-			'basic-taxonomies' => array(
-				'post_title' => _x( 'Basic Taxonomies', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'starter-content/corporate/blog/basic-taxonomies.png',
+			'blockchain-featured' => array(
+				'post_title' => _x( 'Blockchain', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/blockchain.png',
 			),
-			'writing-tips' => array(
-				'post_title' => _x( 'Tips Better Writing', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'starter-content/corporate/blog/writing-tips.png',
+			'cloud-expert-featured' => array(
+				'post_title' => _x( 'The Cloud Expert', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/cloud-expert.png',
 			),
-			'wordcamp-101' => array(
-				'post_title' => _x( 'WordCamp 101', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'starter-content/corporate/blog/wordcamp-101.png',
+
+			// Blog Posts Services.
+			'advanced-analytics-featured' => array(
+				'post_title' => _x( 'Advanced Analytics', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/advanced-analytics.png',
+			),
+			'corporate-finance-featured' => array(
+				'post_title' => _x( 'Corporate Finance ', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/corporate-finance.png',
+			),
+			'strategy-featured' => array(
+				'post_title' => _x( 'Strategy & Marketing', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/strategy.png',
+			),
+			'digital-featured' => array(
+				'post_title' => _x( 'Digital', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/digital.png',
+			),
+			'information-technology-featured' => array(
+				'post_title' => _x( 'Information Technology', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/information-technology.png',
+			),
+			'mergers-featured' => array(
+				'post_title' => _x( 'Mergers & Aquisitions', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/mergers.png',
 			),
 		);
 
@@ -234,34 +265,69 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'post_content' => bgtfw_get_contents( '/corporate/contact/content.php' ),
 			),
 
-			// Posts.
-			'bloging-101' => array(
+
+			// Home page posts.
+			'artificial-intelligence' => array(
 				'post_type' => 'post',
-				'post_title' => 'Blogging 101',
-				'thumbnail' => '{{blogging-101}}',
-				'post_content' => bgtfw_get_contents( '/corporate/blog/blogging-101.php' ),
+				'post_title' => 'Artificial Intelligence',
+				'thumbnail' => '{{artificial-intelligence-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
 			),
-			'basic-taxonomies' => array(
+			'blockchain' => array(
 				'post_type' => 'post',
-				'post_title' => 'Basic Taxonomies',
-				'thumbnail' => '{{basic-taxonomies}}',
-				'post_content' => bgtfw_get_contents( '/corporate/blog/basic-taxonomies.php' ),
+				'post_title' => 'Blockchain',
+				'thumbnail' => '{{blockchain-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
 			),
-			'tips-for-writing' => array(
+			'cloud-expert' => array(
 				'post_type' => 'post',
-				'post_title' => 'Tips For Better Writing',
-				'thumbnail' => '{{writing-tips}}',
-				'post_content' => bgtfw_get_contents( '/corporate/blog/writing-tips.php' ),
+				'post_title' => 'The Cloud Expert',
+				'thumbnail' => '{{cloud-expert-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
 			),
-			'wordcamp-101' => array(
+
+			// Services Posts.
+			'mergers' => array(
 				'post_type' => 'post',
-				'post_title' => 'WordCamp 101',
-				'thumbnail' => '{{wordcamp-101}}',
-				'post_content' => bgtfw_get_contents( '/corporate/blog/wordcamp-101.php' ),
+				'post_title' => 'Mergers & Aquisitions',
+				'thumbnail' => '{{mergers-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
 			),
+			'information-technology' => array(
+				'post_type' => 'post',
+				'post_title' => 'Information Technology',
+				'thumbnail' => '{{information-technology-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+			),
+			'digital' => array(
+				'post_type' => 'post',
+				'post_title' => 'Artificial Intelligence',
+				'thumbnail' => '{{digital-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+			),
+			'strategy' => array(
+				'post_type' => 'post',
+				'post_title' => 'Strategy & Marketing',
+				'thumbnail' => '{{strategy-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+			),
+			'corporate-finance' => array(
+				'post_type' => 'post',
+				'post_title' => 'Corporate Finance',
+				'thumbnail' => '{{corporate-finance-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+			),
+			'advanced-analytics' => array(
+				'post_type' => 'post',
+				'post_title' => 'Advanced Analytics',
+				'thumbnail' => '{{advanced-analytics-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+			),
+
 			'blog' => array(
 				'post_type' => 'page',
 				'post_title' => 'Blog',
+				'thumbnail' => '{{mergers-featured}}',
 			),
 		);
 
@@ -396,7 +462,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['bgtfw_blog_post_readmore_text']['default'] = esc_html__( 'Read More', 'bgtfw' );
 
 		// Post list read more link style.
-		$config['customizer']['controls']['bgtfw_blog_post_readmore_type']['default'] = 'btn button-primary';
+		$config['customizer']['controls']['bgtfw_blog_post_readmore_type']['default'] = 'btn button-secondary';
 
 		// Post list read more link alignment.
 		$config['customizer']['controls']['bgtfw_blog_post_readmore_position']['default'] = 'left';
@@ -436,7 +502,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Site's body typography defaults.
 		$config['customizer']['controls']['bgtfw_body_typography']['default'] = array(
 			'font-family' => 'Lato',
-			'font-size' => '17px',
+			'font-size' => '16px',
 			'line-height' => '1.4',
 			'text-transform' => 'none',
 			'variant' => 'regular'

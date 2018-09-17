@@ -1,9 +1,23 @@
+<?php $post_widget_opts = function () {
+	return urlencode( json_encode( [
+		'widget-boldgrid_component_postlist[][selected_post]' => 'all',
+		'widget-boldgrid_component_postlist[][sorting]' => 'oldest',
+		'widget-boldgrid_component_postlist[][limit]' => 3,
+		'widget-boldgrid_component_postlist[][columns]' => 3,
+		'widget-boldgrid_component_postlist[][show_title]' => 1,
+		'widget-boldgrid_component_postlist[][excerpt]' => 0,
+		'widget-boldgrid_component_postlist[][author]' => 1,
+		'widget-boldgrid_component_postlist[][thumbnail]' => 1,
+		'widget-boldgrid_component_postlist[][date]' => 1,
+		'widget-boldgrid_component_postlist[][image_size]' => 'medium',
+	] ) );
+} ?>
 <div class="boldgrid-slider boldgrid-section-wrap" data-config='{"arrows":true,"autoplay":true,"autoplaySpeed":"10","dots":false,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
 	<div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1.png') ?>)">
 		<div class="container">
 			<div class="row row-spacing">
 				<div class="col-md-6 col-sm-12 col-xs-12">
-					<h5 style="color: #fff; margin-bottom: 0; text-transform: uppercase;">We Help Entrepreneurs</h5>
+					<p class="h6" style="color: #fff; margin-bottom: 0; text-transform: uppercase;">We Help Entrepreneurs</p>
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Grow Your Business</h2>
 					<?php $divider(); ?>
 					<h5 style="color: #fff; font-size: 1.3em;">Taking core competencies to, consequently, infiltrate new markets. Drive analytics so that as an end result.</h5>
@@ -17,7 +31,7 @@
 		<div class="container">
 			<div class="row row-spacing">
 				<div class="col-md-6 col-sm-12 col-xs-12">
-					<h5 style="color: #fff; margin-bottom: 0; text-transform: uppercase;">Let Us Help</h5>
+					<p class="h6" style="color: #fff; margin-bottom: 0; text-transform: uppercase;">Let Us Help</p>
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Dedicated to Quality</h2>
 					<?php $divider(); ?>
 					<h5 style="color: #fff; font-size: 1.3em;">Leading best in class so that as an end result, we make the logo bigger. Lead analytics to in turn make the ROI bigger.</h5>
@@ -31,7 +45,7 @@
 		<div class="container">
 			<div class="row row-spacing">
 				<div class="col-md-6 col-sm-12 col-xs-12">
-					<h5 style="color: #fff; margin-bottom: 0; text-transform: uppercase;">Bold Solutions</h5>
+					<p class="h6" style="color: #fff; margin-bottom: 0; text-transform: uppercase;">Bold Solutions</p>
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Industry Leaders</h2>
 					<?php $divider(); ?>
 					<h5 style="color: #fff; font-size: 1.3em;">Take blue-sky thinking to in turn create actionable insights. Amplifying growth channels to use best practice.</h5>
@@ -46,7 +60,7 @@
 	<div class="container">
 		<div class="row row-spacing">
 			<div class="col-md-6 col-sm-12 col-xs-12">
-				<h5 class="color1-color" style="margin-bottom: 0; text-transform: uppercase;">Where We Started</h5>
+				<p class="h6 color1-color" style="margin-bottom: 0; text-transform: uppercase;">Where We Started</p>
 				<h2 style="margin-top: 0;">Our Story</h2>
 				<?php $divider(); ?>
 				<p style="margin-bottom: 1.5em;">Executing big data with the aim to improve overall outcomes. Build user stories so that as an end result, we create actionable insights. Engage audience segments and above all, use best practice. Target key demographics while remembering
@@ -64,7 +78,7 @@
 	<div class="container">
 		<div class="row row-spacing-top">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<h5 style="color: #fff; margin-bottom: 0; text-transform: uppercase;">What We Do</h5>
+				<p class="h6" style="color: #fff; margin-bottom: 0; text-transform: uppercase;">What We Do</h6>
 				<h2 style="color: #fff; margin-top: 0;">Services</h2>
 				<?php $divider(); ?>
 			</div>
@@ -116,7 +130,7 @@
 	<div class="container">
 		<div class="row row-spacing-top">
 			<div class="col-md-5 col-sm-12 col-xs-12">
-				<h5 class="color1-color" style="margin-bottom: 0; text-transform: uppercase;">Read All About It</h5>
+				<p class="color1-color h6" style="margin-bottom: 0; text-transform: uppercase;">Read All About It</p>
 				<h2 style="margin-top: 0;">Recent News</h2>
 				<?php $divider(); ?>
 			</div>
@@ -124,10 +138,10 @@
 				<p>Target user stories so that we maximise share of voice. Grow cloud computing with the aim to take this offline. Lead integrated tech stacks and above all, target the low hanging fruit.</p>
 			</div>
 		</div>
-		<div class="row row-spacing-sm">
+		<div class="row row-spacing-bottom" style="padding-top: 15px;">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div class="boldgrid-shortcode" data-imhwpb-draggable="true">
-					[boldgrid_component  type="wp_boldgrid_component_postlist" opts="%7B%22widget-boldgrid_component_postlist%5B%5D%5Bcolumns%5D%22%3A%223%22%7D"]
+					[boldgrid_component type="wp_boldgrid_component_postlist" opts="<?php print $post_widget_opts(); ?>"]
 				</div>
 			</div>
 		</div>
@@ -137,12 +151,12 @@
 	<div class="container">
 		<div class="row row-spacing-top">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<h5 class="color1-color" style="margin-bottom: 0; text-transform: uppercase;">Meet the Professionals</h5>
+				<p class="h6 color1-color" style="margin-bottom: 0; text-transform: uppercase;">Meet the Professionals</p>
 				<h2 style="margin-top: 0;">Team</h2>
 				<?php $divider(); ?>
 			</div>
 		</div>
-		<div class="row row-spacing-bottom">
+		<div class="row row-spacing-bottom" style="padding-top: 50px;">
 			<div class="col-md-6 col-sm-12 col-xs-12">
 				<div class="boldgrid-slider boldgrid-wrap-row" data-config='{"arrows":false,"autoplay":true,"autoplaySpeed":"8","dots":true,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
 					<div class="row">
