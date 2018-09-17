@@ -176,6 +176,14 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'post_title' => _x( 'About Us', 'Theme starter content', 'boldgrid-prime' ),
 				'file' => 'starter-content/corporate/about/featured.jpg',
 			),
+			'services-featured' => array(
+				'post_title' => _x( 'Services', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/services/featured.jpg',
+			),
+			'blog-featured' => array(
+				'post_title' => _x( 'Blog', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/featured.jpg',
+			),			
 
 			// Blog Posts Home.
 			'artificial-intelligence-featured' => array(
@@ -268,6 +276,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'menu' => array(
 				'post_type' => 'page',
 				'post_title' => 'Services',
+				'thumbnail' => '{{services-featured}}',
 				'post_content' => bgtfw_get_contents( '/corporate/services/content.php' ),
 			),
 			'contact' => array(
@@ -339,7 +348,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'blog' => array(
 				'post_type' => 'page',
 				'post_title' => 'Blog',
-				'thumbnail' => '{{mergers-featured}}',
+				'thumbnail' => '{{blog-featured}}',
 			),
 		);
 
