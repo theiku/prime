@@ -51,6 +51,18 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			],
 		];
 
+		$config['customizer']['controls']['bgtfw_blog_margin']['default'] = [
+			[
+				'media' => [ 'base' ],
+				'unit' => 'em',
+				'isLinked' => false,
+				'values' => [
+					'top' => 0,
+					'bottom' => 3
+				],
+			],
+		];
+
 		$config['customizer']['controls']['bgtfw_header_border_color']['default'] = 'color-3';
 
 		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_main']['default'] = 'color-1';
@@ -518,7 +530,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		);
 
 
-		$config['customizer']['controls']['bgtfw_headings_font_size']['default'] = '18';
+		$config['customizer']['controls']['bgtfw_headings_font_size']['default'] = '16';
 		$config['customizer']['controls']['bgtfw_headings_typography']['default'] = array(
 			'font-family' => 'Playfair Display',
 			'line-height' => '1.5',

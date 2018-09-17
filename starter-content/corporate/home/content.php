@@ -156,7 +156,7 @@
 				<?php $divider(); ?>
 			</div>
 		</div>
-		<div class="row row-spacing-bottom" style="padding-top: 50px;">
+		<div class="row row-spacing-bottom" style="padding-top: 40px;">
 			<div class="col-md-6 col-sm-12 col-xs-12">
 				<div class="boldgrid-slider boldgrid-wrap-row" data-config='{"arrows":false,"autoplay":true,"autoplaySpeed":"8","dots":true,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
 					<div class="row">

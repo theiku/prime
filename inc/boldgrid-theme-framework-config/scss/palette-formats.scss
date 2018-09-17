@@ -28,4 +28,8 @@
 	  background-color: rgba( $palette-primary_1, 0.7 );
 	  color: $text-contrast-palette-primary-1;
   }
+
+  .bgc-single-image .image-opacity {
+	  background-color: rgba( $palette-primary_2, 0.3 );
+  }
 }

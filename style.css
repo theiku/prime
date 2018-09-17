@@ -13,21 +13,21 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, rtl-language-
 
 /** Some temporary classes **/
 .row-spacing {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .row-spacing-sm {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .row-spacing-top {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .row-spacing-bottom {
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 .image-shadow {
