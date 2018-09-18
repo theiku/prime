@@ -58,7 +58,7 @@
 	<div class="container">
 		<div class="row" style="padding-top: 60px; padding-bottom: 60px;">
 			<div class="col-md-5 col-sm-4 col-xs-12">
-				<p class="color1-color" style="margin-bottom: 5px; text-transform: uppercase;">Our Best Business</p>
+				<p class="color1-color h6" style="margin-bottom: 5px; text-transform: uppercase;">Our Best Business</p>
 				<h2 style="margin-top: 0px;">The Benefit</h2>
 				<?php $divider(); ?>
 			</div>
@@ -178,7 +178,7 @@
 	<div class="container">
 		<div class="row" style="padding-top: 60px; padding-bottom: 0px;">
 			<div class="col-md-5 col-sm-4 col-xs-12">
-				<p class="color1-color" style="text-transform: uppercase; margin-bottom: 5px;">Pick Your Plan</p>
+				<p class="color1-color h6" style="text-transform: uppercase; margin-bottom: 5px;">Pick Your Plan</p>
 				<h2 style="margin-top: 0px;">Pricing Table</h2>
 				<?php $divider(); ?>
 			</div>

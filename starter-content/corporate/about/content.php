@@ -6,7 +6,7 @@
 			</div>
 			<div class="col-md-1 col-sm-1 col-xs-12"></div>
 			<div class="col-md-6 col-sm-6 col-xs-12">
-				<p class="color1-color" style="margin-bottom: 5px; text-transform: uppercase;">Your Best Solution</p>
+				<p class="color1-color h6" style="margin-bottom: 5px; text-transform: uppercase;">Your Best Solution</p>
 				<h2 style="margin-top: 0;">What We Do</h2>
 				<?php $divider(); ?>
 				<p style="margin-top: 35px;">Leveraging sprints with the aim to take this offline. Executing transformation mapping with a goal to build ROI. Taking dark social to in turn think outside the box. Execute cloud computing to, consequently, go viral. Utilise below the
@@ -49,7 +49,7 @@
 	<div class="container">
 		<div class="row" style="padding-bottom: 100px; padding-top: 100px;">
 			<div class="col-md-6 col-sm-6 col-xs-12">
-				<p class="color1-color" style="margin-bottom: 5px; text-transform: uppercase;">Spark Better Business</p>
+				<p class="color1-color h6" style="margin-bottom: 5px; text-transform: uppercase;">Spark Better Business</p>
 				<h2 style="margin-top: 0px;">Why Choose Us</h2>
 				<?php $divider(); ?>
 				<p style="margin-top: 35px;">Leveraging sprints with the aim to take this offline. Executing transformation mapping with a goal to build ROI. Taking dark social to in turn think outside the box.</p>
@@ -122,7 +122,7 @@
 	<div class="container">
 		<div class="row" style="padding-top: 100px; padding-bottom: 35px;">
 			<div class="col-md-4 col-sm-4 col-xs-12">
-				<p class="color1-color" style="margin-bottom: 5px; text-transform: uppercase;">Meet the Professionals</p>
+				<p class="color1-color h6" style="margin-bottom: 5px; text-transform: uppercase;">Meet the Professionals</p>
 				<h2 style="margin-top: 0px;">Team</h2>
 				<?php $divider(); ?>
 			</div>
