@@ -499,8 +499,8 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			),
 		);
 
-		$config['starter-conttext_aboutent']['widgets']['footer-2'] = array(
-			'text_about',
+		$config['starter-content']['widgets']['footer-2'] = array(
+			'custom_html',
 		);
 
 		$config['starter-content']['widgets']['footer-3'] = array(
