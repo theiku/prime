@@ -22,7 +22,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['bgtfw_blog_post_readmore_link_color']['choices']['selectors'][] = '.bgc-single-article .read-more .link';
 
 		// New.
-		$config['customizer']['controls']['bgtfw_pages_container']['default'] = '';
+		$config['customizer']['controls']['bgtfw_pages_container']['default'] = 'container';
 
 		// Menu.
 		$config['customizer']['controls']['bgtfw_menu_margin_main']['default'] = [
@@ -449,7 +449,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				// Widget $instance -> settings
 				array(
 					'title' => 'About ' . get_bloginfo( 'name' ),
-					'content' => '<hr class="bg-hr color1-color bg-hr-15" style="width: 10%; margin-left: 0px; margin-right: auto; margin-top: 0px;"><div class="about-us-image text-center" style="padding-bottom: 1em;"><img class="bg-box-shadow-bottom-right bg-box-cover" src="https://randomuser.me/api/portraits/women/' . rand( 1, 50 ) . '.jpg"></div><p>' . get_bloginfo( 'name' ) . ' is taking brand ambassadors but re-target key demographics.  Amplifying cloud. </p>',
+					'content' => '<div class="about-us-image text-center" style="padding-bottom: 1em;"><img class="bg-box-shadow-bottom-right bg-box-cover" src="https://randomuser.me/api/portraits/women/' . rand( 1, 50 ) . '.jpg"></div><p>' . get_bloginfo( 'name' ) . ' is taking brand ambassadors but re-target key demographics.  Amplifying cloud. </p>',
 				),
 			),
 			'search',

@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row row-spacing-sm" style="padding-bottom: 100px;">
 			<div class="col-md-6 col-sm-6 col-xs-12">
-				<p class=" color1-color" style="margin-bottom: 5px; text-transform: uppercase;">Free Consultation</p>
+				<p class=" color1-color h6" style="margin-bottom: 5px; text-transform: uppercase;">Free Consultation</p>
 				<h2 style="margin-top: 0;">Get a Quote</h2>
 				<?php $divider(); ?>
 				<p style="margin-top: 35px;">Executing below the line so that we maximise share of voice. Targeting agile and possibly think outside the box. Synchronise big data so that as an end result, we make the logo bigger.</p>
