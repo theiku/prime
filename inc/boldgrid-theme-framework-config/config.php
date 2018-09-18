@@ -17,6 +17,10 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 	 */
 	function boldgrid_prime_framework_config( $config ) {
 
+
+		// Move to Post and Page builder. also add bgtfw_blog_post_readmore_position or loosen selector.
+		$config['customizer']['controls']['bgtfw_blog_post_readmore_link_color']['choices']['selectors'][] = '.bgc-single-article .read-more .link';
+
 		// New.
 		$config['customizer']['controls']['bgtfw_pages_container']['default'] = '';
 
@@ -46,12 +50,29 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				],
 			],
 		];
+
+		$config['customizer']['controls']['bgtfw_blog_margin']['default'] = [
+			[
+				'media' => [ 'base' ],
+				'unit' => 'em',
+				'isLinked' => false,
+				'values' => [
+					'top' => 0,
+					'bottom' => 3
+				],
+			],
+		];
+
 		$config['customizer']['controls']['bgtfw_header_border_color']['default'] = 'color-3';
 
 		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_main']['default'] = 'color-1';
 		$config['customizer']['controls']['bgtfw_menu_items_link_color_main']['default'] = 'color-2';
 		$config['customizer']['controls']['bgtfw_menu_items_hover_color_main']['default'] = 'color-1';
 		$config['customizer']['controls']['bgtfw_menu_items_hover_effect_main']['default'] = 'hvr-underline-from-center';
+
+		// Content Links.
+		$config['customizer']['controls']['bgtfw_body_link_decoration']['default'] = 'none';
+
 		// End New.
 
 		// Disable old typography controls in favor of new ones.
@@ -145,21 +166,63 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Create the custom image attachments used as post thumbnails for pages.
 		$config['starter-content']['attachments'] = array(
-			'image-blogging-101' => array(
-				'post_title' => _x( 'Blogging 101', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'images/blogging-101.png',
+
+			// Pages.
+			'contact-featured' => array(
+				'post_title' => _x( 'Contact', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/contact/featured.jpg',
 			),
-			'image-basic-taxonomies' => array(
-				'post_title' => _x( 'Basic Taxonomies', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'images/basic-taxonomies.png',
+			'about-featured' => array(
+				'post_title' => _x( 'About Us', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/about/featured.jpg',
 			),
-			'image-tips-better-writing' => array(
-				'post_title' => _x( 'Tips Better Writing', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'images/tips-better-writing.png',
+			'services-featured' => array(
+				'post_title' => _x( 'Services', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/services/featured.jpg',
 			),
-			'image-wordcamp-101' => array(
-				'post_title' => _x( 'WordCamp 101', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'images/wordcamp-101.png',
+			'blog-featured' => array(
+				'post_title' => _x( 'Blog', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/featured.jpg',
+			),			
+
+			// Blog Posts Home.
+			'artificial-intelligence-featured' => array(
+				'post_title' => _x( 'Artificial Intelligence', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/artificial-intelligence.png',
+			),
+			'blockchain-featured' => array(
+				'post_title' => _x( 'Blockchain', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/blockchain.png',
+			),
+			'cloud-expert-featured' => array(
+				'post_title' => _x( 'The Cloud Expert', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/cloud-expert.png',
+			),
+
+			// Blog Posts Services.
+			'advanced-analytics-featured' => array(
+				'post_title' => _x( 'Advanced Analytics', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/advanced-analytics.png',
+			),
+			'corporate-finance-featured' => array(
+				'post_title' => _x( 'Corporate Finance ', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/corporate-finance.png',
+			),
+			'strategy-featured' => array(
+				'post_title' => _x( 'Strategy & Marketing', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/strategy.png',
+			),
+			'digital-featured' => array(
+				'post_title' => _x( 'Digital', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/digital.png',
+			),
+			'information-technology-featured' => array(
+				'post_title' => _x( 'Information Technology', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/information-technology.png',
+			),
+			'mergers-featured' => array(
+				'post_title' => _x( 'Mergers & Aquisitions', 'Theme starter content', 'boldgrid-prime' ),
+				'file' => 'starter-content/corporate/blog/mergers.png',
 			),
 		);
 
@@ -193,6 +256,8 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Specify the core-defined pages to create and add custom thumbnails to some of them.
 		$config['starter-content']['posts'] = array(
+
+			// Pages.
 			'homepage' => array(
 				'post_type' => 'page',
 				'post_title' => 'Home',
@@ -204,48 +269,85 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'about' => array(
 				'post_type' => 'page',
 				'post_title' => 'About Us',
+				'thumbnail' => '{{about-featured}}',
 				'post_content' => bgtfw_get_contents( '/corporate/about/content.php' ),
 			),
 			'menu' => array(
 				'post_type' => 'page',
 				'post_title' => 'Services',
+				'thumbnail' => '{{services-featured}}',
 				'post_content' => bgtfw_get_contents( '/corporate/services/content.php' ),
 			),
 			'contact' => array(
 				'post_type' => 'page',
 				'post_title' => 'Contact Us',
+				'thumbnail' => '{{contact-featured}}',
 				'post_content' => bgtfw_get_contents( '/corporate/contact/content.php' ),
 			),
-			'bloging-101' => array(
+
+
+			// Home page posts.
+			'artificial-intelligence' => array(
 				'post_type' => 'post',
-				'post_title' => 'Blogging 101',
-				'thumbnail' => '{{image-blogging-101}}',
-				'post_content' => '',
+				'post_title' => 'Artificial Intelligence',
+				'thumbnail' => '{{artificial-intelligence-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
 			),
-			'basic-taxonomies' => array(
+			'blockchain' => array(
 				'post_type' => 'post',
-				'post_title' => 'Basic Taxonomies',
-				'thumbnail' => '{{image-basic-taxonomies}}',
-				'post_content' => '<div class="boldgrid-section"><div class="container"><div class="row">
-					<div class="col-md-12 col-xs-12 col-sm-12"><h3>Categories and Tags</h3><p class="">If you write about a variety of subjects, categories can help your readers find the posts that are most relevant to them. For instance, if you run a consulting business, you may want some of your posts to reflect work you\'ve done with previous clients, while having other posts act as informational resources. In this particular case, you can set up 2 categories: one labeled <em><strong>Projects</strong></em> and another labeled <em><strong>Resources</strong></em>. You\'d then place your posts in their respective categories.</p><!--more Read more &gt; --><p class="">Categories are accessible from the post editor. There you can create new categories and assign them to your posts.</p><p class="">Tags, on the other hand, allow you to label your posts with relevant topics. For instance, within one of your resource posts you may choose to write about a set of project management tools. While you can certainly create a new category called "Project Management Tools," you may not plan to write about the topic often enough to justify giving it a dedicated category. Instead, you may want to tag your post with several topics that exists within the post; e.g. <em><strong>project management tools, communication, time tracking</strong></em>, etc.</p><p class="">What\'s great about tags is that they are searchable and provide your users another way to find content on your site. Anyone searching for "project management tools" will be able to locate any posts you\'ve tagged with those words!</p></div></div></div></div>',
+				'post_title' => 'Blockchain',
+				'thumbnail' => '{{blockchain-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
 			),
-			'tips-for-writing' => array(
+			'cloud-expert' => array(
 				'post_type' => 'post',
-				'post_title' => 'Tips For Better Writing',
-				'thumbnail' => '{{image-tips-better-writing}}',
-				'post_content' => '<div class="boldgrid-section"><div class="container"><div class="row">
-					<div class="col-md-12 col-xs-12 col-sm-12"><h3>Plan Your Content</h3><p class="">If you\'re considering adding a blog to your site, you\'ll want to have a plan beforehand. Planning your blog will help your subject matter remain consistent over time. It\'ll also help you determine whether or not there\'s enough material to maintain a steady stream of posts.</p><p class="">One pitfall many new bloggers run into is starting a blog that isn\'t posted to frequently enough. A shortage of recent posts can give your visitors a bad impression of your business. One may think "I wonder if they’re still in business" or "they may want to hire a writer."</p><p class="">A blog, like any other customer facing aspect of your business, communicates your brand. If it isn\'t maintained and given proper attention, people will notice. Post regularly and keep your content fresh. Give your audience a reason to visit often.</p><p class=""><!--more Read more &gt; --></p><h3>Find Your Audience</h3><p class="">While on the topic of audiences, you\'ll likely want to identify yours early on. If your blog is going to be set up to compliment a business, your target audience will likely be the same as your consumer base; you\'re then writing for the same people that buy your product. You\'ll want to allow any marketing material you\'ve used inform the style and tone of your writing. Think of your blog as an extension of your company\'s brand. If, on the other hand, your business is completely new or you don\'t happen to be selling anything in particular, this is the time to start thinking about your brand.</p></div></div></div></div>',
+				'post_title' => 'The Cloud Expert',
+				'thumbnail' => '{{cloud-expert-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
 			),
-			'wordcamp-101' => array(
+
+			// Services Posts.
+			'mergers' => array(
 				'post_type' => 'post',
-				'post_title' => 'WordCamp 101',
-				'thumbnail' => '{{image-wordcamp-101}}',
-				'post_content' => '<div class="boldgrid-section"><div class="container"><div class="row">
-					<div class="col-md-12 col-xs-12 col-sm-12"><p class="">What is WordCamp? It’s a place for WordPress enthusiasts to meet, greet, and speak about everything WordPress. Many in attendance play a much more active role in the WordPress community, guiding and assisting WordPress users all around the world through community-based Support Forums, and documentation from contributors on everything from installing WordPress to creating plugins.</p><h3>The WordPress Community</h3><p class="">At any given time, an announcement seeking speaker applications as well as organizing teams to attend WordCamp goes out to WordPress enthusiasts in North America, similar announcements can be seen in Africa, and Europe. As community members from around the world prepare for attendance, it’s at this time you may be wondering “What can you expect from attending a WordCamp?”.</p><p class="">It’s about everything WordPress. From developers and designers to first-time bloggers, WordCamp is a place to meet, collaborate, and discuss everything WordPress. The focus of the event is on using and developing for WordPress and all are welcome. First organized by Matt Mullenweg in 2006, and held in San Francisco, events continue to grow in attendance with local WordPress communities organizing over 796 WordCamp events in 65 countries spread across 6 continents. What stands out as astonishing is how the event organizers, speakers, and attendees are all volunteers from local WordPress communities. It is these local communities that together make the WordPress community as a whole, and that is the highlight of this post.</p><p class="">Visit the WordPress Support Forums and join in the community discussion here <a href="https://wordpress.org/support/" target="_blank" rel="noopener">https://wordpress.org/support/</a></p></div></div></div></div>',
+				'post_title' => 'Mergers & Aquisitions',
+				'thumbnail' => '{{mergers-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
 			),
+			'information-technology' => array(
+				'post_type' => 'post',
+				'post_title' => 'Information Technology',
+				'thumbnail' => '{{information-technology-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+			),
+			'digital' => array(
+				'post_type' => 'post',
+				'post_title' => 'Artificial Intelligence',
+				'thumbnail' => '{{digital-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+			),
+			'strategy' => array(
+				'post_type' => 'post',
+				'post_title' => 'Strategy & Marketing',
+				'thumbnail' => '{{strategy-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+			),
+			'corporate-finance' => array(
+				'post_type' => 'post',
+				'post_title' => 'Corporate Finance',
+				'thumbnail' => '{{corporate-finance-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+			),
+			'advanced-analytics' => array(
+				'post_type' => 'post',
+				'post_title' => 'Advanced Analytics',
+				'thumbnail' => '{{advanced-analytics-featured}}',
+				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+			),
+
 			'blog' => array(
 				'post_type' => 'page',
 				'post_title' => 'Blog',
+				'thumbnail' => '{{blog-featured}}',
 			),
 		);
 
@@ -380,7 +482,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['bgtfw_blog_post_readmore_text']['default'] = esc_html__( 'Read More', 'bgtfw' );
 
 		// Post list read more link style.
-		$config['customizer']['controls']['bgtfw_blog_post_readmore_type']['default'] = 'btn button-primary';
+		$config['customizer']['controls']['bgtfw_blog_post_readmore_type']['default'] = 'btn button-secondary';
 
 		// Post list read more link alignment.
 		$config['customizer']['controls']['bgtfw_blog_post_readmore_position']['default'] = 'left';
@@ -420,7 +522,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Site's body typography defaults.
 		$config['customizer']['controls']['bgtfw_body_typography']['default'] = array(
 			'font-family' => 'Lato',
-			'font-size' => '17px',
+			'font-size' => '16px',
 			'line-height' => '1.4',
 			'text-transform' => 'none',
 			'variant' => 'regular'
@@ -436,7 +538,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		);
 
 
-		$config['customizer']['controls']['bgtfw_headings_font_size']['default'] = '18';
+		$config['customizer']['controls']['bgtfw_headings_font_size']['default'] = '16';
 		$config['customizer']['controls']['bgtfw_headings_typography']['default'] = array(
 			'font-family' => 'Playfair Display',
 			'line-height' => '1.5',
@@ -486,6 +588,25 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			),
 		);
 
+
+		// Set the default link color of the social menu location.
+		$config['customizer']['controls']['bgtfw_menu_items_link_color_social']['default'] = 'color-1';
+
+		// Set the default link hover state color of the social menu location.
+		$config['customizer']['controls']['bgtfw_menu_items_hover_color_social']['default'] = 'color-3';
+
+		// Set the default hover effect for the social menu location.
+		$config['customizer']['controls']['bgtfw_menu_items_hover_effect_social']['default'] = 'hvr-underline-from-center';
+
+		// Set social menu active link color defaults in case other menu items are assigned to this location.
+		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_social']['default'] = 'color-3';
+
+		// Set the social media icon size.
+		$config['social-icons']['size'] = 'large';
+
+		// Ensure the social menu location hooks are removed when the footer is disabled.
+		$config['menu']['footer_menus'][] = 'social';
+
 		// Text Contrast Colors.
 		$config['customizer-options']['colors']['light_text'] = '#ffffff';
 		$config['customizer-options']['colors']['dark_text'] = '#333333';
@@ -494,26 +615,23 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['components']['buttons']['variables']['button-primary-classes'] = '.btn, .btn-color-1, .btn-pill';
 		$config['components']['buttons']['variables']['button-secondary-classes'] = '.btn, .btn-color-2, .btn-pill';
 
-		// Social Icons.
-		$config['social-icons']['size'] = 'large';
-
-		// Remove footer menus when footer is disabled.
-		$config['menu']['footer_menus'][] = 'social';
-
 		// Configs above will override framework defaults.
 		return $config;
 	}
 }
 
 function bgtfw_get_contents( $filePath ) {
-	include get_template_directory() . '/starter-content/corporate/utility.php';
+	return function () use ( $filePath ) {
+		include get_template_directory() . '/starter-content/corporate/utility.php';
 
-	ob_start();
-	include get_template_directory() . '/starter-content/' . $filePath;
-	$content = ob_get_contents();
-	ob_end_clean();
+		ob_start();
+		include get_template_directory() . '/starter-content/' . $filePath;
+		$content = ob_get_contents();
+		ob_end_clean();
+		$content = str_replace( array( "\n", "\t" ), '', $content );
 
-	return $content;
+		return $content;
+	};
 }
 
 add_filter( 'boldgrid_theme_framework_config', 'boldgrid_prime_framework_config' );

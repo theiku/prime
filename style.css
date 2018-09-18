@@ -13,23 +13,35 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, rtl-language-
 
 /** Some temporary classes **/
 .row-spacing {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .row-spacing-sm {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .row-spacing-top {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .row-spacing-bottom {
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 .image-shadow {
   box-shadow: 12px 12px 2px rgba(0, 0, 0, 0.2);
+}
+
+.boldgrid-shortcode .bgc-postlist .bgc-single-article {
+    box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bgc-single-article .read-more {
+    margin-top: 2em;
+}
+
+.blog .page-header-wrapper {
+    margin-bottom: 2em;
 }
