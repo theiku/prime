@@ -24,17 +24,17 @@
 			<div class="col-md-12 col-xs-12 col-sm-12"></div>
 		</div>
 		<div class="row">
-			<div class="col-md-4 col-xs-12 col-sm-4 color4-background-color color-4-text-contrast" style="padding: 2em;">
+			<div class="col-md-4 col-xs-12 col-sm-4 color4-background-color color-4-text-contrast wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="padding: 2em;">
 				<p><img class="alignleft" src="<?php $image_path('icons/005-value.png') ?>" width="61" height="48"></p>
 				<h3 class="h4">Qualified Pros</h3>
 				<p>Synchronise branding to in turn disrupt the balance.</p>
 			</div>
-			<div class="col-md-4 col-xs-12 col-sm-4 col-sm-4 color3-background-color color-3-text-contrast" style="padding: 2em;">
+			<div class="col-md-4 col-xs-12 col-sm-4 col-sm-4 color3-background-color color-3-text-contrast wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" style="padding: 2em;">
 				<p><img class="alignleft" src="<?php $image_path('icons/006-development.png') ?>" alt="" width="61" height="48"></p>
 				<h3 class="h4">Performance</h3>
 				<p>Repurpose big data and possibly gain traction.</p>
 			</div>
-			<div class="col-md-4 col-xs-12 col-sm-4 col-sm-4 color4-background-color color-4-text-contrast" style="padding: 2em;">
+			<div class="col-md-4 col-xs-12 col-sm-4 col-sm-4 color4-background-color color-4-text-contrast wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s" style="padding: 2em;">
 				<p><img class="alignleft" src="<?php $image_path('icons/007-analysis.png') ?>" alt="" width="61" height="61"></p>
 				<h3 class="h4">Years of Experience</h3>
 				<p>Leverage bleeding edge and above all, be on brand.</p>
@@ -56,13 +56,13 @@
 				<p style="margin-top: 2.2em;">Execute cloud computing to, consequently, go viral. Utilise below the fold and then re-target key demographics.</p>
 				<div class="row" style="margin-top: 2.2em;">
 					<div class="col-md-6 col-xs-12 col-sm-12">
-						<h4 class="h5"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Transformation</h4>
-						<h4 class="h5" style="margin-top: 2.2em;"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Operations &amp; Robotics</h4>
+						<h4 class="h5 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s"  ><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Transformation</h4>
+						<h4 class="h5 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s"  style="margin-top: 2.2em;"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Operations &amp; Robotics</h4>
 					</div>
 					<div class="col-md-6 col-xs-12 col-sm-12">
 						<div>
-							<h4 class="h5"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"> </i>Information Technology</h4>
-							<h4 class="h5" style="margin-top: 2.2em;"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"> </i>Unlimited Possibilites</h4>
+							<h4 class="h5 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" ><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"> </i>Information Technology</h4>
+							<h4 class="h5 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="margin-top: 2.2em;"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"> </i>Unlimited Possibilites</h4>
 						</div>
 					</div>
 				</div>
@@ -129,28 +129,28 @@
 		</div>
 		<div class="row" style="padding-bottom: 100px;">
 			<div class="col-md-3 col-xs-12 col-sm-6">
-				<div class="text-center bg-box bg-box-square bg-box-cover color-3-text-contrast color3-background-color" style="padding: 0.5em 0.5em 1em; margin: 0em -.8em;">
+				<div class="text-center bg-box bg-box-square bg-box-cover color-3-text-contrast color3-background-color wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s" style="padding: 0.5em 0.5em 1em; margin: 0em -.8em;">
 					<p><img src="<?php $image_path('about/about5.png') ?>"></p>
 					<h4>Nathan Counsel</h4>
 					<p class="color1-color">Chief Executive Officer</p>
 				</div>
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-6">
-				<div class="text-center bg-box bg-box-square bg-box-cover color-3-text-contrast color3-background-color" style="padding: 0.5em 0.5em 1em; margin: 0em -.8em;">
+				<div class="text-center bg-box bg-box-square bg-box-cover color-3-text-contrast color3-background-color wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" style="padding: 0.5em 0.5em 1em; margin: 0em -.8em;">
 					<p><img src="<?php $image_path('about/about6.png') ?>"></p>
 					<h4>Morten Iverson</h4>
 					<p class="color1-color">Chief Financial Officer</p>
 				</div>
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-6">
-				<div class="text-center bg-box bg-box-square bg-box-cover color-3-text-contrast color3-background-color" style="padding: 0.5em 0.5em 1em; margin: 0em -.8em;">
+				<div class="text-center bg-box bg-box-square bg-box-cover color-3-text-contrast color3-background-color wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s" style="padding: 0.5em 0.5em 1em; margin: 0em -.8em;">
 					<p><img src="<?php $image_path('about/about7.png') ?>"></p>
 					<h4>Julie Grave</h4>
 					<p class="color1-color">Information Technology Officer</p>
 				</div>
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-6">
-				<div class="text-center bg-box bg-box-square bg-box-cover color-3-text-contrast color3-background-color" style="padding: 0.5em 0.5em 1em; margin: 0em -.8em;">
+				<div class="text-center bg-box bg-box-square bg-box-cover color-3-text-contrast color3-background-color wow fadeIn" data-wow-duration="1s" data-wow-delay="2s" style="padding: 0.5em 0.5em 1em; margin: 0em -.8em;">
 					<p><img src="<?php $image_path('about/about8.png') ?>"></p>
 					<h4>Hans Paulsen</h4>
 					<p class="color1-color">Operations Director</p>

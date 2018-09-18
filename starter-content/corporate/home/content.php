@@ -112,16 +112,16 @@
 	<div class="container">
 		<div class="row row-spacing-sm">
 			<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-				<img src="<?php $image_path('home/logo1.png') ?>">
+				<p class="mod-reset wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s"><img src="<?php $image_path('home/logo1.png') ?>"></p>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-				<img src="<?php $image_path('home/logo3.png') ?>">
+				<p class="mod-reset wow fadeIn" data-wow-duration="1s" data-wow-delay="0.50s"><img src="<?php $image_path('home/logo3.png') ?>"></p>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-				<img src="<?php $image_path('home/logo4.png') ?>">
+				<p class="mod-reset wow fadeIn" data-wow-duration="1s" data-wow-delay="0.75s"><img src="<?php $image_path('home/logo4.png') ?>"></p>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-				<img src="<?php $image_path('home/logo5.png') ?>">
+				<p class="mod-reset wow fadeIn" data-wow-duration="1s" data-wow-delay="1.00s"><img src="<?php $image_path('home/logo5.png') ?>"></p>
 			</div>
 		</div>
 	</div>
@@ -138,7 +138,7 @@
 				<p>Target user stories so that we maximise share of voice. Grow cloud computing with the aim to take this offline. Lead integrated tech stacks and above all, target the low hanging fruit.</p>
 			</div>
 		</div>
-		<div class="row row-spacing-bottom" style="padding-top: 15px;">
+		<div class="row row-spacing-bottom wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s" style="padding-top: 15px;" >
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div class="boldgrid-shortcode" data-imhwpb-draggable="true">
 					[boldgrid_component type="wp_boldgrid_component_postlist" opts="<?php print $post_widget_opts(); ?>"]
@@ -206,7 +206,7 @@
 				<h3 style="color: #fff;">Create daily standups to in turn re-target key demographics.</h3>
 			</div>
 			<div class="col-md-4 col-sm-12 col-xs-12 text-right align-column-center">
-				<p style="margin-top: 1em;"><a href="#" class="button-primary">Contact Us</a></p>
+				<p class="wow pulse" data-wow-duration="1s" data-wow-delay="1s" style="margin-top: 1em;"><a href="#" class="button-primary">Contact Us</a></p>
 			</div>
 		</div>
 	</div>

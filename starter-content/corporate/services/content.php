@@ -31,22 +31,22 @@
 <div class="boldgrid-section">
 	<div class="container">
 		<div class="row" style="padding-bottom: 80px;">
-			<div class="col-md-3 col-xs-12 col-sm-6 text-center" style="padding: 2em;">
+			<div class="col-md-3 col-xs-12 col-sm-6 text-center  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="padding: 2em;">
 				<p><img src="<?php $image_path( 'icons/008-idea.png' ) ?>" alt="" width="75" height="75"></p>
 				<h3 style="margin-top: 2.1em;">Discover</h3>
 				<p class="">Lead bleeding edge and then further your reach. Synchronizing below the line.</p>
 			</div>
-			<div class="col-md-3 col-xs-12 col-sm-6 text-center" style="padding: 2em;">
+			<div class="col-md-3 col-xs-12 col-sm-6 text-center  wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" style="padding: 2em;">
 				<p><img src="<?php $image_path( 'icons/009-options.png' ) ?>" alt="" width="75" height="75"></p>
 				<h3 style="margin-top: 2.1em;">Create</h3>
 				<p class="">Lead bleeding edge and then further your reach. Synchronizing below the line.</p>
 			</div>
-			<div class="col-md-3 col-xs-12 col-sm-6 text-center" style="padding: 2em;">
+			<div class="col-md-3 col-xs-12 col-sm-6 text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s" style="padding: 2em;">
 				<p><img src="<?php $image_path( 'icons/010-start.png' ) ?>" alt="" width="62" height="75"></p>
 				<h3 style="margin-top: 2.1em;">Energy</h3>
 				<p class="">Lead bleeding edge and then further your reach. Synchronizing below the line.</p>
 			</div>
-			<div class="col-md-3 col-xs-12 col-sm-6 text-center" style="padding: 2em;">
+			<div class="col-md-3 col-xs-12 col-sm-6 text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="2s" style="padding: 2em;">
 				<p><img src="<?php $image_path( 'icons/011-develop.png' ) ?>" alt="" width="75" height="75"></p>
 				<h3 style="margin-top: 2.1em;">Success</h3>
 				<p class="">Lead bleeding edge and then further your reach. Synchronizing below the line.</p>
@@ -66,7 +66,7 @@
 		</div>
 		<div class="row" style="padding-bottom: 35px;">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<div class="boldgrid-shortcode" data-imhwpb-draggable="true">
+				<div class="boldgrid-shortcode  wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s" data-imhwpb-draggable="true" >
 					[boldgrid_component type="wp_boldgrid_component_postlist" opts="<?php print $post_widget_opts(); ?>"]
 				</div>
 			</div>
@@ -91,9 +91,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" >
 					<div class="col-md-7 col-xs-12 col-sm-12">
-						<p style="font-size: 200%;">$123 million</p>
+						<p style="font-size: 200%;" >$123 million</p>
 					</div>
 					<div class="col-md-5 col-xs-12 col-sm-12 align-column-center">
 						<div>
@@ -101,14 +101,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="row bg-editor-hr-wrap">
+				<div class="row bg-editor-hr-wrap wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
 					<div class="col-md-12 col-xs-12 col-sm-12">
 						<div>
 							<hr>
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
 					<div class="col-md-7 col-xs-12 col-sm-12">
 						<div>
 							<p style="font-size: 200%;">5,000+</p>
@@ -120,12 +120,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="row bg-editor-hr-wrap">
+				<div class="row bg-editor-hr-wrap wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
 					<div class="col-md-12 col-xs-12 col-sm-12">
 						<hr>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s">
 					<div class="col-md-7 col-xs-12 col-sm-12">
 						<p style="font-size: 200%;">10 states</p>
 					</div>
@@ -135,12 +135,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="row bg-editor-hr-wrap">
+				<div class="row bg-editor-hr-wrap wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s">
 					<div class="col-md-12 col-xs-12 col-sm-12">
 						<hr>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row wow fadeIn" data-wow-duration="1s" data-wow-delay="2s">
 					<div class="col-md-7 col-xs-12 col-sm-12">
 						<p style="font-size: 200%;">45 funds</p>
 					</div>
@@ -150,12 +150,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="row bg-editor-hr-wrap">
+				<div class="row bg-editor-hr-wrap  wow fadeIn" data-wow-duration="1s" data-wow-delay="2s">
 					<div class="col-md-12 col-xs-12 col-sm-12">
 						<hr>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row  wow fadeIn" data-wow-duration="1s" data-wow-delay="2.5s">
 					<div class="col-md-7 col-xs-12 col-sm-12">
 						<p style="font-size: 200%;">30 years</p>
 					</div>
@@ -165,7 +165,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row bg-editor-hr-wrap">
+				<div class="row bg-editor-hr-wrap  wow fadeIn" data-wow-duration="1s" data-wow-delay="2.5s">
 					<div class="col-md-12 col-xs-12 col-sm-12">
 						<hr>
 					</div>
@@ -231,7 +231,7 @@
 
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-3 text-center align-column-center bg-box-border-thin color3-border-color" style="position:relative; z-index:1">
-				<div class="bg-box-flush bg-box-cover featured product-type color-neutral-background-color color-neutral-text-contrast bg-background-color bg-box">
+				<div class="bg-box-flush bg-box-cover featured product-type color-neutral-background-color color-neutral-text-contrast bg-background-color bg-box wow pulse" data-wow-duration="2.5s" data-wow-delay="1s">
 					<p class="product-name">PREMIUM</p>
 					<p class="price" style="background-color: rgba(0,0,0,.05);margin-top: 0;"> <span style="font-size: 1.5em; position: relative; top: -.9em;" class="color2-color">$</span> <span style="font-size: 2.5em;" class="color2-color">79</span> <span style="margin-top: 0; font-size: .9em; font-style: italic; display: block;">Yearly</span>                        </p>
 					<ul class="feature-list bg-list">
