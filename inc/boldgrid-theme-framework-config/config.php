@@ -22,7 +22,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['bgtfw_blog_post_readmore_link_color']['choices']['selectors'][] = '.bgc-single-article .read-more .link';
 
 		// New.
-		$config['customizer']['controls']['bgtfw_pages_container']['default'] = '';
+		$config['customizer']['controls']['bgtfw_pages_container']['default'] = 'container';
 
 		// Menu.
 		$config['customizer']['controls']['bgtfw_menu_margin_main']['default'] = [
