@@ -494,12 +494,12 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				// Widget $instance -> settings
 				array(
 					'title' => '',
-					'content' => '<img alt="Crio" style="margin:1em 0; width:100px;" src="' . get_parent_theme_file_uri( 'images/crio.svg' ) . '"><p style="margin-bottom: 1em">A Theme by BoldGrid. Try some of our other WordPress products.</p><ul><li><a href="https://www.boldgrid.com/boldgrid-inspirations">BoldGrid Inspirations</a></li><li><a href="https://www.boldgrid.com/boldgrid-seo">BoldGrid SEO</a></li><li><a href="https://www.boldgrid.com/boldgrid-backup">BoldGrid Backup</a></li><li><a href="https://www.boldgrid.com/post-and-page-builder">Post and Page Builder</a></li><li><a href="https://www.boldgrid.com/prototype-transfer-wordpress-site/">Cloud WordPress</a></li></ul>',
+					'content' => '<img alt="Crio" style="margin:1em 0; width:100px;" src="' . get_parent_theme_file_uri( 'images/crio.svg' ) . '"><p style="margin-bottom: 1em">A WordPress Theme by BoldGrid. Try our other products today.</p><ul><li><a href="https://www.boldgrid.com/boldgrid-backup">BoldGrid Backup</a></li><li><a href="https://www.boldgrid.com/post-and-page-builder">Post and Page Builder</a></li><li><a href="https://www.boldgrid.com/boldgrid-seo">BoldGrid SEO</a></li><li><a href="https://www.boldgrid.com/prototype-transfer-wordpress-site/">Cloud WordPress</a></li></ul>',
 				),
 			),
 		);
 
-		$config['starter-content']['widgets']['footer-2'] = array(
+		$config['starter-conttext_aboutent']['widgets']['footer-2'] = array(
 			'text_about',
 		);
 
