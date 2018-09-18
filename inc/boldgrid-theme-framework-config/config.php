@@ -508,7 +508,17 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		);
 
 		$config['starter-content']['widgets']['footer-4'] = array(
-			'text_business_info',
+			'custom_html' => array(
+
+				// Widget $id -> set when creating a Widget Class
+				'custom_html',
+
+				// Widget $instance -> settings
+				array(
+					'title' => '',
+					'content' => '<h3 class="widget-title">Contact Info</h3><p style="margin-top: 1.3em; margin-bottom: .3em;">1234 Franconia Way</p><p>New York City, New York 65432</p><p style="margin-top: 1.7em; margin-bottom: .3em;"><span class="color1-color" style="margin-right: .2em; font-weight: bold;">Email:</span> <a href="#">support@example.com</a></p><p><span class="color1-color" style="margin-right: .2em; font-weight: bold;">Phone:</span> <a href="#">+1 456 152 4652</a></p><p style="margin-top: 2em; "><i class="fa bg-inserted-icon fa-facebook-square color1-color" style="font-size: 22px; margin-right: .9em;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i><i class="fa bg-inserted-icon fa-twitter-square color1-color" style="font-size: 22px; margin-right: .9em;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i><i class="fa bg-inserted-icon fa-google-plus-square color1-color" style="font-size: 22px; margin-right: .9em;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i><i class="fa bg-inserted-icon fa-linkedin-square color1-color" style="font-size: 22px; margin-right: .9em;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i><i class="fa bg-inserted-icon fa-youtube-square color1-color" style="font-size: 22px; margin-right: .9em;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i></p>',
+				),
+			),
 		);
 
 		// Show excerpts instead of full blog post on blog and archives.
