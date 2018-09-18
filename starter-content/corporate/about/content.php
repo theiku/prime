@@ -57,12 +57,12 @@
 				<div class="row" style="margin-top: 2.2em;">
 					<div class="col-md-6 col-xs-12 col-sm-12">
 						<h4 class="h5 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s"  ><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Transformation</h4>
-						<h4 class="h5 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s"  style="margin-top: 2.2em;"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Operations &amp; Robotics</h4>
+						<h4 class="h5 wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"  style="margin-top: 2.2em;"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Operations &amp; Robotics</h4>
 					</div>
 					<div class="col-md-6 col-xs-12 col-sm-12">
 						<div>
-							<h4 class="h5 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" ><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"> </i>Information Technology</h4>
-							<h4 class="h5 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="margin-top: 2.2em;"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"> </i>Unlimited Possibilites</h4>
+							<h4 class="h5 wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s" ><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"> </i>Information Technology</h4>
+							<h4 class="h5 wow fadeIn" data-wow-duration="1s" data-wow-delay="2s" style="margin-top: 2.2em;"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"> </i>Unlimited Possibilites</h4>
 						</div>
 					</div>
 				</div>
