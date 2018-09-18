@@ -74,45 +74,41 @@
 		</div>
 	</div>
 </div>
-<div class="boldgrid-slider boldgrid-slider-wrap" data-config='{"arrows":false,"autoplay":true,"autoplaySpeed":"8","dots":true,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
-	<div class="boldgrid-section">
-		<div class="container">
-			<div class="row" style="padding-top: 100px;">
-				<div class="col-md-4 col-xs-12 col-sm-5">
-					<p><img src="<?php $image_path('about/about4.png') ?>" class="image-shadow"></p>
-				</div>
-				<div class="col-md-8 col-sm-7 col-xs-12">
-					<p class="h4">Leveraging sprints with the aim to take this offline. Executing transformation mapping with a goal to build ROI. Taking dark social to in turn think outside the box.</p>
-					<p class="h4" style="text-align: right; margin-top: 4.6em;">Starr Hudson</p>
-					<p style="text-align: right;" class="color1-color">Chief Executive Officer | Box Em Up</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="boldgrid-section">
-		<div class="container">
-			<div class="row" style="padding-top: 100px;">
-				<div class="col-md-4 col-xs-12 col-sm-5">
-					<p><img src="<?php $image_path('about/about4b.png') ?>" class="image-shadow"></p>
-				</div>
-				<div class="col-md-8 col-sm-7 col-xs-12">
-					<p class="h4">Engaging customer experience so that as an end result, we be CMSable. Leverage below the fold and finally gain traction. Generating bleeding edge and creating actionable insights.</p>
-					<p class="h4" style="text-align: right; margin-top: 4.6em;">Teresa Oliver</p>
-					<p style="text-align: right;" class="color1-color">Brand Expert | Mantell Design</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="boldgrid-section">
-		<div class="container">
-			<div class="row" style="padding-top: 100px;">
-				<div class="col-md-4 col-xs-12 col-sm-5">
-					<p><img src="<?php $image_path('about/about4c.png') ?>" class="image-shadow"></p>
-				</div>
-				<div class="col-md-8 col-sm-7 col-xs-12">
-					<p class="h4"> Generating best in class in order to improve overall outcomes. Inform outside the box thinking and finally target the low hanging fruit.</p>
-					<p class="h4" style="text-align: right; margin-top: 4.6em;">Leslie Boone</p>
-					<p style="text-align: right;" class="color1-color">Support Staff | Gerwyn Financial</p>
+<div class="boldgrid-section">
+	<div class="container">
+		<div class="row row-spacing">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="boldgrid-wrap-row boldgrid-slider" data-config='{"arrows":false,"autoplay":true,"autoplaySpeed":"8","dots":true,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
+					<div class="row">
+						<div class="col-md-4 col-xs-12 col-sm-5">
+							<p><img src="<?php $image_path('about/about4.png') ?>" class="image-shadow"></p>
+						</div>
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<p class="h4">Leveraging sprints with the aim to take this offline. Executing transformation mapping with a goal to build ROI. Taking dark social to in turn think outside the box.</p>
+							<p class="h4" style="text-align: right; margin-top: 4.6em;">Starr Hudson</p>
+							<p style="text-align: right;" class="color1-color">Chief Executive Officer | Box Em Up</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-xs-12 col-sm-5">
+							<p><img src="<?php $image_path('about/about4b.png') ?>" class="image-shadow"></p>
+						</div>
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<p class="h4">Engaging customer experience so that as an end result, we be CMSable. Leverage below the fold and finally gain traction. Generating bleeding edge and creating actionable insights.</p>
+							<p class="h4" style="text-align: right; margin-top: 4.6em;">Teresa Oliver</p>
+							<p style="text-align: right;" class="color1-color">Brand Expert | Mantell Design</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-xs-12 col-sm-5">
+							<p><img src="<?php $image_path('about/about4c.png') ?>" class="image-shadow"></p>
+						</div>
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<p class="h4"> Generating best in class in order to improve overall outcomes. Inform outside the box thinking and finally target the low hanging fruit.</p>
+							<p class="h4" style="text-align: right; margin-top: 4.6em;">Leslie Boone</p>
+							<p style="text-align: right;" class="color1-color">Support Staff | Gerwyn Financial</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
