@@ -22,7 +22,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6 col-xs-12 col-sm-6"></div>
+			<div class="col-md-6 col-xs-12 col-sm-6">
+				<div class="bg-box" style="padding: 2em">
+					<?php echo BoldGrid_Framework_Starter_Content::get_form_shortcode( __DIR__ . '/../wpforms/form-1.json' ); ?>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
