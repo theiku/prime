@@ -24,7 +24,20 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// New.
 		$config['customizer']['controls']['bgtfw_pages_container']['default'] = '';
 
-		// Menu.
+		$config['customizer']['controls']['bgtfw_footer_padding']['default'] = [
+			[
+				'media' => [ 'base' ],
+				'unit' => 'em',
+				'isLinked' => true,
+				'values' => [
+					'top' => 3,
+					'left' => 3,
+					'right' => 3,
+					'bottom' => 3
+				],
+			],
+		];
+
 		$config['customizer']['controls']['bgtfw_menu_margin_main']['default'] = [
 			[
 				'media' => [ 'base' ],
@@ -374,7 +387,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['bgtfw_header_color']['default'] = 'color-neutral';
 
 		// Footer specific colors for background, headings, and links.
-		$config['customizer']['controls']['bgtfw_footer_color']['default'] = 'color-5';
+		$config['customizer']['controls']['bgtfw_footer_color']['default'] = 'color-2';
 		$config['customizer']['controls']['bgtfw_footer_links']['default'] = 'color-1';
 
 		// Page title display settings, show by default.
@@ -438,6 +451,21 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Set the primary sidebar headings color.
 		$config['customizer']['controls']['sidebar_meta']['primary-sidebar']['headings_color'] = 'color-2';
 
+		// Footer widget row.
+		$config['customizer']['controls']['boldgrid_footer_widgets']['default'] = '4';
+		$config['customizer']['controls']['sidebar_meta']['footer-1']['background_color'] = 'color-2';
+		$config['customizer']['controls']['sidebar_meta']['footer-2']['background_color'] = 'color-2';
+		$config['customizer']['controls']['sidebar_meta']['footer-3']['background_color'] = 'color-2';
+		$config['customizer']['controls']['sidebar_meta']['footer-4']['background_color'] = 'color-2';
+		$config['customizer']['controls']['sidebar_meta']['footer-1']['headings_color'] = 'color-1';
+		$config['customizer']['controls']['sidebar_meta']['footer-2']['headings_color'] = 'color-1';
+		$config['customizer']['controls']['sidebar_meta']['footer-3']['headings_color'] = 'color-1';
+		$config['customizer']['controls']['sidebar_meta']['footer-4']['headings_color'] = 'color-1';
+		$config['customizer']['controls']['sidebar_meta']['footer-1']['links_color'] = 'color-4';
+		$config['customizer']['controls']['sidebar_meta']['footer-2']['links_color'] = 'color-4';
+		$config['customizer']['controls']['sidebar_meta']['footer-3']['links_color'] = 'color-4';
+		$config['customizer']['controls']['sidebar_meta']['footer-4']['links_color'] = 'color-4';
+
 		// Register primary sidebar widgets..
 		$config['starter-content']['widgets']['primary-sidebar'] = array(
 			// Widget ID
@@ -455,6 +483,32 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'search',
 			'category',
 			'recent-posts',
+		);
+
+		$config['starter-content']['widgets']['footer-1'] = array(
+			'custom_html' => array(
+
+				// Widget $id -> set when creating a Widget Class
+				'custom_html',
+
+				// Widget $instance -> settings
+				array(
+					'title' => '',
+					'content' => '<img alt="Crio" style="margin:1em 0; width:100px;" src="' . get_parent_theme_file_uri( 'images/crio.svg' ) . '"><p style="margin-bottom: 1em">A Theme by BoldGrid. Try some of our other WordPress products.</p><ul><li><a href="https://www.boldgrid.com/boldgrid-inspirations">BoldGrid Inspirations</a></li><li><a href="https://www.boldgrid.com/boldgrid-seo">BoldGrid SEO</a></li><li><a href="https://www.boldgrid.com/boldgrid-backup">BoldGrid Backup</a></li><li><a href="https://www.boldgrid.com/post-and-page-builder">Post and Page Builder</a></li><li><a href="https://www.boldgrid.com/prototype-transfer-wordpress-site/">Cloud WordPress</a></li></ul>',
+				),
+			),
+		);
+
+		$config['starter-content']['widgets']['footer-2'] = array(
+			'text_about',
+		);
+
+		$config['starter-content']['widgets']['footer-3'] = array(
+			'recent-posts',
+		);
+
+		$config['starter-content']['widgets']['footer-4'] = array(
+			'text_business_info',
 		);
 
 		// Show excerpts instead of full blog post on blog and archives.
@@ -577,6 +631,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		);
 
 		// Social Menu configuration.
+		/*
 		$config['starter-content']['nav_menus']['social'] = array(
 			'name' => __( 'Social Media Links', 'bgtfw' ),
 			'items' => array(
@@ -587,7 +642,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'link_email',
 			),
 		);
-
+		*/
 
 		// Set the default link color of the social menu location.
 		$config['customizer']['controls']['bgtfw_menu_items_link_color_social']['default'] = 'color-1';
