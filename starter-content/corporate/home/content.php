@@ -11,8 +11,35 @@
 		'widget-boldgrid_component_postlist[][date]' => 1,
 		'widget-boldgrid_component_postlist[][image_size]' => 'medium',
 	] ) );
-} ?>
-<div class="boldgrid-slider boldgrid-section-wrap" data-config='{"arrows":true,"autoplay":true,"autoplaySpeed":"10","dots":false,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
+};
+
+$serviceIcons = function() use ( $image_path ) { ?>
+	<div class="row">
+		<div class="col-md-4 col-sm-12 col-xs-12">
+			<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
+				<img src="<?php $image_path('icons/development.svg') ?>" style="height: 75px;">
+				<h4 class="color-2-text-contrast">Advanced Analytics</h4>
+				<p class="">Building brand integration and possibly funnel users.</p>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-12 col-xs-12">
+			<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
+				<img src="<?php $image_path('icons/business.svg') ?>" style="height: 75px;">
+				<h4 class="color-2-text-contrast">Finance</h4>
+				<p class="">Building brand integration and possibly funnel users.</p>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-12 col-xs-12">
+			<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
+				<img src="<?php $image_path('icons/strategy.svg') ?>" style="height: 75px;">
+				<h4 class="color-2-text-contrast">Strategy & Marketing</h4>
+				<p class="">Building brand integration and possibly funnel users.</p>
+			</div>
+		</div>
+	</div>
+<?php }; ?>
+
+<div class="boldgrid-slider boldgrid-section-wrap" data-config='{"arrows":true,"autoplay":true,"autoplaySpeed":"10","dots":false,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"chevron","arrowsSize":"15","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
 	<div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1.png') ?>)">
 		<div class="container">
 			<div class="row row-spacing-lg">
@@ -63,7 +90,7 @@
 				<p class="h6 color1-color" style="margin-bottom: 0; text-transform: uppercase;">Where We Started</p>
 				<h2 style="margin-top: 0;">Our Story</h2>
 				<?php $divider(); ?>
-				<p style="margin-bottom: 1.5em;margin-top: 1em;">Executing big data with the aim to improve overall outcomes. Build user stories so that as an end result, we create actionable insights. Engage audience segments and above all, use best practice. Target key demographics while remembering
+				<p style="margin: 1.5em 0">Executing big data with the aim to improve overall outcomes. Build user stories so that as an end result, we create actionable insights. Engage audience segments and above all, use best practice. Target key demographics while remembering
 					to get buy in.</p>
 				<p style="margin-bottom: 2.5em;">Generating dark social so that as an end result, we use best practice. Synchronizing first party data so that we be transparent.</p>
 				<p style="margin-bottom: 2.5em;"><a href="#" class="button-primary">Learn More</a></p>
@@ -84,25 +111,11 @@
 			</div>
 		</div>
 		<div class="row row-spacing-lg-bottom">
-			<div class="col-md-4 col-sm-12 col-xs-12">
-				<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
-					<img src="<?php $image_path('icons/development.svg') ?>" style="height: 75px;">
-					<h4 class="color-2-text-contrast">Advanced Analytics</h4>
-					<p class="">Building brand integration and possibly funnel users.</p>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-12 col-xs-12">
-				<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
-					<img src="<?php $image_path('icons/business.svg') ?>" style="height: 75px;">
-					<h4 class="color-2-text-contrast">Finance</h4>
-					<p class="">Building brand integration and possibly funnel users.</p>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-12 col-xs-12">
-				<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
-					<img src="<?php $image_path('icons/strategy.svg') ?>" style="height: 75px;">
-					<h4 class="color-2-text-contrast">Strategy & Marketing</h4>
-					<p class="">Building brand integration and possibly funnel users.</p>
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="boldgrid-wrap-row boldgrid-slider bg-box-cover"  data-config='{"arrows":true,"autoplay":true,"autoplaySpeed":"10","dots":false,"infinite":true,"bgOptions":{"arrowsPos":"top-right","arrowsOverlay":false,"arrowsBgColor":"1","arrowsIcon":"chevron","arrowsSize":"15","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
+					<?php $serviceIcons(); ?>
+					<?php $serviceIcons(); ?>
+					<?php $serviceIcons(); ?>
 				</div>
 			</div>
 		</div>
