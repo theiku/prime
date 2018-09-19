@@ -610,7 +610,18 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 					'top' => 3,
 					'left' => 3,
 					'right' => 3,
-					'bottom' => 3
+					'bottom' => 3,
+				],
+			],
+			[
+				'media' => [ 'tablet', 'phone' ],
+				'unit' => 'em',
+				'isLinked' => true,
+				'values' => [
+					'top' => 1.5,
+					'left' => 1.5,
+					'right' => 1.5,
+					'bottom' => 1.5,
 				],
 			],
 		];

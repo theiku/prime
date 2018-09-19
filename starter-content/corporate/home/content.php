@@ -59,16 +59,16 @@
 <div class="boldgrid-section">
 	<div class="container">
 		<div class="row row-spacing-lg">
-			<div class="col-md-6 col-sm-12 col-xs-12">
+			<div class="col-md-6 col-sm-6 col-xs-12">
 				<p class="h6 color1-color" style="margin-bottom: 0; text-transform: uppercase;">Where We Started</p>
 				<h2 style="margin-top: 0;">Our Story</h2>
 				<?php $divider(); ?>
-				<p style="margin-bottom: 1.5em;">Executing big data with the aim to improve overall outcomes. Build user stories so that as an end result, we create actionable insights. Engage audience segments and above all, use best practice. Target key demographics while remembering
+				<p style="margin-bottom: 1.5em;margin-top: 1em;">Executing big data with the aim to improve overall outcomes. Build user stories so that as an end result, we create actionable insights. Engage audience segments and above all, use best practice. Target key demographics while remembering
 					to get buy in.</p>
 				<p style="margin-bottom: 2.5em;">Generating dark social so that as an end result, we use best practice. Synchronizing first party data so that we be transparent.</p>
-				<p><a href="#" class="button-primary">Learn More</a></p>
+				<p style="margin-bottom: 2.5em;"><a href="#" class="button-primary">Learn More</a></p>
 			</div>
-			<div class="col-md-6 col-sm-12 col-xs-12 align-column-center">
+			<div class="col-md-6 col-sm-6 col-xs-12 align-column-center">
 				<p class="text-center"><img class="bg-img bg-img-3" src="<?php $image_path('home/home2.png') ?>"></p>
 			</div>
 		</div>
@@ -85,21 +85,21 @@
 		</div>
 		<div class="row row-spacing-lg-bottom">
 			<div class="col-md-4 col-sm-12 col-xs-12">
-				<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.6em;">
+				<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
 					<img src="<?php $image_path('icons/development.svg') ?>" style="height: 75px;">
 					<h4 class="color-2-text-contrast">Advanced Analytics</h4>
 					<p class="">Building brand integration and possibly funnel users.</p>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12 col-xs-12">
-				<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.6em;">
+				<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
 					<img src="<?php $image_path('icons/business.svg') ?>" style="height: 75px;">
 					<h4 class="color-2-text-contrast">Finance</h4>
 					<p class="">Building brand integration and possibly funnel users.</p>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12 col-xs-12">
-				<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.6em;">
+				<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
 					<img src="<?php $image_path('icons/strategy.svg') ?>" style="height: 75px;">
 					<h4 class="color-2-text-contrast">Strategy & Marketing</h4>
 					<p class="">Building brand integration and possibly funnel users.</p>
@@ -110,18 +110,18 @@
 </div>
 <div class="boldgrid-section">
 	<div class="container">
-		<div class="row row-spacing-sm">
+		<div class="row row-spacing-md">
 			<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-				<p class="mod-reset wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s"><img src="<?php $image_path('home/logo1.png') ?>"></p>
+				<p class="mod-reset wow fadeIn" data-wow-duration="1s" data-wow-delay="0.50s"><img src="<?php $image_path('home/logo1.png') ?>"></p>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-				<p class="mod-reset wow fadeIn" data-wow-duration="1s" data-wow-delay="0.50s"><img src="<?php $image_path('home/logo3.png') ?>"></p>
+				<p class="mod-reset wow fadeIn" data-wow-duration="1s" data-wow-delay="0.75s"><img src="<?php $image_path('home/logo3.png') ?>"></p>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-				<p class="mod-reset wow fadeIn" data-wow-duration="1s" data-wow-delay="0.75s"><img src="<?php $image_path('home/logo4.png') ?>"></p>
+				<p class="mod-reset wow fadeIn" data-wow-duration="1s" data-wow-delay="1.00s"><img src="<?php $image_path('home/logo4.png') ?>"></p>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-				<p class="mod-reset wow fadeIn" data-wow-duration="1s" data-wow-delay="1.00s"><img src="<?php $image_path('home/logo5.png') ?>"></p>
+				<p class="mod-reset wow fadeIn" data-wow-duration="1s" data-wow-delay="1.25s"><img src="<?php $image_path('home/logo5.png') ?>"></p>
 			</div>
 		</div>
 	</div>
@@ -202,10 +202,11 @@
 <div class="boldgrid-section" style="background-size: cover; background-position: 50% 37%; background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home9.png') ?>)">
 	<div class="container">
 		<div class="row row-spacing-sm">
-			<div class="col-md-8 col-sm-12 col-xs-12">
+			<div class="col-md-7 col-sm-12 col-xs-12">
 				<h3 style="color: #fff;">Create daily standups to in turn re-target key demographics.</h3>
 			</div>
-			<div class="col-md-4 col-sm-12 col-xs-12 text-right align-column-center">
+			<div class="col-md-3 col-sm-12 col-xs-12"></div>
+			<div class="col-md-2 col-sm-12 col-xs-12 align-column-center">
 				<p class="wow pulse" data-wow-duration="1s" data-wow-delay="1s" style="margin-top: 1em;"><a href="#" class="button-primary">Contact Us</a></p>
 			</div>
 		</div>
