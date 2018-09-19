@@ -17,77 +17,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 	 */
 	function boldgrid_prime_framework_config( $config ) {
 
-
-		// Move to Post and Page builder. also add bgtfw_blog_post_readmore_position or loosen selector.
-		$config['customizer']['controls']['bgtfw_blog_post_readmore_link_color']['choices']['selectors'][] = '.bgc-single-article .read-more .link';
-
-		// New.
-		$config['customizer']['controls']['bgtfw_pages_container']['default'] = '';
-
-		$config['customizer']['controls']['bgtfw_footer_padding']['default'] = [
-			[
-				'media' => [ 'base' ],
-				'unit' => 'em',
-				'isLinked' => true,
-				'values' => [
-					'top' => 3,
-					'left' => 3,
-					'right' => 3,
-					'bottom' => 3
-				],
-			],
-		];
-
-		$config['customizer']['controls']['bgtfw_menu_margin_main']['default'] = [
-			[
-				'media' => [ 'base' ],
-				'unit' => 'px',
-				'isLinked' => false,
-				'values' => [
-					'bottom' => 20,
-				],
-			],
-		];
-
-		$config['customizer']['controls']['bgtfw_header_border']['default'] = [
-			[
-				'media' => [ 'base' ],
-				'unit' => 'px',
-				'isLinked' => false,
-				'type' => 'solid',
-				'values' => [
-					'top' => 0,
-					'left' => 0,
-					'right' => 0,
-					'bottom' => 5
-				],
-			],
-		];
-
-		$config['customizer']['controls']['bgtfw_blog_margin']['default'] = [
-			[
-				'media' => [ 'base' ],
-				'unit' => 'em',
-				'isLinked' => false,
-				'values' => [
-					'top' => 0,
-					'bottom' => 3
-				],
-			],
-		];
-
-		$config['customizer']['controls']['bgtfw_header_border_color']['default'] = 'color-3';
-
-		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_main']['default'] = 'color-1';
-		$config['customizer']['controls']['bgtfw_menu_items_link_color_main']['default'] = 'color-2';
-		$config['customizer']['controls']['bgtfw_menu_items_hover_color_main']['default'] = 'color-1';
-		$config['customizer']['controls']['bgtfw_menu_items_hover_effect_main']['default'] = 'hvr-underline-from-center';
-
-		// Content Links.
-		$config['customizer']['controls']['bgtfw_body_link_decoration']['default'] = 'none';
-
-		// End New.
-
 		// Disable old typography controls in favor of new ones.
 		$config['customizer-options']['typography']['controls']['main_text'] = false;
 		$config['customizer-options']['typography']['controls']['subheadings'] = false;
@@ -371,6 +300,9 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'page_for_posts' => '{{blog}}',
 		);
 
+		// Pages container.
+		$config['customizer']['controls']['bgtfw_pages_container']['default'] = '';
+
 		// Primary background color.
 		$config['customizer']['controls']['boldgrid_background_color']['default'] = 'color-neutral';
 
@@ -385,6 +317,9 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Header specific colors for background, headings, and links.
 		$config['customizer']['controls']['bgtfw_header_color']['default'] = 'color-neutral';
+
+		// Header Border Color.
+		$config['customizer']['controls']['bgtfw_header_border_color']['default'] = 'color-3';
 
 		// Footer specific colors for background, headings, and links.
 		$config['customizer']['controls']['bgtfw_footer_color']['default'] = 'color-2';
@@ -665,6 +600,74 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		);
 		*/
 
+		// Advanced Controls.
+		$config['customizer']['controls']['bgtfw_footer_padding']['default'] = [
+			[
+				'media' => [ 'base' ],
+				'unit' => 'em',
+				'isLinked' => true,
+				'values' => [
+					'top' => 3,
+					'left' => 3,
+					'right' => 3,
+					'bottom' => 3
+				],
+			],
+		];
+
+		$config['customizer']['controls']['bgtfw_menu_margin_main']['default'] = [
+			[
+				'media' => [ 'base' ],
+				'unit' => 'px',
+				'isLinked' => false,
+				'values' => [
+					'bottom' => 20,
+				],
+			],
+		];
+
+		$config['customizer']['controls']['bgtfw_header_border']['default'] = [
+			[
+				'media' => [ 'base' ],
+				'unit' => 'px',
+				'isLinked' => false,
+				'type' => 'solid',
+				'values' => [
+					'top' => 0,
+					'left' => 0,
+					'right' => 0,
+					'bottom' => 5
+				],
+			],
+		];
+
+		$config['customizer']['controls']['bgtfw_blog_margin']['default'] = [
+			[
+				'media' => [ 'base' ],
+				'unit' => 'em',
+				'isLinked' => false,
+				'values' => [
+					'top' => 0,
+					'bottom' => 3
+				],
+			],
+		];
+
+		// Content Links.
+		$config['customizer']['controls']['bgtfw_body_link_decoration']['default'] = 'none';
+
+		// Primary Menu -Link color.
+		$config['customizer']['controls']['bgtfw_menu_items_link_color_main']['default'] = 'color-2';
+
+		// Primary Menu - Active link color.
+		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_main']['default'] = 'color-1';
+
+		// Primary Menu - Hover color.
+		$config['customizer']['controls']['bgtfw_menu_items_hover_color_main']['default'] = 'color-1';
+
+		// Primary Menu - Hover Effect.
+		$config['customizer']['controls']['bgtfw_menu_items_hover_effect_main']['default'] = 'hvr-underline-from-center';
+
 		// Set the default link color of the social menu location.
 		$config['customizer']['controls']['bgtfw_menu_items_link_color_social']['default'] = 'color-1';
 
@@ -690,6 +693,9 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Button Classes
 		$config['components']['buttons']['variables']['button-primary-classes'] = '.btn, .btn-color-1, .btn-pill';
 		$config['components']['buttons']['variables']['button-secondary-classes'] = '.btn, .btn-color-2, .btn-pill';
+
+		/*** Post and Page Builder Support ***/
+		$config['customizer']['controls']['bgtfw_blog_post_readmore_link_color']['choices']['selectors'][] = '.bgc-single-article .read-more .link';
 
 		// Configs above will override framework defaults.
 		return $config;
