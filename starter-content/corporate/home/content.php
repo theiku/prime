@@ -15,7 +15,7 @@
 <div class="boldgrid-slider boldgrid-section-wrap" data-config='{"arrows":true,"autoplay":true,"autoplaySpeed":"10","dots":false,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
 	<div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1.png') ?>)">
 		<div class="container">
-			<div class="row row-spacing">
+			<div class="row row-spacing-lg">
 				<div class="col-md-6 col-sm-12 col-xs-12">
 					<p class="h6" style="color: #fff; margin-bottom: 0; text-transform: uppercase;">We Help Entrepreneurs</p>
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Grow Your Business</h2>
@@ -29,7 +29,7 @@
 	</div>
 	<div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1a.png') ?>)">
 		<div class="container">
-			<div class="row row-spacing">
+			<div class="row row-spacing-lg">
 				<div class="col-md-6 col-sm-12 col-xs-12">
 					<p class="h6" style="color: #fff; margin-bottom: 0; text-transform: uppercase;">Let Us Help</p>
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Dedicated to Quality</h2>
@@ -43,7 +43,7 @@
 	</div>
 	<div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1b.png') ?>)">
 		<div class="container">
-			<div class="row row-spacing">
+			<div class="row row-spacing-lg">
 				<div class="col-md-6 col-sm-12 col-xs-12">
 					<p class="h6" style="color: #fff; margin-bottom: 0; text-transform: uppercase;">Bold Solutions</p>
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Industry Leaders</h2>
@@ -58,7 +58,7 @@
 </div>
 <div class="boldgrid-section">
 	<div class="container">
-		<div class="row row-spacing">
+		<div class="row row-spacing-lg">
 			<div class="col-md-6 col-sm-12 col-xs-12">
 				<p class="h6 color1-color" style="margin-bottom: 0; text-transform: uppercase;">Where We Started</p>
 				<h2 style="margin-top: 0;">Our Story</h2>
@@ -69,21 +69,21 @@
 				<p><a href="#" class="button-primary">Learn More</a></p>
 			</div>
 			<div class="col-md-6 col-sm-12 col-xs-12 align-column-center">
-				<p class="text-center"><img class="image-shadow" src="<?php $image_path('home/home2.png') ?>"></p>
+				<p class="text-center"><img class="bg-img bg-img-3" src="<?php $image_path('home/home2.png') ?>"></p>
 			</div>
 		</div>
 	</div>
 </div>
 <div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home3.png') ?>)">
 	<div class="container">
-		<div class="row row-spacing-top">
+		<div class="row row-spacing-lg-top">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<p class="h6" style="color: #fff; margin-bottom: 0; text-transform: uppercase;">What We Do</h6>
 				<h2 style="color: #fff; margin-top: 0;">Services</h2>
 				<?php $divider(); ?>
 			</div>
 		</div>
-		<div class="row row-spacing-bottom">
+		<div class="row row-spacing-lg-bottom">
 			<div class="col-md-4 col-sm-12 col-xs-12">
 				<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.6em;">
 					<img src="<?php $image_path('icons/development.svg') ?>" style="height: 75px;">
@@ -128,7 +128,7 @@
 </div>
 <div class="boldgrid-section color4-background-color">
 	<div class="container">
-		<div class="row row-spacing-top">
+		<div class="row row-spacing-lg-top">
 			<div class="col-md-5 col-sm-12 col-xs-12">
 				<p class="color1-color h6" style="margin-bottom: 0; text-transform: uppercase;">Read All About It</p>
 				<h2 style="margin-top: 0;">Recent News</h2>
@@ -138,7 +138,7 @@
 				<p>Target user stories so that we maximise share of voice. Grow cloud computing with the aim to take this offline. Lead integrated tech stacks and above all, target the low hanging fruit.</p>
 			</div>
 		</div>
-		<div class="row row-spacing-bottom wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s" style="padding-top: 15px;" >
+		<div class="row row-spacing-lg-bottom wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s" style="padding-top: 15px;" >
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div class="boldgrid-shortcode" data-imhwpb-draggable="true">
 					[boldgrid_component type="wp_boldgrid_component_postlist" opts="<?php print $post_widget_opts(); ?>"]
@@ -149,20 +149,20 @@
 </div>
 <div class="boldgrid-section">
 	<div class="container">
-		<div class="row row-spacing-top">
+		<div class="row row-spacing-lg-top">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<p class="h6 color1-color" style="margin-bottom: 0; text-transform: uppercase;">Meet the Professionals</p>
 				<h2 style="margin-top: 0;">Team</h2>
 				<?php $divider(); ?>
 			</div>
 		</div>
-		<div class="row row-spacing-bottom" style="padding-top: 40px;">
+		<div class="row row-spacing-lg-bottom" style="padding-top: 40px;">
 			<div class="col-md-6 col-sm-12 col-xs-12">
 				<div class="boldgrid-slider boldgrid-wrap-row" data-config='{"arrows":false,"autoplay":true,"autoplaySpeed":"8","dots":true,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
 					<div class="row">
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div class="text-center">
-								<img class="image-shadow" src="<?php $image_path('home/home7.png') ?>">
+								<img class="bg-img bg-img-3" src="<?php $image_path('home/home7.png') ?>">
 								<h4 style="margin-top: 1em;font-size: 1.2em;">Nathan Counsel</h4>
 								<p>Chief Executive Officer</p>
 							</div>
@@ -171,7 +171,7 @@
 					<div class="row">
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div class="text-center">
-								<img class="image-shadow" src="<?php $image_path('home/home8.png') ?>">
+								<img class="bg-img bg-img-3" src="<?php $image_path('home/home8.png') ?>">
 								<h4 style="margin-top: 1em;font-size: 1.2em;">Sue Wolfe</h4>
 								<p>Chief Financial Officer</p>
 							</div>
@@ -180,7 +180,7 @@
 					<div class="row">
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div class="text-center">
-								<img class="image-shadow" src="<?php $image_path('home/home8a.png') ?>">
+								<img class="bg-img bg-img-3" src="<?php $image_path('home/home8a.png') ?>">
 								<h4 style="margin-top: 1em;font-size: 1.2em;">Sam Wood</h4>
 								<p>Product Management</p>
 							</div>

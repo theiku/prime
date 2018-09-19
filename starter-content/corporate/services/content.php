@@ -23,7 +23,7 @@
 				<a class="button-primary" href="#">Learn More</a>
 			</div>
 			<div class="col-md-6 col-sm-12 col-xs-12 align-column-center">
-				<p><img class="image-shadow" src="<?php $image_path('services/services1.png') ?>"></p>
+				<img class="bg-img bg-img-3" src="<?php $image_path('services/services1.png') ?>">
 			</div>
 		</div>
 	</div>
