@@ -214,7 +214,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'thumbnail' => '{{about-featured}}',
 				'post_content' => bgtfw_get_contents( '/corporate/about/content.php' ),
 			),
-			'menu' => array(
+			'services' => array(
 				'post_type' => 'page',
 				'post_title' => 'Services',
 				'thumbnail' => '{{services-featured}}',
@@ -572,10 +572,10 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 					'object' => 'page',
 					'object_id' => '{{about}}',
 				),
-				'page_menu' => array(
+				'page_services' => array(
 					'type' => 'post_type',
 					'object' => 'page',
-					'object_id' => '{{menu}}',
+					'object_id' => '{{services}}',
 				),
 				'page_blog',
 				'page_contact'=> array(
