@@ -174,7 +174,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'slug'      => 'post-and-page-builder',
 
 				// Temp. install release candidate.
-				'source'    => 'https://downloads.wordpress.org/plugin/post-and-page-builder.1.8.0-rc.1.zip',
+				'source'    => 'https://downloads.wordpress.org/plugin/post-and-page-builder.1.8.0-rc.2.zip',
 				'required'  => true,
 			),
 			array(
