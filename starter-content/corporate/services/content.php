@@ -190,7 +190,7 @@
 			<div class="col-md-3 col-xs-12 col-sm-3 text-center align-column-center">
 				<div class="bg-box-flush bg-box-cover basic product-type color-neutral-background-color color-neutral-text-contrast bg-background-color bg-box" style="margin-top: .6em; margin-bottom: .6em;">
 					<p class="product-name">STANDARD</p>
-					<p class="price" style="background-color: rgba(0,0,0,.05);margin-top: 0;"> <span style="font-size: 1.5em; position: relative; top: -.9em;" class="color2-color">$</span> <span style="font-size: 2.5em;" class="color2-color">39</span> <span style="margin-top: 0; font-size: .9em; font-style: italic; display: block;">Yearly</span>                        </p>
+					<p class="price" class="color2-color" style="background-color: rgba(0,0,0,.05);margin-top: 0;"> <span style="font-size: 1.5em; position: relative; top: -.9em;">$</span> <span style="font-size: 2.5em;">39</span> <span style="margin-top: 0; font-size: .9em; font-style: italic; display: block;">Yearly</span>                        </p>
 					<ul class="feature-list bg-list">
 						<li>Feature 1</li>
 						<li>Feature 2</li>
@@ -210,7 +210,7 @@
 			<div class="col-md-3 col-xs-12 col-sm-3 text-center align-column-center">
 				<div class="bg-box-flush bg-box-cover basic product-type color-neutral-background-color color-neutral-text-contrast bg-background-color bg-box" style="margin-top: .6em; margin-bottom: .6em;">
 					<p class="product-name">BUSINESS</p>
-					<p class="price" style="background-color: rgba(0,0,0,.05);margin-top: 0;"> <span style="font-size: 1.5em; position: relative; top: -.9em;" class="color2-color">$</span> <span style="font-size: 2.5em;" class="color2-color">59</span> <span style="margin-top: 0; font-size: .9em; font-style: italic; display: block;">Yearly</span>                        </p>
+					<p class="price" class="color2-color" style="background-color: rgba(0,0,0,.05);margin-top: 0;"> <span style="font-size: 1.5em; position: relative; top: -.9em;">$</span> <span style="font-size: 2.5em;">59</span> <span style="margin-top: 0; font-size: .9em; font-style: italic; display: block;">Yearly</span>                        </p>
 					<ul class="feature-list bg-list">
 						<li>Feature 1</li>
 						<li>Feature 2</li>
@@ -231,7 +231,7 @@
 			<div class="col-md-3 col-xs-12 col-sm-3 text-center align-column-center bg-box-border-thin color3-border-color" style="position:relative; z-index:1">
 				<div class="bg-box-flush bg-box-cover featured product-type color-neutral-background-color color-neutral-text-contrast bg-background-color bg-box wow pulse" data-wow-duration="2.5s" data-wow-delay="1s">
 					<p class="product-name">PREMIUM</p>
-					<p class="price" style="background-color: rgba(0,0,0,.05);margin-top: 0;"> <span style="font-size: 1.5em; position: relative; top: -.9em;" class="color2-color">$</span> <span style="font-size: 2.5em;" class="color2-color">79</span> <span style="margin-top: 0; font-size: .9em; font-style: italic; display: block;">Yearly</span>                        </p>
+					<p class="price" class="color2-color" style="background-color: rgba(0,0,0,.05);margin-top: 0;"> <span style="font-size: 1.5em; position: relative; top: -.9em;">$</span> <span style="font-size: 2.5em;">79</span> <span style="margin-top: 0; font-size: .9em; font-style: italic; display: block;">Yearly</span>                        </p>
 					<ul class="feature-list bg-list">
 						<li>Feature 1</li>
 						<li>Feature 2</li>
@@ -252,7 +252,7 @@
 			<div class="col-md-3 col-xs-12 col-sm-3 text-center align-column-center">
 				<div class="bg-box-flush bg-box-cover basic product-type color-neutral-background-color color-neutral-text-contrast bg-background-color bg-box" style="margin-top: .6em; margin-bottom: .6em;">
 					<p class="product-name">ULTIMATE</p>
-					<p class="price" style="background-color: rgba(0,0,0,.05);margin-top: 0;"> <span style="font-size: 1.5em; position: relative; top: -.9em;" class="color2-color">$</span> <span style="font-size: 2.5em;" class="color2-color">109</span> <span style="margin-top: 0; font-size: .9em; font-style: italic; display: block;">Yearly</span>                        </p>
+					<p class="price" class="color2-color" style="background-color: rgba(0,0,0,.05);margin-top: 0;"> <span style="font-size: 1.5em; position: relative; top: -.9em;">$</span> <span style="font-size: 2.5em;">109</span> <span style="margin-top: 0; font-size: .9em; font-style: italic; display: block;">Yearly</span>                        </p>
 					<ul class="feature-list bg-list">
 						<li>Feature 1</li>
 						<li>Feature 2</li>
