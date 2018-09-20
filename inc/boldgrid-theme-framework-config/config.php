@@ -336,7 +336,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['bgtfw_fixed_header']['default'] = true;
 
 		// Default header layout will be layout-4.
-		$config['customizer']['controls']['bgtfw_header_top_layouts']['default'] = 'layout-4';
+		$config['customizer']['controls']['bgtfw_header_top_layouts']['default'] = 'layout-2';
 
 		// Default header will be in container.
 		$config['customizer']['controls']['header_container']['default'] = 'container';
