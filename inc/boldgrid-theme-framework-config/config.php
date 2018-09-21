@@ -715,6 +715,9 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// This content set uses pages set to full width.
 		$config['starter-content']['theme_mods']['bgtfw_pages_container'] = '';
 
+		// Remove contact block control.
+		unset( $config['customizer']['controls']['boldgrid_contact_details_setting'] );
+
 		// Configs above will override framework defaults.
 		return $config;
 	}
