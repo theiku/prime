@@ -116,15 +116,15 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			),
 			'about-featured' => array(
 				'post_title' => _x( 'About Us', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'starter-content/corporate/about/featured.png',
+				'file' => 'starter-content/corporate/about/featured.jpg',
 			),
 			'services-featured' => array(
 				'post_title' => _x( 'Services', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'starter-content/corporate/services/featured.png',
+				'file' => 'starter-content/corporate/services/featured.jpg',
 			),
 			'blog-featured' => array(
 				'post_title' => _x( 'Blog', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'starter-content/corporate/blog/featured.png',
+				'file' => 'starter-content/corporate/blog/featured.jpg',
 			),
 
 			// Blog Posts Home.
