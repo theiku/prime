@@ -54,7 +54,7 @@ $serviceIcons = function() use ( $image_path ) { ?>
 			</div>
 		</div>
 	</div>
-	<div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1a.png') ?>)">
+	<div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1a.jpg') ?>)">
 		<div class="container">
 			<div class="row row-spacing-lg">
 				<div class="col-md-6 col-sm-12 col-xs-12">
@@ -68,7 +68,7 @@ $serviceIcons = function() use ( $image_path ) { ?>
 			</div>
 		</div>
 	</div>
-	<div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1b.png') ?>)">
+	<div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1b.jpg') ?>)">
 		<div class="container">
 			<div class="row row-spacing-lg">
 				<div class="col-md-6 col-sm-12 col-xs-12">
