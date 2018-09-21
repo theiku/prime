@@ -9,6 +9,7 @@ var gulp     = require( 'gulp' ),
 	sequence = require( 'run-sequence' ),
 	unzip    = require( 'gulp-unzip' ),
 	download = require( 'gulp-download' ),
+	// imagemin = require( 'gulp-imagemin' ),
 	debug    = require( 'gulp-debug' ),
 	del      = require( 'del' ),
 	bower    = require( 'gulp-bower' );
@@ -45,6 +46,14 @@ gulp.task('child-download', function () {
 	return zip
 		.pipe( unzip() )
 		.pipe( gulp.dest( config.tempDir ) );
+} );
+
+gulp.task('minify', function () {
+	return gulp.src([ './starter-content/**/*.{png,jpg,gif}'], {base: './starter-content'} )
+      .pipe(imagemin([
+		imagemin.optipng({optimizationLevel: 7})
+	]))
+      .pipe( gulp.dest( './starter-content/' ) )
 } );
 
 gulp.task('child-copy-files', function () {
