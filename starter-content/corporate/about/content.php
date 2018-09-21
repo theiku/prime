@@ -17,7 +17,7 @@
 		</div>
 	</div>
 </div>
-<div class="boldgrid-section" style="background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php $image_path('about/about2.png') ?>'); background-size: cover; background-position: 50% 50%;" data-image-url="https://source.unsplash.com/9l_326FISzk/1920x1080"
+<div class="boldgrid-section" style="background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php $image_path('about/about2.jpg') ?>'); background-size: cover; background-position: 50% 50%;" data-image-url="https://source.unsplash.com/9l_326FISzk/1920x1080"
 	data-bg-overlaycolor="rgba(33,33,33,0.5)">
 	<div class="container">
 		<div class="row row-spacing-lg">

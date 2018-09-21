@@ -130,41 +130,41 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			// Blog Posts Home.
 			'artificial-intelligence-featured' => array(
 				'post_title' => _x( 'Artificial Intelligence', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'starter-content/corporate/blog/artificial-intelligence.png',
+				'file' => 'starter-content/corporate/blog/artificial-intelligence.jpg',
 			),
 			'blockchain-featured' => array(
 				'post_title' => _x( 'Blockchain', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'starter-content/corporate/blog/blockchain.png',
+				'file' => 'starter-content/corporate/blog/blockchain.jpg',
 			),
 			'cloud-expert-featured' => array(
 				'post_title' => _x( 'The Cloud Expert', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'starter-content/corporate/blog/cloud-expert.png',
+				'file' => 'starter-content/corporate/blog/cloud-expert.jpg',
 			),
 
 			// Blog Posts Services.
 			'advanced-analytics-featured' => array(
 				'post_title' => _x( 'Advanced Analytics', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'starter-content/corporate/blog/advanced-analytics.png',
+				'file' => 'starter-content/corporate/blog/advanced-analytics.jpg',
 			),
 			'corporate-finance-featured' => array(
 				'post_title' => _x( 'Corporate Finance ', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'starter-content/corporate/blog/corporate-finance.png',
+				'file' => 'starter-content/corporate/blog/corporate-finance.jpg',
 			),
 			'strategy-featured' => array(
 				'post_title' => _x( 'Strategy & Marketing', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'starter-content/corporate/blog/strategy.png',
+				'file' => 'starter-content/corporate/blog/strategy.jpg',
 			),
 			'digital-featured' => array(
 				'post_title' => _x( 'Digital', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'starter-content/corporate/blog/digital.png',
+				'file' => 'starter-content/corporate/blog/digital.jpg',
 			),
 			'information-technology-featured' => array(
 				'post_title' => _x( 'Information Technology', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'starter-content/corporate/blog/information-technology.png',
+				'file' => 'starter-content/corporate/blog/information-technology.jpg',
 			),
 			'mergers-featured' => array(
 				'post_title' => _x( 'Mergers & Aquisitions', 'Theme starter content', 'boldgrid-prime' ),
-				'file' => 'starter-content/corporate/blog/mergers.png',
+				'file' => 'starter-content/corporate/blog/mergers.jpg',
 			),
 		);
 
