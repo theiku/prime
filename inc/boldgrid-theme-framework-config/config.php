@@ -709,6 +709,12 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		/*** Post and Page Builder Support ***/
 		$config['customizer']['controls']['bgtfw_blog_post_readmore_link_color']['choices']['selectors'][] = '.bgc-single-article .read-more .link';
 
+		// Set all pages to be in a container by default.
+		$config['customizer']['controls']['bgtfw_pages_container']['default'] = 'container';
+
+		// This content set uses pages set to full width.
+		$config['starter-content']['theme_mods']['bgtfw_pages_container'] = '';
+
 		// Configs above will override framework defaults.
 		return $config;
 	}
