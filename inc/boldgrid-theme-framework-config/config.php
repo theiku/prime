@@ -632,8 +632,8 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'unit' => 'em',
 				'isLinked' => false,
 				'values' => [
-					'top' => 1,
-					'bottom' => 1,
+					'top' => 0.5,
+					'bottom' => 0.5,
 				],
 			],
 		];
