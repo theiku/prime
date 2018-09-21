@@ -626,13 +626,14 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			],
 		];
 
-		$config['customizer']['controls']['bgtfw_menu_margin_main']['default'] = [
+		$config['customizer']['controls']['bgtfw_header_padding']['default'] = [
 			[
 				'media' => [ 'base' ],
-				'unit' => 'px',
+				'unit' => 'em',
 				'isLinked' => false,
 				'values' => [
-					'bottom' => 20,
+					'top' => 1,
+					'bottom' => 1,
 				],
 			],
 		];
