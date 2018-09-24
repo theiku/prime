@@ -387,7 +387,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['sidebar_meta']['primary-sidebar']['headings_color'] = 'color-2';
 		
 		// Header widget row.
-		$config['customizer']['controls']['boldgrid_footer_widgets']['default'] = '4';
 		$config['customizer']['controls']['sidebar_meta']['header-1']['background_color'] = 'color-neutral';
 		$config['customizer']['controls']['sidebar_meta']['header-2']['background_color'] = 'color-neutral';
 		$config['customizer']['controls']['sidebar_meta']['header-3']['background_color'] = 'color-neutral';
