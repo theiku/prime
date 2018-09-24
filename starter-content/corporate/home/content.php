@@ -139,7 +139,7 @@ $serviceIcons = function() use ( $image_path ) { ?>
 		</div>
 	</div>
 </div>
-<div class="boldgrid-section color4-background-color">
+<div class="boldgrid-section color4-background-color color-4-text-contrast">
 	<div class="container">
 		<div class="row row-spacing-lg-top">
 			<div class="col-md-5 col-sm-12 col-xs-12">
