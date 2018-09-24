@@ -679,6 +679,12 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Primary Menu - Hover Effect.
 		$config['customizer']['controls']['bgtfw_menu_items_hover_effect_main']['default'] = 'hvr-underline-from-center';
+		
+		// Footer Menu - Link Color
+		$config['customizer']['controls']['bgtfw_menu_items_link_color_footer_center']['default'] = 'color-1';
+		
+		// Footer Menu - Active link color.
+		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_footer_center']['default'] = 'color-neutral';		
 
 		// Set the default link color of the social menu location.
 		$config['customizer']['controls']['bgtfw_menu_items_link_color_social']['default'] = 'color-1';
