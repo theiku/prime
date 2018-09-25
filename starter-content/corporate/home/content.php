@@ -1,7 +1,7 @@
 <?php $post_widget_opts = function () {
 	return urlencode( json_encode( [
 		'widget-boldgrid_component_postlist[][selected_post]' => 'all',
-		'widget-boldgrid_component_postlist[][sorting]' => 'oldest',
+		'widget-boldgrid_component_postlist[][sorting]' => 'newest',
 		'widget-boldgrid_component_postlist[][limit]' => 3,
 		'widget-boldgrid_component_postlist[][columns]' => 3,
 		'widget-boldgrid_component_postlist[][show_title]' => 1,
