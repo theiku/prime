@@ -263,7 +263,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			),
 			'digital' => array(
 				'post_type' => 'post',
-				'post_title' => _x( 'Artificial Intelligence', 'Theme starter content', 'boldgrid-prime' ),
+				'post_title' => _x( 'Digital', 'Theme starter content', 'boldgrid-prime' ),
 				'thumbnail' => '{{digital-featured}}',
 				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
 			),
@@ -385,7 +385,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Set the primary sidebar headings color.
 		$config['customizer']['controls']['sidebar_meta']['primary-sidebar']['headings_color'] = 'color-2';
-		
+
 		// Header widget row.
 		$config['customizer']['controls']['sidebar_meta']['header-1']['background_color'] = 'color-neutral';
 		$config['customizer']['controls']['sidebar_meta']['header-2']['background_color'] = 'color-neutral';
@@ -398,7 +398,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['sidebar_meta']['header-1']['links_color'] = 'color-1';
 		$config['customizer']['controls']['sidebar_meta']['header-2']['links_color'] = 'color-1';
 		$config['customizer']['controls']['sidebar_meta']['header-3']['links_color'] = 'color-1';
-		$config['customizer']['controls']['sidebar_meta']['header-4']['links_color'] = 'color-1';		
+		$config['customizer']['controls']['sidebar_meta']['header-4']['links_color'] = 'color-1';
 
 		// Footer widget row.
 		$config['customizer']['controls']['boldgrid_footer_widgets']['default'] = '4';
@@ -693,12 +693,12 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Primary Menu - Hover Effect.
 		$config['customizer']['controls']['bgtfw_menu_items_hover_effect_main']['default'] = 'hvr-underline-from-center';
-		
+
 		// Footer Menu - Link Color
 		$config['customizer']['controls']['bgtfw_menu_items_link_color_footer_center']['default'] = 'color-1';
-		
+
 		// Footer Menu - Active link color.
-		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_footer_center']['default'] = 'color-neutral';		
+		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_footer_center']['default'] = 'color-neutral';
 
 		// Set the default link color of the social menu location.
 		$config['customizer']['controls']['bgtfw_menu_items_link_color_social']['default'] = 'color-1';
