@@ -607,7 +607,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'link_yelp',
 				'link_facebook',
 				'link_twitter',
-				'link_instagram',
+				'link_linkedin',
 				'link_email',
 			),
 		);
