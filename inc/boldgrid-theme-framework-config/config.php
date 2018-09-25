@@ -726,9 +726,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['components']['buttons']['variables']['button-primary-classes'] = '.btn, .btn-color-1, .btn-pill';
 		$config['components']['buttons']['variables']['button-secondary-classes'] = '.btn, .btn-color-2, .btn-pill';
 
-		/*** Post and Page Builder Support ***/
-		$config['customizer']['controls']['bgtfw_blog_post_readmore_link_color']['choices']['selectors'][] = '.bgc-single-article .read-more .link';
-
 		// Set all pages to be in a container by default.
 		$config['customizer']['controls']['bgtfw_pages_container']['default'] = 'container';
 
