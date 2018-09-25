@@ -9,7 +9,6 @@
 		'widget-boldgrid_component_postlist[][author]' => 1,
 		'widget-boldgrid_component_postlist[][thumbnail]' => 1,
 		'widget-boldgrid_component_postlist[][date]' => 1,
-		'widget-boldgrid_component_postlist[][image_size]' => 'medium',
 	] ) );
 };
 

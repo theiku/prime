@@ -9,7 +9,6 @@
 		'widget-boldgrid_component_postlist[][author]' => 0,
 		'widget-boldgrid_component_postlist[][thumbnail]' => 1,
 		'widget-boldgrid_component_postlist[][date]' => 0,
-		'widget-boldgrid_component_postlist[][image_size]' => 'medium',
 	] ) );
 } ?>
 <div class="boldgrid-section">
