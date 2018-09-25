@@ -601,7 +601,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		);
 
 		// Social Menu configuration.
-		/*
 		$config['starter-content']['nav_menus']['social'] = array(
 			'name' => __( 'Social Media Links', 'bgtfw' ),
 			'items' => array(
@@ -612,7 +611,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'link_email',
 			),
 		);
-		*/
 
 		// Advanced Controls.
 		$config['customizer']['controls']['bgtfw_footer_padding']['default'] = [
