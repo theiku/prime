@@ -89,8 +89,7 @@ $serviceIcons = function() use ( $image_path ) { ?>
 				<p class="h6 color1-color" style="margin-bottom: 0; text-transform: uppercase;">Where We Started</p>
 				<h2 style="margin-top: 0;">Our Story</h2>
 				<?php $divider(); ?>
-				<p style="margin: 1.5em 0">Executing big data with the aim to improve overall outcomes. Build user stories so that as an end result, we create actionable insights. Engage audience segments and above all, use best practice. Target key demographics while remembering
-					to get buy in.</p>
+				<p style="margin: 1.5em 0">Executing big data with the aim to improve overall outcomes. Build user stories so that as an end result, we create actionable insights. Engage audience segments and above all, use best practice. Target key demographics while remembering to get buy in.</p>
 				<p style="margin-bottom: 2.5em;">Generating dark social so that as an end result, we use best practice. Synchronizing first party data so that we be transparent.</p>
 				<p style="margin-bottom: 2.5em;"><a href="#" class="button-primary">Learn More</a></p>
 			</div>
