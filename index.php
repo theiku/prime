@@ -28,6 +28,8 @@ if ( ( is_home() || is_archive() ) && 'above' === get_theme_mod( 'bgtfw_global_t
 			get_template_part( 'templates/content', get_post_type() !== 'post' ? get_post_type() : get_post_format() );
 		endwhile;
 
+		boldgrid_paging_nav();
+
 		echo '</div>';
 
 		if ( BoldGrid::display_sidebar() ) {
@@ -38,6 +40,5 @@ if ( ( is_home() || is_archive() ) && 'above' === get_theme_mod( 'bgtfw_global_t
 	while ( have_posts() ) : the_post();
 		get_template_part( 'templates/content', get_post_type() !== 'post' ? get_post_type() : get_post_format() );
 	endwhile;
+	boldgrid_paging_nav();
 }
-
-boldgrid_paging_nav();
