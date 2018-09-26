@@ -71,8 +71,8 @@
 		</div>
 	</div>
 </div>
-<div class="boldgrid-section" style="color: #fff; background-image: linear-gradient(to left, rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0.5)), url('<?php $image_path( 'services/services8.jpg' ) ?>'); background-size: cover; background-position: 50% 50%;"
-	data-bg-overlaycolor="rgba(33,33,33,0.5)">
+<div class="boldgrid-section" style="color: #fff; background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php $image_path( 'services/services8.jpg' ) ?>'); background-size: cover; background-position: 50% 50%;"
+	data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path( 'services/services8.jpg' ) ?>">
 	<div class="container">
 		<div class="row row-spacing-lg">
 			<div class="col-md-5 col-sm-4 col-xs-12">

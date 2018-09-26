@@ -12,34 +12,22 @@
 	] ) );
 };
 
-$serviceIcons = function() use ( $image_path ) { ?>
+$serviceIcons = function( $options ) use ( $image_path ) { ?>
 	<div class="row">
+		<?php foreach( $options as $option ) { ?>
 		<div class="col-md-4 col-sm-12 col-xs-12">
 			<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
-				<img src="<?php $image_path('icons/development.svg') ?>" style="height: 75px;">
-				<h4 class="color-2-text-contrast">Advanced Analytics</h4>
+				<img src="<?php $image_path( $option['image'] ) ?>" style="height: 75px;">
+				<h4 class="color-2-text-contrast"><?php print $option['title'] ?></h4>
 				<p class="">Building brand integration and possibly funnel users.</p>
 			</div>
 		</div>
-		<div class="col-md-4 col-sm-12 col-xs-12">
-			<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
-				<img src="<?php $image_path('icons/business.svg') ?>" style="height: 75px;">
-				<h4 class="color-2-text-contrast">Finance</h4>
-				<p class="">Building brand integration and possibly funnel users.</p>
-			</div>
-		</div>
-		<div class="col-md-4 col-sm-12 col-xs-12">
-			<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
-				<img src="<?php $image_path('icons/strategy.svg') ?>" style="height: 75px;">
-				<h4 class="color-2-text-contrast">Strategy & Marketing</h4>
-				<p class="">Building brand integration and possibly funnel users.</p>
-			</div>
-		</div>
+		<?php } ?>
 	</div>
 <?php }; ?>
 
 <div class="boldgrid-slider boldgrid-section-wrap" data-config='{"arrows":true,"autoplay":true,"autoplaySpeed":"10","dots":false,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"chevron","arrowsSize":"15","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
-	<div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1.jpg') ?>)">
+	<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path('home/home1.jpg') ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1.jpg') ?>)">
 		<div class="container">
 			<div class="row row-spacing-lg">
 				<div class="col-md-6 col-sm-12 col-xs-12">
@@ -53,7 +41,7 @@ $serviceIcons = function() use ( $image_path ) { ?>
 			</div>
 		</div>
 	</div>
-	<div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1a.jpg') ?>)">
+	<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path('home/home1a.jpg') ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1a.jpg') ?>)">
 		<div class="container">
 			<div class="row row-spacing-lg">
 				<div class="col-md-6 col-sm-12 col-xs-12">
@@ -67,7 +55,7 @@ $serviceIcons = function() use ( $image_path ) { ?>
 			</div>
 		</div>
 	</div>
-	<div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1b.jpg') ?>)">
+	<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path('home/home1b.jpg') ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1b.jpg') ?>)">
 		<div class="container">
 			<div class="row row-spacing-lg">
 				<div class="col-md-6 col-sm-12 col-xs-12">
@@ -89,8 +77,7 @@ $serviceIcons = function() use ( $image_path ) { ?>
 				<p class="h6 color1-color" style="margin-bottom: 0; text-transform: uppercase;">Where We Started</p>
 				<h2 style="margin-top: 0;">Our Story</h2>
 				<?php $divider(); ?>
-				<p style="margin: 1.5em 0">Executing big data with the aim to improve overall outcomes. Build user stories so that as an end result, we create actionable insights. Engage audience segments and above all, use best practice. Target key demographics while remembering
-					to get buy in.</p>
+				<p style="margin: 1.5em 0">Executing big data with the aim to improve overall outcomes. Build user stories so that as an end result, we create actionable insights. Engage audience segments and above all, use best practice. Target key demographics while remembering to get buy in.</p>
 				<p style="margin-bottom: 2.5em;">Generating dark social so that as an end result, we use best practice. Synchronizing first party data so that we be transparent.</p>
 				<p style="margin-bottom: 2.5em;"><a href="#" class="button-primary">Learn More</a></p>
 			</div>
@@ -100,7 +87,7 @@ $serviceIcons = function() use ( $image_path ) { ?>
 		</div>
 	</div>
 </div>
-<div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home3.jpg') ?>)">
+<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path('home/home3.jpg') ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home3.jpg') ?>)">
 	<div class="container">
 		<div class="row row-spacing-lg-top">
 			<div class="col-md-12 col-sm-12 col-xs-12">
@@ -112,9 +99,21 @@ $serviceIcons = function() use ( $image_path ) { ?>
 		<div class="row row-spacing-lg-bottom">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div class="boldgrid-wrap-row boldgrid-slider bg-box-cover"  data-config='{"arrows":true,"autoplay":true,"autoplaySpeed":"10","dots":false,"infinite":true,"bgOptions":{"arrowsPos":"top-right","arrowsOverlay":false,"arrowsBgColor":"1","arrowsIcon":"chevron","arrowsSize":"15","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
-					<?php $serviceIcons(); ?>
-					<?php $serviceIcons(); ?>
-					<?php $serviceIcons(); ?>
+					<?php $serviceIcons( [
+						[ 'title' => 'Advanced Analytics', 'image' => 'icons/development.svg' ],
+						[ 'title' => 'Finance', 'image' => 'icons/business.svg' ],
+						[ 'title' => 'Strategy & Marketing', 'image' => 'icons/strategy.svg' ],
+					] ); ?>
+					<?php $serviceIcons( [
+						[ 'title' => 'Advanced Analytics', 'image' => 'icons/development.svg' ],
+						[ 'title' => 'Finance', 'image' => 'icons/business.svg' ],
+						[ 'title' => 'Strategy & Marketing', 'image' => 'icons/strategy.svg' ],
+					] ); ?>
+					<?php $serviceIcons( [
+						[ 'title' => 'Advanced Analytics', 'image' => 'icons/development.svg' ],
+						[ 'title' => 'Finance', 'image' => 'icons/business.svg' ],
+						[ 'title' => 'Strategy & Marketing', 'image' => 'icons/strategy.svg' ],
+					] ); ?>
 				</div>
 			</div>
 		</div>
@@ -211,7 +210,7 @@ $serviceIcons = function() use ( $image_path ) { ?>
 		</div>
 	</div>
 </div>
-<div class="boldgrid-section" style="background-size: cover; background-position: 50% 37%; background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home9.jpg') ?>)">
+<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path('home/home9.jpg') ?>" style="color: #fff; background-size: cover; background-position: 50% 37%; background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home9.jpg') ?>)">
 	<div class="container">
 		<div class="row row-spacing-sm">
 			<div class="col-md-7 col-sm-12 col-xs-12">
