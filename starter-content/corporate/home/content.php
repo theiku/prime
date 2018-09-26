@@ -39,7 +39,7 @@ $serviceIcons = function() use ( $image_path ) { ?>
 <?php }; ?>
 
 <div class="boldgrid-slider boldgrid-section-wrap" data-config='{"arrows":true,"autoplay":true,"autoplaySpeed":"10","dots":false,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"chevron","arrowsSize":"15","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
-	<div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1.jpg') ?>)">
+	<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path('home/home1.jpg') ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1.jpg') ?>)">
 		<div class="container">
 			<div class="row row-spacing-lg">
 				<div class="col-md-6 col-sm-12 col-xs-12">
@@ -53,7 +53,7 @@ $serviceIcons = function() use ( $image_path ) { ?>
 			</div>
 		</div>
 	</div>
-	<div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1a.jpg') ?>)">
+	<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path('home/home1a.jpg') ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1a.jpg') ?>)">
 		<div class="container">
 			<div class="row row-spacing-lg">
 				<div class="col-md-6 col-sm-12 col-xs-12">
@@ -67,7 +67,7 @@ $serviceIcons = function() use ( $image_path ) { ?>
 			</div>
 		</div>
 	</div>
-	<div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1b.jpg') ?>)">
+	<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path('home/home1b.jpg') ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home1b.jpg') ?>)">
 		<div class="container">
 			<div class="row row-spacing-lg">
 				<div class="col-md-6 col-sm-12 col-xs-12">
@@ -99,7 +99,7 @@ $serviceIcons = function() use ( $image_path ) { ?>
 		</div>
 	</div>
 </div>
-<div class="boldgrid-section" style="background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home3.jpg') ?>)">
+<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path('home/home3.jpg') ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home3.jpg') ?>)">
 	<div class="container">
 		<div class="row row-spacing-lg-top">
 			<div class="col-md-12 col-sm-12 col-xs-12">
@@ -210,7 +210,7 @@ $serviceIcons = function() use ( $image_path ) { ?>
 		</div>
 	</div>
 </div>
-<div class="boldgrid-section" style="background-size: cover; background-position: 50% 37%; background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home9.jpg') ?>)">
+<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path('home/home9.jpg') ?>" style="color: #fff; background-size: cover; background-position: 50% 37%; background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path('home/home9.jpg') ?>)">
 	<div class="container">
 		<div class="row row-spacing-sm">
 			<div class="col-md-7 col-sm-12 col-xs-12">
