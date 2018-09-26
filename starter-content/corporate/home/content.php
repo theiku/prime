@@ -216,8 +216,8 @@ $serviceIcons = function( $options ) use ( $image_path ) { ?>
 			<div class="col-md-7 col-sm-12 col-xs-12">
 				<h3 style="color: #fff;">Create daily standups to in turn re-target key demographics.</h3>
 			</div>
-			<div class="col-md-3 col-sm-12 col-xs-12"></div>
-			<div class="col-md-2 col-sm-12 col-xs-12 align-column-center">
+			<div class="col-md-1 col-sm-12 col-xs-12"></div>
+			<div class="col-md-4 col-sm-12 col-xs-12 align-column-center">
 				<p class="wow pulse" data-wow-duration="1s" data-wow-delay="1s" style="margin-top: 1em;"><a href="#" class="button-primary">Contact Us</a></p>
 			</div>
 		</div>
