@@ -25,7 +25,7 @@
 			<div class="col-md-1 col-sm-12 col-xs-12"></div>
 			<div class="align-column-center col-md-5 col-sm-12 col-xs-12">
 				<div class="bg-box" style="padding: 2em">
-					<div data-imhwpb-draggable="true">
+					<div class="boldgrid-shortcode" data-imhwpb-draggable="true">
 						<?php echo BoldGrid_Framework_Starter_Content::get_form_shortcode( __DIR__ . '/../wpforms/form-1.json' ); ?>
 					</div>
 				</div>
