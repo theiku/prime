@@ -12,29 +12,17 @@
 	] ) );
 };
 
-$serviceIcons = function() use ( $image_path ) { ?>
+$serviceIcons = function( $options ) use ( $image_path ) { ?>
 	<div class="row">
+		<?php foreach( $options as $option ) { ?>
 		<div class="col-md-4 col-sm-12 col-xs-12">
 			<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
-				<img src="<?php $image_path('icons/development.svg') ?>" style="height: 75px;">
-				<h4 class="color-2-text-contrast">Advanced Analytics</h4>
+				<img src="<?php $image_path( $option['image'] ) ?>" style="height: 75px;">
+				<h4 class="color-2-text-contrast"><?php print $option['title'] ?></h4>
 				<p class="">Building brand integration and possibly funnel users.</p>
 			</div>
 		</div>
-		<div class="col-md-4 col-sm-12 col-xs-12">
-			<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
-				<img src="<?php $image_path('icons/business.svg') ?>" style="height: 75px;">
-				<h4 class="color-2-text-contrast">Finance</h4>
-				<p class="">Building brand integration and possibly funnel users.</p>
-			</div>
-		</div>
-		<div class="col-md-4 col-sm-12 col-xs-12">
-			<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
-				<img src="<?php $image_path('icons/strategy.svg') ?>" style="height: 75px;">
-				<h4 class="color-2-text-contrast">Strategy & Marketing</h4>
-				<p class="">Building brand integration and possibly funnel users.</p>
-			</div>
-		</div>
+		<?php } ?>
 	</div>
 <?php }; ?>
 
@@ -111,9 +99,21 @@ $serviceIcons = function() use ( $image_path ) { ?>
 		<div class="row row-spacing-lg-bottom">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div class="boldgrid-wrap-row boldgrid-slider bg-box-cover"  data-config='{"arrows":true,"autoplay":true,"autoplaySpeed":"10","dots":false,"infinite":true,"bgOptions":{"arrowsPos":"top-right","arrowsOverlay":false,"arrowsBgColor":"1","arrowsIcon":"chevron","arrowsSize":"15","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
-					<?php $serviceIcons(); ?>
-					<?php $serviceIcons(); ?>
-					<?php $serviceIcons(); ?>
+					<?php $serviceIcons( [
+						[ 'title' => 'Advanced Analytics', 'image' => 'icons/development.svg' ],
+						[ 'title' => 'Finance', 'image' => 'icons/business.svg' ],
+						[ 'title' => 'Strategy & Marketing', 'image' => 'icons/strategy.svg' ],
+					] ); ?>
+					<?php $serviceIcons( [
+						[ 'title' => 'Advanced Analytics', 'image' => 'icons/development.svg' ],
+						[ 'title' => 'Finance', 'image' => 'icons/business.svg' ],
+						[ 'title' => 'Strategy & Marketing', 'image' => 'icons/strategy.svg' ],
+					] ); ?>
+					<?php $serviceIcons( [
+						[ 'title' => 'Advanced Analytics', 'image' => 'icons/development.svg' ],
+						[ 'title' => 'Finance', 'image' => 'icons/business.svg' ],
+						[ 'title' => 'Strategy & Marketing', 'image' => 'icons/strategy.svg' ],
+					] ); ?>
 				</div>
 			</div>
 		</div>
