@@ -42,6 +42,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// This theme doesn't support a background image.
 		$config['customizer-options']['background']['defaults']['background_image'] = false;
+		$config['customizer-options']['background']['defaults']['boldgrid_background_type'] = 'pattern';
 
 		// Disable Call to Action Widget.
 		$config['template']['call-to-action'] = 'disabled';
@@ -173,7 +174,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'name'      => 'BoldGrid Post and Page Builder',
 				'slug'      => 'post-and-page-builder',
 				// This is temporary. Please keep bgtfw and prime's builder version in sync.
-				'source'    => 'https://downloads.wordpress.org/plugin/post-and-page-builder.1.8.0-rc.2.zip',
+				'source'    => 'https://downloads.wordpress.org/plugin/post-and-page-builder.1.8.0-rc.3.zip',
 				'required'  => true,
 			),
 			array(
