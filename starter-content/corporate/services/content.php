@@ -31,22 +31,22 @@
 	<div class="container">
 		<div class="row row-spacing-sm-top row-spacing-lg-bottom">
 			<div class="col-md-3 col-xs-12 col-sm-6 text-center  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="padding: 2em;">
-				<p><img src="<?php $image_path( 'icons/008-idea.png' ) ?>" alt="" width="75" height="75"></p>
+				<p><img src="<?php $image_path( 'icons/008-idea.png' ) ?>" width="75" height="75"></p>
 				<h3 style="margin-top: 1.25em;">Discover</h3>
 				<p class="">Lead bleeding edge and then further your reach. Synchronizing below the line.</p>
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-6 text-center  wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" style="padding: 2em;">
-				<p><img src="<?php $image_path( 'icons/009-options.png' ) ?>" alt="" width="75" height="75"></p>
+				<p><img src="<?php $image_path( 'icons/009-options.png' ) ?>" width="75" height="75"></p>
 				<h3 style="margin-top: 1.25em;">Create</h3>
 				<p class="">Lead bleeding edge and then further your reach. Synchronizing below the line.</p>
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-6 text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s" style="padding: 2em;">
-				<p><img src="<?php $image_path( 'icons/010-start.png' ) ?>" alt="" width="62" height="75"></p>
+				<p><img src="<?php $image_path( 'icons/010-start.png' ) ?>" width="62" height="75"></p>
 				<h3 style="margin-top: 1.25em;">Energy</h3>
 				<p class="">Lead bleeding edge and then further your reach. Synchronizing below the line.</p>
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-6 text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="2s" style="padding: 2em;">
-				<p><img src="<?php $image_path( 'icons/011-develop.png' ) ?>" alt="" width="75" height="75"></p>
+				<p><img src="<?php $image_path( 'icons/011-develop.png' ) ?>" width="75" height="75"></p>
 				<h3 style="margin-top: 1.25em;">Success</h3>
 				<p class="">Lead bleeding edge and then further your reach. Synchronizing below the line.</p>
 			</div>
