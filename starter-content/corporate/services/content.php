@@ -1,5 +1,5 @@
 <?php $post_widget_opts = function () {
-	return urlencode( json_encode( [
+	return print urlencode( json_encode( [
 		'widget-boldgrid_component_postlist[][selected_post]' => 'all',
 		'widget-boldgrid_component_postlist[][sorting]' => 'newest',
 		'widget-boldgrid_component_postlist[][limit]' => 6,
@@ -65,7 +65,7 @@
 		<div class="row row-spacing-sm-bottom">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div class="boldgrid-shortcode  wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s" data-imhwpb-draggable="true" >
-					[boldgrid_component type="wp_boldgrid_component_postlist" opts="<?php print $post_widget_opts(); ?>"]
+					[boldgrid_component type="wp_boldgrid_component_postlist" opts="<?php $post_widget_opts(); ?>"]
 				</div>
 			</div>
 		</div>

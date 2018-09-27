@@ -1,5 +1,5 @@
 <?php $post_widget_opts = function () {
-	return urlencode( json_encode( [
+	return print urlencode( json_encode( [
 		'widget-boldgrid_component_postlist[][selected_post]' => 'all',
 		'widget-boldgrid_component_postlist[][sorting]' => 'newest',
 		'widget-boldgrid_component_postlist[][limit]' => 3,
@@ -18,7 +18,7 @@ $serviceIcons = function( $options ) use ( $image_path ) { ?>
 		<div class="col-md-4 col-sm-12 col-xs-12">
 			<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
 				<img src="<?php $image_path( $option['image'] ) ?>" style="height: 75px;">
-				<h4 class="color-2-text-contrast"><?php print $option['title'] ?></h4>
+				<h4 class="color-2-text-contrast"><?php print esc_html( $option['title'] ) ?></h4>
 				<p class="">Building brand integration and possibly funnel users.</p>
 			</div>
 		</div>
@@ -152,7 +152,7 @@ $serviceIcons = function( $options ) use ( $image_path ) { ?>
 		<div class="row row-spacing-lg-bottom wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s" style="padding-top: 15px;" >
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div class="boldgrid-shortcode" data-imhwpb-draggable="true">
-					[boldgrid_component type="wp_boldgrid_component_postlist" opts="<?php print $post_widget_opts(); ?>"]
+					[boldgrid_component type="wp_boldgrid_component_postlist" opts="<?php $post_widget_opts(); ?>"]
 				</div>
 			</div>
 		</div>
