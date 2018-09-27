@@ -42,6 +42,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// This theme doesn't support a background image.
 		$config['customizer-options']['background']['defaults']['background_image'] = false;
+		$config['customizer-options']['background']['defaults']['boldgrid_background_type'] = 'pattern';
 
 		// Disable Call to Action Widget.
 		$config['template']['call-to-action'] = 'disabled';
