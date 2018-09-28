@@ -554,7 +554,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Site's headings typography defaults.
 		$config['customizer']['controls']['bgtfw_menu_typography_main']['default'] = array(
-			'font-family' => 'Playfair Display',
+			'font-family' => 'Lato',
 			'font-size' => '16px',
 			'line-height' => '1.5',
 			'text-transform' => 'none',
