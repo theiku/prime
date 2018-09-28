@@ -306,6 +306,9 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Primary background color.
 		$config['customizer']['controls']['boldgrid_background_color']['default'] = 'color-neutral';
 
+		// This theme doesn't supply a background image, so make pattern/color the default type.
+		$config['customizer-options']['background']['defaults']['boldgrid_background_type'] = 'pattern';
+
 		// Primary headings color.
 		$config['customizer']['controls']['bgtfw_headings_color']['default'] = 'color-2';
 
