@@ -38,7 +38,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['boldgrid-parent-theme'] = true;
 
 		// Set Theme Name.
-		$config['theme_name'] = 'prime';
+		$config['theme_name'] = 'crio';
 
 		// This theme doesn't support a background image.
 		$config['customizer-options']['background']['defaults']['background_image'] = false;
