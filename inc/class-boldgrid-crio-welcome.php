@@ -49,12 +49,22 @@ class Boldgrid_Crio_Welcome {
 	protected $starter_content_url;
 
 	/**
+	 * URL to the welcome page.
+	 *
+	 * @since  x.x.x
+	 * @access protected
+	 * @var    string
+	 */
+	protected $welcome_url = '';
+
+	/**
 	 * Initialize the class and set its properties.
 	 *
 	 * @since x.x.x
 	 */
 	public function __construct( ) {
 		$this->starter_content_url = admin_url( 'admin.php?page=' . $this->starter_content_slug );
+		$this->welcome_url = admin_url( 'admin.php?page=' . $this->menu_slug );
 	}
 
 	/**
@@ -67,6 +77,7 @@ class Boldgrid_Crio_Welcome {
 		add_action( 'admin_menu', array( $this, 'add_admin_menu' ) );
 		add_action( 'Boldgrid\Library\Library\Page\Connect\addScripts', array( $this, 'connect_scripts' ) );
 		add_action( 'custom_menu_order', array( $this, 'custom_menu_order' ) );
+		add_filter( 'boldgrid_theme_framework_config', array( $this, 'prime_framework_config' ) );
 
 		/*
 		 * By default, the bgtfw adds the TGMPA "Recommended Plugins" page as a sub menu item of
@@ -293,5 +304,20 @@ class Boldgrid_Crio_Welcome {
 		$has_api_key = ( false !== apply_filters( 'Boldgrid\Library\License\getApiKey', false ) );
 
 		include get_template_directory() . '/inc/partials/welcome.php';
+	}
+
+	/**
+	 * Filter the bgtfw configs.
+	 *
+	 * @since x.x.x
+	 *
+	 * @param  array $config Bgtfw config.
+	 * @return array
+	 */
+	public function prime_framework_config( $config ) {
+		$config['starter-content-installer']['return_to_dashboard'] = $this->welcome_url;
+		$config['starter-content-suggest']['dashboard_url'] = $this->starter_content_url;
+
+		return $config;
 	}
 }
