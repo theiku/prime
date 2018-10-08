@@ -114,6 +114,14 @@ class Boldgrid_Crio_Welcome {
 	 * @since x.x.x
 	 */
 	public function add_admin_menu() {
+
+		// URL to the customizer.
+		$customize_url = add_query_arg(
+			'return',
+			urlencode( wp_unslash( $_SERVER['REQUEST_URI'] ) ),
+			admin_url( 'customize.php' )
+		);
+
 		add_menu_page(
 			__( 'BoldGrid Crio', 'bgtfw' ),
 			__( 'BoldGrid Crio', 'bgtfw' ),
@@ -159,7 +167,7 @@ class Boldgrid_Crio_Welcome {
 			__( 'Customize', 'bgtfw' ),
 			__( 'Customize', 'bgtfw' ),
 			'manage_options',
-			'customize.php'
+			$customize_url
 		);
 	}
 
@@ -186,7 +194,9 @@ class Boldgrid_Crio_Welcome {
 
 			// Find our "customize.php" menu item.
 			foreach ( $submenu[ $this->menu_slug ] as $key => $menu_item ) {
-				if ( 'customize.php' === $menu_item[2] ) {
+				$begins_with_customize = substr( $menu_item[2], 0, strlen( 'customize.php' ) ) === 'customize.php';
+
+				if ( $begins_with_customize ) {
 					$customize_key = $key;
 					$customize_menu_item = $menu_item;
 					break;
@@ -233,8 +243,7 @@ class Boldgrid_Crio_Welcome {
 		wp_enqueue_script(
 			'bgcrio-framework-registration',
 			get_template_directory_uri() . '/js/registration.js',
-			array( 'jquery' ),
-			$this->configs['version']
+			array( 'jquery' )
 		);
 
 		/*
