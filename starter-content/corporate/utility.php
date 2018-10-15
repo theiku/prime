@@ -1,6 +1,6 @@
 <?php
 $image_path = function ( $path ) {
-	echo get_parent_theme_file_uri( 'starter-content/corporate/' .  $path );
+	echo get_parent_theme_file_uri( 'starter-content/corporate/' . $path );
 };
 
 $divider = function() { ?>
