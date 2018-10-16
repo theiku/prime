@@ -113,59 +113,59 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			// Pages.
 			'contact-featured' => array(
 				'post_title' => _x( 'Contact Featured', 'Theme starter content', 'crio' ),
-				'file' => 'starter-content/corporate/contact/featured.jpg',
+				'file' => 'images/contact-featured.jpg',
 			),
 			'about-featured' => array(
 				'post_title' => _x( 'About Us Featured', 'Theme starter content', 'crio' ),
-				'file' => 'starter-content/corporate/about/featured.jpg',
+				'file' => 'images/about-featured.jpg',
 			),
 			'services-featured' => array(
 				'post_title' => _x( 'Services Featured', 'Theme starter content', 'crio' ),
-				'file' => 'starter-content/corporate/services/featured.jpg',
+				'file' => 'images/services-featured.jpg',
 			),
 			'blog-featured' => array(
 				'post_title' => _x( 'Blog Featured', 'Theme starter content', 'crio' ),
-				'file' => 'starter-content/corporate/blog/featured.jpg',
+				'file' => 'images/blog-featured.jpg',
 			),
 
 			// Blog Posts Home.
 			'artificial-intelligence-featured' => array(
 				'post_title' => _x( 'Artificial Intelligence Featured', 'Theme starter content', 'crio' ),
-				'file' => 'starter-content/corporate/blog/artificial-intelligence.jpg',
+				'file' => 'images/artificial-intelligence.jpg',
 			),
 			'blockchain-featured' => array(
 				'post_title' => _x( 'Blockchain Featured', 'Theme starter content', 'crio' ),
-				'file' => 'starter-content/corporate/blog/blockchain.jpg',
+				'file' => 'images/blockchain.jpg',
 			),
 			'cloud-expert-featured' => array(
 				'post_title' => _x( 'The Cloud Expert Featured', 'Theme starter content', 'crio' ),
-				'file' => 'starter-content/corporate/blog/cloud-expert.jpg',
+				'file' => 'images/cloud-expert.jpg',
 			),
 
 			// Blog Posts Services.
 			'advanced-analytics-featured' => array(
 				'post_title' => _x( 'Advanced Analytics Featured', 'Theme starter content', 'crio' ),
-				'file' => 'starter-content/corporate/blog/advanced-analytics.jpg',
+				'file' => 'images/advanced-analytics.jpg',
 			),
 			'corporate-finance-featured' => array(
 				'post_title' => _x( 'Corporate Finance Featured', 'Theme starter content', 'crio' ),
-				'file' => 'starter-content/corporate/blog/corporate-finance.jpg',
+				'file' => 'images/corporate-finance.jpg',
 			),
 			'strategy-featured' => array(
 				'post_title' => _x( 'Strategy & Marketing Featured', 'Theme starter content', 'crio' ),
-				'file' => 'starter-content/corporate/blog/strategy.jpg',
+				'file' => 'images/strategy.jpg',
 			),
 			'digital-featured' => array(
 				'post_title' => _x( 'Digital Featured', 'Theme starter content', 'crio' ),
-				'file' => 'starter-content/corporate/blog/digital.jpg',
+				'file' => 'images/digital.jpg',
 			),
 			'information-technology-featured' => array(
 				'post_title' => _x( 'Information Technology Featured', 'Theme starter content', 'crio' ),
-				'file' => 'starter-content/corporate/blog/information-technology.jpg',
+				'file' => 'images/information-technology.jpg',
 			),
 			'mergers-featured' => array(
 				'post_title' => _x( 'Mergers & Aquisitions Featured', 'Theme starter content', 'crio' ),
-				'file' => 'starter-content/corporate/blog/mergers.jpg',
+				'file' => 'images/mergers.jpg',
 			),
 		);
 
@@ -203,7 +203,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'homepage' => array(
 				'post_type' => 'page',
 				'post_title' => _x( 'Home', 'Theme starter content', 'crio' ),
-				'post_content' => bgtfw_get_contents( '/corporate/home/content.php' ),
+				'post_content' => bgtfw_get_contents( 'home.php' ),
 				'meta_input' => array(
 					'boldgrid_hide_page_title' => '0',
 				),
@@ -212,19 +212,19 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'post_type' => 'page',
 				'post_title' => _x( 'About Us', 'Theme starter content', 'crio' ),
 				'thumbnail' => '{{about-featured}}',
-				'post_content' => bgtfw_get_contents( '/corporate/about/content.php' ),
+				'post_content' => bgtfw_get_contents( 'about.php' ),
 			),
 			'services' => array(
 				'post_type' => 'page',
 				'post_title' => _x( 'Services', 'Theme starter content', 'crio' ),
 				'thumbnail' => '{{services-featured}}',
-				'post_content' => bgtfw_get_contents( '/corporate/services/content.php' ),
+				'post_content' => bgtfw_get_contents( 'services.php' ),
 			),
 			'contact' => array(
 				'post_type' => 'page',
 				'post_title' => _x( 'Contact Us', 'Theme starter content', 'crio' ),
 				'thumbnail' => '{{contact-featured}}',
-				'post_content' => bgtfw_get_contents( '/corporate/contact/content.php' ),
+				'post_content' => bgtfw_get_contents( 'contact.php' ),
 			),
 
 
@@ -233,19 +233,19 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'post_type' => 'post',
 				'post_title' => _x( 'Artificial Intelligence', 'Theme starter content', 'crio' ),
 				'thumbnail' => '{{artificial-intelligence-featured}}',
-				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+				'post_content' => bgtfw_get_contents( 'blog.php' ),
 			),
 			'blockchain' => array(
 				'post_type' => 'post',
 				'post_title' => _x( 'Scalable Solutions', 'Theme starter content', 'crio' ),
 				'thumbnail' => '{{blockchain-featured}}',
-				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+				'post_content' => bgtfw_get_contents( 'blog.php' ),
 			),
 			'cloud-expert' => array(
 				'post_type' => 'post',
 				'post_title' => _x( 'The Cloud Expert', 'Theme starter content', 'crio' ),
 				'thumbnail' => '{{cloud-expert-featured}}',
-				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+				'post_content' => bgtfw_get_contents( 'blog.php' ),
 			),
 
 			// Services Posts.
@@ -253,37 +253,37 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'post_type' => 'post',
 				'post_title' => _x( 'Mergers & Aquisitions', 'Theme starter content', 'crio' ),
 				'thumbnail' => '{{mergers-featured}}',
-				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+				'post_content' => bgtfw_get_contents( 'blog.php' ),
 			),
 			'information-technology' => array(
 				'post_type' => 'post',
 				'post_title' => _x( 'Information Technology', 'Theme starter content', 'crio' ),
 				'thumbnail' => '{{information-technology-featured}}',
-				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+				'post_content' => bgtfw_get_contents( 'blog.php' ),
 			),
 			'digital' => array(
 				'post_type' => 'post',
 				'post_title' => _x( 'Digital', 'Theme starter content', 'crio' ),
 				'thumbnail' => '{{digital-featured}}',
-				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+				'post_content' => bgtfw_get_contents( 'blog.php' ),
 			),
 			'strategy' => array(
 				'post_type' => 'post',
 				'post_title' => _x( 'Strategy & Marketing', 'Theme starter content', 'crio' ),
 				'thumbnail' => '{{strategy-featured}}',
-				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+				'post_content' => bgtfw_get_contents( 'blog.php' ),
 			),
 			'corporate-finance' => array(
 				'post_type' => 'post',
 				'post_title' => _x( 'Corporate Finance', 'Theme starter content', 'crio' ),
 				'thumbnail' => '{{corporate-finance-featured}}',
-				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+				'post_content' => bgtfw_get_contents( 'blog.php' ),
 			),
 			'advanced-analytics' => array(
 				'post_type' => 'post',
 				'post_title' => _x( 'Advanced Analytics', 'Theme starter content', 'crio' ),
 				'thumbnail' => '{{advanced-analytics-featured}}',
-				'post_content' => bgtfw_get_contents( '/corporate/blog/generic.php' ),
+				'post_content' => bgtfw_get_contents( 'blog.php' ),
 			),
 
 			'blog' => array(
@@ -740,10 +740,10 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 function bgtfw_get_contents( $filePath ) {
 	return function () use ( $filePath ) {
-		include get_template_directory() . '/starter-content/corporate/utility.php';
+		include get_template_directory() . '/partials/utility.php';
 
 		ob_start();
-		include get_template_directory() . '/starter-content/' . $filePath;
+		include get_template_directory() . '/partials/' . $filePath;
 		$content = ob_get_contents();
 		ob_end_clean();
 		$content = str_replace( array( "\n", "\t" ), '', $content );
