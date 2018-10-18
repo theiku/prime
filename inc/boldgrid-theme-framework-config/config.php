@@ -110,6 +110,15 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Create the custom image attachments used as post thumbnails for pages.
 		$config['starter-content']['attachments'] = array(
 
+			// Custom Logo.
+			'crio-logo-dark' => array(
+				'post_title' => _x( 'Dark Text on Crio Logo', 'crio' ),
+				'file' => 'images/crio-dark.png',
+				'meta_input' => array(
+					'_custom_logo' => true,
+				),
+			),
+
 			// Pages.
 			'contact-featured' => array(
 				'post_title' => _x( 'Contact Featured', 'Theme starter content', 'crio' ),
