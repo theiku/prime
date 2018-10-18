@@ -40,6 +40,38 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Set Theme Name.
 		$config['theme_name'] = 'crio';
 
+		// Hide the tagline by default and display a logo instead.
+		$config['customizer']['controls']['bgtfw_site_title_display']['default'] = 'hide';
+
+		// Primary color for site's title.
+		$config['customizer']['controls']['bgtfw_site_title_color']['default'] = 'color-2';
+
+		// Site's title typography defaults.
+		$config['customizer']['controls']['bgtfw_site_title_typography']['default'] = array(
+			'font-family' => 'Playfair Display',
+			'font-size' => '38px',
+			'text-transform' => 'capitalize',
+			'line-height' => '1.1',
+			'text-align' => 'center',
+			'variant' => 'regular'
+		);
+
+		// Hide the tagline by default and display a logo instead.
+		$config['customizer']['controls']['bgtfw_tagline_display']['default'] = 'hide';
+
+		// Primary color for site's tagline.
+		$config['customizer']['controls']['bgtfw_tagline_color']['default'] = 'color-2';
+
+		// Site's tagline typography defaults.
+		$config['customizer']['controls']['bgtfw_tagline_typography']['default'] = array(
+			'font-family' => 'Lato',
+			'font-size' => '20px',
+			'text-transform' => 'lowercase',
+			'line-height' => '1.1',
+			'text-align' => 'center',
+			'variant' => '300italic'
+		);
+
 		// This theme doesn't support a background image.
 		$config['customizer-options']['background']['defaults']['background_image'] = false;
 		$config['customizer-options']['background']['defaults']['boldgrid_background_type'] = 'pattern';
@@ -323,12 +355,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Primary headings color.
 		$config['customizer']['controls']['bgtfw_headings_color']['default'] = 'color-2';
 
-		// Primary color for site's title.
-		$config['customizer']['controls']['bgtfw_site_title_color']['default'] = 'color-2';
-
-		// Primary color for site's tagline.
-		$config['customizer']['controls']['bgtfw_tagline_color']['default'] = 'color-2';
-
 		// Header specific colors for background, headings, and links.
 		$config['customizer']['controls']['bgtfw_header_color']['default'] = 'color-neutral';
 
@@ -536,26 +562,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Pages will not show a sidebar by default.
 		$config['customizer']['controls']['bgtfw_layout_page']['default'] = 'no-sidebar';
-
-		// Site's title typography defaults.
-		$config['customizer']['controls']['bgtfw_site_title_typography']['default'] = array(
-			'font-family' => 'Playfair Display',
-			'font-size' => '38px',
-			'text-transform' => 'capitalize',
-			'line-height' => '1.1',
-			'text-align' => 'center',
-			'variant' => 'regular'
-		);
-
-		// Site's tagline typography defaults.
-		$config['customizer']['controls']['bgtfw_tagline_typography']['default'] = array(
-			'font-family' => 'Lato',
-			'font-size' => '20px',
-			'text-transform' => 'lowercase',
-			'line-height' => '1.1',
-			'text-align' => 'center',
-			'variant' => '300italic'
-		);
 
 		// Site's body typography defaults.
 		$config['customizer']['controls']['bgtfw_body_typography']['default'] = array(
