@@ -111,12 +111,17 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['starter-content']['attachments'] = array(
 
 			// Custom Logo.
-			'crio-logo-dark' => array(
-				'post_title' => _x( 'Dark Text on Crio Logo', 'crio' ),
+			'crio-dark' => array(
+				'post_title' => _x( 'Dark Text in Crio Logo', 'crio' ),
 				'file' => 'images/crio-dark.png',
 				'meta_input' => array(
 					'_custom_logo' => true,
 				),
+			),
+
+			'crio-light' => array(
+				'post_title' => _x( 'Light Text in Crio Logo', 'crio' ),
+				'file' => 'images/crio-light.png',
 			),
 
 			// Pages.
