@@ -8,17 +8,9 @@
  * @package Prime
  */
 
-if ( is_archive() ) :
-	get_template_part( 'templates/page-header', 'archive' );
-endif;
-
-if ( ! is_front_page() && is_home() ) {
-	get_template_part( 'templates/page-header', 'blog' );
-}
-
-if ( ! have_posts() ) :
+if ( ! have_posts() ) {
 	get_template_part( 'templates/content', 'none' );
-endif;
+}
 
 if ( ( is_home() || is_archive() ) && 'above' === get_theme_mod( 'bgtfw_global_title_position' ) ) {
 	if ( have_posts() ) {

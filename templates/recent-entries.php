@@ -8,7 +8,6 @@
  * @package Prime
  */
 ?>
-
 <?php
 	$recent_posts = wp_get_recent_posts( array( 'numberposts' => '10', 'post_status' => 'publish' ) );
 	$pages = get_pages( array( 'sort_column' => 'menu_order' ) );

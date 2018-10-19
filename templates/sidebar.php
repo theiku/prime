@@ -4,5 +4,4 @@
  *
  * @package Prime
  */
-
 bgtfw_widget( 'primary-sidebar', true );

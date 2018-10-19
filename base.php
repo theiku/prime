@@ -24,6 +24,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 		<?php do_action( 'boldgrid_header_after' ); ?>
 		<?php do_action( 'boldgrid_content_before' ); ?>
 		<div id="content" <?php BoldGrid::add_class( 'site_content', [ 'site-content' ] ); ?> role="document">
+			<?php get_template_part( 'templates/page-headers' ); ?>
 			<main <?php BoldGrid::add_class( 'main', [ 'main' ] ); ?>>
 				<?php do_action( 'boldgrid_main_top' ); ?>
 				<?php include Boldgrid_Framework_Wrapper::boldgrid_template_path(); ?>

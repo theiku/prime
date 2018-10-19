@@ -1,3 +1,12 @@
+<?php
+/**
+ * Page Entry Header
+ *
+ * This file contains the markup for page entry headers.
+ *
+ * @package Prime
+ */
+do_action( 'before_entry_title' ); ?>
 <div <?php BoldGrid::add_class( 'page_header_wrapper', [ 'page-header-wrapper', get_theme_mod( 'bgtfw_global_title_background_container' ) ] ); ?>>
 	<header <?php BoldGrid::add_class( 'page_page_title', [ 'entry-header', 'page-header', has_post_thumbnail( get_option( 'page_for_posts', true ) ) ? 'has-featured-image-header' : '' ] ); ?> <?php bgtfw_featured_img_bg( $post->ID ); ?>>
 		<div <?php BoldGrid::add_class( 'featured_image_page', [ 'featured-imgage-header', get_theme_mod( 'bgtfw_global_title_content_container' ) ] ); ?>>
@@ -10,3 +19,4 @@
 		</div>
 	</header><!-- .entry-header -->
 </div>
+<?php do_action( 'after_entry_title' ); ?>

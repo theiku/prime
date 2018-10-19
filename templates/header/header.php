@@ -6,9 +6,7 @@
  *
  * @package Prime
  */
-
 ?>
-
 <header id="masthead" <?php BoldGrid::add_class( 'header', [ 'header' ] ); ?> role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>>
 	<div class="custom-header-media">
 		<?php the_custom_header_markup(); ?>

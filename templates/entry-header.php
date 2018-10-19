@@ -1,3 +1,12 @@
+<?php
+/**
+ * Entry Header
+ *
+ * This file contains the markup for entry headers.
+ *
+ * @package Prime
+ */
+do_action( 'before_entry_title' ); ?>
 <header <?php BoldGrid::add_class( 'entry_header', [ 'entry-header' ] ); ?> <?php bgtfw_featured_img_bg( $post->ID ); ?>>
 	<div <?php BoldGrid::add_class( 'featured_image', [ 'featured-imgage-header' ] ); ?>>
 		<?php if ( is_single() ) : ?>
@@ -14,3 +23,4 @@
 		<?php endif; ?>
 	</div>
 </header><!-- .entry-header -->
+<?php do_action( 'after_entry_title' ); ?>

@@ -7,7 +7,6 @@
  * @package Prime
  */
 ?>
-
 <section class="no-results not-found">
 	<div class="jumbotron text-center">
 		<div class="container">

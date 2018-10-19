@@ -7,7 +7,6 @@
  * @since 2.0
  * @package Prime
  */
-
 ?>
 <footer id="colophon" <?php BoldGrid::add_class( 'footer', [ 'site-footer' ] ); ?> role="contentinfo" <?php BoldGrid_Framework_Schema::footer( true ); ?>>
 	<?php do_action( 'boldgrid_footer_top' ); ?>

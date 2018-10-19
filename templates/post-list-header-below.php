@@ -1,3 +1,12 @@
+<?php
+/**
+ * Post List Header Below Template
+ *
+ * This file contains the markup for the post list with feat img below header information.
+ *
+ * @package Prime
+ */
+?>
 <header <?php BoldGrid::add_class( 'entry_header', [ 'entry-header', 'below' ] ); ?>>
 	<div>
 		<?php the_title( sprintf( '<p class="entry-title ' . get_theme_mod( 'bgtfw_blog_post_header_title_size' ) . '"><a ' . BoldGrid::add_class( 'blog_page_post_title', [ 'link' ], false ) . ' href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>

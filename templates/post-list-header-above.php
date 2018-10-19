@@ -1,3 +1,12 @@
+<?php
+/**
+ * Post List Header Above Template
+ *
+ * This file contains the markup for the post list with feat img above the header information.
+ *
+ * @package Prime
+ */
+?>
 <header <?php BoldGrid::add_class( 'entry_header', [ 'entry-header', 'above' ] ); ?>>
 	<div <?php BoldGrid::add_class( 'featured_image', [ 'featured-imgage-header' ] ); ?> <?php is_single() ? : bgtfw_featured_img_bg( $post->ID, true ); ?>></div>
 	<div>

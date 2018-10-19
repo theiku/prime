@@ -1,3 +1,12 @@
+<?php
+/**
+ * Post List Header Background Template
+ *
+ * This file contains the markup for the post list with feat img as a background image for header.
+ *
+ * @package Prime
+ */
+?>
 <header <?php BoldGrid::add_class( 'entry_header', [ 'entry-header' ] ); ?> <?php is_single() ? : bgtfw_featured_img_bg( $post->ID, true ); ?>>
 	<div <?php BoldGrid::add_class( 'featured_image', [ 'featured-imgage-header' ] ); ?>>
 		<?php if ( is_single() || is_page() ) : ?>

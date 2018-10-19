@@ -2,8 +2,7 @@
 /**
  * Archive Page Entry Header Template
  *
- * This file contains the markup for the archive page's
- * entry header.
+ * This file contains the markup for the archive page's entry header.
  *
  * @package Prime
  */

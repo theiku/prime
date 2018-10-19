@@ -1,3 +1,12 @@
+<?php
+/**
+ * Search Content
+ *
+ * This file contains the markup for the search page template.
+ *
+ * @package Prime
+ */
+?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php get_template_part( 'templates/entry-header' ); ?>
 	<div class="entry-summary">

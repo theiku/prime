@@ -7,12 +7,8 @@
  * @package Prime
  */
 ?>
-
 <?php while ( have_posts() ) : the_post(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<?php do_action( 'before_entry_title' ); ?>
-		<?php get_template_part( 'templates/entry-header-single', get_post_format() ); ?>
-		<?php do_action( 'after_entry_title' ); ?>
 		<div class ="article-wrapper">
 			<div class="entry-content">
 				<?php the_content(); ?>
