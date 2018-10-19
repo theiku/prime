@@ -140,7 +140,7 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 </div>
 <div class="boldgrid-section color4-background-color color-4-text-contrast">
 	<div class="container">
-		<div class="row row-spacing-lg-top">
+		<div class="row row-spacing-lg-top row-spacing-sm-bottom">
 			<div class="col-md-6 col-sm-6 col-xs-12">
 				<p class="color1-color h6" style="margin-bottom: 0; text-transform: uppercase;">Read All About It</p>
 				<h2 style="margin-top: 0;">Recent News</h2>
@@ -150,7 +150,7 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 				<p class="">Target user stories so that we maximise share of voice. Grow cloud computing with the aim to take this offline. Lead integrated tech stacks and above all, target the low hanging fruit.</p>
 			</div>
 		</div>
-		<div class="row row-spacing-lg-bottom wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s" style="padding-top: 15px;" >
+		<div class="row row-spacing-lg-bottom wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div class="boldgrid-shortcode" data-imhwpb-draggable="true">
 					[boldgrid_component type="wp_boldgrid_component_postlist" opts="<?php $post_widget_opts(); ?>"]
@@ -168,7 +168,7 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 				<?php $divider(); ?>
 			</div>
 		</div>
-		<div class="row row-spacing-lg-bottom" style="padding-top: 40px;">
+		<div class="row row-spacing-lg-bottom row-spacing-sm-top">
 			<div class="col-md-5 col-sm-12 col-xs-12">
 				<div class="boldgrid-slider boldgrid-wrap-row" data-config='{"arrows":false,"autoplay":true,"autoplaySpeed":"8","dots":true,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
 					<div class="row">
