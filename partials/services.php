@@ -13,15 +13,16 @@
 } ?>
 <div class="boldgrid-section">
 	<div class="container">
-		<div class="row row-spacing-lg-top row-spacing-sm-bottom">
-			<div class="col-md-6 col-sm-12 col-xs-12">
+		<div class="row row-spacing-lg-top">
+			<div class="col-md-6 col-sm-6 col-xs-12">
 				<p class="h6 color1-color" style="margin-bottom: 0; text-transform: uppercase;">Take Your Steps</p>
 				<h2 style="margin-top: 0;">Winning Process</h2>
 				<?php $divider(); ?>
 				<p class="" style="margin: 1.5em 0;">Leverage integrated tech stacks and above all, build ROI. Targeting user engagement and try to further your reach. Building awareness while remembering to target the low hanging fruit. Growing brand ambassadors with a goal to maximise share of voice.</p>
 				<p style="margin: 1.5em 0;"><a class="button-primary" href="#">Learn More</a></p>
 			</div>
-			<div class="col-md-6 col-sm-12 col-xs-12 align-column-center">
+			<div class="col-md-1 col-sm-1 col-xs-12 align-column-center"></div>
+			<div class="col-md-5 col-sm-5 col-xs-12 align-column-center">
 				<p style="margin: 2em 0" class="text-center" ><img class="bg-img bg-img-3" src="<?php $image_path( 'services-1.jpg' ) ?>">
 			</div>
 		</div>
@@ -31,22 +32,22 @@
 	<div class="container">
 		<div class="row row-spacing-sm-top row-spacing-lg-bottom">
 			<div class="col-md-3 col-xs-12 col-sm-6 text-center  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="padding: 2em;">
-				<p><img src="<?php $image_path( '008-idea.png' ) ?>" width="75" height="75"></p>
+				<p class=""><img src="<?php $image_path( '008-idea.png' ) ?>" width="75" height="75"></p>
 				<h3 style="margin-top: 1.25em;">Discover</h3>
 				<p class="">Lead bleeding edge and then further your reach. Synchronizing below the line.</p>
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-6 text-center  wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" style="padding: 2em;">
-				<p><img src="<?php $image_path( '009-options.png' ) ?>" width="75" height="75"></p>
+				<p class=""><img src="<?php $image_path( '009-options.png' ) ?>" width="75" height="75"></p>
 				<h3 style="margin-top: 1.25em;">Create</h3>
 				<p class="">Lead bleeding edge and then further your reach. Synchronizing below the line.</p>
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-6 text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s" style="padding: 2em;">
-				<p><img src="<?php $image_path( '010-start.png' ) ?>" width="62" height="75"></p>
+				<p class=""><img src="<?php $image_path( '010-start.png' ) ?>" width="62" height="75"></p>
 				<h3 style="margin-top: 1.25em;">Energy</h3>
 				<p class="">Lead bleeding edge and then further your reach. Synchronizing below the line.</p>
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-6 text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="2s" style="padding: 2em;">
-				<p><img src="<?php $image_path( '011-develop.png' ) ?>" width="75" height="75"></p>
+				<p class=""><img src="<?php $image_path( '011-develop.png' ) ?>" width="75" height="75"></p>
 				<h3 style="margin-top: 1.25em;">Success</h3>
 				<p class="">Lead bleeding edge and then further your reach. Synchronizing below the line.</p>
 			</div>
@@ -202,9 +203,7 @@
 						</li>
 					</ul>
 					<p style="background-color: rgba(0,0,0,.05);" class="action"> <a class="btn-color-3 btn btn-capitalize btn-pill btn-regular" href="#">Buy Now</a> </p>
-
 				</div>
-
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-3 text-center align-column-center">
 				<div class="bg-box-flush bg-box-cover basic product-type color-neutral-background-color color-neutral-text-contrast bg-background-color bg-box" style="margin-top: .6em; margin-bottom: .6em;">
@@ -223,9 +222,7 @@
 						</li>
 					</ul>
 					<p style="background-color: rgba(0,0,0,.05);" class="action"> <a class="btn-color-3 btn btn-capitalize btn-pill  btn-regular" href="#">Buy Now</a> </p>
-
 				</div>
-
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-3 text-center align-column-center bg-box-border-thin color3-border-color" style="position:relative; z-index:1">
 				<div class="bg-box-flush bg-box-cover featured product-type color-neutral-background-color color-neutral-text-contrast bg-background-color bg-box wow pulse" data-wow-duration="2.5s" data-wow-delay="1s">
@@ -244,9 +241,7 @@
 						</li>
 					</ul>
 					<p style="background-color: rgba(0,0,0,.05);" class="action"> <a class="button-primary" href="#">Buy Now</a> </p>
-
 				</div>
-
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-3 text-center align-column-center">
 				<div class="bg-box-flush bg-box-cover basic product-type color-neutral-background-color color-neutral-text-contrast bg-background-color bg-box" style="margin-top: .6em; margin-bottom: .6em;">
@@ -265,11 +260,8 @@
 						</li>
 					</ul>
 					<p style="background-color: rgba(0,0,0,.05);" class="action"> <a class="btn-color-3 btn btn-capitalize btn-pill  btn-regular" href="#">Buy Now</a> </p>
-
 				</div>
-
 			</div>
-
 		</div>
 	</div>
 </div>
