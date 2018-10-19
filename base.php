@@ -25,14 +25,16 @@ $configs = $boldgrid_theme_framework->get_configs();
 		<?php do_action( 'boldgrid_content_before' ); ?>
 		<div id="content" <?php BoldGrid::add_class( 'site_content', [ 'site-content' ] ); ?> role="document">
 			<?php get_template_part( 'templates/page-headers' ); ?>
-			<main <?php BoldGrid::add_class( 'main', [ 'main' ] ); ?>>
-				<?php do_action( 'boldgrid_main_top' ); ?>
-				<?php include Boldgrid_Framework_Wrapper::boldgrid_template_path(); ?>
-				<?php do_action( 'boldgrid_main_bottom' ); ?>
-			</main><!-- /.main -->
-			<?php if ( BoldGrid::display_sidebar() && 'above' !== get_theme_mod( 'bgtfw_global_title_position' ) ) : ?>
-				<?php include BoldGrid::boldgrid_sidebar_path(); ?>
-			<?php endif; ?>
+			<div id="main-wrapper" <?php BoldGrid::add_class( 'main_wrapper', [ 'main-wrapper' ] ); ?>>
+				<main <?php BoldGrid::add_class( 'main', [ 'main' ] ); ?>>
+					<?php do_action( 'boldgrid_main_top' ); ?>
+					<?php include Boldgrid_Framework_Wrapper::boldgrid_template_path(); ?>
+					<?php do_action( 'boldgrid_main_bottom' ); ?>
+				</main><!-- /.main -->
+				<?php if ( BoldGrid::display_sidebar() && 'above' !== get_theme_mod( 'bgtfw_global_title_position' ) ) : ?>
+					<?php include BoldGrid::boldgrid_sidebar_path(); ?>
+				<?php endif; ?>
+			</div>
 		</div><!-- /.content -->
 		<?php do_action( 'boldgrid_content_after' ); ?>
 		<?php do_action( 'boldgrid_footer_before' ); ?>
