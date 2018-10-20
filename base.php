@@ -36,7 +36,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 					<?php include Boldgrid_Framework_Wrapper::boldgrid_template_path(); ?>
 					<?php do_action( 'boldgrid_main_bottom' ); ?>
 				</main><!-- /.main -->
-				<?php if ( BoldGrid::display_sidebar() && 'above' !== get_theme_mod( 'bgtfw_global_title_position' ) ) : ?>
+				<?php if ( BoldGrid::display_sidebar() && ( is_woocommerce() || 'above' !== get_theme_mod( 'bgtfw_global_title_position' ) ) ) : ?>
 					<?php include BoldGrid::boldgrid_sidebar_path(); ?>
 				<?php endif; ?>
 			</div>
