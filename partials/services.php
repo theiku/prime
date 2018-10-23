@@ -16,10 +16,10 @@
 		<div class="row row-spacing-lg-top">
 			<div class="col-md-6 col-sm-6 col-xs-12">
 				<p class="h6 color1-color" style="margin-bottom: 0; text-transform: uppercase;">Take Your Steps</p>
-				<h2 style="margin-top: 0;">Winning Process</h2>
+				<h1 class="h2" style="margin-top: 0;">Winning Process</h1>
 				<?php $divider(); ?>
-				<p class="" style="margin: 1.5em 0;">Leverage integrated tech stacks and above all, build ROI. Targeting user engagement and try to further your reach. Building awareness while remembering to target the low hanging fruit. Growing brand ambassadors with a goal to maximise share of voice.</p>
-				<p style="margin: 1.5em 0;"><a class="button-primary" href="#">Learn More</a></p>
+				<p class="" style="margin: 2.2em 0;">Leverage integrated tech stacks and above all, build ROI. Targeting user engagement and try to further your reach. Building awareness while remembering to target the low hanging fruit. Growing brand ambassadors with a goal to maximise share of voice.</p>
+				<p style="margin: 2.2em 0;"><a class="button-primary" href="#">Learn More</a></p>
 			</div>
 			<div class="col-md-1 col-sm-1 col-xs-12 align-column-center"></div>
 			<div class="col-md-5 col-sm-5 col-xs-12 align-column-center">

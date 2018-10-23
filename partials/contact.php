@@ -3,7 +3,7 @@
 		<div class="row row-spacing-lg">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<p class="color1-color h6" style="margin-bottom: .3em; text-transform: uppercase;">Free Consultation</p>
-				<h2 style="margin-top: 0;">Get a Quote</h2>
+				<h1 class="h2" style="margin-top: 0;">Get a Quote</h1>
 				<?php $divider(); ?>
 			</div>
 			<div class="col-md-6 col-sm-12 col-xs-12">

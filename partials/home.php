@@ -77,9 +77,9 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 				<p class="h6 color1-color" style="margin-bottom: 0; text-transform: uppercase;">Where We Started</p>
 				<h2 style="margin-top: 0;">Our Story</h2>
 				<?php $divider(); ?>
-				<p style="margin: 1.5em 0">Executing big data with the aim to improve overall outcomes. Build user stories so that as an end result, we create actionable insights. Engage audience segments and above all, use best practice. Target key demographics while remembering to get buy in.</p>
-				<p style="margin-bottom: 2.5em;">Generating dark social so that as an end result, we use best practice. Synchronizing first party data so that we be transparent.</p>
-				<p style="margin-bottom: 2.5em;"><a href="#" class="button-primary">Learn More</a></p>
+				<p style="margin: 2.2em 0">Executing big data with the aim to improve overall outcomes. Build user stories so that as an end result, we create actionable insights. Engage audience segments and above all, use best practice. Target key demographics while remembering to get buy in.</p>
+				<p style="margin-bottom: 2.2em;">Generating dark social so that as an end result, we use best practice. Synchronizing first party data so that we be transparent.</p>
+				<p style="margin-bottom: 2.2em;"><a href="#" class="button-primary">Learn More</a></p>
 			</div>
 			<div class="col-md-1 col-sm-1 col-xs-12"></div>
 			<div class="col-md-5 col-sm-5 col-xs-12 align-column-center">
@@ -122,7 +122,7 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 </div>
 <div class="boldgrid-section">
 	<div class="container">
-		<div class="row row-spacing-md">
+		<div class="row row-spacing-sm">
 			<div class="col-md-3 col-sm-6 col-xs-12 text-center">
 				<p class="mod-reset wow fadeIn" data-wow-duration="1s" data-wow-delay="0.50s"><img src="<?php $image_path( 'logo-1.png' ) ?>"></p>
 			</div>

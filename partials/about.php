@@ -7,7 +7,7 @@
 			<div class="col-md-1 col-sm-1 col-xs-12"></div>
 			<div class="col-md-6 col-sm-6 col-xs-12">
 				<p class="color1-color h6" style="margin-bottom: .3em; text-transform: uppercase;">Your Best Solution</p>
-				<h2 style="margin-top: 0;">What We Do</h2>
+				<h1 class="h2" style="margin-top: 0;">What We Do</h1>
 				<?php $divider(); ?>
 				<p style="margin-top: 2.2em;">Leveraging sprints with the aim to take this offline. Executing transformation mapping with a goal to build ROI. Taking dark social to in turn think outside the box. Execute cloud computing to, consequently, go viral. Utilise below the
 					fold and then re-target key demographics.</p>
