@@ -3,7 +3,6 @@
 		<div class="row row-spacing-lg-top">
 			<div class="col-md-6 col-sm-12 col-xs-12">
 				<div class="bg-box" style="padding-bottom: 0em; padding-top: 0em;">
-					<p class="h6 color1-color" style="margin-bottom: 0; text-transform: uppercase;">Take Your Steps</p>
 					<h1 class="h2" style="margin-top: 0;">Heading</h1>
 					<?php $divider(); ?>
 				</div>

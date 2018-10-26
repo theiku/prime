@@ -31,7 +31,6 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 		<div class="container">
 			<div class="row row-spacing-lg">
 				<div class="col-md-6 col-sm-12 col-xs-12">
-					<p class="h6" style="color: #fff; margin-bottom: 0; text-transform: uppercase;">We Help Entrepreneurs</p>
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Grow Your Business</h2>
 					<?php $divider(); ?>
 					<h5 style="color: #fff; font-size: 1.3em;">Taking core competencies to, consequently, infiltrate new markets. Drive analytics so that as an end result.</h5>
@@ -45,7 +44,6 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 		<div class="container">
 			<div class="row row-spacing-lg">
 				<div class="col-md-6 col-sm-12 col-xs-12">
-					<p class="h6" style="color: #fff; margin-bottom: 0; text-transform: uppercase;">Let Us Help</p>
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Dedicated to Quality</h2>
 					<?php $divider(); ?>
 					<h5 style="color: #fff; font-size: 1.3em;">Leading best in class so that as an end result, we make the logo bigger. Lead analytics to make the ROI bigger.</h5>
@@ -59,7 +57,6 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 		<div class="container">
 			<div class="row row-spacing-lg">
 				<div class="col-md-6 col-sm-12 col-xs-12">
-					<p class="h6" style="color: #fff; margin-bottom: 0; text-transform: uppercase;">Bold Solutions</p>
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Industry Leaders</h2>
 					<?php $divider(); ?>
 					<h5 style="color: #fff; font-size: 1.3em;">Take blue-sky thinking to in turn create actionable insights. Amplifying growth channels to use best practice.</h5>
@@ -74,7 +71,6 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 	<div class="container">
 		<div class="row row-spacing-lg">
 			<div class="col-md-6 col-sm-6 col-xs-12">
-				<p class="h6 color1-color" style="margin-bottom: 0; text-transform: uppercase;">Where We Started</p>
 				<h2 style="margin-top: 0;">Our Story</h2>
 				<?php $divider(); ?>
 				<p style="margin: 2.2em 0">Executing big data with the aim to improve overall outcomes. Build user stories so that as an end result, we create actionable insights. Engage audience segments and above all, use best practice. Target key demographics while remembering to get buy in.</p>
@@ -92,7 +88,6 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 	<div class="container">
 		<div class="row row-spacing-lg-top">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<p class="h6" style="color: #fff; margin-bottom: 0; text-transform: uppercase;">What We Do</h6>
 				<h2 style="color: #fff; margin-top: 0;">Services</h2>
 				<?php $divider(); ?>
 			</div>
@@ -142,7 +137,6 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 	<div class="container">
 		<div class="row row-spacing-lg-top row-spacing-sm-bottom">
 			<div class="col-md-6 col-sm-6 col-xs-12">
-				<p class="color1-color h6" style="margin-bottom: 0; text-transform: uppercase;">Read All About It</p>
 				<h2 style="margin-top: 0;">Recent News</h2>
 				<?php $divider(); ?>
 			</div>
@@ -163,7 +157,6 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 	<div class="container">
 		<div class="row row-spacing-lg-top">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<p class="h6 color1-color" style="margin-bottom: 0; text-transform: uppercase;">Meet the Professionals</p>
 				<h2 style="margin-top: 0;">Team</h2>
 				<?php $divider(); ?>
 			</div>

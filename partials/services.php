@@ -15,7 +15,6 @@
 	<div class="container">
 		<div class="row row-spacing-lg-top">
 			<div class="col-md-6 col-sm-6 col-xs-12">
-				<p class="h6 color1-color" style="margin-bottom: 0; text-transform: uppercase;">Take Your Steps</p>
 				<h1 class="h2" style="margin-top: 0;">Winning Process</h1>
 				<?php $divider(); ?>
 				<p class="" style="margin: 2.2em 0;">Leverage integrated tech stacks and above all, build ROI. Targeting user engagement and try to further your reach. Building awareness while remembering to target the low hanging fruit. Growing brand ambassadors with a goal to maximise share of voice.</p>
@@ -58,7 +57,6 @@
 	<div class="container">
 		<div class="row row-spacing-lg-top row-spacing-sm-bottom">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<p class="color1-color h6" style="margin-bottom: 0.3em; text-transform: uppercase;">Our Best Business</p>
 				<h2 style="margin-top: 0;">The Benefit</h2>
 				<?php $divider(); ?>
 			</div>
@@ -77,7 +75,6 @@
 	<div class="container">
 		<div class="row row-spacing-lg">
 			<div class="col-md-5 col-sm-4 col-xs-12">
-				<p style="margin-bottom: .3em; text-transform: uppercase;">Take a Look</p>
 				<h2 style="color: #fff; margin-top: 0;">Glimpse</h2>
 				<?php $divider(); ?>
 			</div>
@@ -177,7 +174,6 @@
 	<div class="container">
 		<div class="row row-spacing-lg-top row-spacing-sm-bottom">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<p class="color1-color h6" style="text-transform: uppercase; margin-bottom: .3em;">Pick Your Plan</p>
 				<h2 style="margin-top: 0;">Pricing Table</h2>
 				<?php $divider(); ?>
 			</div>
