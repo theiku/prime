@@ -632,44 +632,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			),
 		);
 
-		// Advanced Controls.
-		$config['customizer']['controls']['bgtfw_footer_padding']['default'] = [
-			[
-				'media' => [ 'base' ],
-				'unit' => 'em',
-				'isLinked' => true,
-				'values' => [
-					'top' => 3,
-					'left' => 3,
-					'right' => 3,
-					'bottom' => 3,
-				],
-			],
-			[
-				'media' => [ 'tablet', 'phone' ],
-				'unit' => 'em',
-				'isLinked' => true,
-				'values' => [
-					'top' => 1.5,
-					'left' => 1.5,
-					'right' => 1.5,
-					'bottom' => 1.5,
-				],
-			],
-		];
-
-		$config['customizer']['controls']['bgtfw_header_padding']['default'] = [
-			[
-				'media' => [ 'base' ],
-				'unit' => 'em',
-				'isLinked' => false,
-				'values' => [
-					'top' => 0.5,
-					'bottom' => 0.5,
-				],
-			],
-		];
-
 		$config['customizer']['controls']['bgtfw_header_border']['default'] = [
 			[
 				'media' => [ 'base' ],
