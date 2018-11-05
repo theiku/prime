@@ -1,4 +1,13 @@
-<?php $post_widget_opts = function () {
+<?php
+/**
+ * Contains markup for the home page in starter content.
+ *
+ * @package Prime
+ *
+ * @since 2.0.0
+ */
+
+$post_widget_opts = function () {
 	return print urlencode( json_encode( [
 		'widget-boldgrid_component_postlist[][selected_post]' => 'all',
 		'widget-boldgrid_component_postlist[][sorting]' => 'newest',
@@ -14,7 +23,7 @@
 
 $service_icons = function( $options ) use ( $image_path ) { ?>
 	<div class="row">
-		<?php foreach( $options as $option ) { ?>
+		<?php foreach ( $options as $option ) { ?>
 		<div class="col-md-4 col-sm-12 col-xs-12">
 			<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
 				<img src="<?php $image_path( $option['image'] ) ?>" style="height: 75px;">

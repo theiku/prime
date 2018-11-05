@@ -1,3 +1,12 @@
+<?php
+/**
+ * Page Content Template
+ *
+ * This file contains the markup for the page content template.
+ *
+ * @package Prime
+ */
+?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class ="article-wrapper">
 		<div class="entry-content">

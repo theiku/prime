@@ -1,4 +1,13 @@
-<?php $post_widget_opts = function () {
+<?php
+/**
+ * Contains markup for the services page in starter content.
+ *
+ * @package Prime
+ *
+ * @since 2.0.0
+ */
+
+$post_widget_opts = function () {
 	return print urlencode( json_encode( [
 		'widget-boldgrid_component_postlist[][selected_post]' => 'all',
 		'widget-boldgrid_component_postlist[][sorting]' => 'newest',

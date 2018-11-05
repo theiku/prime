@@ -1,3 +1,12 @@
+<?php
+/**
+ * Contains markup for the contact page in starter content.
+ *
+ * @package Prime
+ *
+ * @since 2.0.0
+ */
+?>
 <div class="boldgrid-section">
 	<div class="container">
 		<div class="row row-spacing-lg">

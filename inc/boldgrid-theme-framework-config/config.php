@@ -52,8 +52,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'font-size' => '38px',
 			'text-transform' => 'capitalize',
 			'line-height' => '1.1',
-			'text-align' => 'center',
-			'variant' => 'regular'
+			'variant' => 'regular',
 		);
 
 		// Hide the tagline by default and display a logo instead.
@@ -68,8 +67,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'font-size' => '20px',
 			'text-transform' => 'lowercase',
 			'line-height' => '1.1',
-			'text-align' => 'center',
-			'variant' => '300italic'
+			'variant' => '300italic',
 		);
 
 		// This theme doesn't support a background image.
@@ -272,7 +270,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'thumbnail' => '{{contact-featured}}',
 				'post_content' => bgtfw_get_contents( 'contact.php' ),
 			),
-
 
 			// Home page posts.
 			'artificial-intelligence' => array(
@@ -569,7 +566,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'font-size' => '16px',
 			'line-height' => '1.4',
 			'text-transform' => 'none',
-			'variant' => 'regular'
+			'variant' => 'regular',
 		);
 
 		// Site's headings typography defaults.
@@ -578,18 +575,16 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'font-size' => '16px',
 			'line-height' => '1.5',
 			'text-transform' => 'none',
-			'variant' => 'regular'
+			'variant' => 'regular',
 		);
-
 
 		$config['customizer']['controls']['bgtfw_headings_font_size']['default'] = '16';
 		$config['customizer']['controls']['bgtfw_headings_typography']['default'] = array(
 			'font-family' => 'Playfair Display',
 			'line-height' => '1.5',
 			'text-transform' => 'none',
-			'variant' => 'regular'
+			'variant' => 'regular',
 		);
-
 
 		if ( ! class_exists( 'Boldgrid_Editor' ) ) {
 			$config['scripts']['animate-css'] = true;
@@ -612,7 +607,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 					'object_id' => '{{services}}',
 				),
 				'page_blog',
-				'page_contact'=> array(
+				'page_contact' => array(
 					'type' => 'post_type',
 					'object' => 'page',
 					'object_id' => '{{contact}}',
@@ -642,7 +637,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 					'top' => 0,
 					'left' => 0,
 					'right' => 0,
-					'bottom' => 5
+					'bottom' => 5,
 				],
 			],
 		];
@@ -654,7 +649,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'isLinked' => false,
 				'values' => [
 					'top' => 0,
-					'bottom' => 3
+					'bottom' => 3,
 				],
 			],
 		];
@@ -720,12 +715,21 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 	}
 }
 
-function bgtfw_get_contents( $filePath ) {
-	return function () use ( $filePath ) {
+/**
+ * Retrieve starter content file contents.
+ *
+ * @since 2.0.0
+ *
+ * @param string $partial File's relative path to ./partials/.
+ *
+ * @return string $content Rendered markup for starter content page.
+ */
+function bgtfw_get_contents( $partial ) {
+	return function () use ( $partial ) {
 		include get_template_directory() . '/partials/utility.php';
 
 		ob_start();
-		include get_template_directory() . '/partials/' . $filePath;
+		include get_template_directory() . '/partials/' . $partial;
 		$content = ob_get_contents();
 		ob_end_clean();
 		$content = str_replace( array( "\n", "\t" ), '', $content );
