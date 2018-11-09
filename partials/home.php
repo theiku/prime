@@ -35,7 +35,7 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 	</div>
 <?php }; ?>
 
-<div class="boldgrid-slider boldgrid-section-wrap" data-config='{"arrows":true,"autoplay":true,"autoplaySpeed":"10","dots":false,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"chevron","arrowsSize":"15","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
+<div class="boldgrid-slider boldgrid-section-wrap" data-config='{"arrows":true,"autoplay":true,"autoplaySpeed":"6","dots":false,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"chevron","arrowsSize":"15","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
 	<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path( 'home-1.jpg' ) ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'home-1.jpg' ) ?>)">
 		<div class="container">
 			<div class="row row-spacing-lg">
@@ -43,7 +43,7 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Grow Your Business</h2>
 					<?php $divider(); ?>
 					<h5 style="color: #fff; font-size: 1.3em;">Taking core competencies to, consequently, infiltrate new markets. Drive analytics so that as an end result.</h5>
-					<p class="" style="margin-top: 2em;"><a href="#" class="button-primary">Learn More</a></p>
+					<p style="margin-top: 2em;"><a href="#" class="button-primary">Learn More</a></p>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12"></div>
 			</div>
@@ -56,7 +56,7 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Dedicated to Quality</h2>
 					<?php $divider(); ?>
 					<h5 style="color: #fff; font-size: 1.3em;">Leading best in class so that as an end result, we make the logo bigger. Lead analytics to make the ROI bigger.</h5>
-					<p class="" style="margin-top: 2em;"><a href="#" class="button-primary">Learn More</a></p>
+					<p style="margin-top: 2em;"><a href="#" class="button-primary">Learn More</a></p>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12"></div>
 			</div>
@@ -68,8 +68,8 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 				<div class="col-md-6 col-sm-12 col-xs-12">
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Industry Leaders</h2>
 					<?php $divider(); ?>
-					<h5 style="color: #fff; font-size: 1.3em;">Take blue-sky thinking to in turn create actionable insights. Amplifying growth channels to use best practice.</h5>
-					<p class="" style="margin-top: 2em;"><a href="#" class="button-primary">Learn More</a></p>
+					<h5 style="color: #fff; font-size: 1.3em;">Take blue-sky thinking to create actionable insights. Amplifying growth channels to use best practice.</h5>
+					<p style="margin-top: 2em;"><a href="#" class="button-primary">Learn More</a></p>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12"></div>
 			</div>
@@ -103,7 +103,7 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 		</div>
 		<div class="row row-spacing-lg-bottom">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<div class="boldgrid-wrap-row boldgrid-slider bg-box-cover" data-config='{"arrows":true,"autoplay":true,"autoplaySpeed":"10","dots":false,"infinite":true,"bgOptions":{"arrowsPos":"top-right","arrowsOverlay":false,"arrowsBgColor":"1","arrowsIcon":"chevron","arrowsSize":"15","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
+				<div class="boldgrid-slider boldgrid-section-wrap" data-config='{"arrows":true,"autoplay":true,"autoplaySpeed":"6","dots":false,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"chevron","arrowsSize":"15","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
 					<?php $service_icons( [
 						[ 'title' => 'Advanced Analytics', 'image' => 'development.svg' ],
 						[ 'title' => 'Finance', 'image' => 'business.svg' ],
@@ -172,7 +172,7 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 		</div>
 		<div class="row row-spacing-lg-bottom row-spacing-sm-top">
 			<div class="col-md-5 col-sm-12 col-xs-12">
-				<div class="boldgrid-slider boldgrid-wrap-row" data-config='{"arrows":false,"autoplay":true,"autoplaySpeed":"8","dots":true,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
+				<div class="boldgrid-slider boldgrid-wrap-row" data-config='{"arrows":false,"autoplay":true,"autoplaySpeed":"6","dots":true,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
 					<div class="row">
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div class="text-center">
@@ -216,11 +216,11 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 <div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path( 'home-9.jpg' ) ?>" style="color: #fff; background-size: cover; background-position: 50% 37%; background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'home-9.jpg' ) ?>)">
 	<div class="container">
 		<div class="row row-spacing-sm">
-			<div class="col-md-7 col-sm-12 col-xs-12">
-				<h3 style="color: #fff;">Create daily standups to in turn re-target key demographics.</h3>
+			<div class="col-md-5 col-sm-12 col-xs-12">
+				<h3 style="color: #fff;">Lead tech stacks and above all, get the low hanging fruit.</h3>
 			</div>
 			<div class="col-md-1 col-sm-12 col-xs-12"></div>
-			<div class="col-md-4 col-sm-12 col-xs-12 align-column-center">
+			<div class="col-md-6 col-sm-12 col-xs-12 align-column-center">
 				<p class="wow pulse" data-wow-duration="1s" data-wow-delay="1s" style="margin-top: 1em;"><a href="#" class="button-primary">Contact Us</a></p>
 			</div>
 		</div>
