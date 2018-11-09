@@ -42,21 +42,25 @@ $post_widget_opts = function () {
 			<div class="col-md-3 col-xs-12 col-sm-6 text-center  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="padding: 2em;">
 				<p class=""><img src="<?php $image_path( '008-idea.png' ) ?>" width="75" height="75"></p>
 				<h3 style="margin-top: 1.25em;">Discover</h3>
+				<hr class="bg-hr color1-color bg-hr-15" style="width: 50px; margin-left: auto; margin-right: auto; margin-top: 0px; border-radius: 100px;">
 				<p class="">Lead bleeding edge and then further your reach. Synchronizing below the line.</p>
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-6 text-center  wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" style="padding: 2em;">
 				<p class=""><img src="<?php $image_path( '009-options.png' ) ?>" width="75" height="75"></p>
 				<h3 style="margin-top: 1.25em;">Create</h3>
+				<hr class="bg-hr color1-color bg-hr-15" style="width: 50px; margin-left: auto; margin-right: auto; margin-top: 0px; border-radius: 100px;">
 				<p class="">Lead bleeding edge and then further your reach. Synchronizing below the line.</p>
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-6 text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s" style="padding: 2em;">
 				<p class=""><img src="<?php $image_path( '010-start.png' ) ?>" width="62" height="75"></p>
 				<h3 style="margin-top: 1.25em;">Energy</h3>
+				<hr class="bg-hr color1-color bg-hr-15" style="width: 50px; margin-left: auto; margin-right: auto; margin-top: 0px; border-radius: 100px;">
 				<p class="">Lead bleeding edge and then further your reach. Synchronizing below the line.</p>
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-6 text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="2s" style="padding: 2em;">
 				<p class=""><img src="<?php $image_path( '011-develop.png' ) ?>" width="75" height="75"></p>
 				<h3 style="margin-top: 1.25em;">Success</h3>
+				<hr class="bg-hr color1-color bg-hr-15" style="width: 50px; margin-left: auto; margin-right: auto; margin-top: 0px; border-radius: 100px;">
 				<p class="">Lead bleeding edge and then further your reach. Synchronizing below the line.</p>
 			</div>
 		</div>
