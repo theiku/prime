@@ -403,7 +403,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['bgtfw_global_title_alignment']['default'] = 'left';
 
 		// Set the headings size of the page titles globally.
-		$config['customizer']['controls']['bgtfw_global_title_size']['default'] = 'h2';
+		$config['customizer']['controls']['bgtfw_global_title_size']['default'] = 'h1';
 
 		// Show blog and archives in a 1 column layout.
 		$config['customizer']['controls']['bgtfw_pages_blog_blog_page_layout_columns']['default'] = '1';
@@ -698,8 +698,8 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer-options']['colors']['dark_text'] = '#333333';
 
 		// Button Classes
-		$config['components']['buttons']['variables']['button-primary-classes'] = '.btn, .btn-color-1, .btn-pill';
-		$config['components']['buttons']['variables']['button-secondary-classes'] = '.btn, .btn-color-2, .btn-pill';
+		$config['components']['buttons']['variables']['button-primary-classes'] = '.btn, .btn-color-1';
+		$config['components']['buttons']['variables']['button-secondary-classes'] = '.btn, .btn-color-2';
 
 		// Set all pages to be in a container by default.
 		$config['customizer']['controls']['bgtfw_pages_container']['default'] = 'container';
