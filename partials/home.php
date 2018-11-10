@@ -35,7 +35,7 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 	</div>
 <?php }; ?>
 
-<div class="boldgrid-slider boldgrid-section-wrap" data-config='{"arrows":true,"autoplay":true,"autoplaySpeed":"6","dots":false,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"chevron","arrowsSize":"15","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
+<div class="boldgrid-slider boldgrid-section-wrap" data-config='{"arrows":false,"autoplay":true,"autoplaySpeed":"6","dots":true,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"4","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":true,"dotsColor":"4","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"4","text":""},"dotsColor":{"type":"class","value":"4","text":""}}}'>
 	<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path( 'home-1.jpg' ) ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'home-1.jpg' ) ?>)">
 		<div class="container">
 			<div class="row row-spacing-lg">
