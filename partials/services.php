@@ -26,19 +26,19 @@ $post_widget_opts = function () {
 			<div class="col-md-6 col-sm-6 col-xs-12">
 				<h1 class="h2" style="margin-top: 0;">Winning Process</h1>
 				<?php $divider(); ?>
-				<p class="" style="margin: 2.2em 0;">Leverage integrated tech stacks and above all, build ROI. Targeting user engagement and try to further your reach. Building awareness while remembering to target the low hanging fruit. Growing brand ambassadors with a goal to maximise share of voice.</p>
-				<p style="margin: 2.2em 0;"><a class="button-primary" href="#">Learn More</a></p>
+				<p class="" style="margin-bottom: 2em;">Leverage integrated tech stacks and above all, build ROI. Targeting user engagement and try to further your reach. Building awareness while remembering to target the low hanging fruit. Growing brand ambassadors with a goal to maximise share of voice.</p>
+				<p style="margin-bottom: 2em;"><a class="button-primary" href="#">Learn More</a></p>
 			</div>
 			<div class="col-md-1 col-sm-1 col-xs-12 align-column-center"></div>
 			<div class="col-md-5 col-sm-5 col-xs-12 align-column-center">
-				<p style="margin: 2em 0" class="text-center" ><img class="bg-img bg-img-3" src="<?php $image_path( 'services-1.jpg' ) ?>">
+				<p class="text-center" ><img class="bg-img bg-img-3" src="<?php $image_path( 'services-1.jpg' ) ?>">
 			</div>
 		</div>
 	</div>
 </div>
 <div class="boldgrid-section">
 	<div class="container">
-		<div class="row row-spacing-sm-top row-spacing-lg-bottom">
+		<div class="row row-spacing-lg-bottom">
 			<div class="col-md-3 col-xs-12 col-sm-6 text-center  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="padding: 2em;">
 				<p class=""><img src="<?php $image_path( '008-idea.png' ) ?>" width="75" height="75"></p>
 				<h3 style="margin-top: 1.25em;">Discover</h3>
@@ -68,7 +68,7 @@ $post_widget_opts = function () {
 </div>
 <div class="boldgrid-section color4-background-color color-4-text-contrast bg-background-color">
 	<div class="container">
-		<div class="row row-spacing-lg-top row-spacing-sm-bottom">
+		<div class="row row-spacing-lg-top">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<h2 style="margin-top: 0;">The Benefit</h2>
 				<?php $divider(); ?>
@@ -92,8 +92,8 @@ $post_widget_opts = function () {
 				<?php $divider(); ?>
 			</div>
 			<div class="col-md-7 col-xs-12 col-sm-12">
-				<p style="margin-top: 2.1em;">Executing audience segments and try to be transparent. Generating analytics with a goal to build ROI. Grow stakeholder management so that we surprise and delight.</p>
-				<div class="row bg-editor-hr-wrap" style="margin-top: 2.1em;">
+				<p style="margin-bottom: 2em;">Executing audience segments and try to be transparent. Generating analytics with a goal to build ROI. Grow stakeholder management so that we surprise and delight.</p>
+				<div class="row bg-editor-hr-wrap">
 					<div class="col-md-12 col-xs-12 col-sm-12">
 						<div>
 							<hr>
@@ -185,7 +185,7 @@ $post_widget_opts = function () {
 </div>
 <div class="boldgrid-section">
 	<div class="container">
-		<div class="row row-spacing-lg-top row-spacing-sm-bottom">
+		<div class="row row-spacing-lg-top">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<h2 style="margin-top: 0;">Pricing Table</h2>
 				<?php $divider(); ?>

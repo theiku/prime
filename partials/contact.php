@@ -15,8 +15,8 @@
 				<?php $divider(); ?>
 			</div>
 			<div class="col-md-6 col-sm-12 col-xs-12">
-				<p style="margin-top: 2.2em;">Executing below the line so that we maximise share of voice. Targeting agile and possibly think outside the box. Synchronise big data so that as an end result, we make the logo bigger.</p>
-				<p style="margin-top: 2.2em;">Targeting a holistic approach yet make users into advocates. Taking user stories to, consequently, target the low hanging fruit.</p>
+				<p style="margin-bottom: 2em;">Executing below the line so that we maximise share of voice. Targeting agile and possibly think outside the box. Synchronise big data so that as an end result, we make the logo bigger.</p>
+				<p style="margin-bottom: 2em;">Targeting a holistic approach yet make users into advocates. Taking user stories to, consequently, target the low hanging fruit.</p>
 				<div class="row ">
 					<div class="col-md-12 col-xs-12 col-sm-12">
 						<div class="bg-img bg-img-3 bg-box bg-box-square bg-box-cover color-4-text-contrast color4-background-color" style="margin-top: 2.2em; padding: 2em 3em;">
@@ -33,7 +33,7 @@
 				</div>
 			</div>
 			<div class="col-md-6 col-sm-12 col-xs-12">
-				<div class="bg-box" style="padding: 0 0 0 2.2em; margin-top: 2.2em;">
+				<div class="bg-box" style="padding: 0 0 0 2.2em;">
 					<div class="boldgrid-shortcode wpforms-shortcode" data-imhwpb-draggable="true">
 						<?php echo BoldGrid_Framework_Starter_Content::get_form_shortcode( __DIR__ . '/../json/wpforms/form-1.json' ); ?>
 					</div>
