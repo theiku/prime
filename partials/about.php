@@ -31,17 +31,17 @@
 			<div class="col-md-4 col-xs-12 col-sm-6 color4-background-color color-4-text-contrast wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="padding: 2em;">
 				<p><img class="alignleft" src="<?php $image_path( '005-value.png' ) ?>" width="61" height="48"></p>
 				<h3 class="h4">Qualified Pros</h3>
-				<p>Synchronise branding to in turn disrupt the balance.</p>
+				<p class="">Synchronise branding to disrupt the balance.</p>
 			</div>
 			<div class="col-md-4 col-xs-12 col-sm-6 color3-background-color color-3-text-contrast wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" style="padding: 2em;">
 				<p><img class="alignleft" src="<?php $image_path( '006-development.png' ) ?>" width="61" height="48"></p>
 				<h3 class="h4">Performance</h3>
-				<p>Repurpose big data and possibly gain traction.</p>
+				<p class="">Repurpose big data and possibly gain traction.</p>
 			</div>
 			<div class="col-md-4 col-xs-12 col-sm-12 color4-background-color color-4-text-contrast wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s" style="padding: 2em;">
-				<p><img class="alignleft" src="<?php $image_path( '007-analysis.png' ) ?>" width="61" height="61"></p>
+				<p><img class="alignleft" src="<?php $image_path( '007-analysis.png' ) ?>" width="48" height="48"></p>
 				<h3 class="h4">Years of Experience</h3>
-				<p>Leverage bleeding edge and above all, be on brand.</p>
+				<p class="">Leverage bleeding edge and be on brand.</p>
 			</div>
 		</div>
 	</div>
