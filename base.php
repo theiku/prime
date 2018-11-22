@@ -17,7 +17,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 	<?php get_template_part( 'templates/head' ); ?>
 	<body <?php body_class(); ?>>
 		<?php do_action( 'boldgrid_header_before' ); ?>
-		<div <?php BoldGrid::add_class( 'site_header', [ 'site-header' ] ); ?>>
+		<div <?php BoldGrid::add_class( 'site_header', [ 'bgtfw-header', 'site-header' ] ); ?>>
 			<?php do_action( 'get_header' ); ?>
 			<?php get_template_part( 'templates/header/header', $configs['template']['header'] ); ?>
 		</div><!-- /.header -->

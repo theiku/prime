@@ -7,7 +7,7 @@
  * @package Prime
  */
 ?>
-<header id="masthead" <?php BoldGrid::add_class( 'header', [ 'bgtfw-header', 'header' ] ); ?> role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>>
+<header id="masthead" <?php BoldGrid::add_class( 'header', [ 'header' ] ); ?> role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>>
 	<?php do_action( 'boldgrid_header_top' ); ?>
 	<div class="custom-header-media">
 		<?php the_custom_header_markup(); ?>
