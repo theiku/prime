@@ -42,8 +42,8 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 				<div class="col-md-6 col-sm-12 col-xs-12">
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Grow Your Business</h2>
 					<?php $divider(); ?>
-					<h5 style="color: #fff; font-size: 1.3em;">Taking core competencies to, consequently, infiltrate new markets. Drive analytics so that as an end result.</h5>
-					<p style="margin-top: 2em;"><a href="#" class="button-primary">Learn More</a></p>
+					<h5 style="margin-top: 0; margin-bottom: 2em; color: #fff; font-size: 1.3em;">Taking core competencies to, consequently, infiltrate new markets. Drive analytics so that as an end result.</h5>
+					<p style="margin-bottom: 2em;"><a href="#" class="button-primary">Learn More</a></p>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12"></div>
 			</div>
@@ -55,8 +55,8 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 				<div class="col-md-6 col-sm-12 col-xs-12">
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Dedicated to Quality</h2>
 					<?php $divider(); ?>
-					<h5 style="color: #fff; font-size: 1.3em;">Leading best in class so that as an end result, we make the logo bigger. Lead analytics to make the ROI bigger.</h5>
-					<p style="margin-top: 2em;"><a href="#" class="button-primary">Learn More</a></p>
+					<h5 style="margin-top: 0; margin-bottom: 2em; color: #fff; font-size: 1.3em;">Leading best in class so that as an end result, we make the logo bigger. Lead analytics to make the ROI bigger.</h5>
+					<p style="margin-bottom: 2em;"><a href="#" class="button-primary">Learn More</a></p>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12"></div>
 			</div>
@@ -68,8 +68,8 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 				<div class="col-md-6 col-sm-12 col-xs-12">
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Industry Leaders</h2>
 					<?php $divider(); ?>
-					<h5 style="color: #fff; font-size: 1.3em;">Take blue-sky thinking to create actionable insights. Amplifying growth channels to use best practice.</h5>
-					<p style="margin-top: 2em;"><a href="#" class="button-primary">Learn More</a></p>
+					<h5 style="margin-top: 0; margin-bottom: 2em; color: #fff; font-size: 1.3em;">Take blue-sky thinking to create actionable insights. Amplifying growth channels to use best practice.</h5>
+					<p style="margin-bottom: 2em;"><a href="#" class="button-primary">Learn More</a></p>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12"></div>
 			</div>
