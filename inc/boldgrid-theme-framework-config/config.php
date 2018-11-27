@@ -707,6 +707,118 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// This content set uses pages set to full width.
 		$config['starter-content']['theme_mods']['bgtfw_pages_container'] = '';
 
+		// Set header layout for this import.
+		$config['starter-content']['theme_mods']['bgtfw_header_layout'] = [
+			[
+				'container' => 'container',
+				'items' => [
+					[
+						'type' => 'boldgrid_site_identity',
+						'key' => 'branding',
+						'align' => 'w',
+						'display' => [
+							[
+								'selector' => '.custom-logo',
+								'display' => 'show',
+								'title' => __( 'Logo', 'bgtfw' ),
+							],
+							[
+								'selector' => '.site-title',
+								'display' => 'hide',
+								'title' => __( 'Title', 'bgtfw' ),
+							],
+							[
+								'selector' => '.site-description',
+								'display' => 'hide',
+								'title' => __( 'Tagline', 'bgtfw' ),
+							],
+						],
+					],
+					[
+						'type' => 'boldgrid_menu_main',
+						'key' => 'menu',
+						'align' => 'e',
+					],
+				],
+			],
+		];
+
+		// Set sticky header layout for this import.
+		$config['starter-content']['theme_mods']['bgtfw_sticky_header_layout'] = [
+			[
+				'container' => 'container',
+				'items' => [
+					[
+						'type' => 'boldgrid_site_identity',
+						'key' => 'branding',
+						'align' => 'w',
+						'display' => [
+							[
+								'selector' => '.custom-logo',
+								'display' => 'show',
+								'title' => __( 'Logo', 'bgtfw' ),
+							],
+							[
+								'selector' => '.site-title',
+								'display' => 'hide',
+								'title' => __( 'Title', 'bgtfw' ),
+							],
+							[
+								'selector' => '.site-description',
+								'display' => 'hide',
+								'title' => __( 'Tagline', 'bgtfw' ),
+							],
+						],
+					],
+					[
+						'type' => 'boldgrid_menu_sticky-main',
+						'key' => 'menu',
+						'align' => 'e',
+					],
+				],
+			],
+		];
+
+		// Set footer layout for this import.
+		$config['starter-content']['theme_mods']['bgtfw_footer_layout'] = [
+			[
+				'container' => 'container',
+				'items' => [
+					[
+						'type' => 'bgtfw_sidebar_footer-1',
+						'key' => 'sidebar',
+					],
+					[
+						'type' => 'bgtfw_sidebar_footer-2',
+						'key' => 'sidebar',
+					],
+					[
+						'type' => 'bgtfw_sidebar_footer-3',
+						'key' => 'sidebar',
+					],
+					[
+						'type' => 'bgtfw_sidebar_footer-4',
+						'key' => 'sidebar',
+					],
+				],
+			],
+			[
+				'container' => 'container',
+				'items' => [
+					[
+						'type' => 'boldgrid_display_attribution_links',
+						'key' => 'attribution',
+						'align' => 'w',
+					],
+					[
+						'type' => 'boldgrid_menu_social',
+						'key' => 'menu',
+						'align' => 'e',
+					],
+				],
+			],
+		];
+
 		// Remove contact block control.
 		unset( $config['customizer']['controls']['boldgrid_contact_details_setting'] );
 
