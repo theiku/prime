@@ -15,6 +15,14 @@ Prime is a BoldGrid Parent Theme used to create new child themes for use in the 
 ### 2.1.0-rc.1 ###
 * Update: Added dynamic layout for sticky headers.
 * Update: Added import defaults for header/footer/sticky-header layout.
+* Update: Removed the following deprecated configs:
+	- bgtfw_site_title_display
+	- bgtfw_tagline_display
+	- boldgrid_footer_widgets
+	- bgtfw_header_top_layouts
+	- header_container
+	- footer_container
+	- bgtfw_footer_layouts
 
 ### 2.1.0-alpha.1 ###
 * Update: Added dynamic layout methods to header/footer.
