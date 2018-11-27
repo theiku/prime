@@ -366,18 +366,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Default header is a fixed header.
 		$config['customizer']['controls']['bgtfw_fixed_header']['default'] = true;
 
-		// Default header layout will be layout-4.
-		$config['customizer']['controls']['bgtfw_header_top_layouts']['default'] = 'layout-2';
-
-		// Default header will be in container.
-		$config['customizer']['controls']['header_container']['default'] = 'container';
-
-		// Default footer will be in container.
-		$config['customizer']['controls']['footer_container']['default'] = 'container';
-
-		// Default footer layout will be layout-7.
-		$config['customizer']['controls']['bgtfw_footer_layouts']['default'] = 'layout-3';
-
 		// Set the page title position.
 		$config['customizer']['controls']['bgtfw_global_title_position']['default'] = 'above';
 
