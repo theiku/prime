@@ -40,9 +40,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Set Theme Name.
 		$config['theme_name'] = 'crio';
 
-		// Hide the tagline by default and display a logo instead.
-		$config['customizer']['controls']['bgtfw_site_title_display']['default'] = 'hide';
-
 		// Primary color for site's title.
 		$config['customizer']['controls']['bgtfw_site_title_color']['default'] = 'color-2';
 
@@ -54,9 +51,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'line-height' => '1.1',
 			'variant' => 'regular',
 		);
-
-		// Hide the tagline by default and display a logo instead.
-		$config['customizer']['controls']['bgtfw_tagline_display']['default'] = 'hide';
 
 		// Primary color for site's tagline.
 		$config['customizer']['controls']['bgtfw_tagline_color']['default'] = 'color-2';
@@ -438,7 +432,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['sidebar_meta']['header-4']['links_color'] = 'color-1';
 
 		// Footer widget row.
-		$config['customizer']['controls']['boldgrid_footer_widgets']['default'] = '4';
 		$config['customizer']['controls']['sidebar_meta']['footer-1']['background_color'] = 'color-2';
 		$config['customizer']['controls']['sidebar_meta']['footer-2']['background_color'] = 'color-2';
 		$config['customizer']['controls']['sidebar_meta']['footer-3']['background_color'] = 'color-2';
