@@ -591,8 +591,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			$config['scripts']['wow-js'] = true;
 		}
 
-		// Main Menu configuration.
-		$config['starter-content']['nav_menus']['main'] = array(
+		$main_menu = array(
 			'name' => __( 'Main Menu', 'bgtfw' ),
 			'items' => array(
 				'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
@@ -614,6 +613,12 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				),
 			),
 		);
+
+		// Main Menu configuration.
+		$config['starter-content']['nav_menus']['main'] = $main_menu;
+
+		// Main Sticky Menu configuration.
+		$config['starter-content']['nav_menus']['sticky-main'] = $main_menu;
 
 		// Social Menu configuration.
 		$config['starter-content']['nav_menus']['social'] = array(
