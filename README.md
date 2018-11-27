@@ -2,8 +2,8 @@
 
 - Contributors: rramo012, timph
 - Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-layout, rtl-language-support, translation-ready
-- Requires at least: 4.4
-- Tested up to: 4.9.6
+- Requires at least: 4.8
+- Tested up to: 5.0.0
 - License: GNU General Public License v2 or later
 - License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,6 +11,10 @@
 Prime is a BoldGrid Parent Theme used to create new child themes for use in the BoldGrid system.  This theme utilizes the [BoldGrid Theme Framework](https://github.com/boldgrid/boldgrid-theme-framework).
 
 ## Changelog
+
+### 2.1.0-rc.1 ###
+* Update: Added dynamic layout for sticky headers.
+* Update: Added import defaults for header/footer/sticky-header layout.
 
 ### 2.1.0-alpha.1 ###
 * Update: Added dynamic layout methods to header/footer.
