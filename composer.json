@@ -1,0 +1,8 @@
+{
+    "require": {
+        "boldgrid/library": "^2.0.0",
+        "boldgrid/theme-updater": "^1.0.0"
+    },
+    "require-dev": {
+    }
+}
