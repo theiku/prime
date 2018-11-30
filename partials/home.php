@@ -42,7 +42,7 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 				<div class="col-md-6 col-sm-12 col-xs-12">
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Grow Your Business</h2>
 					<?php $divider(); ?>
-					<h5 style="margin-top: 0; margin-bottom: 2em; color: #fff; font-size: 1.3em;">Taking core competencies to, consequently, infiltrate new markets. Drive analytics so that as an end result.</h5>
+					<p class="" style="margin-bottom: 2em; color: #fff; font-size: 1.2em;">Taking core competencies to infiltrate new markets. Drive analytics so that as an end result.</p>
 					<p style="margin-bottom: 2em;"><a href="#" class="button-primary">Learn More</a></p>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12"></div>
@@ -55,7 +55,7 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 				<div class="col-md-6 col-sm-12 col-xs-12">
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Dedicated to Quality</h2>
 					<?php $divider(); ?>
-					<h5 style="margin-top: 0; margin-bottom: 2em; color: #fff; font-size: 1.3em;">Leading best in class so that as an end result, we make the logo bigger. Lead analytics to make the ROI bigger.</h5>
+					<p class="" style="margin-bottom: 2em; color: #fff; font-size: 1.2em;">Leading best in class so that as an end result, we make the logo bigger. Lead analytics to make the ROI bigger.</p>
 					<p style="margin-bottom: 2em;"><a href="#" class="button-primary">Learn More</a></p>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12"></div>
@@ -66,9 +66,9 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 		<div class="container">
 			<div class="row row-spacing-lg">
 				<div class="col-md-6 col-sm-12 col-xs-12">
-					<h2 class="h1" style="color: #fff; margin-top: 0;">Industry Leaders</h2>
+					<h2 class="h1" style="color: #fff; margin-top: 0;">Top Industry Leaders</h2>
 					<?php $divider(); ?>
-					<h5 style="margin-top: 0; margin-bottom: 2em; color: #fff; font-size: 1.3em;">Take blue-sky thinking to create actionable insights. Amplifying growth channels to use best practice.</h5>
+					<p class="" style="margin-bottom: 2em; color: #fff; font-size: 1.2em;">Take blue-sky thinking to create actionable insights. Amplifying growth channels to use best practice.</p>
 					<p style="margin-bottom: 2em;"><a href="#" class="button-primary">Learn More</a></p>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12"></div>
@@ -150,7 +150,7 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 				<?php $divider(); ?>
 			</div>
 			<div class="col-md-6 col-sm-6 col-xs-12 align-column-center">
-				<p class="">Target user stories so that we maximise share of voice. Grow cloud computing with the aim to take this offline. Lead integrated tech stacks and above all, target the low hanging fruit.</p>
+				<p class="" style="margin-bottom: 2em;">Target user stories so that we maximise share of voice. Grow cloud computing with the aim to take this offline. Lead integrated tech stacks and above all, target the low hanging fruit.</p>
 			</div>
 		</div>
 		<div class="row row-spacing-lg-bottom wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
@@ -209,19 +209,6 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 				<p style="margin-bottom: 2em;">Repurpose customer jounreys with the aim to come up with a bespoken solution. Growing benchmarking so that we build ROI.</p>
 				<p style="margin-bottom: 2em;">Engage benchmarking to, consequently, take this offline. Execute user experience to go viral. Funneling sprints and possibly improve overall outcomes.</p>
 				<p class="" style="margin-bottom: 2em;"><a href="#" class="button-primary">Meet the Team</a></p>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path( 'home-9.jpg' ) ?>" style="color: #fff; background-size: cover; background-position: 50% 37%; background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'home-9.jpg' ) ?>)">
-	<div class="container">
-		<div class="row row-spacing-sm">
-			<div class="col-md-5 col-sm-12 col-xs-12">
-				<h3 style="color: #fff; margin-top: 0;">Lead tech stacks and above all, get the low hanging fruit.</h3>
-			</div>
-			<div class="col-md-1 col-sm-12 col-xs-12"></div>
-			<div class="col-md-6 col-sm-12 col-xs-12 align-column-center">
-				<p class="wow pulse" data-wow-duration="1s" data-wow-delay="1s"><a href="#" class="button-primary">Contact Us</a></p>
 			</div>
 		</div>
 	</div>

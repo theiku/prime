@@ -56,13 +56,13 @@
 				<p style="margin-bottom: 2em;">Execute cloud computing to, consequently, go viral. Utilise below the fold and then re-target key demographics.</p>
 				<div class="row">
 					<div class="col-md-6 col-xs-12 col-sm-12">
-						<h4 class="h5 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="margin-bottom: 2em; margin-top: 0"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Transformation</h4>
-						<h4 class="h5 wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" style="margin: 2em 0;"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Operations &amp; Robotics</h4>
+						<p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="margin-bottom: 2em; margin-top: 0"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Transformation</p>
+						<p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" style="margin: 2em 0;"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"><span style="display: none;">&nbsp;</span></i>Operations &amp; Robotics</p>
 					</div>
 					<div class="col-md-6 col-xs-12 col-sm-12">
 						<div>
-							<h4 class="h5 wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s" style="margin-top: 0"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"> </i>Information Technology</h4>
-							<h4 class="h5 wow fadeIn" data-wow-duration="1s" data-wow-delay="2s" style="margin: 2em 0;"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"> </i>Unlimited Possibilites</h4>
+							<p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s" style="margin-top: 0"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"> </i>Information Technology</p>
+							<p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="2s" style="margin: 2em 0;"><i class="fa bg-inserted-icon fa-check-square-o color1-color" style="margin: 0em 0.8em 0em 0em; font-size: 20px;" aria-hidden="true"> </i>Unlimited Possibilites</p>
 						</div>
 					</div>
 				</div>
@@ -81,33 +81,33 @@
 				<div class="boldgrid-wrap-row boldgrid-slider" data-config='{"arrows":false,"autoplay":true,"autoplaySpeed":"8","dots":true,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
 					<div class="row">
 						<div class="col-md-4 col-xs-12 col-sm-4">
-							<p class="text-center"><img class="bg-img bg-img-3" src="<?php $image_path( 'about-4.jpg' ) ?>"></p>
+							<p class=""><img class="bg-img bg-img-3" src="<?php $image_path( 'about-4.jpg' ) ?>"></p>
 						</div>
 						<div class="col-md-1 col-sm-1 col-xs-12"></div>
 						<div class="col-md-7 col-sm-7 col-xs-12">
-							<p class="h4" style="line-height: 2em;">Leveraging sprints with the aim to take this offline. Executing transformation mapping with a goal to build and retain ROI. Taking dark social to in turn think outside the box.</p>
+							<p style="font-size: 1.2em;">Leveraging sprints with the aim to take this offline. Executing transformation mapping with a goal to build and retain ROI. Taking dark social to in turn think outside the box.</p>
 							<p class="h4" style="text-align: right; margin-top: 4.6em;">Starr Hudson</p>
 							<p style="text-align: right;" class="color1-color">Chief Executive Officer | Box Em Up</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-4 col-xs-12 col-sm-4">
-							<p class="text-center"><img class="bg-img bg-img-3" src="<?php $image_path( 'about-4b.jpg' ) ?>"></p>
+							<p class=""><img class="bg-img bg-img-3" src="<?php $image_path( 'about-4b.jpg' ) ?>"></p>
 						</div>
 						<div class="col-md-1 col-sm-1 col-xs-12"></div>
 						<div class="col-md-7 col-sm-7 col-xs-12">
-							<p class="h4" style="line-height: 2em;">Engaging customer experience so that as an end result, we be CMSable. Leverage below the fold and finally gain traction. Generating bleeding edge and creating actionable insights.</p>
+							<p style="font-size: 1.2em;">Engaging customer experience so that as an end result, we be CMSable. Leverage below the fold and finally gain traction. Generating bleeding edge and creating actionable insights.</p>
 							<p class="h4" style="text-align: right; margin-top: 4.6em;">Teresa Oliver</p>
 							<p style="text-align: right;" class="color1-color">Brand Expert | Mantell Design</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-4 col-xs-12 col-sm-4">
-							<p class="text-center"><img class="bg-img bg-img-3" src="<?php $image_path( 'about-4c.jpg' ) ?>"></p>
+							<p class=""><img class="bg-img bg-img-3" src="<?php $image_path( 'about-4c.jpg' ) ?>"></p>
 						</div>
 						<div class="col-md-1 col-sm-1 col-xs-12"></div>
 						<div class="col-md-7 col-sm-7 col-xs-12">
-							<p class="h4" style="line-height: 2em;">Generating best in class in order to improve overall outcomes. Inform outside the box thinking and finally target the low hanging fruit. Repurose big data and possibly gain traction.</p>
+							<p style="font-size: 1.2em;">Generating best in class in order to improve overall outcomes. Inform outside the box thinking and finally target the low hanging fruit. Repurose big data and possibly gain traction.</p>
 							<p class="h4" style="text-align: right; margin-top: 4.6em;">Leslie Boone</p>
 							<p style="text-align: right;" class="color1-color">Support Staff | Gerwyn Financial</p>
 						</div>
@@ -125,7 +125,7 @@
 				<?php $divider(); ?>
 			</div>
 			<div class="col-md-6 col-xs-12 col-sm-6 align-column-center">
-				<p class="">Target user stories so that we maximise share of voice. Grow cloud computing with the aim to take this offline. Lead integrated tech stacks and above all, target the low hanging fruit.</p>
+				<p class="" style="margin-bottom: 2em;">Target user stories so that we maximise share of voice. Grow cloud computing with the aim to take this offline. Lead integrated tech stacks and above all, target the low hanging fruit.</p>
 			</div>
 		</div>
 		<div class="row row-spacing-lg-bottom">
@@ -147,7 +147,7 @@
 				<div class="text-center bg-box bg-box-square bg-box-cover color-3-text-contrast color3-background-color wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s" style="padding: 0.5em 0.5em 1em; margin: 0em -.8em;">
 					<p class=""><img src="<?php $image_path( 'about-7.jpg' ) ?>"></p>
 					<h4>Julie Grave</h4>
-					<p class="color1-color">Information Technology Officer</p>
+					<p class="color1-color">Technology Director</p>
 				</div>
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-6">
