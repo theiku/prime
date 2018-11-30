@@ -23,23 +23,23 @@ class Boldgrid_Premium_Loader {
 	 * @since 1.0.0
 	 */
 	public function __construct() {
-		$autoloader_path = dirname( __FILE__ ) . '/vendor/autoload.php';
+		$autoloader_path = dirname( __DIR__ ) . '/vendor/autoload.php';
 
 		if ( file_exists( $autoloader_path ) ) {
 			$loader = require $autoloader_path;
 
 			new Boldgrid\Library\Util\Load(
 				array(
-					'type' => 'theme',
-					'file' => get_template() . '/style.css',
-					'loader' => $loader,
-					'keyValidate' => true,
-					'licenseActivate', false,
+					'type'            => 'theme',
+					'file'            => get_template() . '/style.css',
+					'loader'          => $loader,
+					'keyValidate'     => true,
+					'licenseActivate' => false,
 				)
 			);
 
 			if ( class_exists( 'Boldgrid\Library\Theme\Updater' ) ) {
-				new Boldgrid\Library\Theme\Updater;
+				new Boldgrid\Library\Theme\Updater();
 			}
 		}
 	}
