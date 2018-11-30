@@ -45,11 +45,11 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Site's title typography defaults.
 		$config['customizer']['controls']['bgtfw_site_title_typography']['default'] = array(
-			'font-family' => 'Playfair Display',
-			'font-size' => '38px',
-			'text-transform' => 'capitalize',
+			'font-family' => 'Josefin Sans',
+			'font-size' => '40px',
+			'text-transform' => 'uppercase',
 			'line-height' => '1.1',
-			'variant' => 'regular',
+			'variant' => '300',
 		);
 
 		// Primary color for site's tagline.
@@ -57,11 +57,11 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Site's tagline typography defaults.
 		$config['customizer']['controls']['bgtfw_tagline_typography']['default'] = array(
-			'font-family' => 'Lato',
+			'font-family' => 'Exo 2',
 			'font-size' => '20px',
 			'text-transform' => 'lowercase',
 			'line-height' => '1.1',
-			'variant' => '300italic',
+			'variant' => 'regular',
 		);
 
 		// This theme doesn't support a background image.
@@ -543,16 +543,16 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Site's body typography defaults.
 		$config['customizer']['controls']['bgtfw_body_typography']['default'] = array(
-			'font-family' => 'Lato',
+			'font-family' => 'Exo 2',
 			'font-size' => '16px',
-			'line-height' => '1.4',
+			'line-height' => '1.8',
 			'text-transform' => 'none',
 			'variant' => 'regular',
 		);
 
 		// Site's headings typography defaults.
 		$config['customizer']['controls']['bgtfw_menu_typography_main']['default'] = array(
-			'font-family' => 'Lato',
+			'font-family' => 'Exo 2',
 			'font-size' => '16px',
 			'line-height' => '1.5',
 			'text-transform' => 'none',
@@ -561,10 +561,10 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		$config['customizer']['controls']['bgtfw_headings_font_size']['default'] = '16';
 		$config['customizer']['controls']['bgtfw_headings_typography']['default'] = array(
-			'font-family' => 'Playfair Display',
-			'line-height' => '1.5',
+			'font-family' => 'Josefin Sans',
+			'line-height' => '1.1',
 			'text-transform' => 'none',
-			'variant' => 'regular',
+			'variant' => '300',
 		);
 
 		if ( ! class_exists( 'Boldgrid_Editor' ) ) {
