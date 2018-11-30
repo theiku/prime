@@ -211,7 +211,7 @@ $post_widget_opts = function () {
 							<div class="rating-icons-1"> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star" aria-hidden="true"><span style="display:none;">&nbsp;</span></i>                                <i class="fa fa-star" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> </div>
 						</li>
 					</ul>
-					<p style="background-color: rgba(0,0,0,.05);" class="action"> <a class="btn-color-3 btn btn-capitalize btn-pill btn-regular" href="#">Buy Now</a> </p>
+					<p style="background-color: rgba(0,0,0,.05);" class="action"> <a class="btn-color-3 btn btn-capitalize btn-regular" href="#">Buy Now</a> </p>
 				</div>
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-3 text-center align-column-center">
@@ -230,7 +230,7 @@ $post_widget_opts = function () {
 									aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star" aria-hidden="true"><span style="display:none;">&nbsp;</span></i>                                </div>
 						</li>
 					</ul>
-					<p style="background-color: rgba(0,0,0,.05);" class="action"> <a class="btn-color-3 btn btn-capitalize btn-pill  btn-regular" href="#">Buy Now</a> </p>
+					<p style="background-color: rgba(0,0,0,.05);" class="action"> <a class="btn-color-3 btn btn-capitalize btn-regular" href="#">Buy Now</a> </p>
 				</div>
 			</div>
 			<div class="col-md-3 col-xs-12 col-sm-3 text-center align-column-center bg-box-border-thin color3-border-color" style="position:relative; z-index:1">
@@ -268,7 +268,7 @@ $post_widget_opts = function () {
 									aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i> <i class="fa fa-star color1-color" aria-hidden="true"><span style="display:none;">&nbsp;</span></i>                                </div>
 						</li>
 					</ul>
-					<p style="background-color: rgba(0,0,0,.05);" class="action"> <a class="btn-color-3 btn btn-capitalize btn-pill  btn-regular" href="#">Buy Now</a> </p>
+					<p style="background-color: rgba(0,0,0,.05);" class="action"> <a class="btn-color-3 btn btn-capitalize btn-regular" href="#">Buy Now</a> </p>
 				</div>
 			</div>
 		</div>
