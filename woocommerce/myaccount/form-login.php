@@ -12,17 +12,14 @@
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 3.4.0
+ * @version 3.5.2
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-?>
 
-<?php wc_print_notices(); ?>
-
-<?php do_action( 'woocommerce_before_customer_login_form' ); ?>
+do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 <div class="panel panel-default user-login">
 	<div class="panel-heading">
@@ -32,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php if ( get_option( 'woocommerce_enable_myaccount_registration' ) === 'yes' ) : ?>
 			<p>No account?  <a href="#" class="switch-user-form">Sign up for free!</a></p>
 		<?php endif; ?>
-		<form method="post" class="form-group">
+		<form method="post" class="form-group" <?php do_action( 'woocommerce_register_form_tag' ); ?> >
 			<?php do_action( 'woocommerce_login_form_start' ); ?>
 			<label for="username"><?php esc_html_e( 'Username or email address', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
 			<div class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide input-group">
