@@ -4,5 +4,10 @@
         "boldgrid/theme-updater": "^1.0.0"
     },
     "require-dev": {
+    },
+	"scripts": {
+        "post-autoload-dump": [
+            "composer run-script post-autoload-dump -d ./vendor/boldgrid/library"
+        ]
     }
 }
