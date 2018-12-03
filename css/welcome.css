@@ -65,6 +65,14 @@
   margin-top: 15px;
 }
 
+/* When primary button is active, it causes sibling text to jump (happens in core too). */
+.wp-core-ui .button-primary:first-child.active,
+.wp-core-ui .button-primary:first-child.active:focus,
+.wp-core-ui .button-primary:first-child.active:hover,
+.wp-core-ui .button-primary:first-child:active {
+  vertical-align: baseline;
+}
+
 /**
 * Starter Content Messages.
 *
