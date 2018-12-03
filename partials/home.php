@@ -43,7 +43,7 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Grow Your Business</h2>
 					<?php $divider(); ?>
 					<p class="" style="margin-bottom: 2em; color: #fff; font-size: 1.2em;">Taking core competencies to infiltrate new markets. Drive analytics so that as an end result.</p>
-					<p style="margin-bottom: 2em;"><a href="#" class="button-primary">Learn More</a></p>
+					<p class=""><a href="#" class="button-primary">Learn More</a></p>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12"></div>
 			</div>
@@ -56,7 +56,7 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Dedicated to Quality</h2>
 					<?php $divider(); ?>
 					<p class="" style="margin-bottom: 2em; color: #fff; font-size: 1.2em;">Leading best in class so that as an end result, we make the logo bigger. Lead analytics to make the ROI bigger.</p>
-					<p style="margin-bottom: 2em;"><a href="#" class="button-primary">Learn More</a></p>
+					<p class=""><a href="#" class="button-primary">Learn More</a></p>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12"></div>
 			</div>
@@ -69,7 +69,7 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 					<h2 class="h1" style="color: #fff; margin-top: 0;">Top Industry Leaders</h2>
 					<?php $divider(); ?>
 					<p class="" style="margin-bottom: 2em; color: #fff; font-size: 1.2em;">Take blue-sky thinking to create actionable insights. Amplifying growth channels to use best practice.</p>
-					<p style="margin-bottom: 2em;"><a href="#" class="button-primary">Learn More</a></p>
+					<p class=""><a href="#" class="button-primary">Learn More</a></p>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12"></div>
 			</div>
