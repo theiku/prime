@@ -1,4 +1,7 @@
 {
+    "config": {
+        "vendor-dir": "inc/boldgrid-theme-framework/includes/vendor"
+    },
     "require": {
         "boldgrid/library": "^2.0.0",
         "boldgrid/theme-updater": "^1.0.0"
@@ -7,7 +10,7 @@
     },
 	"scripts": {
         "post-autoload-dump": [
-            "composer run-script post-autoload-dump -d ./vendor/boldgrid/library"
+            "composer run-script post-autoload-dump -d ./inc/boldgrid-theme-framework/includes/vendor/boldgrid/library"
         ]
     }
 }

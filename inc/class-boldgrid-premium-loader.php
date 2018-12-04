@@ -23,7 +23,14 @@ class Boldgrid_Premium_Loader {
 	 * @since 1.0.0
 	 */
 	public function __construct() {
-		$autoloader_path = dirname( __DIR__ ) . '/vendor/autoload.php';
+		global $theme_framework_path;
+
+		if ( ! empty( $theme_framework_path ) ) {
+			$autoloader_path = $theme_framework_path . '/includes/vendor/autoload.php';
+		} else {
+			$autoloader_path = dirname( __FILE__ ) .
+				'/boldgrid-theme-framework/includes/vendor/autoload.php';
+		}
 
 		if ( file_exists( $autoloader_path ) ) {
 			$loader = require $autoloader_path;
