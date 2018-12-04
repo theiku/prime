@@ -62,7 +62,7 @@ class Boldgrid_Crio_Welcome {
 	 *
 	 * @since x.x.x
 	 */
-	public function __construct( ) {
+	public function __construct() {
 		$this->starter_content_url = admin_url( 'admin.php?page=' . $this->starter_content_slug );
 		$this->welcome_url = admin_url( 'admin.php?page=' . $this->menu_slug );
 	}
