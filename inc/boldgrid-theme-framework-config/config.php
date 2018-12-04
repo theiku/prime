@@ -211,8 +211,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			array(
 				'name'      => 'BoldGrid Post and Page Builder',
 				'slug'      => 'post-and-page-builder',
-				// This is temporary. Please keep bgtfw and prime's builder version in sync.
-				'source'    => 'https://downloads.wordpress.org/plugin/post-and-page-builder.1.8.0-rc.4.zip',
 				'required'  => true,
 			),
 			array(
