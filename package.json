@@ -14,5 +14,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/BoldGrid/prime.git"
+  },
+  "devDependencies": {
+    "shelljs": "^0.8.3"
   }
 }
