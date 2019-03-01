@@ -6,6 +6,11 @@ const path = require( 'path' ),
 	getBGTFW = require( './modules/install-bgtfw.js' ),
 	zip = require( './modules/zip.js' );
 
+const configs = {
+	textdomain: 'crio',
+	themeName: 'Crio',
+	authorUri: 'https://www.boldgrid.com/themes/crio'
+};
 let args = process.argv.slice( 2 );
 
 if ( ! args ) {
@@ -34,52 +39,47 @@ async function setConfigs() {
 		}
 	} );
 }
+getBGTFW().then( () => {
+	( async () => {
+		try {
+			await setConfigs();
+			await headerUpdate( 'Version', version, 'style.css' );
+			await headerUpdate( 'Text Domain', configs.textdomain, 'style.css' );
+			await headerUpdate( 'Theme Name', configs.themeName, 'style.css' );
+			await headerUpdate( 'Theme URI', configs.authorUri, 'style.css' );
+		} catch( err ) {
+			console.error( err );
+		}
 
-// Update version.
-( async () => {
-	await setConfigs();
-	await getBGTFW();
-	await headerUpdate( 'Version', version );
-	await headerUpdate( 'Text Domain', 'boldgrid-prime' );
-	wpTextdomain( '../**/*.php', {
-		domain: [ 'boldgrid-prime', 'kirki' ],
-		fix: true,
-		force: true
+		wpTextdomain( '**/*.php', {
+			domain: [ configs.textdomain, 'kirki' ],
+			fix: true,
+			force: true
+		} );
+	} )().then( () => {
+		fs.renameSync( '../prime', `../${ configs.textdomain }` );
+		zipTheme();
 	} );
+} ).catch( console.error );
+
+const zipTheme = async () => {
 	zip( {
-		name: 'bgtfw',
-		source: [ '**' ],
+		name: configs.textdomain,
+		source: `../${ configs.textdomain }/**`,
 		globOpts: {
 			dot: false,
 			ignore: [
-				'codesniffer.ruleset.xml',
-				'package.json',
-				'README.md',
-				'yarn.lock',
-				'bin',
-				'bin/**'
+				`../${ configs.textdomain }/crio.zip`,
+				`../${ configs.textdomain }/codesniffer.ruleset.xml`,
+				`../${ configs.textdomain }/package.json`,
+				`../${ configs.textdomain }/README.md`,
+				`../${ configs.textdomain }/readme.txt`,
+				`../${ configs.textdomain }/yarn.lock`,
+				`../${ configs.textdomain }/bin`,
+				`../${ configs.textdomain }/bin/**`,
+				`../${ configs.textdomain }/node_modules`,
+				`../${ configs.textdomain }/node_modules/**`
 			]
 		}
 	} );
-
-} )().then( () => {
-	const cmds = [
-		`yarn version --new-version ${ process.env.BGTFW_AUTO_UPDATE_TAG } --no-git-tag-version --no-commit-hooks`,
-		`git commit -am "Updating version to ${ process.env.BGTFW_AUTO_UPDATE_TAG }"`,
-		'git push origin dev',
-		'git checkout master',
-		`git pull origin dev`,
-		'git push origin master',
-		`git tag -a ${ process.env.BGTFW_AUTO_UPDATE_TAG } -m "Version ${ process.env.BGTFW_AUTO_UPDATE_TAG } Release"`,
-		`git push origin ${ process.env.BGTFW_AUTO_UPDATE_TAG } 2>&1`
-	];
-
-	// Execute tagging.
-	cmds.map( cmd => {
-		if ( shell.exec( cmd ).code !== 0 ) {
-			console.log( `Failed to autodeploy when running ${ cmd }` );
-			shell.exit( 1 );
-			process.exitCode = 1;
-		}
-	} );
-} ).catch( console.error );
+}
