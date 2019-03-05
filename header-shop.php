@@ -1,2 +1,6 @@
 <?php
-// Silence is golden.
+/**
+ * Included for WooCommerce overrides.
+ *
+ * @package Prime
+ */

@@ -12,4 +12,8 @@
  * /inc/boldgrid-theme-framework/includes/class-boldgrid-framework-comments.php
  *
  * @link https://developer.wordpress.org/reference/functions/comments_template/
+ *
+ * @package Prime
+ *
+ * @since 2.1.1
  */
