@@ -196,7 +196,6 @@ class Boldgrid_Crio_Welcome {
 
 		$theme = wp_get_theme();
 
-
 		include get_template_directory() . '/inc/partials/welcome.php';
 	}
 
