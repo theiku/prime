@@ -34,17 +34,11 @@ $configs = $boldgrid_theme_framework->get_configs();
 ?>
 
 <div class="wrap about-wrap bgcrio-about-wrap">
-
 	<div>
-
 		<h1><?php esc_html_e( 'Welcome to Crio!', 'bgtfw' ); ?></h1>
-
-		<div class="wp-badge"><?php esc_html_e( 'Version', 'bgtfw' ); ?> <?php echo esc_html( $theme->version ); ?></div>
-
 		<p>
-			<?php esc_html_e( 'Congratulations! You\'ve successfully installed BoldGrid Crio. BoldGrid Crio is a powerful tool that enables you to build beautiful websites without boundaries or limitations.', 'bgtfw' ); ?>
+			<?php esc_html_e( 'Crio is a powerful theme that enables you to build beautiful websites without boundaries or limitations.', 'prime' ); ?>
 		</p>
-
 	</div>
 
 	<div class="welcome-panel">
@@ -82,7 +76,6 @@ $configs = $boldgrid_theme_framework->get_configs();
 						<?php esc_html_e( 'Enter it below:', 'bgtfw' ); ?>
 					</p>
 					<?php
-						Boldgrid\Library\Library\Views\KeyPromptMini::displayForm();
 					} // End conditional based on $has_api_key. ?>
 				</div>
 				<div class="welcome-panel-column">
