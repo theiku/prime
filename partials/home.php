@@ -26,7 +26,6 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 		<?php foreach ( $options as $option ) { ?>
 		<div class="col-md-4 col-sm-12 col-xs-12">
 			<div class="bg-box text-center color2-background-alpha color-2-text-contrast" style="padding: 1.5em; margin: 1em 0;">
-				<img src="<?php $image_path( $option['image'] ) ?>" style="height: 75px;">
 				<h4 class="color-2-text-contrast"><?php print esc_html( $option['title'] ) ?></h4>
 				<p class="">Building brand integration and possibly funnel users.</p>
 			</div>
@@ -105,39 +104,21 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div class="boldgrid-slider boldgrid-wrap-row" data-config='{"arrows":true,"autoplay":true,"autoplaySpeed":"6","dots":false,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"chevron","arrowsSize":"15","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
 					<?php $service_icons( [
-						[ 'title' => 'Advanced Analytics', 'image' => 'development.svg' ],
-						[ 'title' => 'Finance', 'image' => 'business.svg' ],
-						[ 'title' => 'Strategy & Marketing', 'image' => 'strategy.svg' ],
+						[ 'title' => 'Advanced Analytics' ],
+						[ 'title' => 'Finance' ],
+						[ 'title' => 'Strategy & Marketing' ],
 					] ); ?>
 					<?php $service_icons( [
-						[ 'title' => 'Advanced Analytics', 'image' => 'development.svg' ],
-						[ 'title' => 'Finance', 'image' => 'business.svg' ],
-						[ 'title' => 'Strategy & Marketing', 'image' => 'strategy.svg' ],
+						[ 'title' => 'Advanced Analytics' ],
+						[ 'title' => 'Finance' ],
+						[ 'title' => 'Strategy & Marketing' ],
 					] ); ?>
 					<?php $service_icons( [
-						[ 'title' => 'Advanced Analytics', 'image' => 'development.svg' ],
-						[ 'title' => 'Finance', 'image' => 'business.svg' ],
-						[ 'title' => 'Strategy & Marketing', 'image' => 'strategy.svg' ],
+						[ 'title' => 'Advanced Analytics' ],
+						[ 'title' => 'Finance' ],
+						[ 'title' => 'Strategy & Marketing' ],
 					] ); ?>
 				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="boldgrid-section">
-	<div class="container">
-		<div class="row row-spacing-sm">
-			<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-				<p class="mod-reset wow fadeIn" data-wow-duration="1s" data-wow-delay="0.50s"><img src="<?php $image_path( 'logo-1.png' ) ?>"></p>
-			</div>
-			<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-				<p class="mod-reset wow fadeIn" data-wow-duration="1s" data-wow-delay="0.75s"><img src="<?php $image_path( 'logo-3.png' ) ?>"></p>
-			</div>
-			<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-				<p class="mod-reset wow fadeIn" data-wow-duration="1s" data-wow-delay="1.00s"><img src="<?php $image_path( 'logo-4.png' ) ?>"></p>
-			</div>
-			<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-				<p class="mod-reset wow fadeIn" data-wow-duration="1s" data-wow-delay="1.25s"><img src="<?php $image_path( 'logo-5.png' ) ?>"></p>
 			</div>
 		</div>
 	</div>
