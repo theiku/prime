@@ -74,21 +74,6 @@ class Boldgrid_Crio_Welcome {
 	 */
 	public function add_hooks() {
 		add_action( 'admin_menu', array( $this, 'add_admin_menu' ) );
-		add_filter( 'boldgrid_theme_framework_config', array( $this, 'prime_framework_config' ) );
-
-		/*
-		 * By default, the bgtfw adds the TGMPA "Recommended Plugins" page as a sub menu item of
-		 * Plugins. Change this so it becomes a sub menu item of "BoldGrid Crio".
-		 */
-		add_filter( 'bgtfw_register_tgmpa_configs', function( $configs ) {
-			$configs['parent_slug'] = $this->menu_slug;
-			return $configs;
-		} );
-
-		// Don't show the key prompt notice on the welcome page.
-		if ( Boldgrid_Crio_Welcome::is_welcome_page() ) {
-			add_filter( 'Boldgrid\Library\Library\Notice\KeyPrompt_display', '__return_false' );
-		}
 	}
 
 	/**
@@ -114,23 +99,6 @@ class Boldgrid_Crio_Welcome {
 			'none',
 			2
 		);
-	}
-
-	/**
-	 * Whether or not we are on the welcome page.
-	 *
-	 * @since x.x.x
-	 *
-	 * @global string $pagenow
-	 *
-	 * @return bool
-	 */
-	public static function is_welcome_page() {
-		global $pagenow;
-
-		$page = empty( $_GET['page'] ) ? null : $_GET['page'];
-
-		return 'admin.php' === $pagenow && 'crio-welcome' === $page;
 	}
 
 	/**
@@ -176,8 +144,6 @@ class Boldgrid_Crio_Welcome {
 			'prime-welcome',
 			get_template_directory_uri() . '/css/welcome.css'
 		);
-
-		do_action( 'bgtfw_enqueue_starter_content_plugins' );
 
 		include get_template_directory() . '/inc/partials/welcome.php';
 	}
