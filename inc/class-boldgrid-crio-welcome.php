@@ -73,7 +73,6 @@ class Boldgrid_Crio_Welcome {
 	 * @since x.x.x
 	 */
 	public function add_hooks() {
-		add_action( 'admin_init', array( $this, 'redirect_on_activation' ) );
 		add_action( 'admin_menu', array( $this, 'add_admin_menu' ) );
 		add_filter( 'boldgrid_theme_framework_config', array( $this, 'prime_framework_config' ) );
 
@@ -89,20 +88,6 @@ class Boldgrid_Crio_Welcome {
 		// Don't show the key prompt notice on the welcome page.
 		if ( Boldgrid_Crio_Welcome::is_welcome_page() ) {
 			add_filter( 'Boldgrid\Library\Library\Notice\KeyPrompt_display', '__return_false' );
-		}
-	}
-
-	/**
-	 * Redirect to Welcome page after theme is activated.
-	 *
-	 * @since x.x.x
-	 */
-	public function redirect_on_activation() {
-		global $pagenow;
-
-		if ( 'themes.php' === $pagenow && is_admin() && isset( $_GET['activated'] ) ) {
-			wp_safe_redirect( admin_url( 'admin.php?page=' . $this->menu_slug ) );
-			exit();
 		}
 	}
 
