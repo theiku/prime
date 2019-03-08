@@ -194,23 +194,6 @@ class Boldgrid_Crio_Welcome {
 
 		do_action( 'bgtfw_enqueue_starter_content_plugins' );
 
-		$theme = wp_get_theme();
-
 		include get_template_directory() . '/inc/partials/welcome.php';
-	}
-
-	/**
-	 * Filter the bgtfw configs.
-	 *
-	 * @since x.x.x
-	 *
-	 * @param  array $config Bgtfw config.
-	 * @return array
-	 */
-	public function prime_framework_config( $config ) {
-		$config['starter-content-installer']['return_to_dashboard'] = $this->welcome_url;
-		$config['starter-content-suggest']['dashboard_url'] = $this->starter_content_url;
-
-		return $config;
 	}
 }
