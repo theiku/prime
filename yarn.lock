@@ -367,6 +367,18 @@ interpret@^1.0.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.2.0.tgz#d5061a6224be58e8083985f5014d844359576296"
   integrity sha512-mT34yGKMNceBQUoVn7iCDKDntA7SC6gycMAWzGx1z/CMCTV7b2AAtXlo3nRyHZ1FelRkQbQjprHSYGwzLtkVbw==
 
+is-extglob@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/is-extglob/-/is-extglob-2.1.1.tgz#a88c02535791f02ed37c76a1b9ea9773c833f8c2"
+  integrity sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=
+
+is-glob@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/is-glob/-/is-glob-4.0.0.tgz#9521c76845cc2610a85203ddf080a958c2ffabc0"
+  integrity sha1-lSHHaEXMJhCoUgPd8ICpWML/q8A=
+  dependencies:
+    is-extglob "^2.1.1"
+
 is-path-cwd@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-path-cwd/-/is-path-cwd-1.0.0.tgz#d225ec23132e89edd38fda767472e62e65f1106d"
@@ -462,6 +474,14 @@ lowercase-keys@^1.0.0, lowercase-keys@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/lowercase-keys/-/lowercase-keys-1.0.1.tgz#6f9e30b47084d971a7c820ff15a6c5167b74c26f"
   integrity sha512-G2Lj61tXDnVFFOi8VZds+SoQjtQC3dgokKdDG2mTm1tx4m50NUHBOZSBwQQHyy0V12A0JTG4icfZQH+xPyh8VA==
+
+matched@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/matched/-/matched-3.0.1.tgz#2ad95383f6737b763a38999318a8278423c34f9a"
+  integrity sha512-HW3qvcGvaFz36xnFanvwHNCiKZomvOcxV0w3nIq8Zy7pEm8JXNY1t6roKBx03l03bgYb7JWLg+k1lloeI/ZPkg==
+  dependencies:
+    glob "^7.1.3"
+    is-glob "^4.0.0"
 
 mimic-response@^1.0.0, mimic-response@^1.0.1:
   version "1.0.1"
@@ -569,6 +589,11 @@ path-parse@^1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
   integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
+
+path-sort@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/path-sort/-/path-sort-0.1.0.tgz#cb0175d4ecbfa5a18fe674cc6d720bfe15e0b805"
+  integrity sha1-ywF11Oy/paGP5nTMbXIL/hXguAU=
 
 php-parser@^3.0.0-prerelease.8:
   version "3.0.0-prerelease.8"
@@ -755,6 +780,15 @@ wp-header-update@^1.0.1:
   integrity sha512-UI1YqTG70qkWEGGzmTUlNVIhXrg6M8mYLItzdYUvm43gFc7+3UQr+ssnrG2+2zuaKaye4yB6UiB5IdHYGFrd3w==
   dependencies:
     wp-project-header "^1.0.1"
+
+wp-pot@^1.6.6:
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/wp-pot/-/wp-pot-1.6.6.tgz#94f34588ac0402f0814dca0d1ae794004882b7ff"
+  integrity sha512-PqPMwMCYe4z4o5LT9ohBFBY137ZD5r+rnAPnrx6aK5jVxWSvY3Wr92dr2fBP/8Ojgqn4E7PtSoFxCxw9+GUX2g==
+  dependencies:
+    matched "^3.0.1"
+    path-sort "^0.1.0"
+    php-parser "^3.0.0-prerelease.8"
 
 wp-project-header@^1.0.1:
   version "1.0.1"
