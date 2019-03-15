@@ -47,7 +47,7 @@ module.exports = ( options ) => {
 
 		stream.on( 'close', () => {
 			console.log( chalk`{magenta Cleaning up temp files}...` );
-			rimraf( path.resolve( opts.globOpts.root.slice( 0, -1 ), '..' ), () => {
+			rimraf( path.resolve( opts.globOpts.root ), () => {
 				console.log( "\n" + chalk`{green.bold  ✔  Successfully built ${ opts.name }${ opts.extension }!}\n` );
 				console.log( '    File located in: ' );
 				console.log( '    ' + chalk.reset.underline( opts.path ) + "\n" );
