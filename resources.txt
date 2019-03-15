@@ -1,0 +1,97 @@
+== Resources ==
+
+= normalize.css =
+* © 2012-2018 Nicolas Gallagher and Jonathan Neal
+* MIT
+
+= Underscores =
+* © 2012-2018 Automattic, Inc.
+* GPL-2.0-or-later
+
+= Buttons 2.0 =
+* © 2012-2016 Alex Wolfe and Rob Levin
+* Apache-2.0
+
+= animate.css =
+* © 2018 Daniel Eden
+* MIT
+
+= bootstrap-sass =
+* © 2011-2016 Twitter, Inc, 2011-2016 The Bootstrap Authors
+* MIT
+
+= Color.js =
+* © 2008-2010, Andrew Brehaut, Tim Baumann, Matt Wilson
+* BSD 2-Clause "Simplified" License
+
+= css-vars-ponyfill =
+* © 2018 John Hildenbiddle
+* MIT
+
+= DOM Ready (@wordpress/dom-ready) = 
+* © 2011-2019 The WordPress Contributors
+* GPL-2.0-or-later
+
+= float-labels.js =
+* © 2015 Gemini Labs LLC <paul@geminilabs.io>
+* MIT
+
+= FontAwesome Font v4.7.0 =
+* © Font Awesome by Dave Gandy - http://fontawesome.io
+* OFL-1.1
+
+= FontAwesome Icons v4.7.0 =
+* © Font Awesome by Dave Gandy - http://fontawesome.io
+* CC-BY-4.0
+
+= FontAwesome Code v4.7.0 =
+* © Font Awesome by Dave Gandy - http://fontawesome.io
+* MIT
+
+= Hamburgers =
+* © 2016 Jonathan Suh <hello@jonsuh.com> (jonsuh.com)
+* MIT
+
+= hover.css =
+* © 2017 Ian Lunn Design Limited
+* MIT
+
+= jquery-goup =
+* © 2014-2018 Daniele Lenares
+* GPL-3.0-or-later or MIT
+
+= jQuery.NiceScroll =
+* © 2011-14 InuYaksa
+* MIT
+
+= Stellar.js =
+* © 2013 Mark Dalgleish
+* MIT
+
+= Kirki Toolkit =
+* © 2017 Aristeides Stathopoulos
+* MIT
+
+= lodash =
+* © JS Foundation and other contributors <https://js.foundation/>
+* MIT
+
+= Modernizr =
+* © 2009-2018 Modernizr
+* MIT
+
+= Sass.js =
+* © 2015 Rodney Rehm
+* MIT
+
+= scssphp =
+* © 2015 Leaf Corcoran, http://leafo.github.io/scssphp
+* MIT
+
+= SmartMenus =
+* © Vasil Dinkov, Vadikom Web Ltd.
+* MIT
+
+= WOW.js =
+* © 2016 Thomas Grainger
+* MIT
