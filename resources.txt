@@ -95,3 +95,173 @@
 = WOW.js =
 * © 2016 Thomas Grainger
 * MIT
+
+= images/home-1.jpg = 
+* https://stocksnap.io/photo/DOLNAISHLZ
+* Burst
+* CC0-1.0
+
+= images/home-1a.jpg =
+* https://stocksnap.io/photo/UN5XQREKKP
+* Burst
+* CC0-1.0
+
+= images/home-1b.jpg =
+* https://stocksnap.io/photo/FFSUL8TZD3
+* JESHOOTS.com 
+* CC0-1.0
+
+= images/home-2.jpg =
+* https://stocksnap.io/photo/Y2AHVPYB51
+* Brodie Vissers
+* CC0-1.0
+
+= images/home-3.jpg =
+* https://stocksnap.io/photo/J18ZCO3IPA
+* Olu Eletu
+* CC0-1.0
+
+= images/home-7.jpg =
+* https://stocksnap.io/photo/5BRQF1DZ8W
+* Bruce Mars
+* CC0-1.0
+
+= images/home-8.jpg =
+* https://stocksnap.io/photo/MU7G67710S
+* Brooke Cagle
+* CC0-1.0
+
+= images/home-8a.jpg =
+* https://stocksnap.io/photo/XBL8EKLLAK
+* Bruce Mars
+* CC0-1.0
+
+= images/about-featured.jpg =
+* https://stocksnap.io/photo/5EWM2TS69A
+* Wilfred Iven 
+* CC0-1.0
+
+= images/about-1.jpg =
+* https://stocksnap.io/photo/42H3JH8QI5
+* energepic.com 
+* CC0-1.0
+
+= images/about-2.jpg =
+* https://stocksnap.io/photo/Y2P39NGLLO
+* Startup Stock Photos
+* CC0-1.0
+
+= images/about-3.jpg =
+* https://stocksnap.io/photo/KPVOIKEPSG
+* Burst
+* CC0-1.0
+
+= images/about-4.jpg =
+* https://stocksnap.io/photo/FRHAMZCZ2X
+* Garon Piceli
+* CC0-1.0
+
+= images/about-4b.jpg =
+* https://stocksnap.io/photo/MO7PZ7AYIC
+* Bruce Mars
+* CC0-1.0
+
+= images/about-4c.jpg =
+* https://stocksnap.io/photo/9AZW8YSXHA
+* Capucine Moda
+* CC0-1.0
+
+= images/about-5.jpg =
+* https://stocksnap.io/photo/TGG4JHNHB8
+* Burst
+* CC0-1.0
+
+= images/about-6.jpg =
+* https://stocksnap.io/photo/7GXMY2JMR4
+* Bruce Mars
+* CC0-1.0
+
+= images/about-7.jpg =
+* https://stocksnap.io/photo/E5GUBD8MWN
+* Bruce Mars
+* CC0-1.0
+
+= images/about-8.jpg =
+* https://stocksnap.io/photo/7ZGVCPQ3N7
+* Warren Wong
+* CC0-1.0
+
+= images/services-featured.jpg =
+* https://stocksnap.io/photo/YYJBMNVN6Q
+* Messala Ciulla
+* CC0-1.0
+
+= images/services-1.jpg =
+* https://stocksnap.io/photo/Y01VDYAX63
+* Helloquence 
+* CC0-1.0
+
+= images/services-8.jpg =
+* https://stocksnap.io/photo/DPZPTWJ07T
+* Tatiana Lapina
+* CC0-1.0
+
+= images/blog-featured.jpg =
+* https://stocksnap.io/photo/35DZYNX6SG
+* Porapak Apichodilok
+* CC0-1.0
+
+= images/cloud-expert.jpg =
+* https://stocksnap.io/photo/NBRVNC5FWO
+* Wilfred Iven
+* CC0-1.0
+
+= images/information-technology.jpg =
+* https://stocksnap.io/photo/6Z663NNH9K
+* Field Engineer
+* CC0-1.0
+
+= images/corporate-finance.jpg =
+* https://stocksnap.io/photo/9NCMFEISLF
+* Burst
+* CC0-1.0
+
+= images/mergers.jpg =
+* https://stocksnap.io/photo/2DIUYGMJLM
+* Kalen Emsley
+* CC0-1.0
+
+= images/blockchain.jpg =
+* https://stocksnap.io/photo/Z4RMPTR9UD
+* Cristina Gottardi
+* CC0-1.0
+
+= images/digital.jpg =
+* https://stocksnap.io/photo/4PMYDANTCD
+* Burst
+* CC0-1.0
+
+= images/strategy.jpg =
+* https://stocksnap.io/photo/GJRSR35DZ2
+* Mateusz Dach
+* CC0-1.0
+
+= images/advanced-analytics.jpg =
+* https://stocksnap.io/photo/89AZTB8E5H
+* Negative Space
+* CC0-1.0
+
+= images/artificial-intelligence.jpg =
+* https://stocksnap.io/photo/UD2XOGJBCJ
+* NeONBRAND
+* CC0-1.0
+
+= images/blog-1.jpg =
+* https://stocksnap.io/photo/ZXOBOKAJEQ
+* Brooke Cagle
+* CC0-1.0
+
+= images/contact-featured.jpg =
+* https://stocksnap.io/photo/0P9709P1DQ
+* Luca Bravo
+* CC0-1.0
