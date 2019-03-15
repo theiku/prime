@@ -1,8 +1,8 @@
 const archiver = require( 'archiver' ),
 	fs = require( 'fs' ),
 	path = require( 'path' ),
-	chalk = require( 'chalk' ),
-	pkgDir = require( 'pkg-dir' );
+	rimraf = require( 'rimraf' ),
+	chalk = require( 'chalk' );
 
 /**
  * @param {Object} options Module Options
@@ -46,10 +46,13 @@ module.exports = ( options ) => {
 			.pipe( stream );
 
 		stream.on( 'close', () => {
-			console.log( "\n" + chalk`{green.bold  ✔  Successfully built ${ opts.name }${ opts.extension }!}\n` );
-			console.log( '    File located in: ' );
-			console.log( '    ' + chalk.reset.underline( opts.path ) + "\n" );
-			resolve();
+			console.log( chalk`{magenta Cleaning up temp files}...` );
+			rimraf( path.resolve( opts.globOpts.root.slice( 0, -1 ), '..' ), () => {
+				console.log( "\n" + chalk`{green.bold  ✔  Successfully built ${ opts.name }${ opts.extension }!}\n` );
+				console.log( '    File located in: ' );
+				console.log( '    ' + chalk.reset.underline( opts.path ) + "\n" );
+				resolve();
+			} );
 		} );
 
 		archive.finalize();
