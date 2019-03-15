@@ -32,7 +32,7 @@ module.exports = ( options ) => {
 		opts.extension = 'zip' === opts.archiver.format ? '.zip' : '.tar.gz';
 	}
 
-	console.log( chalk`{magenta Building archive:} ${ opts.name }${ opts.extension }...` );
+	console.log( chalk`{magenta Building archive:} ${ opts.name }${ opts.extension }` );
 
 	const archive = archiver( opts.archiver.format, opts.archiver.options ),
 		stream = fs.createWriteStream( opts.path + path.sep + opts.name + opts.extension );
@@ -46,8 +46,8 @@ module.exports = ( options ) => {
 			.pipe( stream );
 
 		stream.on( 'close', () => {
-			console.log( chalk`{magenta Cleaning up temp files}...` );
-			rimraf( path.resolve( opts.globOpts.root ), () => {
+			console.log( chalk`{magenta Cleaning up temp files in:} ${ path.relative( process.cwd(), opts.globOpts.cwd ) }` );
+			rimraf( opts.globOpts.cwd, () => {
 				console.log( "\n" + chalk`{green.bold  ✔  Successfully built ${ opts.name }${ opts.extension }!}\n` );
 				console.log( '    File located in: ' );
 				console.log( '    ' + chalk.reset.underline( opts.path ) + "\n" );
