@@ -48,7 +48,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 					<div class="welcome-panel-column">
 						<h2><?php esc_html_e( 'Getting Started', 'bgtfw' ); ?></h2>
 						<p>
-							<?php wp_kses_post( _e( 'Welcome to BoldGrid Crio! In order to give you a head start editing and designing, we have installed Starter Content for you. You may edit any part of the content to suit your needs or delete content and pages you don\'t find valuable.  Our Starter Content works best with the <a href="https://wordpress.org/plugins/post-and-page-builder/" target="_blank">Post and Page Builder</a> by <a href="https://www.boldgrid.com/" target="_blank">Boldgrid</a>. Click below to install.', 'bgtfw' ) ); ?>
+							<?php echo wp_kses_post( __( 'Welcome to BoldGrid Crio! In order to give you a head start editing and designing, we have installed Starter Content for you. You may edit any part of the content to suit your needs or delete content and pages you don\'t find valuable.  Our Starter Content works best with the <a href="https://wordpress.org/plugins/post-and-page-builder/" target="_blank">Post and Page Builder</a> by <a href="https://www.boldgrid.com/" target="_blank">Boldgrid</a>. Click below to install.', 'bgtfw' ) ); ?>
 						</p>
 						<p>
 							<a href="<?php echo esc_url( $tgm_url ) ?>" class="button button-primary button-hero"><?php esc_html_e( 'Install Post and Page Builder', 'bgtfw' ); ?></a>
@@ -64,7 +64,7 @@ $configs = $boldgrid_theme_framework->get_configs();
 					<div class="welcome-panel-column">
 						<h2><?php esc_html_e( 'Crio - The theme with more', 'bgtfw' ); ?></h2>
 						<p>
-							<?php wp_kses_post( _e( 'Crio means "I Create" in Portuguese and this is our aim: To give you the most powerful site creation tools you can use! Visit <a href="https://www.BoldGrid.com/" target="_blank">BoldGrid.com</a> to learn about all the resources we offer, including our new WordPress Cloud toolset where you can create in seconds!', 'bgtfw' ) ); ?></p>
+							<?php echo wp_kses_post( __( 'Crio means "I Create" in Portuguese and this is our aim: To give you the most powerful site creation tools you can use! Visit <a href="https://www.BoldGrid.com/" target="_blank">BoldGrid.com</a> to learn about all the resources we offer, including our new WordPress Cloud toolset where you can create in seconds!', 'bgtfw' ) ); ?></p>
 						<p>
 							<a href="https://www.boldgrid.com/" target="_blank"><?php esc_html_e( 'BoldGrid.com', 'bgtfw' ); ?></a>
 						</p>
