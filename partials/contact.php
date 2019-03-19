@@ -34,18 +34,21 @@
 			</div>
 			<div class="col-md-6 col-sm-12 col-xs-12">
 				<div class="bg-box" style="padding: 0 0 0 2.2em;">
-					<div class="boldgrid-shortcode wpforms-shortcode" data-imhwpb-draggable="true">
-						<?php echo BoldGrid_Framework_Starter_Content::get_form_shortcode( __DIR__ . '/../json/wpforms/form-1.json' ); ?>
-					</div>
+					<form method="post" enctype="multipart/form-data" novalidate="novalidate">
+						<div>
+							<label for="contact-name-1">Name</label><input id="contact-name-1" type="text" required="" placeholder="Name" aria-required="true">
+						</div>
+						<div>
+							<label for="contact-email-1">E-mail</label><input id="contact-email-1" type="text" required="" placeholder="E-mail" aria-required="true">
+						</div>
+						<div>
+							<label for="contact-msg-1">Message</label><textarea id="contact-msg-1" required="" placeholder="Message" aria-required="true"></textarea>
+						</div>
+						<div>
+							<button type="submit" class="btn button-primary" >Send</button>
+						</div>
+					</form>
 				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="boldgrid-section color5-background-color color-5-text-contrast bg-background-color">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12 col-xs-12 col-sm-12">
 			</div>
 		</div>
 	</div>
