@@ -2,8 +2,8 @@
 /**
  * Class: Boldgrid_Crio_Welcome
  *
- * @since      2.0.0
- * @package    Boldgrid_Crio
+ * @since      x.x.x
+ * @package    Prime
  * @subpackage Boldgrid_Crio_Welcome
  * @author     BoldGrid <support@boldgrid.com>
  * @link       https://boldgrid.com
