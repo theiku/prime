@@ -68,8 +68,10 @@ getBGTFW().then( () => {
 				await headerUpdate( 'Text Domain', domain, `${ tempDir }/style.css` );
 				await headerUpdate( 'Theme Name', domain.charAt( 0 ).toUpperCase() + domain.slice( 1 ), `${ tempDir }/style.css` );
 				await headerUpdate( 'Theme URI', `https://www.boldgrid.com/themes/${ domain }`, `${ tempDir }/style.css` );
+				await headerUpdate( 'Stable Tag', version, `${ tempDir }/readme.txt` );
 				await fixTextDomains();
-			} )().then( () => generatePot() )
+			} )()
+				.then( () => generatePot() )
 				.then( () => zipTheme() )
 				.catch( console.error );
 		} ).catch( console.error );
