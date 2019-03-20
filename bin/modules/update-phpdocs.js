@@ -1,5 +1,4 @@
-const path = require( 'path' ),
-	fs = require( 'fs' ),
+const fs = require( 'fs' ),
 	glob = require( 'glob' );
 
 module.exports = ( path, config ) => {
