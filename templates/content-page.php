@@ -14,7 +14,9 @@
 			<?php wp_link_pages( array( 'before' => '<nav class="page-links"><p>' . esc_html__( 'Pages:', 'bgtfw' ), 'after' => '</p></nav>' ) ); ?>
 		</div><!-- .entry-content -->
 		<footer class="entry-footer">
-			<?php get_template_part( 'templates/entry-footer' ); ?>
+			<div class="bgtfw container">
+				<?php bgtfw_edit_post_link(); ?>
+			</div>
 		</footer><!-- .entry-footer -->
 		<?php if ( comments_open() || get_comments_number() ) : ?>
 			<?php comments_template( '/templates/comments.php' ); ?>
