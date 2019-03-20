@@ -459,31 +459,17 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				// Widget $instance -> settings
 				array(
 					'title' => '',
-					'content' => '<img alt="Crio" style="margin:1em 0; width:100px;" src="' . get_parent_theme_file_uri( 'images/crio.svg' ) . '"><p style="margin-bottom: 1em">A WordPress Theme by BoldGrid. Try our other products today.</p><ul><li><a href="https://www.boldgrid.com/boldgrid-backup">BoldGrid Backup</a></li><li><a href="https://www.boldgrid.com/post-and-page-builder">Post and Page Builder</a></li><li><a href="https://www.boldgrid.com/boldgrid-seo">BoldGrid SEO</a></li><li><a href="https://www.boldgrid.com/prototype-transfer-wordpress-site/">Cloud WordPress</a></li></ul>',
-				),
-			),
-		);
-
-		$config['starter-content']['widgets']['footer-2'] = array(
-			'custom_html' => array(
-
-				// Widget $id -> set when creating a Widget Class
-				'custom_html',
-
-				// Widget $instance -> settings
-				array(
-					'title' => '',
 					'content' => '<h3 class="widget-title">Hours</h3><p style="margin-top: 1.3em; margin-bottom: .3em;">Monday - Friday: 8am to 5pm</p><p style="margin-bottom: .3em;">Saturday: 10am to 4pm</p><p>Sunday: 12pm to 4pm</p>',
 				),
 			),
 			'search',
 		);
 
-		$config['starter-content']['widgets']['footer-3'] = array(
+		$config['starter-content']['widgets']['footer-2'] = array(
 			'recent-posts',
 		);
 
-		$config['starter-content']['widgets']['footer-4'] = array(
+		$config['starter-content']['widgets']['footer-3'] = array(
 			'custom_html' => array(
 
 				// Widget $id -> set when creating a Widget Class
@@ -778,10 +764,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 					],
 					[
 						'type' => 'bgtfw_sidebar_footer-3',
-						'key' => 'sidebar',
-					],
-					[
-						'type' => 'bgtfw_sidebar_footer-4',
 						'key' => 'sidebar',
 					],
 				],
