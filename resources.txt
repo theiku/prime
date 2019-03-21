@@ -1,4 +1,5 @@
 == Resources ==
+The following resources are used in the production of creating the experience this theme provides.  Additional images, code, and documentation included with this package is released under the same license as this theme.  For a full list of development dependencies, license information, and URLs - please refer to licenses.txt.  A special thanks goes out to all of the developers who have spent their time and energy to help make something special and share it with the rest of the world!
 
 = normalize.css =
 * © 2012-2018 Nicolas Gallagher and Jonathan Neal
@@ -28,7 +29,7 @@
 * © 2018 John Hildenbiddle
 * MIT
 
-= DOM Ready (@wordpress/dom-ready) = 
+= DOM Ready (@wordpress/dom-ready) =
 * © 2011-2019 The WordPress Contributors
 * GPL-2.0-or-later
 
@@ -54,6 +55,10 @@
 
 = hover.css =
 * © 2017 Ian Lunn Design Limited
+* MIT
+
+= hero-patterns =
+* © Alec Lomas
 * MIT
 
 = jquery-goup =
@@ -96,7 +101,7 @@
 * © 2016 Thomas Grainger
 * MIT
 
-= images/home-1.jpg = 
+= images/home-1.jpg =
 * https://stocksnap.io/photo/DOLNAISHLZ
 * Burst
 * CC0-1.0
@@ -108,7 +113,7 @@
 
 = images/home-1b.jpg =
 * https://stocksnap.io/photo/FFSUL8TZD3
-* JESHOOTS.com 
+* JESHOOTS.com
 * CC0-1.0
 
 = images/home-2.jpg =
@@ -138,12 +143,12 @@
 
 = images/about-featured.jpg =
 * https://stocksnap.io/photo/5EWM2TS69A
-* Wilfred Iven 
+* Wilfred Iven
 * CC0-1.0
 
 = images/about-1.jpg =
 * https://stocksnap.io/photo/42H3JH8QI5
-* energepic.com 
+* energepic.com
 * CC0-1.0
 
 = images/about-2.jpg =
@@ -198,7 +203,7 @@
 
 = images/services-1.jpg =
 * https://stocksnap.io/photo/Y01VDYAX63
-* Helloquence 
+* Helloquence
 * CC0-1.0
 
 = images/services-8.jpg =
