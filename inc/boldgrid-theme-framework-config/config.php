@@ -133,17 +133,21 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Create the custom image attachments used as post thumbnails for pages.
 		$config['starter-content']['attachments'] = array(
-			'home-image' => array(
-				'post_title' => _x( 'Homepage full-width image', 'Theme starter content homepage image', 'crio' ),
-				'file' => 'images/home-1.jpg',
+			'typing-on-laptop-closeup' => array(
+				'post_title' => _x( 'Typing on laptop closeup', 'An image of someone typing on laptop up close used in theme starter content', 'crio' ),
+				'file' => 'images/typing-on-laptop-closeup.jpg',
 			),
-			'contact-featured' => array(
-				'post_title' => _x( 'Contact page featured image', 'Contact page image in theme starter content', 'crio' ),
-				'file' => 'images/contact-featured.jpg',
+			'desk-with-computer-and-chair' => array(
+				'post_title' => _x( 'Laptop and chair photography', 'Image of a laptop, desk, and chair used in theme starter content', 'crio' ),
+				'file' => 'images/desk-with-computer-and-chair.jpg',
 			),
-			'blog-featured' => array(
-				'post_title' => _x( 'Blog page featured image', 'Blog page featured image in theme starter content', 'crio' ),
-				'file' => 'images/blog-featured.jpg',
+			'book-and-phone' => array(
+				'post_title' => _x( 'Diary and Phone', 'Photogaphy of a journal and cell phone in theme starter content', 'crio' ),
+				'file' => 'images/book-and-phone.jpg',
+			),
+			'man-on-computer' => array(
+				'post_title' => _x( 'Man on computer', 'Image of man on computer used in theme starter content', 'crio' ),
+				'file' => 'images/man-on-computer.jpg',
 			),
 			'crio-dark' => array(
 				'post_title' => _x( 'Dark test logo for theme starter content', 'crio' ),
@@ -167,30 +171,30 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'contact' => array(
 				'post_type' => 'page',
 				'post_title' => _x( 'Contact Us', 'Theme starter content post title', 'crio' ),
-				'thumbnail' => '{{contact-featured}}',
+				'thumbnail' => '{{desk-with-computer-and-chair}}',
 				'post_content' => bgtfw_get_contents( 'contact.php' ),
 			),
 			'blog' => array(
 				'post_type' => 'page',
 				'post_title' => _x( 'Blog', 'Theme starter content post title', 'crio' ),
-				'thumbnail' => '{{blog-featured}}',
+				'thumbnail' => '{{book-and-phone}}',
 			),
 			'advanced-analytics' => array(
 				'post_type' => 'post',
 				'post_title' => _x( 'Advanced Analytics', 'Theme starter content post title', 'crio' ),
-				'thumbnail' => '{{contact-featured}}',
-				'post_content' => bgtfw_get_contents( 'blog.php' ),
-			),
-			'digital' => array(
-				'post_type' => 'post',
-				'post_title' => _x( 'Digital', 'Theme starter content post title', 'crio' ),
-				'thumbnail' => '{{home-image}}',
+				'thumbnail' => '{{desk-with-computer-and-chair}}',
 				'post_content' => bgtfw_get_contents( 'blog.php' ),
 			),
 			'information-technology' => array(
 				'post_type' => 'post',
 				'post_title' => _x( 'Information Technology', 'Theme starter content post title', 'crio' ),
-				'thumbnail' => '{{blog-featured}}',
+				'thumbnail' => '{{book-and-phone}}',
+				'post_content' => bgtfw_get_contents( 'blog.php' ),
+			),
+			'digital' => array(
+				'post_type' => 'post',
+				'post_title' => _x( 'Digital', 'Theme starter content post title', 'crio' ),
+				'thumbnail' => '{{typing-on-laptop-closeup}}',
 				'post_content' => bgtfw_get_contents( 'blog.php' ),
 			),
 		);

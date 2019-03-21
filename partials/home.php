@@ -20,7 +20,7 @@ $service_icons = function( $options ) { ?>
 	</div>
 <?php }; ?>
 
-<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path( 'home-1.jpg' ) ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'home-1.jpg' ) ?>)">
+<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path( 'typing-on-laptop-closeup.jpg' ) ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'typing-on-laptop-closeup.jpg' ) ?>)">
 	<div class="container">
 		<div class="row row-spacing-lg">
 			<div class="col-md-6 col-sm-12 col-xs-12">
@@ -45,12 +45,12 @@ $service_icons = function( $options ) { ?>
 			</div>
 			<div class="col-md-1 col-sm-1 col-xs-12"></div>
 			<div class="col-md-5 col-sm-5 col-xs-12 align-column-center">
-				<p class="text-center"><img class="bg-img bg-img-3" src="<?php $image_path( 'home-2.jpg' ) ?>"></p>
+				<p class="text-center"><img class="bg-img bg-img-3" src="<?php $image_path( 'people-in-office.jpg' ) ?>"></p>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path( 'home-3.jpg' ) ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'home-3.jpg' ) ?>)">
+<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path( 'desk-with-computer-and-chair.jpg' ) ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'desk-with-computer-and-chair.jpg' ) ?>)">
 	<div class="container">
 		<div class="row row-spacing-lg-top">
 			<div class="col-md-12 col-sm-12 col-xs-12">
@@ -82,7 +82,7 @@ $service_icons = function( $options ) { ?>
 				<div class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12">
 						<div class="text-center">
-							<img class="bg-img bg-img-3" src="<?php $image_path( 'home-8a.jpg' ) ?>">
+							<img class="bg-img bg-img-3" src="<?php $image_path( 'man-on-computer.jpg' ) ?>">
 							<h4 style="margin-top: 1em; font-size: 1.2em;">Sam Wood</h4>
 							<p class="">Product Management</p>
 						</div>

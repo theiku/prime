@@ -101,39 +101,24 @@ The following resources are used in the production of creating the experience th
 * © 2016 Thomas Grainger
 * MIT
 
-= images/home-1.jpg =
+= images/typing-on-laptop-closeup.jpg =
 * https://stocksnap.io/photo/DOLNAISHLZ
 * © Burst
 * CC0-1.0
 
-= images/home-2.jpg =
+= images/people-in-office.jpg =
 * https://stocksnap.io/photo/Y2AHVPYB51
 * © Brodie Vissers
 * CC0-1.0
 
-= images/home-3.jpg =
-* https://stocksnap.io/photo/J18ZCO3IPA
-* © Olu Eletu
-* CC0-1.0
-
-= images/home-8a.jpg =
+= images/man-on-computer.jpg =
 * https://stocksnap.io/photo/XBL8EKLLAK
 * © Bruce Mars
-* CC0-1.0
-
-= images/advanced-analytics.jpg =
-* https://stocksnap.io/photo/89AZTB8E5H
-* © Negative Space
 * CC0-1.0
 
 = images/blog-featured.jpg =
 * https://stocksnap.io/photo/35DZYNX6SG
 * © Porapak Apichodilok
-* CC0-1.0
-
-= images/blog-1.jpg =
-* https://stocksnap.io/photo/ZXOBOKAJEQ
-* © Brooke Cagle
 * CC0-1.0
 
 = images/contact-featured.jpg =
