@@ -7,21 +7,7 @@
  * @since 2.0.0
  */
 
-$post_widget_opts = function () {
-	return print urlencode( json_encode( [
-		'widget-boldgrid_component_postlist[][selected_post]' => 'all',
-		'widget-boldgrid_component_postlist[][sorting]' => 'newest',
-		'widget-boldgrid_component_postlist[][limit]' => 3,
-		'widget-boldgrid_component_postlist[][columns]' => 3,
-		'widget-boldgrid_component_postlist[][show_title]' => 1,
-		'widget-boldgrid_component_postlist[][excerpt]' => 0,
-		'widget-boldgrid_component_postlist[][author]' => 1,
-		'widget-boldgrid_component_postlist[][thumbnail]' => 1,
-		'widget-boldgrid_component_postlist[][date]' => 1,
-	] ) );
-};
-
-$service_icons = function( $options ) use ( $image_path ) { ?>
+$service_icons = function( $options ) { ?>
 	<div class="row">
 		<?php foreach ( $options as $option ) { ?>
 		<div class="col-md-4 col-sm-12 col-xs-12">
@@ -34,44 +20,16 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 	</div>
 <?php }; ?>
 
-<div class="boldgrid-slider boldgrid-section-wrap" data-config='{"arrows":false,"autoplay":true,"autoplaySpeed":"6","dots":true,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"4","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":true,"dotsColor":"4","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"4","text":""},"dotsColor":{"type":"class","value":"4","text":""}}}'>
-	<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path( 'home-1.jpg' ) ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'home-1.jpg' ) ?>)">
-		<div class="container">
-			<div class="row row-spacing-lg">
-				<div class="col-md-6 col-sm-12 col-xs-12">
-					<h2 class="h1" style="color: #fff; margin-top: 0;">Grow Your Business</h2>
-					<?php $divider(); ?>
-					<p class="" style="margin-bottom: 2em; color: #fff; font-size: 1.2em;">Taking core competencies to infiltrate new markets. Drive analytics so that as an end result.</p>
-					<p class=""><a href="#" class="button-primary">Learn More</a></p>
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12"></div>
+<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path( 'home-1.jpg' ) ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'home-1.jpg' ) ?>)">
+	<div class="container">
+		<div class="row row-spacing-lg">
+			<div class="col-md-6 col-sm-12 col-xs-12">
+				<h2 class="h1" style="color: #fff; margin-top: 0;">Grow Your Business</h2>
+				<?php $divider(); ?>
+				<p class="" style="margin-bottom: 2em; color: #fff; font-size: 1.2em;">Taking core competencies to infiltrate new markets. Drive analytics so that as an end result.</p>
+				<p class=""><a href="#" class="button-primary">Learn More</a></p>
 			</div>
-		</div>
-	</div>
-	<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path( 'home-1a.jpg' ) ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'home-1a.jpg' ) ?>)">
-		<div class="container">
-			<div class="row row-spacing-lg">
-				<div class="col-md-6 col-sm-12 col-xs-12">
-					<h2 class="h1" style="color: #fff; margin-top: 0;">Dedicated to Quality</h2>
-					<?php $divider(); ?>
-					<p class="" style="margin-bottom: 2em; color: #fff; font-size: 1.2em;">Leading best in class so that as an end result, we make the logo bigger. Lead analytics to make the ROI bigger.</p>
-					<p class=""><a href="#" class="button-primary">Learn More</a></p>
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12"></div>
-			</div>
-		</div>
-	</div>
-	<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path( 'home-1b.jpg' ) ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'home-1b.jpg' ) ?>)">
-		<div class="container">
-			<div class="row row-spacing-lg">
-				<div class="col-md-6 col-sm-12 col-xs-12">
-					<h2 class="h1" style="color: #fff; margin-top: 0;">Top Industry Leaders</h2>
-					<?php $divider(); ?>
-					<p class="" style="margin-bottom: 2em; color: #fff; font-size: 1.2em;">Take blue-sky thinking to create actionable insights. Amplifying growth channels to use best practice.</p>
-					<p class=""><a href="#" class="button-primary">Learn More</a></p>
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12"></div>
-			</div>
+			<div class="col-md-6 col-sm-12 col-xs-12"></div>
 		</div>
 	</div>
 </div>
@@ -102,43 +60,11 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 		</div>
 		<div class="row row-spacing-lg-bottom">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<div class="boldgrid-slider boldgrid-wrap-row" data-config='{"arrows":true,"autoplay":true,"autoplaySpeed":"6","dots":false,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"chevron","arrowsSize":"15","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
-					<?php $service_icons( [
-						[ 'title' => 'Advanced Analytics' ],
-						[ 'title' => 'Finance' ],
-						[ 'title' => 'Strategy & Marketing' ],
-					] ); ?>
-					<?php $service_icons( [
-						[ 'title' => 'Advanced Analytics' ],
-						[ 'title' => 'Finance' ],
-						[ 'title' => 'Strategy & Marketing' ],
-					] ); ?>
-					<?php $service_icons( [
-						[ 'title' => 'Advanced Analytics' ],
-						[ 'title' => 'Finance' ],
-						[ 'title' => 'Strategy & Marketing' ],
-					] ); ?>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="boldgrid-section color4-background-color color-4-text-contrast">
-	<div class="container">
-		<div class="row row-spacing-lg-top">
-			<div class="col-md-6 col-sm-6 col-xs-12">
-				<h2 style="margin-top: 0;">Recent News</h2>
-				<?php $divider(); ?>
-			</div>
-			<div class="col-md-6 col-sm-6 col-xs-12 align-column-center">
-				<p class="" style="margin-bottom: 2em;">Target user stories so that we maximise share of voice. Grow cloud computing with the aim to take this offline. Lead integrated tech stacks and above all, target the low hanging fruit.</p>
-			</div>
-		</div>
-		<div class="row row-spacing-lg-bottom wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
-			<div class="col-md-12 col-sm-12 col-xs-12">
-				<div class="boldgrid-shortcode" data-imhwpb-draggable="true">
-					[boldgrid_component type="wp_boldgrid_component_postlist" opts="<?php $post_widget_opts(); ?>"]
-				</div>
+				<?php $service_icons( [
+					[ 'title' => 'Advanced Analytics' ],
+					[ 'title' => 'Finance' ],
+					[ 'title' => 'Strategy & Marketing' ],
+				] ); ?>
 			</div>
 		</div>
 	</div>
@@ -153,32 +79,12 @@ $service_icons = function( $options ) use ( $image_path ) { ?>
 		</div>
 		<div class="row row-spacing-lg-bottom">
 			<div class="col-md-5 col-sm-12 col-xs-12">
-				<div class="boldgrid-slider boldgrid-wrap-row" data-config='{"arrows":false,"autoplay":true,"autoplaySpeed":"6","dots":true,"infinite":true,"bgOptions":{"arrowsPos":"standard","arrowsOverlay":true,"arrowsBgColor":"1","arrowsIcon":"angle","arrowsSize":"30","dotsPos":"bottom","dotsOverlay":false,"dotsColor":"1","dotsSize":"50"},"colors":{"arrowsBG":{"type":"class","value":"1","text":""},"dotsColor":{"type":"class","value":"1","text":""}}}'>
-					<div class="row">
-						<div class="col-md-12 col-sm-12 col-xs-12">
-							<div class="text-center">
-								<img class="bg-img bg-img-3" src="<?php $image_path( 'home-7.jpg' ) ?>">
-								<h4 style="margin-top: 1em; font-size: 1.2em;">Nathan Counsel</h4>
-								<p class="">Chief Executive Officer</p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 col-sm-12 col-xs-12">
-							<div class="text-center">
-								<img class="bg-img bg-img-3" src="<?php $image_path( 'home-8.jpg' ) ?>">
-								<h4 style="margin-top: 1em; font-size: 1.2em;">Sue Wolfe</h4>
-								<p class="">Chief Financial Officer</p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 col-sm-12 col-xs-12">
-							<div class="text-center">
-								<img class="bg-img bg-img-3" src="<?php $image_path( 'home-8a.jpg' ) ?>">
-								<h4 style="margin-top: 1em; font-size: 1.2em;">Sam Wood</h4>
-								<p class="">Product Management</p>
-							</div>
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="text-center">
+							<img class="bg-img bg-img-3" src="<?php $image_path( 'home-8a.jpg' ) ?>">
+							<h4 style="margin-top: 1em; font-size: 1.2em;">Sam Wood</h4>
+							<p class="">Product Management</p>
 						</div>
 					</div>
 				</div>

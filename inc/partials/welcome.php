@@ -52,7 +52,7 @@ $crio_customizer_url = esc_url(
 						</p>
 					</div>
 					<div class="welcome-panel-column">
-						<img style="width:100%;" src="<?php echo esc_url( get_template_directory_uri() ) . '/images/welcome/bg-fresh-site.jpg'; ?>" />
+						<img style="width:100%;" src="<?php echo esc_url( get_template_directory_uri() ) . '/screenshot.png'; ?>" />
 					</div>
 				<?php else : ?>
 					<div class="welcome-panel-column">
