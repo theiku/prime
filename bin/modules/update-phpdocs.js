@@ -28,7 +28,7 @@ module.exports = ( path, config ) => {
 			// If content changed, log or update.
 			if ( updatedContent !== content ) {
 				if ( config.fix ) {
-					fs.writeFile( file, content, 'utf8', function( err ) {
+					fs.writeFile( file, updatedContent, 'utf8', function( err ) {
 						if ( err ) return console.log( err );
 					} );
 				} else {
