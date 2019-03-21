@@ -5,7 +5,6 @@ const path = require( 'path' ),
 	getBGTFW = require( './modules/install-bgtfw.js' ),
 	zip = require( './modules/zip.js' ),
 	wpPot = require( 'wp-pot' ),
-	updatePhpdocs = require( './modules/update-phpdocs.js' ),
 	rimraf = require( 'rimraf' );
 
 let args = process.argv.slice( 2 );
@@ -42,18 +41,6 @@ const domain = args[0];
 const version = args[1];
 const themeName = domain.charAt( 0 ).toUpperCase() + domain.slice( 1 );
 const tempDir = `../${ domain }-zip-building/${ domain }`;
-const phpdocConfig = {
-	fix: true,
-	force: true,
-	globOpts: {
-		cwd: tempDir,
-		ignore: [
-			'inc/boldgrid-theme-framework/**/*',
-			'vendor/**/*',
-			'woocommerce/**/*'
-		]
-	}
-};
 
 getBGTFW().then( () => {
 	rimraf( path.resolve( tempDir, '..' ), () => {
@@ -78,21 +65,12 @@ getBGTFW().then( () => {
 
 		copy( themeDir, tempDir, options ).then( () => {
 			( async () => {
-
 				await headerUpdate( 'Version', version, `${ tempDir }/style.css` );
 				await headerUpdate( 'Text Domain', domain, `${ tempDir }/style.css` );
 				await headerUpdate( 'Theme Name', themeName, `${ tempDir }/style.css` );
 				await headerUpdate( 'Theme URI', `https://www.boldgrid.com/themes/${ domain }`, `${ tempDir }/style.css` );
 				await headerUpdate( 'Stable Tag', version, `${ tempDir }/readme.txt` );
 				await fixTextDomains();
-				updatePhpdocs( `**/*.php`, { ...phpdocConfig, ...{
-					name: 'license',
-					value: 'GPL-2.0-or-later'
-				} } );
-				updatePhpdocs( `**/*.php`, { ...phpdocConfig, ...{
-					name: 'package',
-					value: themeName
-				} } );
 			} )()
 				.then( () => generatePot() )
 				.then( () => zipTheme() )
