@@ -133,44 +133,32 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Create the custom image attachments used as post thumbnails for pages.
 		$config['starter-content']['attachments'] = array(
-
-			// Custom Logo.
+			'home-image' => array(
+				'post_title' => _x( 'Homepage full-width image', 'Theme starter content homepage image', 'crio' ),
+				'file' => 'images/home-1.jpg',
+			),
+			'contact-featured' => array(
+				'post_title' => _x( 'Contact page featured image', 'Contact page image in theme starter content', 'crio' ),
+				'file' => 'images/contact-featured.jpg',
+			),
+			'blog-featured' => array(
+				'post_title' => _x( 'Blog page featured image', 'Blog page featured image in theme starter content', 'crio' ),
+				'file' => 'images/blog-featured.jpg',
+			),
 			'crio-dark' => array(
-				'post_title' => _x( 'Dark Text in Crio Logo', 'crio' ),
+				'post_title' => _x( 'Dark test logo for theme starter content', 'crio' ),
 				'file' => 'images/crio-dark.png',
 				'meta_input' => array(
 					'_custom_logo' => true,
 				),
 			),
-
-			'crio-light' => array(
-				'post_title' => _x( 'Light Text in Crio Logo', 'crio' ),
-				'file' => 'images/crio-light.png',
-			),
-			// Pages.
-			'contact-featured' => array(
-				'post_title' => _x( 'Contact Featured', 'Theme starter content', 'crio' ),
-				'file' => 'images/contact-featured.jpg',
-			),
-			'blog-featured' => array(
-				'post_title' => _x( 'Blog Featured', 'Theme starter content', 'crio' ),
-				'file' => 'images/blog-featured.jpg',
-			),
-
-			// Blog Posts Services.
-			'advanced-analytics-featured' => array(
-				'post_title' => _x( 'Advanced Analytics Featured', 'Theme starter content', 'crio' ),
-				'file' => 'images/advanced-analytics.jpg',
-			),
 		);
 
-		// Specify the core-defined pages to create and add custom thumbnails to some of them.
+		// Specify the starter content posts & pages.
 		$config['starter-content']['posts'] = array(
-
-			// Pages.
 			'homepage' => array(
 				'post_type' => 'page',
-				'post_title' => _x( 'Home', 'Theme starter content', 'crio' ),
+				'post_title' => _x( 'Home', 'Theme starter content post title', 'crio' ),
 				'post_content' => bgtfw_get_contents( 'home.php' ),
 				'meta_input' => array(
 					'boldgrid_hide_page_title' => '0',
@@ -178,20 +166,32 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			),
 			'contact' => array(
 				'post_type' => 'page',
-				'post_title' => _x( 'Contact Us', 'Theme starter content', 'crio' ),
+				'post_title' => _x( 'Contact Us', 'Theme starter content post title', 'crio' ),
 				'thumbnail' => '{{contact-featured}}',
 				'post_content' => bgtfw_get_contents( 'contact.php' ),
 			),
-			'advanced-analytics' => array(
-				'post_type' => 'post',
-				'post_title' => _x( 'Advanced Analytics', 'Theme starter content', 'crio' ),
-				'thumbnail' => '{{advanced-analytics-featured}}',
-				'post_content' => bgtfw_get_contents( 'blog.php' ),
-			),
 			'blog' => array(
 				'post_type' => 'page',
-				'post_title' => _x( 'Blog', 'Theme starter content', 'crio' ),
+				'post_title' => _x( 'Blog', 'Theme starter content post title', 'crio' ),
 				'thumbnail' => '{{blog-featured}}',
+			),
+			'advanced-analytics' => array(
+				'post_type' => 'post',
+				'post_title' => _x( 'Advanced Analytics', 'Theme starter content post title', 'crio' ),
+				'thumbnail' => '{{contact-featured}}',
+				'post_content' => bgtfw_get_contents( 'blog.php' ),
+			),
+			'digital' => array(
+				'post_type' => 'post',
+				'post_title' => _x( 'Digital', 'Theme starter content post title', 'crio' ),
+				'thumbnail' => '{{home-image}}',
+				'post_content' => bgtfw_get_contents( 'blog.php' ),
+			),
+			'information-technology' => array(
+				'post_type' => 'post',
+				'post_title' => _x( 'Information Technology', 'Theme starter content post title', 'crio' ),
+				'thumbnail' => '{{blog-featured}}',
+				'post_content' => bgtfw_get_contents( 'blog.php' ),
 			),
 		);
 
