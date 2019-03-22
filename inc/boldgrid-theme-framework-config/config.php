@@ -659,7 +659,7 @@ function bgtfw_get_contents( $partial ) {
 		ob_end_clean();
 		$content = str_replace( array( "\n", "\t" ), '', $content );
 
-		return wp_kses_post( $content );
+		return $content;
 	};
 }
 
