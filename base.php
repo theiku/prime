@@ -9,18 +9,21 @@
  */
 
 global $boldgrid_theme_framework;
-$configs = $boldgrid_theme_framework->get_configs();
+$bgtfw_configs = $boldgrid_theme_framework->get_configs();
 ?>
 <!doctype html>
-<!-- BoldGrid Theme Framework Version: <?php echo esc_html( $configs['framework-version'] ); ?> -->
+<!-- BoldGrid Theme Framework Version: <?php echo esc_html( $bgtfw_configs['framework-version'] ); ?> -->
 <html <?php language_attributes(); ?>>
 	<?php get_template_part( 'templates/head' ); ?>
 	<body <?php body_class(); ?>>
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'prime' ); ?></a>
 		<?php do_action( 'boldgrid_header_before' ); ?>
 		<div <?php BoldGrid::add_class( 'site_header', [ 'bgtfw-header', 'site-header' ] ); ?>>
-			<?php do_action( 'get_header' ); ?>
-			<?php get_template_part( 'templates/header/header', $configs['template']['header'] ); ?>
+			<?php
+				// Invoking core hook for plugins to hook into header.
+				do_action( 'get_header' ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+			?>
+			<?php get_template_part( 'templates/header/header', $bgtfw_configs['template']['header'] ); ?>
 		</div><!-- /.header -->
 		<?php do_action( 'boldgrid_header_after' ); ?>
 		<?php do_action( 'boldgrid_content_before' ); ?>
@@ -44,8 +47,11 @@ $configs = $boldgrid_theme_framework->get_configs();
 		</div><!-- /.content -->
 		<?php do_action( 'boldgrid_content_after' ); ?>
 		<?php do_action( 'boldgrid_footer_before' ); ?>
-		<?php do_action( 'get_footer' ); ?>
-		<?php get_template_part( 'templates/footer/footer', $configs['template']['footer'] ); ?>
+		<?php
+			// Invoking core hook for plugins to hook into footer.
+			do_action( 'get_footer' ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+		?>
+		<?php get_template_part( 'templates/footer/footer', $bgtfw_configs['template']['footer'] ); ?>
 		<?php wp_footer(); ?>
 		<?php do_action( 'boldgrid_footer_after' ); ?>
 	</body>

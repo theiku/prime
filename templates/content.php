@@ -27,8 +27,8 @@
 	<?php
 
 		/* translators: %s: Name of current post */
-		$content = get_theme_mod( 'bgtfw_pages_blog_blog_page_layout_content', 'excerpt' );
-		if ( 'excerpt' === $content ) {
+		$bgtfw_content = get_theme_mod( 'bgtfw_pages_blog_blog_page_layout_content', 'excerpt' );
+		if ( 'excerpt' === $bgtfw_content ) {
 			Boldgrid_Framework_Content::the_excerpt();
 		} else {
 			the_content( sprintf( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'bgtfw' ), the_title( '<span class="screen-reader-text">"', '"</span>', false ) ) );

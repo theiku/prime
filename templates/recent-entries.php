@@ -36,12 +36,12 @@
 				<h3><?php esc_html_e( 'Page Sitemap', 'bgtfw' ); ?></h3>
 				<ul class="list-group">
 					<?php
-						$count = 0;
+						$bgtfw_count = 0;
 					foreach ( $bgtfw_pages as $bgtfw_page ) {
-						if ( $bgtfw_page->post_title && $count < 10 ) {
+						if ( $bgtfw_page->post_title && $bgtfw_count < 10 ) {
 							echo '<li class="list-group-item"><a href="' . esc_url( get_permalink( $bgtfw_page->ID ) ) . '">' . wp_kses_post( $bgtfw_page->post_title ) . '</a></li>';
 						}
-						$count++;
+						$bgtfw_count++;
 					}
 					?>
 				</ul>

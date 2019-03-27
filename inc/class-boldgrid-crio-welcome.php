@@ -2,7 +2,7 @@
 /**
  * Class: Boldgrid_Crio_Welcome
  *
- * @since      x.x.x
+ * @since      2.1.0
  * @package    Prime
  * @subpackage Boldgrid_Crio_Welcome
  * @author     BoldGrid <support@boldgrid.com>

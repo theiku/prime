@@ -6,15 +6,15 @@
  */
 
 // Get number of results.
-$results_count = $wp_query->found_posts;
+$crio_results_count = $wp_query->found_posts;
 ?>
 	<div class="text-center">
 		<div class="container">
-			<h1>Search <span class="keyword">&ldquo;<?php the_search_query(); ?>&rdquo;</span></h1>
-			<?php if ( '' == $results_count || 0 == $results_count ) { // No Results ?>
+			<h1><?php esc_html_e( 'Search', 'bgtfw' ); ?> <span class="keyword">&ldquo;<?php the_search_query(); ?>&rdquo;</span></h1>
+			<?php if ( '' == $crio_results_count || 0 == $crio_results_count ) { // No Results ?>
 				<p><span class="label label-danger"><?php esc_html_e( 'No Results', 'bgtfw' ); ?></span>&nbsp; <?php esc_html_e( 'Try different search terms.', 'bgtfw' ); ?></p>
 			<?php } else { // Results Found. ?>
-				<p><span class="label label-success"><?php echo absint( $results_count ) . ' ' . esc_html__( 'Results', 'bgtfw' ); ?></span></p>
+				<p><span class="label label-success"><?php echo absint( $crio_results_count ) . ' ' . esc_html__( 'Results', 'bgtfw' ); ?></span></p>
 			<?php } // End results check. ?>
 			<div class="row">
 				<div class="<?php echo BoldGrid::display_sidebar() ? 'col-md-9' : 'col-md-12'; ?>">
