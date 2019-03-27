@@ -6,7 +6,7 @@
  *
  * @package Prime
  */
-do_action( 'before_entry_title' ); ?>
+do_action( 'boldgrid_before_entry_title' ); ?>
 <div <?php BoldGrid::add_class( 'page_header_wrapper', [ 'page-header-wrapper' ] ); ?>>
 	<header <?php BoldGrid::add_class( 'page_page_title', [ 'entry-header', 'page-header', has_post_thumbnail( get_option( 'page_for_posts', true ) ) ? 'has-featured-image-header' : '' ] ); ?> <?php bgtfw_featured_img_bg( $post->ID ); ?>>
 		<div <?php BoldGrid::add_class( 'featured_image_page', [ 'featured-imgage-header' ] ); ?>>
@@ -19,4 +19,4 @@ do_action( 'before_entry_title' ); ?>
 		</div>
 	</header><!-- .entry-header -->
 </div>
-<?php do_action( 'after_entry_title' ); ?>
+<?php do_action( 'boldgrid_after_entry_title' ); ?>
