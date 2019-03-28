@@ -16,6 +16,10 @@ $bgtfw_configs = $boldgrid_theme_framework->get_configs();
 <html <?php language_attributes(); ?>>
 	<?php get_template_part( 'templates/head' ); ?>
 	<body <?php body_class(); ?>>
+		<?php
+			// Invoking core hook for plugins to hook first in place on the body content. Ref: https://core.trac.wordpress.org/ticket/46679
+			do_action( 'wp_body_open' ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+		?>
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'prime' ); ?></a>
 		<?php do_action( 'boldgrid_header_before' ); ?>
 		<div <?php BoldGrid::add_class( 'site_header', [ 'bgtfw-header', 'site-header' ] ); ?>>
