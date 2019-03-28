@@ -11,6 +11,6 @@ require_once get_template_directory() . '/inc/boldgrid-theme-framework/boldgrid-
 
 if ( class_exists( 'Boldgrid_Framework' ) ) {
 	require_once get_template_directory() . '/inc/class-boldgrid-crio-welcome.php';
-	$welcome = new BoldGrid_Crio_Welcome();
-	$welcome->add_hooks();
+	$crio_welcome = new BoldGrid_Crio_Welcome();
+	$crio_welcome->add_hooks();
 }
