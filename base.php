@@ -12,7 +12,7 @@ global $boldgrid_theme_framework;
 $bgtfw_configs = $boldgrid_theme_framework->get_configs();
 ?>
 <!doctype html>
-<!-- BoldGrid Theme Framework Version: <?php echo esc_html( $bgtfw_configs['framework-version'] ); ?> -->
+<!-- BGTFW Version: <?php echo esc_html( $bgtfw_configs['framework-version'] ); ?> -->
 <html <?php language_attributes(); ?>>
 	<?php get_template_part( 'templates/head' ); ?>
 	<body <?php body_class(); ?>>
