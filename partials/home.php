@@ -7,7 +7,7 @@
  * @since 2.0.0
  */
 
-$service_icons = function( $options ) { ?>
+$crio_icons = function( $options ) { ?>
 	<div class="row">
 		<?php foreach ( $options as $option ) { ?>
 		<div class="col-md-4 col-sm-12 col-xs-12">
@@ -60,7 +60,7 @@ $service_icons = function( $options ) { ?>
 		</div>
 		<div class="row row-spacing-lg-bottom">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<?php $service_icons( [
+				<?php $crio_icons( [
 					[ 'title' => 'Advanced Analytics' ],
 					[ 'title' => 'Finance' ],
 					[ 'title' => 'Strategy & Marketing' ],
