@@ -20,12 +20,12 @@ $service_icons = function( $options ) { ?>
 	</div>
 <?php }; ?>
 
-<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path( 'typing-on-laptop-closeup.jpg' ) ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'typing-on-laptop-closeup.jpg' ) ?>)">
+<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $crio_image_path( 'typing-on-laptop-closeup.jpg' ) ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $crio_image_path( 'typing-on-laptop-closeup.jpg' ) ?>)">
 	<div class="container">
 		<div class="row row-spacing-lg">
 			<div class="col-md-6 col-sm-12 col-xs-12">
 				<h2 class="h1" style="color: #fff; margin-top: 0;">Grow Your Business</h2>
-				<?php $divider(); ?>
+				<?php $crio_divider(); ?>
 				<p class="" style="margin-bottom: 2em; color: #fff; font-size: 1.2em;">Taking core competencies to infiltrate new markets. Drive analytics so that as an end result.</p>
 				<p class=""><a href="#" class="button-primary">Learn More</a></p>
 			</div>
@@ -38,24 +38,24 @@ $service_icons = function( $options ) { ?>
 		<div class="row row-spacing-lg">
 			<div class="col-md-6 col-sm-6 col-xs-12">
 				<h2 style="margin-top: 0;">Our Story</h2>
-				<?php $divider(); ?>
+				<?php $crio_divider(); ?>
 				<p style="margin-bottom: 2em;">Executing big data with the aim to improve overall outcomes. Build user stories so that as an end result, we create actionable insights. Engage audience segments and above all, use best practice. Target key demographics while remembering to get buy in.</p>
 				<p style="margin-bottom: 2em;">Generating dark social so that as an end result, we use best practice. Synchronizing first party data so that we be transparent.</p>
 				<p style="margin-bottom: 2em;"><a href="#" class="button-primary">Learn More</a></p>
 			</div>
 			<div class="col-md-1 col-sm-1 col-xs-12"></div>
 			<div class="col-md-5 col-sm-5 col-xs-12 align-column-center">
-				<p class="text-center"><img class="bg-img bg-img-3" src="<?php $image_path( 'people-in-office.jpg' ) ?>"></p>
+				<p class="text-center"><img class="bg-img bg-img-3" src="<?php $crio_image_path( 'people-in-office.jpg' ) ?>"></p>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $image_path( 'desk-with-computer-and-chair.jpg' ) ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $image_path( 'desk-with-computer-and-chair.jpg' ) ?>)">
+<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $crio_image_path( 'desk-with-computer-and-chair.jpg' ) ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $crio_image_path( 'desk-with-computer-and-chair.jpg' ) ?>)">
 	<div class="container">
 		<div class="row row-spacing-lg-top">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<h2 style="color: #fff; margin-top: 0;">Services</h2>
-				<?php $divider(); ?>
+				<?php $crio_divider(); ?>
 			</div>
 		</div>
 		<div class="row row-spacing-lg-bottom">
@@ -74,7 +74,7 @@ $service_icons = function( $options ) { ?>
 		<div class="row row-spacing-lg-top">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<h2 style="margin-top: 0;">Team</h2>
-				<?php $divider(); ?>
+				<?php $crio_divider(); ?>
 			</div>
 		</div>
 		<div class="row row-spacing-lg-bottom">
@@ -82,7 +82,7 @@ $service_icons = function( $options ) { ?>
 				<div class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12">
 						<div class="text-center">
-							<img class="bg-img bg-img-3" src="<?php $image_path( 'man-on-computer.jpg' ) ?>">
+							<img class="bg-img bg-img-3" src="<?php $crio_image_path( 'man-on-computer.jpg' ) ?>">
 							<h4 style="margin-top: 1em; font-size: 1.2em;">Sam Wood</h4>
 							<p class="">Product Management</p>
 						</div>

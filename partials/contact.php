@@ -12,7 +12,7 @@
 		<div class="row row-spacing-lg">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<h1 class="h2" style="margin-top: 0;">Get a Quote</h1>
-				<?php $divider(); ?>
+				<?php $crio_divider(); ?>
 			</div>
 			<div class="col-md-6 col-sm-12 col-xs-12">
 				<p style="margin-bottom: 2em;">Executing below the line so that we maximise share of voice. Targeting agile and possibly think outside the box. Synchronise big data so that as an end result, we make the logo bigger.</p>

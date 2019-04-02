@@ -2,16 +2,16 @@
 /**
  * Utility helper for common functionality in starter content.
  *
- * @package Prime
+ * @package Crio
  *
  * @since 2.0.0
  */
 
-$image_path = function ( $file ) {
+$crio_image_path = function ( $file ) {
 	echo esc_url( get_parent_theme_file_uri( 'images/' . $file ) );
 };
 
-$divider = function() { ?>
+$crio_divider = function() { ?>
 	<div class="row bg-editor-hr-wrap">
 		<div class="col-md-12 col-xs-12 col-sm-12">
 			<div>
