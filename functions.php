@@ -1,6 +1,10 @@
 <?php
 /**
- * Include the BoldGrid Theme Framework
+ * Theme functions and definitions.
+ *
+ * Includes the core files for BoldGrid Theme Framework.
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package Prime
  */
