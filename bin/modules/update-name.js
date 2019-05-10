@@ -1,6 +1,5 @@
 const fs = require( 'fs' ),
-	glob = require( 'glob' ),
-	path = require( 'path' );
+	glob = require( 'glob' );
 
 module.exports = ( to, name, config ) => {
 	const ucFirst = str => str.charAt(0).toUpperCase() + str.slice(1);
@@ -22,7 +21,7 @@ module.exports = ( to, name, config ) => {
 				} );
 			}
 
-			console.info( `Updated theme name from Prime to ${ucFirst( name )} in ${to}` );
+			console.info( `Updated theme name from Prime to ${ ucFirst( name ) } in ${to}` );
 		} );
 	} else {
 		const files = glob.sync( to, config.globOpts );
@@ -33,7 +32,7 @@ module.exports = ( to, name, config ) => {
 					return console.log( err );
 				}
 
-				let result = content.replace( /(\s\*+\s@package\s)([p|P]rime)/, `$1${ name.toLowerCase() }` );
+				let result = content.replace( /(\s\*+\s@package\s)([p|P]rime)/, `$1${ ucFirst( name ) }` );
 
 				if ( result !== content ) {
 					fs.writeFile( file, result, 'utf8', function( err ) {
@@ -42,7 +41,7 @@ module.exports = ( to, name, config ) => {
 						}
 					} );
 				}
-
+				console.info( `Updated @package refs for ${ ucFirst( name ) } in ${to}` );
 			} );
 		} );
 	}
