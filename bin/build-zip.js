@@ -2,6 +2,7 @@ const path = require( 'path' ),
 	copy = require( 'recursive-copy' ),
 	wpTextdomain = require( 'wp-textdomain' ),
 	headerUpdate = require( 'wp-header-update' ),
+	updateName = require( './modules/update-name' ),
 	getBGTFW = require( './modules/install-bgtfw.js' ),
 	zip = require( './modules/zip.js' ),
 	wpPot = require( 'wp-pot' ),
@@ -71,6 +72,7 @@ getBGTFW().then( () => {
 				await headerUpdate( 'Theme URI', `https://www.boldgrid.com/themes/${ domain }`, `${ tempDir }/style.css` );
 				await headerUpdate( 'Stable Tag', version, `${ tempDir }/readme.txt` );
 				await fixTextDomains();
+				await updateNames();
 			} )()
 				.then( () => generatePot() )
 				.then( () => zipTheme() )
@@ -85,6 +87,24 @@ const fixTextDomains = async () => {
 		fix: true,
 		force: true
 	} );
+}
+
+const updateNames = async () => {
+	const config = {
+		globOpts: {
+			cwd: path.resolve( tempDir, '..' ) + '/',
+			dot: false,
+			ignore: [
+				`${ domain }/inc/boldgrid-theme-framework/**/*`,
+				`${ domain }/vendor/**/*`,
+				`${ domain }/woocommerce/**/*`
+			]
+		}
+	};
+
+	updateName( `${ path.resolve( tempDir ) }/**/*.php`, themeName, config );
+	updateName( `${ path.resolve( tempDir ) }/style.css`, themeName, config );
+	updateName( `${ path.resolve( tempDir ) }/readme.txt`, themeName, config );
 }
 
 const generatePot = async () => {
