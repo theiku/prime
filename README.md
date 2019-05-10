@@ -3,8 +3,8 @@
 - Contributors: rramo012, timph
 - Requires at least: 4.8
 - Tested up to: 5.2
-- License: GNU General Public License v2 or later
-- License URI: http://www.gnu.org/licenses/gpl-2.0.html
+- License: GPL-3.0-or-later
+- License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
 
 ## Description
 Prime is a BoldGrid Parent Theme used to create new child themes for use in the BoldGrid system.  This theme utilizes the [BoldGrid Theme Framework](https://github.com/boldgrid/boldgrid-theme-framework).

@@ -5,8 +5,8 @@ Requires PHP: 5.4
 Requires at least: 4.8
 Tested up to: 5.2
 Stable tag: 2.1.0
-License: GPL-2.0-or-later
-License URI: https://www.gnu.org/licenses/gpl-2.0-standalone.html
+License: GPL-3.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
 
 Prime is a WordPress super theme that allows designers, developers and other web professionals to create without bounds.
 
