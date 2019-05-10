@@ -44,14 +44,14 @@ licenses
 │     ├─ URL: git://github.com/isaacs/node-graceful-fs.git
 │     ├─ VendorName: Isaac Z. Schlueter
 │     └─ VendorUrl: http://blog.izs.me
-├─ BSD-2-Clause
-│  ├─ esprima@1.0.4
-│  │  ├─ URL: http://github.com/ariya/esprima.git
-│  │  └─ VendorUrl: http://esprima.org/
-│  └─ color-js@1.0.4
-│     ├─ URL: git+https://github.com/brehaut/color-js.git
-│     ├─ VendorName: Andrew Brehaut
-│     └─ VendorUrl: https://github.com/brehaut/color-js#readme
+├─ BSD 2-Clause
+│  ├─ color-js@1.0.4
+│  │  ├─ URL: git+https://github.com/brehaut/color-js.git
+│  │  ├─ VendorName: Andrew Brehaut
+│  │  └─ VendorUrl: https://github.com/brehaut/color-js#readme
+│  └─ esprima@1.0.4
+│     ├─ URL: http://github.com/ariya/esprima.git
+│     └─ VendorUrl: http://esprima.org/
 ├─ BSD-3-Clause
 │  ├─ bcrypt-pbkdf@1.0.2
 │  │  └─ URL: git://github.com/joyent/node-bcrypt-pbkdf.git
@@ -71,10 +71,14 @@ licenses
 │     ├─ URL: http://github.com/kriszyp/json-schema
 │     └─ VendorName: Kris Zyp
 ├─ GPL-2.0-or-later
-│  └─ @wordpress/dom-ready@2.0.2
+│  ├─ @wordpress/dom-ready@2.0.2
+│  │  ├─ URL: https://github.com/WordPress/gutenberg.git
+│  │  ├─ VendorName: The WordPress Contributors
+│  │  └─ VendorUrl: https://github.com/WordPress/gutenberg/tree/master/packages/dom-ready/README.md
+│  └─ @wordpress/hooks@2.2.0
 │     ├─ URL: https://github.com/WordPress/gutenberg.git
 │     ├─ VendorName: The WordPress Contributors
-│     └─ VendorUrl: https://github.com/WordPress/gutenberg/tree/master/packages/dom-ready/README.md
+│     └─ VendorUrl: https://github.com/WordPress/gutenberg/tree/master/packages/hooks/README.md
 ├─ ISC
 │  ├─ @boldgrid/components@2.16.1
 │  │  ├─ URL: git+https://github.com/BoldGrid/components.git
@@ -97,9 +101,17 @@ licenses
 │  │  ├─ URL: git://github.com/isaacs/json-stringify-safe
 │  │  ├─ VendorName: Isaac Z. Schlueter
 │  │  └─ VendorUrl: https://github.com/isaacs/json-stringify-safe
+│  ├─ lite-ready@1.0.4
+│  │  ├─ URL: git+https://nicbell@github.com/nicbell/liteready.git
+│  │  ├─ VendorName: Nic Bell
+│  │  └─ VendorUrl: https://github.com/nicbell/liteready#readme
 │  ├─ lru-cache@2.7.3
 │  │  ├─ URL: git://github.com/isaacs/node-lru-cache.git
 │  │  └─ VendorName: Isaac Z. Schlueter
+│  ├─ natives@1.1.6
+│  │  ├─ URL: git+https://github.com/addaleax/natives.git
+│  │  ├─ VendorName: Isaac Z. Schlueter
+│  │  └─ VendorUrl: https://github.com/addaleax/natives#readme
 │  ├─ semver@5.0.3
 │  │  └─ URL: https://github.com/npm/node-semver
 │  ├─ sigmund@1.0.1
@@ -110,13 +122,14 @@ licenses
 │     ├─ URL: git://github.com/isaacs/node-which.git
 │     ├─ VendorName: Isaac Z. Schlueter
 │     └─ VendorUrl: http://blog.izs.me
-├─ ISC*
-│  └─ inherits@1.0.2
-│     ├─ URL: https://github.com/isaacs/inherits
-│     ├─ VendorName: Isaac Z. Schlueter
-│     └─ VendorUrl: http://blog.izs.me/
 ├─ MIT
+│  ├─ @babel/runtime-corejs2@7.4.4
+│  │  ├─ URL: https://github.com/babel/babel/tree/master/packages/babel-runtime-corejs2
+│  │  └─ VendorName: Sebastian McKenzie
 │  ├─ @babel/runtime@7.1.5
+│  │  ├─ URL: https://github.com/babel/babel/tree/master/packages/babel-runtime
+│  │  └─ VendorName: Sebastian McKenzie
+│  ├─ @babel/runtime@7.4.4
 │  │  ├─ URL: https://github.com/babel/babel/tree/master/packages/babel-runtime
 │  │  └─ VendorName: Sebastian McKenzie
 │  ├─ agent-base@2.1.1
@@ -171,10 +184,6 @@ licenses
 │  │  └─ URL: https://github.com/chalk/chalk.git
 │  ├─ co@4.6.0
 │  │  └─ URL: https://github.com/tj/co.git
-│  ├─ colors@0.6.2
-│  │  ├─ URL: http://github.com/Marak/colors.js.git
-│  │  ├─ VendorName: Marak Squires
-│  │  └─ VendorUrl: https://github.com/Marak/colors.js
 │  ├─ coffee-script@1.3.3
 │  │  ├─ URL: git://github.com/jashkenas/coffee-script.git
 │  │  ├─ VendorName: Jeremy Ashkenas
@@ -194,6 +203,8 @@ licenses
 │  │  ├─ URL: git://github.com/felixge/node-combined-stream.git
 │  │  ├─ VendorName: Felix Geisendörfer
 │  │  └─ VendorUrl: https://github.com/felixge/node-combined-stream
+│  ├─ core-js@2.6.5
+│  │  └─ URL: https://github.com/zloirock/core-js.git
 │  ├─ core-util-is@1.0.2
 │  │  ├─ URL: git://github.com/isaacs/core-util-is
 │  │  ├─ VendorName: Isaac Z. Schlueter
@@ -213,6 +224,10 @@ licenses
 │  │  ├─ URL: git://github.com/felixge/node-delayed-stream.git
 │  │  ├─ VendorName: Felix Geisendörfer
 │  │  └─ VendorUrl: https://github.com/felixge/node-delayed-stream
+│  ├─ dom-walk@0.1.1
+│  │  ├─ URL: git://github.com/Raynos/dom-walk.git
+│  │  ├─ VendorName: Raynos
+│  │  └─ VendorUrl: https://github.com/Raynos/dom-walk
 │  ├─ ecc-jsbn@0.1.1
 │  │  ├─ URL: https://github.com/quartzjer/ecc-jsbn.git
 │  │  ├─ VendorName: Jeremie Miller
@@ -267,6 +282,10 @@ licenses
 │  ├─ getpass@0.1.7
 │  │  ├─ URL: https://github.com/arekinath/node-getpass.git
 │  │  └─ VendorName: Alex Wilson
+│  ├─ global@4.3.2
+│  │  ├─ URL: git://github.com/Raynos/global.git
+│  │  ├─ VendorName: Raynos
+│  │  └─ VendorUrl: https://github.com/Raynos/global
 │  ├─ grunt-legacy-log-utils@0.1.1
 │  │  ├─ URL: git://github.com/gruntjs/grunt-legacy-log-utils.git
 │  │  ├─ VendorName: "Cowboy" Ben Alman
@@ -326,6 +345,10 @@ licenses
 │  │  ├─ URL: https://github.com/rvagg/isstream.git
 │  │  ├─ VendorName: Rod Vagg
 │  │  └─ VendorUrl: https://github.com/rvagg/isstream
+│  ├─ jarallax@1.10.7
+│  │  ├─ URL: git://github.com/nk-o/jarallax.git
+│  │  ├─ VendorName: nK
+│  │  └─ VendorUrl: https://github.com/nk-o/jarallax
 │  ├─ jquery-goup@1.1.3
 │  │  ├─ URL: https://github.com/dnlnrs/jquery-goup
 │  │  ├─ VendorName: Daniele Lenares
@@ -334,10 +357,6 @@ licenses
 │  │  ├─ URL: git@github.com:inuyaksa/jquery.nicescroll.git
 │  │  ├─ VendorName: InuYaksa
 │  │  └─ VendorUrl: https://github.com/inuyaksa/jquery.nicescroll
-│  ├─ jquery.stellar@0.6.2
-│  │  ├─ URL: git://github.com/markdalgleish/stellar.js.git
-│  │  ├─ VendorName: Mark Dalgleish
-│  │  └─ VendorUrl: http://markdalgleish.com/projects/stellar.js
 │  ├─ jquery@3.3.1
 │  │  ├─ URL: https://github.com/jquery/jquery.git
 │  │  ├─ VendorName: JS Foundation and other contributors
@@ -355,9 +374,9 @@ licenses
 │  │  └─ VendorUrl: https://github.com/epoberezkin/json-schema-traverse#readme
 │  ├─ jsprim@1.4.1
 │  │  └─ URL: git://github.com/joyent/node-jsprim.git
-│  ├─ kirki-toolkit@3.0.27
+│  ├─ kirki-toolkit@3.0.38
 │  │  ├─ URL: https://github.com/aristath/kirki
-│  │  ├─ VendorName: Aristeides Stathopoulos
+│  │  ├─ VendorName: Ari Stathopoulos
 │  │  └─ VendorUrl: https://kirki.org/
 │  ├─ lodash.camelcase@4.3.0
 │  │  ├─ URL: https://github.com/lodash/lodash.git
@@ -391,6 +410,10 @@ licenses
 │  │  └─ URL: https://github.com/jshttp/mime-db.git
 │  ├─ mime-types@2.1.18
 │  │  └─ URL: https://github.com/jshttp/mime-types.git
+│  ├─ min-document@2.19.0
+│  │  ├─ URL: git://github.com/Raynos/min-document.git
+│  │  ├─ VendorName: Raynos
+│  │  └─ VendorUrl: https://github.com/Raynos/min-document
 │  ├─ minimatch@0.2.14
 │  │  ├─ URL: git://github.com/isaacs/minimatch.git
 │  │  ├─ VendorName: Isaac Z. Schlueter
@@ -413,6 +436,9 @@ licenses
 │  │  ├─ URL: https://github.com/postcss/postcss.git
 │  │  ├─ VendorName: Andrey Sitnik
 │  │  └─ VendorUrl: https://postcss.org/
+│  ├─ process@0.5.2
+│  │  ├─ URL: git://github.com/shtylman/node-process.git
+│  │  └─ VendorName: Roman Shtylman
 │  ├─ punycode@1.4.1
 │  │  ├─ URL: https://github.com/bestiejs/punycode.js.git
 │  │  ├─ VendorName: Mathias Bynens
@@ -421,7 +447,13 @@ licenses
 │  │  ├─ URL: git://github.com/kriskowal/q.git
 │  │  ├─ VendorName: Kris Kowal
 │  │  └─ VendorUrl: https://github.com/kriskowal/q
+│  ├─ rafl@1.2.2
+│  │  ├─ URL: git+https://github.com/michaelrhodes/raf.git
+│  │  └─ VendorName: Michael Rhodes
 │  ├─ regenerator-runtime@0.12.1
+│  │  ├─ URL: https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime
+│  │  └─ VendorName: Ben Newman
+│  ├─ regenerator-runtime@0.13.2
 │  │  ├─ URL: https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime
 │  │  └─ VendorName: Ben Newman
 │  ├─ requestretry@1.9.1
@@ -450,7 +482,7 @@ licenses
 │  │  ├─ URL: git://github.com/holidayextras/node-saucelabs.git
 │  │  ├─ VendorName: Dan Jenkins
 │  │  └─ VendorUrl: https://github.com/holidayextras/node-saucelabs
-│  ├─ scssphp@0.7.7
+│  ├─ scssphp@0.8.2
 │  │  ├─ URL: git://github.com/leafo/scssphp.git
 │  │  ├─ VendorName: Leaf Corcoran
 │  │  └─ VendorUrl: http://leafo.github.io/scssphp
@@ -499,6 +531,10 @@ licenses
 │  │  └─ URL: https://github.com/kelektiv/node-uuid.git
 │  ├─ verror@1.10.0
 │  │  └─ URL: git://github.com/davepacheco/node-verror.git
+│  ├─ video-worker@1.1.6
+│  │  ├─ URL: git://github.com/nk-o/video-worker.git
+│  │  ├─ VendorName: nK
+│  │  └─ VendorUrl: https://github.com/nk-o/video-worker
 │  ├─ when@3.7.8
 │  │  ├─ URL: https://github.com/cujojs/when
 │  │  └─ VendorUrl: http://cujojs.com/
