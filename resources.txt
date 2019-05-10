@@ -33,6 +33,10 @@ The following resources are used in the production of creating the experience th
 * © 2011-2019 The WordPress Contributors
 * GPL-2.0-or-later
 
+= Hooks (@wordpress/hooks) =
+* © 2011-2019 The WordPress Contributors
+* GPL-2.0-or-later
+
 = float-labels.js =
 * © 2015 Gemini Labs LLC <paul@geminilabs.io>
 * MIT
@@ -69,8 +73,8 @@ The following resources are used in the production of creating the experience th
 * © 2011-14 InuYaksa
 * MIT
 
-= Stellar.js =
-* © 2013 Mark Dalgleish
+= jarallax =
+* © 2018 nK
 * MIT
 
 = Kirki Toolkit =
@@ -99,6 +103,10 @@ The following resources are used in the production of creating the experience th
 
 = WOW.js =
 * © 2016 Thomas Grainger
+* MIT
+
+= Babel Runtime Core JS 2 (@babel/runtime-corejs2) =
+* © 2014-present Sebastian McKenzie and other contributors
 * MIT
 
 = images/typing-on-laptop-closeup.jpg =
