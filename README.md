@@ -2,7 +2,7 @@
 
 - Contributors: rramo012, timph
 - Requires at least: 4.8
-- Tested up to: 5.1.1
+- Tested up to: 5.2
 - License: GNU General Public License v2 or later
 - License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
