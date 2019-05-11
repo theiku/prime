@@ -41,7 +41,7 @@ module.exports = ( to, name, config ) => {
 						}
 					} );
 				}
-				console.info( `Updated @package refs for ${ ucFirst( name ) } in ${to}` );
+				console.info( `Updated @package refs for ${ ucFirst( name ) } in ${file}` );
 			} );
 		} );
 	}
