@@ -4,7 +4,7 @@ const fs = require( 'fs' ),
 module.exports = ( to, name, config ) => {
 	const ucFirst = str => str.charAt(0).toUpperCase() + str.slice(1);
 
-	if ( to.includes( 'readme.txt' ) || to.includes( 'style.css' ) ) {
+	if ( to.includes( 'readme.txt' ) || to.includes( 'style.css' ) || to.includes( 'rtl.css' ) ) {
 		fs.readFile( to, 'utf8', function( err, content ) {
 			if ( err ) {
 				return console.log( err );

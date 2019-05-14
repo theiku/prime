@@ -104,6 +104,7 @@ const updateNames = async () => {
 
 	updateName( `${ path.resolve( tempDir ) }/**/*.php`, themeName, config );
 	updateName( `${ path.resolve( tempDir ) }/style.css`, themeName, config );
+	updateName( `${ path.resolve( tempDir ) }/rtl.css`, themeName, config );
 	updateName( `${ path.resolve( tempDir ) }/readme.txt`, themeName, config );
 }
 
