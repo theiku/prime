@@ -65,6 +65,7 @@ getBGTFW().then( () => {
 		};
 
 		copy( themeDir, tempDir, options ).then( () => {
+			updateNames();
 			( async () => {
 				await headerUpdate( 'Version', version, `${ tempDir }/style.css` );
 				await headerUpdate( 'Text Domain', domain, `${ tempDir }/style.css` );
@@ -72,7 +73,7 @@ getBGTFW().then( () => {
 				await headerUpdate( 'Theme URI', `https://www.boldgrid.com/themes/${ domain }`, `${ tempDir }/style.css` );
 				await headerUpdate( 'Stable Tag', version, `${ tempDir }/readme.txt` );
 				await fixTextDomains();
-				await updateNames();
+
 			} )()
 				.then( () => generatePot() )
 				.then( () => zipTheme() )
@@ -89,7 +90,7 @@ const fixTextDomains = async () => {
 	} );
 }
 
-const updateNames = async () => {
+const updateNames = () => {
 	const config = {
 		globOpts: {
 			cwd: path.resolve( tempDir, '..' ) + '/',
