@@ -11,7 +11,7 @@ Prime is a BoldGrid Parent Theme used to create new child themes for use in the 
 
 ## Changelog
 
-### 2.1.4 ###
+### 2.2.0 ###
 * New Feature: Users can now toggle on/off the "Scroll To Top" button from the customizer. [#78](https://github.com/BoldGrid/boldgrid-theme-framework/issues/78), [#79](https://github.com/BoldGrid/boldgrid-theme-framework/issues/79)
 * New Feature: Users can now select different background blend modes for background image overlays in the customizer. [#85](https://github.com/BoldGrid/boldgrid-theme-framework/issues/85)
 * Bugfix: Southwest alignment control for branding blocks should now be correctly aligned. [#80](https://github.com/BoldGrid/boldgrid-theme-framework/issues/80)
@@ -19,6 +19,10 @@ Prime is a BoldGrid Parent Theme used to create new child themes for use in the 
 * Bugfix: Parallax backgrounds should show up on the frontend site now. [#81](https://github.com/BoldGrid/boldgrid-theme-framework/issues/81)
 * Bugfix: Parallax backgrounds should now fill entire screen in customizer. [#82](https://github.com/BoldGrid/boldgrid-theme-framework/issues/82)
 * Bugfix: Fixed some issues for select elements not displaying with the correct styles on the frontend site.
+* Bugfix: Fixed issue where sidebars were not dynamically populating in customizer. [#47](https://github.com/BoldGrid/boldgrid-theme-framework/issues/47)
+* Bugfix: WP5.2 unitless line-height causing alignment issues for icons in customizer. [#88](https://github.com/BoldGrid/boldgrid-theme-framework/issues/88)
+* Bugfix: WooCommerce quantity inputs no longer disabled after ajax cart updates. [#34](https://github.com/BoldGrid/boldgrid-theme-framework/issues/34)
+* Bugfix: Fixed partial refresh issue with changing header layouts. [#91](https://github.com/BoldGrid/boldgrid-theme-framework/issues/91)
 * Update: WooCommerce templates and support have been updated for WooCommerce `3.6.2`.
 	- This has continued our deprecation of the following templates:
 		+ woocommerce/global/form-login.php
@@ -32,6 +36,8 @@ Prime is a BoldGrid Parent Theme used to create new child themes for use in the 
 * Update: Removed limitation of node 10.12.0 - 10.13.0 for build process. [#86](https://github.com/BoldGrid/boldgrid-theme-framework/pull/86)
 * Update: Added support for WooCommerce's upcoming new hooks: `woocommerce_before_quantity_input_field`, and `woocommerce_after_quantity_input_field`.
 * Update: Added `.form-control` and `.input-number` CSS classes to quantity inputs via `woocommerce_quantity_input_classes`.
+* Update: Ensure `paginate_comments_links` is being used where necessary. [#92](https://github.com/BoldGrid/boldgrid-theme-framework/issues/92)
+* Update: scssphp package updated.
 
 ### 2.1.3 ###
 * Bugfix: Fixed issue with dynamic imports resolving to incorrect paths.
