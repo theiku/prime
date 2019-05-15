@@ -6,10 +6,10 @@ It's simple to create a new theme with prime, just clone the repo, install the d
 ```
 $ git clone https://github.com/boldgrid/prime
 $ yarn install
-$ yarn theme crio 1.0.0
+$ yarn theme prime 1.0.0
 ```
 
-The last command creates a new .zip file for a WordPress theme called `Crio` at version `1.0.0`. Just replace the textdomain and version number with your own!
+The last command creates a new .zip file for a WordPress theme called `Prime` at version `1.0.0`. Just replace the textdomain and version number with your own!
 
 ## Changelog
 
