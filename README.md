@@ -1,13 +1,15 @@
 # Prime
+Prime is a WordPress theme used to create new WordPress themes utilizing the [BoldGrid Theme Framework](https://github.com/boldgrid/boldgrid-theme-framework).
 
-- Contributors: rramo012, timph
-- Requires at least: 4.8
-- Tested up to: 5.2
-- License: GPL-3.0-or-later
-- License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
+It's simple to create a new theme with prime, just clone the repo, install the deps, and name your theme/version:
 
-## Description
-Prime is a BoldGrid Parent Theme used to create new child themes for use in the BoldGrid system.  This theme utilizes the [BoldGrid Theme Framework](https://github.com/boldgrid/boldgrid-theme-framework).
+```
+$ git clone https://github.com/boldgrid/prime
+$ yarn install
+$ yarn theme crio 1.0.0
+```
+
+The last command creates a new .zip file for a WordPress theme called `Crio` at version `1.0.0`. Just replace the textdomain and version number with your own!
 
 ## Changelog
 
