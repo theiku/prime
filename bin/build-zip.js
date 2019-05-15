@@ -65,17 +65,16 @@ getBGTFW().then( () => {
 		};
 
 		copy( themeDir, tempDir, options ).then( () => {
-			updateNames();
 			( async () => {
 				await headerUpdate( 'Version', version, `${ tempDir }/style.css` );
 				await headerUpdate( 'Text Domain', domain, `${ tempDir }/style.css` );
 				await headerUpdate( 'Theme Name', themeName, `${ tempDir }/style.css` );
 				await headerUpdate( 'Theme URI', `https://www.boldgrid.com/themes/${ domain }`, `${ tempDir }/style.css` );
 				await headerUpdate( 'Stable Tag', version, `${ tempDir }/readme.txt` );
+				await updateNames();
 				await fixTextDomains();
-
+				await generatePot();
 			} )()
-				.then( () => generatePot() )
 				.then( () => zipTheme() )
 				.catch( console.error );
 		} ).catch( console.error );
@@ -83,14 +82,22 @@ getBGTFW().then( () => {
 } ).catch( console.error );
 
 const fixTextDomains = async () => {
-	wpTextdomain( `${ tempDir }/**/*.php`, {
-		domain: [ domain, 'kirki' ],
-		fix: true,
-		force: true
+	return new Promise( ( resolve, reject ) => {
+		try {
+			wpTextdomain( `${ tempDir }/**/*.php`, {
+				domain: [ domain, 'kirki' ],
+				fix: true,
+				force: true
+			} );
+			resolve();
+		} catch( e ) {
+			console.error( e );
+			reject( e );
+		}
 	} );
 }
 
-const updateNames = () => {
+const updateNames = async() => {
 	const config = {
 		globOpts: {
 			cwd: path.resolve( tempDir, '..' ) + '/',
@@ -103,21 +110,36 @@ const updateNames = () => {
 		}
 	};
 
-	updateName( `${ path.resolve( tempDir ) }/**/*.php`, themeName, config );
-	updateName( `${ path.resolve( tempDir ) }/style.css`, themeName, config );
-	updateName( `${ path.resolve( tempDir ) }/rtl.css`, themeName, config );
-	updateName( `${ path.resolve( tempDir ) }/readme.txt`, themeName, config );
+	const task1 = updateName( `${ path.resolve( tempDir ) }/**/*.php`, themeName, config );
+	const task2 = updateName( `${ path.resolve( tempDir ) }/style.css`, themeName, config );
+	const task3 = updateName( `${ path.resolve( tempDir ) }/rtl.css`, themeName, config );
+	const task4 = updateName( `${ path.resolve( tempDir ) }/readme.txt`, themeName, config )
+
+	return {
+		result1: await task1,
+		result2: await task2,
+		result3: await task3,
+		result4: await task4
+	}
 }
 
 const generatePot = async () => {
-	console.log( 'Generating translations file...' );
-	wpPot( {
-		destFile: `${ path.resolve( tempDir ) }/languages/${ domain }.pot`,
-		domain: domain,
-		bugReport: `https://github.com/BoldGrid/${ domain }/issues`,
-		team: 'The BoldGrid Team <support@boldgrid.com>',
-		src: `${path.resolve( tempDir, '..' )}/${domain}/**/*.php`,
-		relativeTo: `${path.resolve( tempDir, '..' )}/${domain}/`
+	return new Promise( ( resolve, reject ) => {
+		try {
+			console.log( 'Generating translations file...' );
+			wpPot( {
+				destFile: `${ path.resolve( tempDir ) }/languages/${ domain }.pot`,
+				domain: domain,
+				bugReport: `https://github.com/BoldGrid/${ domain }/issues`,
+				team: 'The BoldGrid Team <support@boldgrid.com>',
+				src: `${path.resolve( tempDir, '..' )}/${domain}/**/*.php`,
+				relativeTo: `${path.resolve( tempDir, '..' )}/${domain}/`
+			} );
+			resolve();
+		} catch( e ) {
+			console.error( e );
+			reject( e );
+		}
 	} );
 }
 
