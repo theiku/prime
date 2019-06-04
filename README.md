@@ -13,6 +13,12 @@ The last command creates a new .zip file for a WordPress theme called `Prime` at
 
 ## Changelog
 
+### 2.2.1 ###
+* Bug fix: Pagination "active" class is now properly applied. [#109](https://github.com/BoldGrid/boldgrid-theme-framework/issues/109)
+* Bug fix: Removed duplicate panel being displayed in Gutenberg Editor. [#108](https://github.com/BoldGrid/boldgrid-theme-framework/issues/108)
+* Bug fix: Ignored CSS transitions on archive pages when printing. [#106](https://github.com/BoldGrid/boldgrid-theme-framework/issues/106)
+* Update: Increased tap target size for pagination. [#105](https://github.com/BoldGrid/boldgrid-theme-framework/issues/105)
+
 ### 2.2.0 ###
 * New Feature: Users can now toggle on/off the "Scroll To Top" button from the customizer. [#78](https://github.com/BoldGrid/boldgrid-theme-framework/issues/78), [#79](https://github.com/BoldGrid/boldgrid-theme-framework/issues/79)
 * New Feature: Users can now select different background blend modes for background image overlays in the customizer. [#85](https://github.com/BoldGrid/boldgrid-theme-framework/issues/85)

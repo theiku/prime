@@ -3,8 +3,8 @@ Contributors: rramo012, timph
 Tags: news, blog, e-commerce, sticky-post, theme-options, threaded-comments, full-width-template, footer-widgets, featured-images, flexible-header, custom-header, custom-logo, custom-background, custom-colors, custom-menu, editor-style, translation-ready, left-sidebar, right-sidebar, grid-layout, one-column, two-columns, three-columns, four-columns
 Requires PHP: 5.6
 Requires at least: 4.8
-Tested up to: 5.2
-Stable tag: 2.2.0
+Tested up to: 5.2.1
+Stable tag: 2.2.1
 License: GPL-3.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
 
@@ -14,6 +14,12 @@ Prime is a WordPress super theme that allows designers, developers and other web
 Prime is a WordPress super theme that allows designers, developers and other web professionals to create without bounds or restrictions.  Prime’s advanced customization options are completely integrated with the WordPress Customizer API, providing you with a powerful, but familiar interface to customize your website. Our integration gives you granular control over many elements straight from the Customizer, and even device previews so you can see how your site looks on different devices. Crio’s unique color palette system keeps colors consistent across your site. Drag and drop colors in your palette to increase or decrease the usage of that color throughout your website. Use the advanced controls to create a custom Header, Footer, or Blog Page layout. Be Bold and stand above the rest with Prime by BoldGrid!
 
 == Changelog ==
+= 2.2.1 =
+* Bug fix: Pagination "active" class is now properly applied. [#109](https://github.com/BoldGrid/boldgrid-theme-framework/issues/109)
+* Bug fix: Removed duplicate panel being displayed in Gutenberg Editor. [#108](https://github.com/BoldGrid/boldgrid-theme-framework/issues/108)
+* Bug fix: Ignored CSS transitions on archive pages when printing. [#106](https://github.com/BoldGrid/boldgrid-theme-framework/issues/106)
+* Update: Increased tap target size for pagination. [#105](https://github.com/BoldGrid/boldgrid-theme-framework/issues/105)
+
 = 2.2.0 =
 * New Feature: Users can now toggle on/off the "Scroll To Top" button from the customizer. [#78](https://github.com/BoldGrid/boldgrid-theme-framework/issues/78), [#79](https://github.com/BoldGrid/boldgrid-theme-framework/issues/79)
 * New Feature: Users can now select different background blend modes for background image overlays in the customizer. [#85](https://github.com/BoldGrid/boldgrid-theme-framework/issues/85)
