@@ -14,6 +14,18 @@ Prime is a WordPress super theme that allows designers, developers and other web
 Prime is a WordPress super theme that allows designers, developers and other web professionals to create without bounds or restrictions.  Prime’s advanced customization options are completely integrated with the WordPress Customizer API, providing you with a powerful, but familiar interface to customize your website. Our integration gives you granular control over many elements straight from the Customizer, and even device previews so you can see how your site looks on different devices. Crio’s unique color palette system keeps colors consistent across your site. Drag and drop colors in your palette to increase or decrease the usage of that color throughout your website. Use the advanced controls to create a custom Header, Footer, or Blog Page layout. Be Bold and stand above the rest with Prime by BoldGrid!
 
 == Changelog ==
+
+= 2.2.3 =
+* Bug fix: Menu items with mark now respect whitespace. [#114](https://github.com/BoldGrid/boldgrid-theme-framework/issues/114)
+* Bug fix: The "No Sidebar" icon is used for customizer controls instead of default "Sidebar Right". [#116](https://github.com/BoldGrid/boldgrid-theme-framework/issues/116)
+* Bug fix: Primary sidebar now loads in the Widgets section in customizer. [#118](https://github.com/BoldGrid/boldgrid-theme-framework/issues/118)
+* Bug fix: Sidebar icon is now properly positioned. [#119](https://github.com/BoldGrid/boldgrid-theme-framework/issues/119)
+* Bug fix: Section title fonts in customizer are now correct. [#120](https://github.com/BoldGrid/boldgrid-theme-framework/issues/120)
+* Update: Removed unnecessary loading of FontAwesome from CDN in Kirki. [#113](https://github.com/BoldGrid/boldgrid-theme-framework/issues/113)
+* Update: The default for post dates has been set to date format instead of human readable. [#115](https://github.com/BoldGrid/boldgrid-theme-framework/issues/115)
+* Update: Removed Crio branding from customizer controls. [#117](https://github.com/BoldGrid/boldgrid-theme-framework/issues/117)
+* Update: Updated theme dashboard support information. [#48](https://github.com/BoldGrid/prime/issues/48)
+
 = 2.2.2 =
 * Update: Minor changes for WPTRT WordPress.org submission.
 

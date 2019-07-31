@@ -13,6 +13,20 @@ The last command creates a new .zip file for a WordPress theme called `Prime` at
 
 ## Changelog
 
+### 2.2.3 ###
+* Bug fix: Menu items with mark now respect whitespace. [#114](https://github.com/BoldGrid/boldgrid-theme-framework/issues/114)
+* Bug fix: The "No Sidebar" icon is used for customizer controls instead of default "Sidebar Right". [#116](https://github.com/BoldGrid/boldgrid-theme-framework/issues/116)
+* Bug fix: Primary sidebar now loads in the Widgets section in customizer. [#118](https://github.com/BoldGrid/boldgrid-theme-framework/issues/118)
+* Bug fix: Sidebar icon is now properly positioned. [#119](https://github.com/BoldGrid/boldgrid-theme-framework/issues/119)
+* Bug fix: Section title fonts in customizer are now correct. [#120](https://github.com/BoldGrid/boldgrid-theme-framework/issues/120)
+* Update: Removed unnecessary loading of FontAwesome from CDN in Kirki. [#113](https://github.com/BoldGrid/boldgrid-theme-framework/issues/113)
+* Update: The default for post dates has been set to date format instead of human readable. [#115](https://github.com/BoldGrid/boldgrid-theme-framework/issues/115)
+* Update: Removed Crio branding from customizer controls. [#117](https://github.com/BoldGrid/boldgrid-theme-framework/issues/117)
+* Update: Updated theme dashboard support information. [#48](https://github.com/BoldGrid/prime/issues/48)
+
+### 2.2.2 ###
+* Update: Minor changes for WPTRT WordPress.org submission.
+
 ### 2.2.1 ###
 * Bug fix: Pagination "active" class is now properly applied. [#109](https://github.com/BoldGrid/boldgrid-theme-framework/issues/109)
 * Bug fix: Removed duplicate panel being displayed in Gutenberg Editor. [#108](https://github.com/BoldGrid/boldgrid-theme-framework/issues/108)
