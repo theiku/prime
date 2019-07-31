@@ -83,7 +83,7 @@ $crio_customizer_url = esc_url(
 							</div>
 							<div class="learning-text">
 								<h3><?php esc_html_e( 'Crio Documentation and Tutorials', 'bgtfw' ); ?></h3>
-								<p><?php esc_html_e( 'Step by Step tutorials and easty to follow documentation', 'bgtfw' ); ?></p>
+								<p><?php esc_html_e( 'Step by Step tutorials and easy to follow documentation!', 'bgtfw' ); ?></p>
 							</div>
 						</div>
 					</div>
@@ -109,6 +109,15 @@ $crio_customizer_url = esc_url(
 							</div>
 						</div>
 					</div>
+					<p class="box">
+						<a href="http://boldgrid.com/support/boldgrid-crio" target="_blank" class="button button-secondary"><?php esc_html_e( 'Browse Docs', 'bgtfw' ); ?></a>
+					</p>
+					<p class="box">
+						<a href="https://www.boldgrid.com/feedback/communities/20-questions" target="_blank" class="button button-secondary"><?php esc_html_e( 'Get Support', 'bgtfw' ); ?></a>
+					</p>
+					<p class="box">
+						<a href="https://www.facebook.com/groups/BGTeamOrange" target="_blank" class="button button-secondary"><?php esc_html_e( 'Join Us', 'bgtfw' ); ?></a>
+					</p>
 				</div>
 			</div>
 		</div>
@@ -119,9 +128,9 @@ $crio_customizer_url = esc_url(
 			<div class="welcome-panel-column-container two-col">
 				<div class="welcome-panel-column">
 					<h2><?php esc_html_e( 'Go Pro', 'bgtfw' ); ?></h2>
-					<p><?php esc_html_e( 'Crio Pro gives you access to advanced features and more control over your designs. For a one-time cost of $55 you can design your site with professional level confidence.', 'bgtfw' ); ?></p>
+					<p><?php esc_html_e( 'Crio Pro gives you access to advanced features and more control over your designs. For a one-time cost of $39 you can design your site with professional level confidence.', 'bgtfw' ); ?></p>
 					<p>
-						<a class="button button-primary button-hero"><?php esc_html_e( 'Get Crio Pro', 'bgtfw' ); ?></a>
+						<a href="https://www.boldgrid.com/get-pro-crio/" target="_blank" class="button button-primary button-hero"><?php esc_html_e( 'Get Crio Pro', 'bgtfw' ); ?></a>
 					</p>
 				</div>
 				<div class="welcome-panel-column">

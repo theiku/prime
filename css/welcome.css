@@ -2,8 +2,13 @@
   display: grid;
   grid-template-columns: 79px 1fr;
   grid-gap: 10px;
-  align-items: center;
+  align-items: flex-start;
 }
+
+.welcome-panel-column-container .learning-item .learning-image {
+  margin: 1.33em 0 0;
+}
+
 .welcome-panel-content {
   margin-right: 13px;
 }
@@ -13,6 +18,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   background-color: #fff;
+}
+.welcome-panel-column-container .wrapper p.box {
+  margin-top: 0;
+  margin-left: 89px; /* 79px image grid width + 10px grid padding. */
 }
 
 .welcome-panel-column-container .box {
