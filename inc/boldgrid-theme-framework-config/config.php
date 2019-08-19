@@ -429,9 +429,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			),
 		);
 
-		// Set Main Sticky Menu configuration to contain same content as the Main Menu.
-		$config['starter-content']['nav_menus']['sticky-main'] = $config['starter-content']['nav_menus']['main'];
-
 		// Social Menu configuration.
 		$config['starter-content']['nav_menus']['social'] = array(
 			'name' => __( 'Social Media Links', 'bgtfw' ),
