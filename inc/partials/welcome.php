@@ -58,9 +58,7 @@ $crio_customizer_url = esc_url(
 					<div class="welcome-panel-column">
 						<h2><?php esc_html_e( 'Crio - The theme with more', 'bgtfw' ); ?></h2>
 						<p>
-							<?php echo wp_kses_post( __( 'Crio means "I Create" in Portuguese and this is our aim: To give you the most powerful site creation tools you can use! Visit <a href="https://www.BoldGrid.com/" target="_blank">BoldGrid.com</a> to learn about all the resources we offer, including our new WordPress Cloud toolset where you can create in seconds!', 'bgtfw' ) ); ?></p>
-						<p>
-							<a href="https://www.boldgrid.com/" target="_blank"><?php esc_html_e( 'BoldGrid.com', 'bgtfw' ); ?></a>
+							<?php echo wp_kses_post( __( 'Crio means "I Create" in Portuguese and this is our aim: To give you the most powerful site creation tools you can use! Visit <a href="https://www.BoldGrid.com/" target="_blank">BoldGrid.com</a> to learn about all the resources we offer, including our new WordPress Cloud toolset where you can create in seconds!', 'bgtfw' ) ); ?>
 						</p>
 					</div>
 					<div class="welcome-panel-column">
