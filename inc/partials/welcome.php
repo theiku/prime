@@ -42,7 +42,7 @@ $crio_customizer_url = esc_url(
 					<div class="welcome-panel-column">
 						<h2><?php esc_html_e( 'Getting Started', 'bgtfw' ); ?></h2>
 						<p>
-							<?php echo wp_kses_post( __( 'Welcome to BoldGrid Crio! In order to give you a head start editing and designing, we have installed Starter Content for you. You may edit any part of the content to suit your needs or delete content and pages you don\'t find valuable.  Our Starter Content works best with the <a href="https://wordpress.org/plugins/post-and-page-builder/" target="_blank">Post and Page Builder</a> by <a href="https://www.boldgrid.com/" target="_blank">Boldgrid</a>. Click below to install.', 'bgtfw' ) ); ?>
+							<?php echo wp_kses_post( __( 'Welcome to BoldGrid Crio! In order to give you a head start editing and designing, we have installed Starter Content for you. You may edit any part of the content to suit your needs or delete content and pages you don\'t find valuable.  Our Starter Content works best with the <a href="https://wordpress.org/plugins/post-and-page-builder/" target="_blank">Post and Page Builder</a> by <a href="https://www.boldgrid.com/" target="_blank">BoldGrid</a>. Click below to install.', 'bgtfw' ) ); ?>
 						</p>
 						<p>
 							<a href="<?php echo esc_url( $crio_tgm_url ) ?>" class="button button-primary button-hero"><?php esc_html_e( 'Install Post and Page Builder', 'bgtfw' ); ?></a>
