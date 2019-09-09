@@ -1,5 +1,5 @@
 # Prime
-Prime is a WordPress theme used to create new WordPress themes utilizing the [BoldGrid Theme Framework](https://github.com/boldgrid/boldgrid-theme-framework).
+Prime is a WordPress SuperTheme used to create new WordPress themes utilizing the [BoldGrid Theme Framework](https://github.com/boldgrid/boldgrid-theme-framework).
 
 It's simple to create a new theme with prime, just clone the repo, install the deps, and name your theme/version:
 
@@ -12,6 +12,19 @@ $ yarn theme prime 1.0.0
 The last command creates a new .zip file for a WordPress theme called `Prime` at version `1.0.0`. Just replace the textdomain and version number with your own!
 
 ## Changelog
+
+### 2.2.6 ###
+* Bug fix: Comment titles on post/pages should not be hidden when post titles are hidden in customizer. [#123](https://github.com/BoldGrid/boldgrid-theme-framework/issues/123)
+* Bug fix: Creating new menu in customizer should show only used menu locations. [#124](https://github.com/BoldGrid/boldgrid-theme-framework/issues/124)
+* Bug fix: Allow fonts to display in Gutenberg and Classic Editor for proper WYSIWYG. [#125](https://github.com/BoldGrid/boldgrid-theme-framework/issues/125)
+* Update: Fixed some grammatical issues.
+* Update: Conditionally hide/show premium sections in theme's welcome page/dashboard.
+
+### 2.2.5 ###
+* Update: Version bump.
+
+### 2.2.4 ###
+* Bug fix: TGMPA had incorrect link.
 
 ### 2.2.3 ###
 * Bug fix: Menu items with mark now respect whitespace. [#114](https://github.com/BoldGrid/boldgrid-theme-framework/issues/114)

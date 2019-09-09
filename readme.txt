@@ -4,16 +4,23 @@ Tags: news, blog, e-commerce, sticky-post, theme-options, threaded-comments, ful
 Requires PHP: 5.6
 Requires at least: 4.8
 Tested up to: 5.2
-Stable tag: 2.2.5
+Stable tag: 2.2.6
 License: GPL-3.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
 
-Prime is a WordPress super theme that allows designers, developers and other web professionals to create without bounds.
+Prime is a WordPress SuperTheme that allows designers, developers and other web professionals to create without bounds.
 
 == Description ==
-Prime is a WordPress super theme that allows designers, developers and other web professionals to create without bounds or restrictions.  Prime’s advanced customization options are completely integrated with the WordPress Customizer API, providing you with a powerful, but familiar interface to customize your website. Our integration gives you granular control over many elements straight from the Customizer, and even device previews so you can see how your site looks on different devices. Crio’s unique color palette system keeps colors consistent across your site. Drag and drop colors in your palette to increase or decrease the usage of that color throughout your website. Use the advanced controls to create a custom Header, Footer, or Blog Page layout. Be Bold and stand above the rest with Prime by BoldGrid!
+Prime is a WordPress SuperTheme that allows designers, developers and other web professionals to create without bounds or restrictions.  Prime’s advanced customization options are completely integrated with the WordPress Customizer API, providing you with a powerful, but familiar interface to customize your website. Our integration gives you granular control over many elements straight from the Customizer, and even device previews so you can see how your site looks on different devices. Crio’s unique color palette system keeps colors consistent across your site. Drag and drop colors in your palette to increase or decrease the usage of that color throughout your website. Use the advanced controls to create a custom Header, Footer, or Blog Page layout. Be Bold and stand above the rest with Prime by BoldGrid!
 
 == Changelog ==
+
+= 2.2.6 =
+* Bug fix: Comment titles on post/pages should not be hidden when post titles are hidden in customizer. [#123](https://github.com/BoldGrid/boldgrid-theme-framework/issues/123)
+* Bug fix: Creating new menu in customizer should show only used menu locations. [#124](https://github.com/BoldGrid/boldgrid-theme-framework/issues/124)
+* Bug fix: Allow fonts to display in Gutenberg and Classic Editor for proper WYSIWYG. [#125](https://github.com/BoldGrid/boldgrid-theme-framework/issues/125)
+* Update: Fixed some grammatical issues.
+* Update: Conditionally hide/show premium sections in theme's welcome page/dashboard.
 
 = 2.2.5 =
 * Update: Version bump.
