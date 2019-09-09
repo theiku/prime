@@ -120,7 +120,7 @@ $crio_customizer_url = esc_url(
 			</div>
 		</div>
 	</div>
-
+	<?php if ( ! class_exists( 'Crio_Premium' ) ) : ?>
 	<div class="welcome-panel">
 		<div class="welcome-panel-content">
 			<div class="welcome-panel-column-container two-col">
@@ -137,4 +137,5 @@ $crio_customizer_url = esc_url(
 			</div>
 		</div>
 	</div>
+	<?php endif; ?>
 </div>
