@@ -25,6 +25,7 @@ $crio_customizer_url = esc_url(
 		wp_customize_url()
 	)
 );
+$crio_editor_file = 'post-and-page-builder/post-and-page-builder.php';
 ?>
 
 <div class="wrap about-wrap bgcrio-about-wrap">
@@ -42,14 +43,28 @@ $crio_customizer_url = esc_url(
 					<div class="welcome-panel-column">
 						<h2><?php esc_html_e( 'Getting Started', 'bgtfw' ); ?></h2>
 						<p>
-							<?php echo wp_kses_post( __( 'Welcome to BoldGrid Crio! In order to give you a head start editing and designing, we have installed Starter Content for you. You may edit any part of the content to suit your needs or delete content and pages you don\'t find valuable.  Our Starter Content works best with the <a href="https://wordpress.org/plugins/post-and-page-builder/" target="_blank">Post and Page Builder</a> by <a href="https://www.boldgrid.com/" target="_blank">BoldGrid</a>. Click below to install.', 'bgtfw' ) ); ?>
+							<?php echo wp_kses_post( __( 'Welcome to BoldGrid Crio! In order to give you a head start editing and designing, we have provided starter content for you to customize.  You may edit any part of the content to suit your needs or delete content and pages you don\'t find valuable.  Our starter content works best with the <a href="https://wordpress.org/plugins/post-and-page-builder/" target="_blank">Post and Page Builder</a> by <a href="https://www.boldgrid.com/" target="_blank">BoldGrid</a>.', 'bgtfw' ) ); ?>
 						</p>
-						<p>
-							<a href="<?php echo esc_url( $crio_tgm_url ) ?>" class="button button-primary button-hero"><?php esc_html_e( 'Install Post and Page Builder', 'bgtfw' ); ?></a>
-						</p>
-						<p>
-							<a href="<?php echo esc_url( $crio_customizer_url ); ?>"class="button button-secondary button-hero"><?php esc_html_e( 'Get Started Customizing', 'bgtfw' ); ?></a>
-						</p>
+						<?php if ( ! file_exists( WP_PLUGIN_DIR . DIRECTORY_SEPARATOR . $crio_editor_file ) ) : ?>
+							<p>
+								<a href="<?php echo esc_url( $crio_tgm_url ) ?>" class="button button-primary button-hero crio-welcome-button"><?php esc_html_e( 'Install Post and Page Builder', 'bgtfw' ); ?></a>
+							</p>
+							<p>
+								<a href="<?php echo esc_url( $crio_customizer_url ); ?>"class="button button-secondary button-hero crio-welcome-button"><?php esc_html_e( 'Preview and Customize Starter Content', 'bgtfw' ); ?></a>
+							</p>
+
+						<?php elseif ( ! in_array( $crio_editor_file, apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) : ?>
+							<p>
+								<a href="<?php echo esc_url( add_query_arg( 'plugin_status', 'activate', $crio_tgm_url ) ) ?>" class="button button-primary button-hero crio-welcome-button"><?php esc_html_e( 'Activate Post and Page Builder', 'bgtfw' ); ?></a>
+							</p>
+							<p>
+								<a href="<?php echo esc_url( $crio_customizer_url ); ?>"class="button button-secondary button-hero crio-welcome-button"><?php esc_html_e( 'Preview and Customize Starter Content', 'bgtfw' ); ?></a>
+							</p>
+						<?php else : ?>
+							<p>
+								<a href="<?php echo esc_url( $crio_customizer_url ); ?>"class="button button-primary button-hero crio-welcome-button"><?php esc_html_e( 'Preview and Customize Starter Content', 'bgtfw' ); ?></a>
+							</p>
+						<?php endif; ?>
 					</div>
 					<div class="welcome-panel-column">
 						<img style="width:100%;" src="<?php echo esc_url( get_template_directory_uri() ) . '/screenshot.png'; ?>" />

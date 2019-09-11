@@ -1,3 +1,8 @@
+.welcome-panel-column .crio-welcome-button.button.button-hero {
+  display: block;
+  text-align: center;
+  margin: 2em 0;
+}
 .welcome-panel-column-container .learning-item {
   display: grid;
   grid-template-columns: 79px 1fr;
