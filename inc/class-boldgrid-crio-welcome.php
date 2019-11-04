@@ -39,9 +39,7 @@ class Boldgrid_Crio_Welcome {
 			__( 'Crio', 'bgtfw' ),
 			'manage_options',
 			'crio',
-			array( $this, 'page_welcome' ),
-			'none',
-			2
+			array( $this, 'page_welcome' )
 		);
 	}
 
