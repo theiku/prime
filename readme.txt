@@ -15,6 +15,10 @@ Prime is a WordPress SuperTheme that allows designers, developers and other web 
 
 == Changelog ==
 
+= 2.2.8 =
+* Bug fix: PHP notice on welcome page. [#57](https://github.com/BoldGrid/boldgrid-theme-framework/issues/57)
+* Update: Updating woocommerce templates.
+
 = 2.2.7 =
 * Bug fix: Ensure that the site header is correctly output when settings are updated in customizer. [#127](https://github.com/BoldGrid/boldgrid-theme-framework/issues/127)
 * Update: Changed some of the welcome page content to better assist new users with a fresh site in getting started. [#53](https://github.com/BoldGrid/prime/issues/53), [#54](https://github.com/BoldGrid/prime/issues/54)
