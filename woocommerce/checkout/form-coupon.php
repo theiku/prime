@@ -12,26 +12,26 @@
  *
  * @see https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 3.4.0
+ * @version 3.4.4
  */
 
 defined( 'ABSPATH' ) || exit;
 
-if ( ! wc_coupons_enabled() || ! empty( WC()->cart->applied_coupons ) ) { // @codingStandardsIgnoreLine.
+if ( ! wc_coupons_enabled() ) { // @codingStandardsIgnoreLine.
 	return;
 }
 
 ?>
 <div class="woocommerce-form-coupon-toggle">
-	<?php wc_print_notice( apply_filters( 'woocommerce_checkout_coupon_message', __( 'Have a coupon?', 'woocommerce' ) . ' <a href="#" class="showcoupon">' . __( 'Click here to enter your code', 'woocommerce' ) . '</a>' ), 'notice' ); ?>
+	<?php wc_print_notice( apply_filters( 'woocommerce_checkout_coupon_message', esc_html__( 'Have a coupon?', 'woocommerce' ) . ' <a href="#" class="showcoupon">' . esc_html__( 'Click here to enter your code', 'woocommerce' ) . '</a>' ), 'notice' ); ?>
 </div>
 
-<form class="color1-border-color checkout_coupon" method="post" style="display:none">
+<form class="checkout_coupon woocommerce-form-coupon" method="post" style="display:none">
 
 	<p><?php esc_html_e( 'If you have a coupon code, please apply it below.', 'woocommerce' ); ?></p>
 
-	<p class="form-row form-row-first form-group">
-		<input type="text" name="coupon_code" class="input-text form-control input-lg" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" id="coupon_code" value="" />
+	<p class="form-row form-row-first">
+		<input type="text" name="coupon_code" class="input-text" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" id="coupon_code" value="" />
 	</p>
 
 	<p class="form-row form-row-last">
