@@ -30,6 +30,6 @@ if ( ! $notices ) {
 		<i class="fa fa-times-circle"></i>
 	</div>
 	<?php foreach ( $notices as $notice ) : ?>
-		<p><?php echo wp_kses_post( $notice['notice'] ); ?></p>
+		<p><?php echo wc_kses_notice( $notice['notice'] ); ?></p>
 	<?php endforeach; ?>
 </div>
