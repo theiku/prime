@@ -11,28 +11,28 @@
  * the readme will list any important changes.
  *
  * @see 	    https://docs.woocommerce.com/document/template-structure/
- * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     3.5.2
+ * @version     3.9.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-if ( ! $messages ){
+if ( ! $notices ) {
 	return;
 }
 
 ?>
-<?php foreach ( $messages as $message ) : ?>
+
+<?php foreach ( $notices as $notice ) : ?>
 	<div class="alert alert-info alert-white rounded">
 		<button type="button" data-dismiss="alert" aria-hidden="true" class="close">×</button>
 		<div class="icon">
 			<i class="fa fa-info"></i>
 		</div>
 		<div class="alert-message">
-			<?php echo wp_kses_post( $message ); ?>
+			<?php echo wc_kses_notice( $notice['notice'] ); ?>
 		</div>
 	</div>
 <?php endforeach; ?>

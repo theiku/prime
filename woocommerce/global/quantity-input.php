@@ -4,10 +4,6 @@
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/global/quantity-input.php.
  *
- * *******************************************************
- * NOTE: THIS CAN BE DELETED ONCE WCv3.6.3 IS RELEASED.  |
- * *******************************************************
- *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
  * maintain compatibility. We try to do this as little as possible, but it does
@@ -16,9 +12,11 @@
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 3.6.3
+ * @version 4.0.0
  */
+
 defined( 'ABSPATH' ) || exit;
+
 if ( $max_value && $min_value === $max_value ) {
 	?>
 	<div class="quantity hidden">
@@ -27,7 +25,7 @@ if ( $max_value && $min_value === $max_value ) {
 	<?php
 } else {
 	/* translators: %s: Quantity. */
-	$label = ! empty( $args['product_name'] ) ? sprintf( __( '%s quantity', 'woocommerce' ), wp_strip_all_tags( $args['product_name'] ) ) : __( 'Quantity', 'woocommerce' );
+	$label = ! empty( $args['product_name'] ) ? sprintf( __( '%s quantity', 'woocommerce' ), wp_strip_all_tags( $args['product_name'] ) ) : esc_html__( 'Quantity', 'woocommerce' );
 	?>
 	<div class="quantity">
 		<?php do_action( 'woocommerce_before_quantity_input_field' ); ?>
