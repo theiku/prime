@@ -13,6 +13,9 @@ The last command creates a new .zip file for a WordPress theme called `Prime` at
 
 ## Changelog
 
+### 2.2.8 ###
+* Update: Updated WooCommerce Templates.
+
 ### 2.2.7 ###
 * Bug fix: Ensure that the site header is correctly output when settings are updated in customizer. [#127](https://github.com/BoldGrid/boldgrid-theme-framework/issues/127)
 * Update: Changed some of the welcome page content to better assist new users with a fresh site in getting started. [#53](https://github.com/BoldGrid/prime/issues/53), [#54](https://github.com/BoldGrid/prime/issues/54)
