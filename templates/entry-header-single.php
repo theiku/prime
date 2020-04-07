@@ -4,9 +4,10 @@
  *
  * This file contains the markup for single post entry headers.
  *
- * @package Prime
+ * @package Crio
  */
 do_action( 'boldgrid_before_entry_title' ); ?>
+<?php if ( 'product' !== get_post_type() ) { ?>
 <div <?php BoldGrid::add_class( 'page_header_wrapper', [ 'page-header-wrapper' ] ); ?>>
 	<header <?php BoldGrid::add_class( 'single_page_title', [ 'entry-header', 'page-header', has_post_thumbnail( get_option( 'page_for_posts', true ) ) ? 'has-featured-image-header' : '' ] ); ?> <?php bgtfw_featured_img_bg( $post->ID ); ?>>
 		<div <?php BoldGrid::add_class( 'featured_image_single', [ 'featured-imgage-header' ] ); ?>>
@@ -19,4 +20,6 @@ do_action( 'boldgrid_before_entry_title' ); ?>
 		</div>
 	</header><!-- .entry-header -->
 </div>
-<?php do_action( 'boldgrid_after_entry_title' ); ?>
+	<?php
+}
+do_action( 'boldgrid_after_entry_title' ); ?>

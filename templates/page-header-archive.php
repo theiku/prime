@@ -4,9 +4,10 @@
  *
  * This file contains the markup for the archive page's entry header.
  *
- * @package Prime
+ * @package Crio
  */
 ?>
+<?php if ( ! is_post_type_archive( 'product' ) ) { ?>
 <div <?php BoldGrid::add_class( 'page_header_wrapper', [ 'page-header-wrapper' ] ); ?>>
 	<header <?php BoldGrid::add_class( 'archive_page_title', [ 'page-header' ] ); ?>>
 		<div <?php BoldGrid::add_class( 'featured_image', [ 'featured-imgage-header' ] ); ?>>
@@ -35,3 +36,4 @@
 		</div>
 	</header>
 </div>
+			<?php } ?>
