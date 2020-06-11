@@ -13,6 +13,10 @@ The last command creates a new .zip file for a WordPress theme called `Prime` at
 
 ## Changelog
 
+### 2.2.9 ###
+* Bug fix: Shop pages showing multiple H1 headings. [#66](https://github.com/BoldGrid/prime/issues/66)
+* Update: Updated style.css to include new fields.
+
 ### 2.2.8 ###
 * Update: Updated WooCommerce Templates.
 
