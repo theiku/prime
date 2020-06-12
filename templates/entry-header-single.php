@@ -9,7 +9,7 @@
 
 $has_featured_image_header = has_post_thumbnail( get_option( 'page_for_posts', true ) ) &&
 	'show' === get_theme_mod( 'bgtfw_post_header_feat_image_display' ) &&
-	'background' === get_theme_mod( 'bgtfw_post_header_feat_image_position');
+	'background' === get_theme_mod( 'bgtfw_post_header_feat_image_position' );
 
 do_action( 'boldgrid_before_entry_title' ); ?>
 <div <?php BoldGrid::add_class( 'page_header_wrapper', [ 'page-header-wrapper' ] ); ?>>
