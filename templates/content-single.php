@@ -11,6 +11,15 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class ="article-wrapper">
 			<div class="entry-content">
+				<?php
+				if ( 'show' === get_theme_mod( 'bgtfw_post_header_feat_image_display' ) && 'below' === get_theme_mod( 'bgtfw_post_header_feat_image_position' ) ) {
+					echo get_the_post_thumbnail(
+						null,
+						get_theme_mod( 'bgtfw_post_header_feat_image_size' ),
+						array( 'class' => get_theme_mod( 'bgtfw_post_header_feat_image_align' ) )
+					);
+				}
+				?>
 				<?php the_content(); ?>
 				<?php wp_link_pages( array( 'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'bgtfw' ), 'after' => '</p></nav>' ) ); ?>
 			</div><!-- .entry-content -->
