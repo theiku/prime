@@ -337,7 +337,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				// Widget $instance -> settings
 				array(
 					'title' => '',
-					'content' => '<h3 class="widget-title">Contact Info</h3><p style="margin-top: 1.3em; margin-bottom: .3em;">1234 Franconia Way</p><p>New York City, New York 65432</p><p style="margin-top: 1.3em; margin-bottom: .3em;"><span class="color1-color" style="margin-right: .2em; font-weight: bold;">Email:</span><a href="#">support@example.com</a></p><p><span class="color1-color" style="margin-right: .2em; font-weight: bold;">Phone:</span><a href="#">+1 456 152 4652</a></p>',
+					'content' => '<h3 class="widget-title">Contact Info</h3><p style="margin-top: 1.3em; margin-bottom: .3em;">1234 Franconia Way</p><p>New York City, New York 65432</p><p style="margin-top: 1.3em; margin-bottom: .3em;"><span class="h6" style="margin-right: .2em; font-weight: bold;">Email:</span><a href="#">support@example.com</a></p><p><span class="h6" style="margin-right: .2em; font-weight: bold;">Phone:</span><a href="#">+1 456 152 4652</a></p>',
 				),
 			),
 		);
