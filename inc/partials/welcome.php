@@ -47,10 +47,10 @@ $crio_editor_file = 'post-and-page-builder/post-and-page-builder.php';
 						</p>
 						<?php if ( ! file_exists( WP_PLUGIN_DIR . DIRECTORY_SEPARATOR . $crio_editor_file ) ) : ?>
 							<p>
-								<a href="<?php echo esc_url( $crio_tgm_url ) ?>" class="button button-primary button-hero crio-welcome-button"><?php esc_html_e( 'Install Post and Page Builder', 'bgtfw' ); ?></a>
+								<a href="<?php echo esc_url( $crio_tgm_url ) ?>" class="button button-primary button-hero"><?php esc_html_e( 'Install Post and Page Builder', 'bgtfw' ); ?></a>
 							</p>
 							<p>
-								<a href="<?php echo esc_url( $crio_customizer_url ); ?>"class="button button-secondary button-hero crio-welcome-button"><?php esc_html_e( 'Preview and Customize Starter Content', 'bgtfw' ); ?></a>
+								<a href="<?php echo esc_url( $crio_customizer_url ); ?>"class="button button-secondary button-hero"><?php esc_html_e( 'Preview and Customize Starter Content', 'bgtfw' ); ?></a>
 							</p>
 
 						<?php elseif ( ! in_array( $crio_editor_file, apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) : ?>
@@ -71,13 +71,13 @@ $crio_editor_file = 'post-and-page-builder/post-and-page-builder.php';
 					</div>
 				<?php else : ?>
 					<div class="welcome-panel-column">
-						<h2><?php esc_html_e( 'Crio - The theme with more', 'bgtfw' ); ?></h2>
+						<h2><?php esc_html_e( 'Crio - The Theme with More', 'bgtfw' ); ?></h2>
 						<p>
-							<?php echo wp_kses_post( __( 'Crio means "I Create" in Portuguese and this is our aim: To give you the most powerful site creation tools you can use! Visit <a href="https://www.BoldGrid.com/" target="_blank">BoldGrid.com</a> to learn about all the resources we offer, including our new WordPress Cloud toolset where you can create in seconds!', 'bgtfw' ) ); ?>
+							<?php echo wp_kses_post( __( 'Welcome to BoldGrid Crio! Crio means "I Create" in Portuguese and this is our aim: To give you the most powerful site creation tools you can use! Visit <a href="https://www.BoldGrid.com/" target="_blank">BoldGrid.com</a> to learn about all the resources we offer. Be sure to install the recommended Post and Page Builder. Crio\'s unique Customizer was designed to integrate with the <a href="https://www.boldgrid.com/wordpress-page-builder-by-boldgrid/" target="_blank">Post and Page Builder</a>, so you can easily use your fonts and colors from the visual editor.', 'bgtfw' ) ); ?>
 						</p>
 					</div>
 					<div class="welcome-panel-column">
-						<img style="width:100%;" src="<?php echo esc_url( get_template_directory_uri() ) . '/images/welcome/bg-no-fresh-site.png'; ?>" />
+						<img style="width:100%;" src="<?php echo esc_url( get_template_directory_uri() ) . '/images/welcome/bg-crio-pro.png'; ?>" />
 					</div>
 				<?php endif; ?>
 			</div>
@@ -126,7 +126,7 @@ $crio_editor_file = 'post-and-page-builder/post-and-page-builder.php';
 						<a href="http://boldgrid.com/support/boldgrid-crio" target="_blank" class="button button-secondary"><?php esc_html_e( 'Browse Docs', 'bgtfw' ); ?></a>
 					</p>
 					<p class="box">
-						<a href="https://www.boldgrid.com/feedback/communities/20-questions" target="_blank" class="button button-secondary"><?php esc_html_e( 'Get Support', 'bgtfw' ); ?></a>
+						<a href="https://www.boldgrid.com/central/account/help/premium" target="_blank" class="button button-secondary"><?php esc_html_e( 'Get Support', 'bgtfw' ); ?></a>
 					</p>
 					<p class="box">
 						<a href="https://www.facebook.com/groups/BGTeamOrange" target="_blank" class="button button-secondary"><?php esc_html_e( 'Join Us', 'bgtfw' ); ?></a>
@@ -141,13 +141,13 @@ $crio_editor_file = 'post-and-page-builder/post-and-page-builder.php';
 			<div class="welcome-panel-column-container two-col">
 				<div class="welcome-panel-column">
 					<h2><?php esc_html_e( 'Go Pro', 'bgtfw' ); ?></h2>
-					<p><?php esc_html_e( 'Crio Pro gives you access to advanced features and more control over your designs. For a one-time cost of $39 you can design your site with professional level confidence.', 'bgtfw' ); ?></p>
+					<p><?php esc_html_e( 'Looking for more? Upgrade to Crio Pro today to get over 150 additional Customizer controls, including Sticky Header and White Labeling options. For only $3.25 a month (billed annually) you can design your site with professional level confidence.', 'bgtfw' ); ?></p>
 					<p>
 						<a href="https://boldgrid.com/wordpress-themes/crio/?utm_source=Appearance_-_Crio&utm_medium=Button&utm_campaign=Crio_FTP&utm_content=Get_Crio_Pro" target="_blank" class="button button-primary button-hero"><?php esc_html_e( 'Get Crio Pro', 'bgtfw' ); ?></a>
 					</p>
 				</div>
 				<div class="welcome-panel-column">
-					<img style="width:100%;" src="<?php echo esc_url( get_template_directory_uri() ) . '/images/welcome/bg-crio-pro.png'; ?>" />
+					<img style="width:100%;" src="<?php echo esc_url( get_template_directory_uri() ) . '/images/welcome/customizer-extended.png'; ?>" />
 				</div>
 			</div>
 		</div>
