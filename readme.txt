@@ -15,6 +15,10 @@ Prime is a WordPress SuperTheme that allows designers, developers and other web 
 
 == Changelog ==
 
+= 2.3.1 =
+* Update: Updated Crio Welcome Page.
+* Update: lodash dependancy.
+
 = 2.2.8 =
 * Bug fix: PHP notice on welcome page. [#57](https://github.com/BoldGrid/boldgrid-theme-framework/issues/57)
 * Update: Updating woocommerce templates.
