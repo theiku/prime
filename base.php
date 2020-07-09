@@ -13,7 +13,12 @@ $bgtfw_configs = $boldgrid_theme_framework->get_configs();
 ?>
 <!doctype html>
 <!-- BGTFW Version: <?php echo esc_html( $bgtfw_configs['framework-version'] ); ?> -->
-<html <?php language_attributes(); ?>>
+<html
+<?php
+	language_attributes();
+	echo get_theme_mod( 'bgtfw_preloader', false ) ? 'class="' . esc_attr( get_theme_mod( 'bgtfw_preloader' ) ) . '"' : '';
+?>
+	>
 	<?php get_template_part( 'templates/head' ); ?>
 	<body <?php body_class(); ?>>
 		<?php
