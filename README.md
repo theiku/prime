@@ -13,6 +13,9 @@ The last command creates a new .zip file for a WordPress theme called `Prime` at
 
 ## Changelog
 
+### 2.2.10 ###
+* Update: Changed default fonts with spaces to be quoted.
+
 ### 2.2.9 ###
 * Bug fix: Shop pages showing multiple H1 headings. [#66](https://github.com/BoldGrid/prime/issues/66)
 * Update: Updated style.css to include new fields.
