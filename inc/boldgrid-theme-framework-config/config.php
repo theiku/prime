@@ -386,7 +386,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Site's body typography defaults.
 		$config['customizer']['controls']['bgtfw_body_typography']['default'] = array(
-			'font-family' => 'Exo 2',
+			'font-family' => '"Exo 2"',
 			'font-size' => '16px',
 			'line-height' => '1.8',
 			'text-transform' => 'none',
@@ -395,7 +395,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Site's headings typography defaults.
 		$config['customizer']['controls']['bgtfw_menu_typography_main']['default'] = array(
-			'font-family' => 'Exo 2',
+			'font-family' => '"Exo 2"',
 			'font-size' => '16px',
 			'line-height' => '1.5',
 			'text-transform' => 'none',
@@ -404,7 +404,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		$config['customizer']['controls']['bgtfw_headings_font_size']['default'] = '16';
 		$config['customizer']['controls']['bgtfw_headings_typography']['default'] = array(
-			'font-family' => 'Josefin Sans',
+			'font-family' => '"Josefin Sans"',
 			'line-height' => '1.1',
 			'text-transform' => 'none',
 			'variant' => '300',
