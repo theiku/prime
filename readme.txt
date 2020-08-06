@@ -17,7 +17,7 @@ Prime is a WordPress SuperTheme that allows designers, developers and other web 
 
 = 2.2.10 =
 * Update: Changed default fonts with spaces to be quoted.
-* Update: Updated 'Tested up to:'
+* Update: Updated 'Tested up to: 5.5'
 
 = 2.2.9 =
 * Bug fix: Shop pages showing multiple H1 headings. [#66](https://github.com/BoldGrid/prime/issues/66)
