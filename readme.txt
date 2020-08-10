@@ -3,8 +3,8 @@ Contributors: boldgrid, timph, rramo012, bgnicolepaschen, joemoto, imh_brad
 Tags: news, blog, e-commerce, sticky-post, theme-options, threaded-comments, full-width-template, footer-widgets, featured-images, flexible-header, custom-header, custom-logo, custom-background, custom-colors, custom-menu, editor-style, translation-ready, left-sidebar, right-sidebar, grid-layout, one-column, two-columns, three-columns, four-columns
 Requires PHP: 5.6
 Requires at least: 4.8
-Tested up to: 5.2
-Stable tag: 2.2.7
+Tested up to: 5.5
+Stable tag: 2.2.10
 License: GPL-3.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
 
@@ -14,6 +14,14 @@ Prime is a WordPress SuperTheme that allows designers, developers and other web 
 Prime is a WordPress SuperTheme that allows designers, developers and other web professionals to create without bounds or restrictions.  Prime’s advanced customization options are completely integrated with the WordPress Customizer API, providing you with a powerful, but familiar interface to customize your website. Our integration gives you granular control over many elements straight from the Customizer, and even device previews so you can see how your site looks on different devices. Crio’s unique color palette system keeps colors consistent across your site. Drag and drop colors in your palette to increase or decrease the usage of that color throughout your website. Use the advanced controls to create a custom Header, Footer, or Blog Page layout. Be Bold and stand above the rest with Prime by BoldGrid!
 
 == Changelog ==
+
+= 2.2.10 =
+* Update: Changed default fonts with spaces to be quoted.
+* Update: Updated 'Tested up to: 5.5'
+
+= 2.2.9 =
+* Bug fix: Shop pages showing multiple H1 headings. [#66](https://github.com/BoldGrid/prime/issues/66)
+* Update: Updated style.css to include new fields.
 
 = 2.2.8 =
 * Bug fix: PHP notice on welcome page. [#57](https://github.com/BoldGrid/boldgrid-theme-framework/issues/57)
