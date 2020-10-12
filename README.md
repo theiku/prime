@@ -12,6 +12,9 @@ Prime is a BoldGrid Parent Theme used to create new child themes for use in the 
 
 ## Changelog
 
+### 1.5.8 ###
+* Update: Add template conditionals for Sprout Invoices.
+
 ### 1.5.5 ###
 * Bug Fix: Fixing issue with grouped products.
 * Bug Fix: Fixing issue with incorrect nonces passed.
