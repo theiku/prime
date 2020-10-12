@@ -9,11 +9,16 @@
  */
 
 global $boldgrid_theme_framework;
+global $post;
+
+$is_sprout = 'sa_invoice' === $post->post_type;
+
 $bgtfw_configs = $boldgrid_theme_framework->get_configs();
 ?>
 <!doctype html>
 <!-- BGTFW Version: <?php echo esc_html( $bgtfw_configs['framework-version'] ); ?> -->
 <html <?php language_attributes(); ?>>
+	<?php if ( $is_sprout ) { get_template_part( 'sa_templates/invoice' ); } else { ?>
 	<?php get_template_part( 'templates/head' ); ?>
 	<body <?php body_class(); ?>>
 		<?php
@@ -59,4 +64,5 @@ $bgtfw_configs = $boldgrid_theme_framework->get_configs();
 		<?php wp_footer(); ?>
 		<?php do_action( 'boldgrid_footer_after' ); ?>
 	</body>
+				<?php } ?>
 </html>
