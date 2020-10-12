@@ -10,10 +10,14 @@
 
 global $boldgrid_theme_framework;
 $configs = $boldgrid_theme_framework->get_configs();
+global $post;
+
+$is_sprout = 'sa_invoice' === $post->post_type;
 ?>
 <!doctype html>
 <!-- BoldGrid Theme Framework Version: <?php echo $configs['framework-version']; ?> -->
 <html <?php language_attributes(); ?>>
+	<?php if ( $is_sprout ) { get_template_part( 'sa_templates/invoice' ); } else { ?>
 	<?php get_template_part( 'templates/head' ); ?>
 	<body <?php body_class(); ?>>
 		<?php do_action( 'boldgrid_header_before' ); ?>
@@ -49,4 +53,5 @@ $configs = $boldgrid_theme_framework->get_configs();
 		</div>
 		<?php do_action( 'boldgrid_footer_after' ); ?>
 	</body>
+	<?php } ?>
 </html>
