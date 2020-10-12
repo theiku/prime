@@ -20,7 +20,7 @@ do_action( 'pre_si_invoice_view' ); ?><!DOCTYPE html>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title><?php the_title() ?></title>
+		<title><?php wp_title() ?></title>
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
 
 		<script type="text/javascript" src="<?php echo site_url() ?>/wp-includes/js/jquery/jquery.js"></script>
