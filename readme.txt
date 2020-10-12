@@ -15,6 +15,9 @@ Prime is a WordPress SuperTheme that allows designers, developers and other web 
 
 == Changelog ==
 
+= 2.2.11 =
+* Update: Add template conditionals for Sprout Invoices.
+
 = 2.2.10 =
 * Update: Changed default fonts with spaces to be quoted.
 * Update: Updated 'Tested up to: 5.5'
