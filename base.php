@@ -27,7 +27,6 @@ $is_sa_estimate = 'sa_estimate' === $post->post_type;
 	} else {
 		get_template_part( 'templates/head' );
 	?>
-	<?php get_template_part( 'templates/head' ); ?>
 	<body <?php body_class(); ?>>
 		<?php do_action( 'boldgrid_header_before' ); ?>
 		<div class="site-header">
