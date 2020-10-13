@@ -13,6 +13,9 @@ The last command creates a new .zip file for a WordPress theme called `Prime` at
 
 ## Changelog
 
+### 2.2.12 ###
+* Update: Add template conditionals for Sprout Estimates.
+
 ### 2.2.11 ###
 * Update: Add template conditionals for Sprout Invoices.
 

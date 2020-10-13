@@ -18,8 +18,14 @@ $bgtfw_configs = $boldgrid_theme_framework->get_configs();
 <!doctype html>
 <!-- BGTFW Version: <?php echo esc_html( $bgtfw_configs['framework-version'] ); ?> -->
 <html <?php language_attributes(); ?>>
-	<?php if ( $is_sprout ) { get_template_part( 'sa_templates/invoice' ); } else { ?>
-	<?php get_template_part( 'templates/head' ); ?>
+<?php
+	if ( $is_sa_invoice ) {
+		get_template_part( 'sa_templates/invoice' );
+	} elseif ( $is_sa_estimate ) {
+		get_template_part( 'sa_templates/estimate' );
+	} else {
+		get_template_part( 'templates/head' );
+	?>
 	<body <?php body_class(); ?>>
 		<?php
 			// Invoking core hook for plugins to hook first in place on the body content. Ref: https://core.trac.wordpress.org/ticket/46679.
