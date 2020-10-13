@@ -12,12 +12,21 @@ global $boldgrid_theme_framework;
 $configs = $boldgrid_theme_framework->get_configs();
 global $post;
 
-$is_sprout = 'sa_invoice' === $post->post_type;
+$is_sa_invoice  = 'sa_invoice' === $post->post_type;
+$is_sa_estimate = 'sa_estimate' === $post->post_type;
+
 ?>
 <!doctype html>
 <!-- BoldGrid Theme Framework Version: <?php echo $configs['framework-version']; ?> -->
 <html <?php language_attributes(); ?>>
-	<?php if ( $is_sprout ) { get_template_part( 'sa_templates/invoice' ); } else { ?>
+<?php
+	if ( $is_sa_invoice ) {
+		get_template_part( 'sa_templates/invoice' );
+	} elseif ( $is_sa_estimate ) {
+		get_template_part( 'sa_templates/estimate' );
+	} else {
+		get_template_part( 'templates/head' );
+	?>
 	<?php get_template_part( 'templates/head' ); ?>
 	<body <?php body_class(); ?>>
 		<?php do_action( 'boldgrid_header_before' ); ?>
