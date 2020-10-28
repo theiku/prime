@@ -25,7 +25,7 @@ $bgtfw_configs = $boldgrid_theme_framework->get_configs();
 		<div <?php BoldGrid::add_class( 'site_header', array( 'bgtfw-header', 'site-header' ) ); ?>>
 			<?php
 				// Invoking core hook for plugins to hook into header.
-				do_action( 'get_header' ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+				do_action( 'get_header' ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound				do_action( 'crio_premium_remove_redirect' );
 			?>
 			<?php
 			if ( ! apply_filters( 'crio_premium_page_headers_enabled', false ) ) {
