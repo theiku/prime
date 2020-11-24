@@ -31,14 +31,15 @@ $bgtfw_configs = $boldgrid_theme_framework->get_configs();
 			<?php
 			if ( ! apply_filters( 'crio_premium_page_headers_enabled', false ) ) {
 				get_template_part( 'templates/header/header', $bgtfw_configs['template']['header'] );
+				?>
+			</div><!-- /.header -->
+			<?php
 			}
 			?>
-		</div><!-- /.header -->
 		<?php do_action( 'boldgrid_header_after' ); ?>
 		<?php do_action( 'boldgrid_content_before' ); ?>
 		<?php if ( ! apply_filters( 'crio_premium_page_headers_enabled', false ) ) : ?>
 		<div id="content" <?php BoldGrid::add_class( 'site_content', array( 'site-content' ) ); ?> role="document">
-
 			<?php do_action( 'bgtfw_page_header' ) ?>
 			<?php if ( 'above' === get_theme_mod( 'bgtfw_global_title_position' ) && ! $boldgrid_theme_framework->woo->is_woocommerce_page() && ! apply_filters( 'crio_premium_header_templates', false ) ) : ?>
 				<?php get_template_part( 'templates/page-headers' ); ?>
