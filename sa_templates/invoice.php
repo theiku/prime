@@ -13,7 +13,25 @@
  * You find something that you're not able to customize? We want your experience to be awesome so let support know and we'll be able to help you.
  *
  */
-?>
+
+do_action( 'pre_si_invoice_view' ); ?><!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<html>
+	<head>
+		<meta charset="<?php bloginfo( 'charset' ); ?>" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title><?php wp_title() ?></title>
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+
+		<script type="text/javascript" src="<?php echo site_url() ?>/wp-includes/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="<?php echo site_url() ?>/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+
+		<?php si_head( true ); ?>
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900">
+		<meta name="robots" content="noindex, nofollow" />
+	</head>
+
 	<body id="invoice" <?php body_class( 'si_default_theme' ); ?>>
 		<header class="row" id="header">
 			<div class="inner">
@@ -194,7 +212,6 @@
 			<!--<p><?php esc_attr_e( 'Powered by Sprout Invoices', 'sprout-invoices' ) ?></p>-->
 		</div><!-- #footer_messaging -->
 		<?php wp_footer(); ?>
-
 	</body>
 	<?php do_action( 'si_document_footer' ) ?>
 	<?php si_footer() ?>
