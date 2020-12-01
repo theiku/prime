@@ -38,18 +38,28 @@ $bgtfw_configs = $boldgrid_theme_framework->get_configs();
 			<?php
 				// Invoking core hook for plugins to hook into header.
 				do_action( 'get_header' ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+				do_action( 'crio_premium_remove_redirect' );
 			?>
-			<?php get_template_part( 'templates/header/header', $bgtfw_configs['template']['header'] ); ?>
-		</div><!-- /.header -->
+			<?php
+			if ( ! apply_filters( 'crio_premium_page_headers_enabled', false ) ) {
+				get_template_part( 'templates/header/header', $bgtfw_configs['template']['header'] );
+				?>
+			</div><!-- /.header -->
+			<?php
+			}
+			?>
 		<?php do_action( 'boldgrid_header_after' ); ?>
 		<?php do_action( 'boldgrid_content_before' ); ?>
+		<?php if ( ! apply_filters( 'crio_premium_page_headers_enabled', false ) ) : ?>
 		<div id="content" <?php BoldGrid::add_class( 'site_content', array( 'site-content' ) ); ?> role="document">
-			<?php if ( 'above' === get_theme_mod( 'bgtfw_global_title_position' ) && ! $boldgrid_theme_framework->woo->is_woocommerce_page() ) : ?>
+			<?php do_action( 'bgtfw_page_header' ) ?>
+			<?php if ( 'above' === get_theme_mod( 'bgtfw_global_title_position' ) && ! $boldgrid_theme_framework->woo->is_woocommerce_page() && ! apply_filters( 'crio_premium_header_templates', false ) ) : ?>
 				<?php get_template_part( 'templates/page-headers' ); ?>
 			<?php endif; ?>
+		<?php endif; ?>
 			<div id="main-wrapper" <?php BoldGrid::add_class( 'main_wrapper', array( 'main-wrapper' ) ); ?>>
 				<main <?php BoldGrid::add_class( 'main', array( 'main' ) ); ?>>
-					<?php if ( 'above' !== get_theme_mod( 'bgtfw_global_title_position' ) && ! $boldgrid_theme_framework->woo->is_woocommerce_page() ) : ?>
+					<?php if ( 'above' !== get_theme_mod( 'bgtfw_global_title_position' ) && ! $boldgrid_theme_framework->woo->is_woocommerce_page() && ! apply_filters( 'crio_premium_header_templates', false ) ) : ?>
 						<?php get_template_part( 'templates/page-headers' ); ?>
 					<?php endif; ?>
 					<?php do_action( 'boldgrid_main_top' ); ?>
