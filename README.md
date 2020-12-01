@@ -13,6 +13,15 @@ The last command creates a new .zip file for a WordPress theme called `Prime` at
 
 ## Changelog
 
+### 2.2.13 ###
+* Bug Fix: Cannot use Crio Customizer with Sprout Invoices [#93] (https://github.com/BoldGrid/prime/issues/93)
+
+### 2.2.12 ###
+* Update: Add template conditionals for Sprout Estimates.
+
+### 2.2.11 ###
+* Update: Add template conditionals for Sprout Invoices.
+
 ### 2.2.10 ###
 * Update: Changed default fonts with spaces to be quoted.
 * Update: Updated 'Tested up to: 5.5'
