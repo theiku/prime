@@ -15,6 +15,10 @@
  * @version 3.4.0
  */
 
+$has_header_template = apply_filters( 'crio_premium_get_page_header', get_the_ID() );
+$has_header_template = $has_header_template === get_the_ID() ? false : $has_header_template;
+$template_has_title  = get_post_meta( $has_header_template, 'crio-premium-template-has-page-title', true );
+
 defined( 'ABSPATH' ) || exit;
 
 get_header( 'shop' );
@@ -30,7 +34,7 @@ do_action( 'woocommerce_before_main_content' );
 
 ?>
 <header class="woocommerce-products-header">
-	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) && ! $template_has_title ) : ?>
 		<<?php echo is_front_page() ? 'h2' : 'h1'; ?> class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
 	<?php endif; ?>
 
