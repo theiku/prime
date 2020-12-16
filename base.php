@@ -9,6 +9,11 @@
  */
 
 global $boldgrid_theme_framework;
+global $post;
+
+$is_sa_invoice  = 'sa_invoice' === $post->post_type;
+$is_sa_estimate = 'sa_estimate' === $post->post_type;
+
 $bgtfw_configs = $boldgrid_theme_framework->get_configs();
 
 $has_header_template = apply_filters( 'crio_premium_get_page_header', get_the_ID() );
@@ -19,7 +24,14 @@ $template_has_title  = get_post_meta( $has_header_template, 'crio-premium-templa
 <!doctype html>
 <!-- BGTFW Version: <?php echo esc_html( $bgtfw_configs['framework-version'] ); ?> -->
 <html <?php language_attributes(); ?>>
-	<?php get_template_part( 'templates/head' ); ?>
+<?php
+	if ( $is_sa_invoice ) {
+		get_template_part( 'sa_templates/invoice' );
+	} elseif ( $is_sa_estimate ) {
+		get_template_part( 'sa_templates/estimate' );
+	} else {
+		get_template_part( 'templates/head' );
+	?>
 	<body <?php body_class(); ?>>
 		<?php
 			// Invoking core hook for plugins to hook first in place on the body content. Ref: https://core.trac.wordpress.org/ticket/46679.
@@ -34,6 +46,7 @@ $template_has_title  = get_post_meta( $has_header_template, 'crio-premium-templa
 				do_action( 'crio_premium_remove_redirect' );
 			?>
 			<?php
+
 			if ( ! $has_header_template ) {
 				get_template_part( 'templates/header/header', $bgtfw_configs['template']['header'] );
 				?>
@@ -43,6 +56,7 @@ $template_has_title  = get_post_meta( $has_header_template, 'crio-premium-templa
 			?>
 		<?php do_action( 'boldgrid_header_after' ); ?>
 		<?php do_action( 'boldgrid_content_before' ); ?>
+
 		<?php if ( ! $template_has_title ) : ?>
 		<div id="content" <?php BoldGrid::add_class( 'site_content', array( 'site-content' ) ); ?> role="document">
 			<?php do_action( 'bgtfw_page_header' ) ?>
@@ -52,6 +66,7 @@ $template_has_title  = get_post_meta( $has_header_template, 'crio-premium-templa
 		<?php endif; ?>
 			<div id="main-wrapper" <?php BoldGrid::add_class( 'main_wrapper', array( 'main-wrapper' ) ); ?>>
 				<main <?php BoldGrid::add_class( 'main', array( 'main' ) ); ?>>
+
 					<?php if ( 'above' !== get_theme_mod( 'bgtfw_global_title_position' ) && ! $boldgrid_theme_framework->woo->is_shop_page() && ! $template_has_title ) : ?>
 						<?php get_template_part( 'templates/page-headers' ); ?>
 					<?php endif; ?>
@@ -74,4 +89,5 @@ $template_has_title  = get_post_meta( $has_header_template, 'crio-premium-templa
 		<?php wp_footer(); ?>
 		<?php do_action( 'boldgrid_footer_after' ); ?>
 	</body>
+				<?php } ?>
 </html>
