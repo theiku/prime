@@ -4,7 +4,7 @@ Tags: news, blog, e-commerce, sticky-post, theme-options, threaded-comments, ful
 Requires PHP: 5.6
 Requires at least: 4.8
 Tested up to: 5.6
-Stable tag: 2.2.10
+Stable tag: 2.4.0
 License: GPL-3.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
 
@@ -15,17 +15,20 @@ Prime is a WordPress SuperTheme that allows designers, developers and other web 
 
 == Changelog ==
 
+= 2.4.0 =
+New Feature: Increased flexibility of page / post / woocommerce templates to allow better compatibility with Crio Pro's Custom Page Headers [#100] (https://github.com/BoldGrid/prime/pull/100)
+
 = 2.3.0 =
-* Update: Added compatibility with Crio Page Header Templates. [#94] (https://github.com/BoldGrid/prime/pull/94)
+New Feature: Added compatibility with Crio Page Header Templates. [#94] (https://github.com/BoldGrid/prime/pull/94)
 
 = 2.2.13 =
-* Bug Fix: Cannot use Crio Customizer with Sprout Invoices [#93] (https://github.com/BoldGrid/prime/issues/93)
+Bug Fix: Cannot use Crio Customizer with Sprout Invoices [#93] (https://github.com/BoldGrid/prime/issues/93)
 
 = 2.2.12 =
-* Update: Add template conditionals for Sprout Estimates.
+Update: Add template conditionals for Sprout Estimates.
 
 = 2.2.11 =
-* Update: Add template conditionals for Sprout Invoices.
+Update: Add template conditionals for Sprout Invoices.
 
 = 2.2.10 =
 * Update: Changed default fonts with spaces to be quoted.

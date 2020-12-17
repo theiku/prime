@@ -15,6 +15,11 @@ $is_sa_invoice  = 'sa_invoice' === $post->post_type;
 $is_sa_estimate = 'sa_estimate' === $post->post_type;
 
 $bgtfw_configs = $boldgrid_theme_framework->get_configs();
+
+$has_header_template = apply_filters( 'crio_premium_get_page_header', get_the_ID() );
+$has_header_template = $has_header_template === get_the_ID() ? false : $has_header_template;
+$template_has_title  = get_post_meta( $has_header_template, 'crio-premium-template-has-page-title', true );
+
 ?>
 <!doctype html>
 <!-- BGTFW Version: <?php echo esc_html( $bgtfw_configs['framework-version'] ); ?> -->
@@ -41,7 +46,8 @@ $bgtfw_configs = $boldgrid_theme_framework->get_configs();
 				do_action( 'crio_premium_remove_redirect' );
 			?>
 			<?php
-			if ( ! apply_filters( 'crio_premium_page_headers_enabled', false ) ) {
+
+			if ( ! $has_header_template ) {
 				get_template_part( 'templates/header/header', $bgtfw_configs['template']['header'] );
 				?>
 			</div><!-- /.header -->
@@ -50,16 +56,18 @@ $bgtfw_configs = $boldgrid_theme_framework->get_configs();
 			?>
 		<?php do_action( 'boldgrid_header_after' ); ?>
 		<?php do_action( 'boldgrid_content_before' ); ?>
-		<?php if ( ! apply_filters( 'crio_premium_page_headers_enabled', false ) ) : ?>
+
+		<?php if ( ! $template_has_title ) : ?>
 		<div id="content" <?php BoldGrid::add_class( 'site_content', array( 'site-content' ) ); ?> role="document">
 			<?php do_action( 'bgtfw_page_header' ) ?>
-			<?php if ( 'above' === get_theme_mod( 'bgtfw_global_title_position' ) && ! $boldgrid_theme_framework->woo->is_woocommerce_page() && ! apply_filters( 'crio_premium_header_templates', false ) ) : ?>
+			<?php if ( 'above' === get_theme_mod( 'bgtfw_global_title_position' ) && ! $boldgrid_theme_framework->woo->is_shop_page() && ! $template_has_title ) : ?>
 				<?php get_template_part( 'templates/page-headers' ); ?>
 			<?php endif; ?>
 		<?php endif; ?>
 			<div id="main-wrapper" <?php BoldGrid::add_class( 'main_wrapper', array( 'main-wrapper' ) ); ?>>
 				<main <?php BoldGrid::add_class( 'main', array( 'main' ) ); ?>>
-					<?php if ( 'above' !== get_theme_mod( 'bgtfw_global_title_position' ) && ! $boldgrid_theme_framework->woo->is_woocommerce_page() && ! apply_filters( 'crio_premium_header_templates', false ) ) : ?>
+
+					<?php if ( 'above' !== get_theme_mod( 'bgtfw_global_title_position' ) && ! $boldgrid_theme_framework->woo->is_shop_page() && ! $template_has_title ) : ?>
 						<?php get_template_part( 'templates/page-headers' ); ?>
 					<?php endif; ?>
 					<?php do_action( 'boldgrid_main_top' ); ?>
