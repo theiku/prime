@@ -4,7 +4,7 @@ Tags: news, blog, e-commerce, sticky-post, theme-options, threaded-comments, ful
 Requires PHP: 5.6
 Requires at least: 4.8
 Tested up to: 5.6
-Stable tag: 2.2.10
+Stable tag: 2.4.0
 License: GPL-3.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
 
