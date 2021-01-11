@@ -39,7 +39,7 @@ class Boldgrid_Crio_Welcome {
 			return;
 		}
 
-		$menus    = $GLOBALS[ 'menu' ];
+		$menus    = $GLOBALS['menu'];
 		$priority = array_filter( $menus, function( $item ) {
 			return 'themes.php' === $item[2];
 		} );
