@@ -48,7 +48,7 @@ $crio_icons = function( $options ) { ?>
 		</div>
 	</div>
 </div>
-<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $crio_image_path( 'desk-with-computer-and-chair.jpg' ) ?>" style="color: #fff; background-position: 50% 60%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $crio_image_path( 'desk-with-computer-and-chair.jpg' ) ?>)">
+<div class="boldgrid-section" data-bg-overlaycolor="rgba(0,0,0,0.5)" data-image-url="<?php $crio_image_path( 'city-view-night.jpg' ) ?>" style="color: #fff; background-position: 50% 50%; background-size: cover;background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<?php $crio_image_path( 'city-view-night.jpg' ) ?>)">
 	<div class="container">
 		<div class="row row-spacing-lg-top">
 			<div class="col-md-12 col-sm-12 col-xs-12">
