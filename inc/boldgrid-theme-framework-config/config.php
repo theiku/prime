@@ -41,7 +41,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['theme_name'] = 'crio';
 
 		// Primary color for site's title.
-		$config['customizer']['controls']['bgtfw_site_title_color']['default'] = 'neutral-color';
+		$config['customizer']['controls']['bgtfw_site_title_color']['default'] = 'color-neutral';
 
 		// Site's title typography defaults.
 		$config['customizer']['controls']['bgtfw_site_title_typography']['default'] = array(
@@ -53,7 +53,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		);
 
 		// Primary color for site's tagline.
-		$config['customizer']['controls']['bgtfw_tagline_color']['default'] = 'neutral-color';
+		$config['customizer']['controls']['bgtfw_tagline_color']['default'] = 'color-neutral';
 
 		// Site's tagline typography defaults.
 		$config['customizer']['controls']['bgtfw_tagline_typography']['default'] = array(
@@ -219,7 +219,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['bgtfw_header_color']['default'] = 'color-5';
 
 		// Footer specific colors for background, headings, and links.
-		$config['customizer']['controls']['bgtfw_footer_color']['default'] = 'color-2';
+		$config['customizer']['controls']['bgtfw_footer_color']['default'] = 'color-5';
 		$config['customizer']['controls']['bgtfw_footer_links']['default'] = 'color-1';
 
 		// Page title display settings, show by default.
@@ -399,7 +399,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'variant' => 'regular',
 		);
 
-		$config['customizer']['controls']['bgtfw_headings_font_size']['default'] = '18';
+		$config['customizer']['controls']['bgtfw_headings_font_size']['default'] = '19';
 		$config['customizer']['controls']['bgtfw_headings_typography']['default'] = array(
 			'font-family' => 'Source Sans Pro',
 			'line-height' => '1.1',
