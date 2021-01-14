@@ -41,23 +41,23 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['theme_name'] = 'crio';
 
 		// Primary color for site's title.
-		$config['customizer']['controls']['bgtfw_site_title_color']['default'] = 'color-neutral';
+		$config['customizer']['controls']['bgtfw_site_title_color']['default'] = 'color-2';
 
 		// Site's title typography defaults.
 		$config['customizer']['controls']['bgtfw_site_title_typography']['default'] = array(
-			'font-family' => 'Source Sans Pro',
-			'font-size' => '42px',
-			'text-transform' => 'none',
+			'font-family' => 'Josefin Sans',
+			'font-size' => '40px',
+			'text-transform' => 'uppercase',
 			'line-height' => '1.1',
-			'variant' => '600',
+			'variant' => '300',
 		);
 
 		// Primary color for site's tagline.
-		$config['customizer']['controls']['bgtfw_tagline_color']['default'] = 'color-neutral';
+		$config['customizer']['controls']['bgtfw_tagline_color']['default'] = 'color-2';
 
 		// Site's tagline typography defaults.
 		$config['customizer']['controls']['bgtfw_tagline_typography']['default'] = array(
-			'font-family' => 'Roboto',
+			'font-family' => 'Exo 2',
 			'font-size' => '20px',
 			'text-transform' => 'lowercase',
 			'line-height' => '1.1',
@@ -82,7 +82,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 					'#212121',
 					'#eaebed',
 					'#f6f6f6',
-					'#060606',
+					'#1a1a1a',
 				),
 			),
 			array(
@@ -149,9 +149,9 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'post_title' => _x( 'Man on computer', 'Image of man on computer used in theme starter content', 'crio' ),
 				'file' => 'images/man-on-computer.jpg',
 			),
-			'crio-light' => array(
-				'post_title' => _x( 'Light test logo for theme starter content', 'crio' ),
-				'file' => 'images/crio-light.png',
+			'crio-dark' => array(
+				'post_title' => _x( 'Dark test logo for theme starter content', 'crio' ),
+				'file' => 'images/crio-dark.png',
 				'meta_input' => array(
 					'_custom_logo' => true,
 				),
@@ -216,10 +216,13 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['bgtfw_headings_color']['default'] = 'color-2';
 
 		// Header specific colors for background, headings, and links.
-		$config['customizer']['controls']['bgtfw_header_color']['default'] = 'color-5';
+		$config['customizer']['controls']['bgtfw_header_color']['default'] = 'color-neutral';
+
+		// Header Border Color.
+		$config['customizer']['controls']['bgtfw_header_border_color']['default'] = 'color-3';
 
 		// Footer specific colors for background, headings, and links.
-		$config['customizer']['controls']['bgtfw_footer_color']['default'] = 'color-5';
+		$config['customizer']['controls']['bgtfw_footer_color']['default'] = 'color-2';
 		$config['customizer']['controls']['bgtfw_footer_links']['default'] = 'color-1';
 
 		// Page title display settings, show by default.
@@ -383,28 +386,28 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Site's body typography defaults.
 		$config['customizer']['controls']['bgtfw_body_typography']['default'] = array(
-			'font-family' => 'Roboto',
+			'font-family' => 'Exo 2',
 			'font-size' => '16px',
 			'line-height' => '1.8',
 			'text-transform' => 'none',
 			'variant' => 'regular',
 		);
 
-		// Site's menu typography defaults.
+		// Site's headings typography defaults.
 		$config['customizer']['controls']['bgtfw_menu_typography_main']['default'] = array(
-			'font-family' => 'Roboto',
+			'font-family' => 'Exo 2',
 			'font-size' => '16px',
 			'line-height' => '1.5',
 			'text-transform' => 'none',
 			'variant' => 'regular',
 		);
 
-		$config['customizer']['controls']['bgtfw_headings_font_size']['default'] = '19';
+		$config['customizer']['controls']['bgtfw_headings_font_size']['default'] = '16';
 		$config['customizer']['controls']['bgtfw_headings_typography']['default'] = array(
-			'font-family' => 'Source Sans Pro',
+			'font-family' => 'Josefin Sans',
 			'line-height' => '1.1',
 			'text-transform' => 'none',
-			'variant' => '600',
+			'variant' => '300',
 		);
 
 		if ( ! class_exists( 'Boldgrid_Editor' ) ) {
@@ -438,6 +441,21 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			),
 		);
 
+		$config['customizer']['controls']['bgtfw_header_border']['default'] = [
+			[
+				'media' => [ 'base' ],
+				'unit' => 'px',
+				'isLinked' => false,
+				'type' => 'solid',
+				'values' => [
+					'top' => 0,
+					'left' => 0,
+					'right' => 0,
+					'bottom' => 5,
+				],
+			],
+		];
+
 		$config['customizer']['controls']['bgtfw_blog_margin']['default'] = [
 			[
 				'media' => [ 'base' ],
@@ -460,7 +478,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_main']['default'] = 'color-1';
 
 		// Primary Menu - Hover color.
-		$config['customizer']['controls']['bgtfw_menu_items_hover_color_main']['default'] = 'color-neutral';
+		$config['customizer']['controls']['bgtfw_menu_items_hover_color_main']['default'] = 'color-1';
 
 		// Primary Menu - Hover Effect.
 		$config['customizer']['controls']['bgtfw_menu_items_hover_effect_main']['default'] = 'hvr-underline-from-center';
